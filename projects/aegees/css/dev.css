@@ -1,0 +1,34 @@
+/* Дополнительный файл стилей (для разработчиков) */
+/* */
+.content__bottom--about { background-position: center; }
+.team-row .team-row__item .team-row__item-photo { height: 450px; }
+.investments_bg {
+	background: url('../img/Investments-values-bg.jpg') fixed;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 100%;
+	color: #fff;
+	height: 450px;
+}
+.careers_bg {
+	background: url('../img/careers-values-bg.jpg') fixed;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 100%;
+	color: #fff;
+	height: 450px;
+	overflow: hidden;
+}
+@media all and (max-width: 1900px) {
+.investments_bg, .careers_bg {
+	background: #f2f4f8;
+	height: auto;
+	overflow: hidden;
+	color: #000;
+}
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+.about-row .about-row__body {
+	float: none;
+}
+}
