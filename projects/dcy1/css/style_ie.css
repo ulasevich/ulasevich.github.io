@@ -1,0 +1,5 @@
+/* Styles for IE (border-radius etc.)
+-----------------------------------------------------------------------------*/
+.more-link, .l-menu a, .report-tabs a {
+    behavior: url(css/PIE.htc);
+}

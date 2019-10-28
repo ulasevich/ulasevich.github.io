@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Main page | Fresh scanner</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!--head css, js-->
+    <link rel="stylesheet" href="css/libs/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/libs/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/libs/slick.css">
+    <link rel="stylesheet" href="css/libs/slick-theme.css">
+    <link rel="stylesheet" href="css/libs/chosen.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/modernizr-custom.js"></script>
+    <script src="js/jquery-1.12.2.min.js"></script>
+    <!--head css, js-->
+    
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="wrapper">
+    
+    <header class="header">
+		<div class="container-fluid main-container">
+            <div class="row header-row align-items-center">
+            	<div class="col-auto header-row__logo">
+                	<a href="index.html" class="header-logo">
+                        <object type="image/svg+xml" data="img/header-logo.svg">
+                        	<img src="img/header-logo.png" alt="Fresh scanner logo" />
+                        </object>
+                    </a>
+                </div>
+                <div class="col header-row__menu">
+                	<ul class="not-list">
+                    	<li> <button type="button" class="btn btn-default btn--red">Take photo</button> </li>
+                        <li> <button type="button" class="btn btn-default btn--transparent">Show all results</button> </li>
+                        <li> <button type="button" class="btn btn-default btn--transparent">Add to report</button> </li>
+                    </ul>
+                </div>
+            </div><!--.header-row-->
+        </div>
+	</header><!-- .header-->
+    
+    
+	<!-- блок только для тестирования -->
+    <div style="position: absolute; top: 10px; right: 15px; font-size: 10px;">
+    	<button type="button" class="js--test--add-slide">добавить слайд</button>
+        <button type="button" class="js--test--add-bar">добавить столбец</button>
+    </div>
+    <!-- блок только для тестирования -->
+    
+    
+	<main class="content">
+		<div class="container-fluid main-container">
+        	
+            
+            <div class="row page-row">
+            	<div class="col-md-7 page-row_slider">
+                	
+                    <div class="slider-details">
+                        <div class="slider-details__slide">
+                        	<div class="row photo-slide-row">
+                            	<div class="col-7 photo-slide-row__photo">
+                                	<img src="content/slide-1.jpg" />
+                                </div>
+                                <div class="col-5 photo-slide-row__info">
+                                	<h2>Conclusion</h2>
+                                    <h3>Category:</h3>
+                                    <p class="big-text color-red-dark">2-nd category mismatch</p>
+                                    <h3>Defects:</h3>
+                                    <p class="big-text color-red-dark">Rot</p>
+                                </div>
+                            </div><!--.photo-slide-row-->
+                        </div><!--.slider-details__slide-->
+                        <div class="slider-details__slide">
+                        	<div class="row photo-slide-row">
+                            	<div class="col-7 photo-slide-row__photo">
+                                	<img src="content/slide-2.jpg" />
+                                </div>
+                                <div class="col-5 photo-slide-row__info">
+                                	<h2>Conclusion</h2>
+                                    <h3>Category:</h3>
+                                    <p class="big-text color-red-dark">1-nd category mismatch</p>
+                                    <h3>Defects:</h3>
+                                    <p class="big-text color-red-dark">Defect 2</p>
+                                </div>
+                            </div>
+                        </div><!--.slider-details__slide-->
+                        <div class="slider-details__slide">
+                        	<div class="row photo-slide-row">
+                            	<div class="col-7 photo-slide-row__photo">
+                                	<img src="content/slide-3.jpg" />
+                                </div>
+                                <div class="col-5 photo-slide-row__info">
+                                	<h2>Conclusion</h2>
+                                    <h3>Category:</h3>
+                                    <p class="big-text color-red-dark">3-nd category mismatch</p>
+                                    <h3>Defects:</h3>
+                                    <p class="big-text color-red-dark">Defect 1</p>
+                                </div>
+                            </div>
+                        </div><!--.slider-details__slide-->
+                        
+                        <div class="slider-details__slide">
+                        	<div class="row photo-slide-row">
+                            	<div class="col-7 photo-slide-row__photo">
+                                	<img src="content/slide-4.jpg" />
+                                </div>
+                                <div class="col-5 photo-slide-row__info">
+                                	<h2>Conclusion</h2>
+                                    <h3>Category:</h3>
+                                    <p class="big-text color-red-dark">1-nd category mismatch</p>
+                                    <h3>Defects:</h3>
+                                    <p class="big-text color-red-dark">Defect 3</p>
+                                </div>
+                            </div>
+                        </div><!--.slider-details__slide-->
+                        <div class="slider-details__slide">
+                        	<div class="row photo-slide-row">
+                            	<div class="col-7 photo-slide-row__photo">
+                                	<img src="content/slide-5.jpg" />
+                                </div>
+                                <div class="col-5 photo-slide-row__info">
+                                	<h2>Conclusion</h2>
+                                    <h3>Category:</h3>
+                                    <p class="big-text color-red-dark">Waste</p>
+                                    <h3>Defects:</h3>
+                                    <p class="big-text color-red-dark">Defect 2</p>
+                                </div>
+                            </div>
+                        </div><!--.slider-details__slide-->
+                        <div class="slider-details__slide">
+                        	<div class="row photo-slide-row">
+                            	<div class="col-7 photo-slide-row__photo">
+                                	<img src="content/slide-6.jpg" />
+                                </div>
+                                <div class="col-5 photo-slide-row__info">
+                                	<h2>Conclusion</h2>
+                                    <h3>Category:</h3>
+                                    <p class="big-text color-red-dark">3-nd category mismatch</p>
+                                    <h3>Defects:</h3>
+                                    <p class="big-text color-red-dark">Defect 1</p>
+                                </div>
+                            </div>
+                        </div><!--.slider-details__slide-->
+                        <div class="slider-details__slide">
+                        	<div class="row photo-slide-row">
+                            	<div class="col-7 photo-slide-row__photo">
+                                	<img src="content/slide-4.jpg" />
+                                </div>
+                                <div class="col-5 photo-slide-row__info">
+                                	<h2>Conclusion</h2>
+                                    <h3>Category:</h3>
+                                    <p class="big-text color-red-dark">12345</p>
+                                    <h3>Defects:</h3>
+                                    <p class="big-text color-red-dark">Defect 1</p>
+                                </div>
+                            </div>
+                        </div><!--.slider-details__slide-->
+                        <div class="slider-details__slide">
+                        	<div class="row photo-slide-row">
+                            	<div class="col-7 photo-slide-row__photo">
+                                	<img src="content/slide-5.jpg" />
+                                </div>
+                                <div class="col-5 photo-slide-row__info">
+                                	<h2>Conclusion</h2>
+                                    <h3>Category:</h3>
+                                    <p class="big-text color-red-dark">6789</p>
+                                    <h3>Defects:</h3>
+                                    <p class="big-text color-red-dark">Defect 1</p>
+                                </div>
+                            </div>
+                        </div><!--.slider-details__slide-->
+                        
+                        <div class="slider-details__slide">
+                        	<div class="row photo-slide-row">
+                            	<div class="col-7 photo-slide-row__photo">
+                                	<img src="content/slide-5.jpg" />
+                                </div>
+                                <div class="col-5 photo-slide-row__info">
+                                	<h2>Conclusion</h2>
+                                    <h3>Category:</h3>
+                                    <p class="big-text color-red-dark">Waste</p>
+                                    <h3>Defects:</h3>
+                                    <p class="big-text color-red-dark">Defect 2</p>
+                                </div>
+                            </div>
+                        </div><!--.slider-details__slide-->
+                        <div class="slider-details__slide">
+                        	<div class="row photo-slide-row">
+                            	<div class="col-7 photo-slide-row__photo">
+                                	<img src="content/slide-6.jpg" />
+                                </div>
+                                <div class="col-5 photo-slide-row__info">
+                                	<h2>Conclusion</h2>
+                                    <h3>Category:</h3>
+                                    <p class="big-text color-red-dark">3-nd category mismatch</p>
+                                    <h3>Defects:</h3>
+                                    <p class="big-text color-red-dark">Defect 1</p>
+                                </div>
+                            </div>
+                        </div><!--.slider-details__slide-->
+                        <div class="slider-details__slide">
+                        	<div class="row photo-slide-row">
+                            	<div class="col-7 photo-slide-row__photo">
+                                	<img src="content/slide-4.jpg" />
+                                </div>
+                                <div class="col-5 photo-slide-row__info">
+                                	<h2>Conclusion</h2>
+                                    <h3>Category:</h3>
+                                    <p class="big-text color-red-dark">12345</p>
+                                    <h3>Defects:</h3>
+                                    <p class="big-text color-red-dark">Defect 1</p>
+                                </div>
+                            </div>
+                        </div><!--.slider-details__slide-->
+                        <div class="slider-details__slide">
+                        	<div class="row photo-slide-row">
+                            	<div class="col-7 photo-slide-row__photo">
+                                	<img src="content/slide-5.jpg" />
+                                </div>
+                                <div class="col-5 photo-slide-row__info">
+                                	<h2>Conclusion</h2>
+                                    <h3>Category:</h3>
+                                    <p class="big-text color-red-dark">6789</p>
+                                    <h3>Defects:</h3>
+                                    <p class="big-text color-red-dark">Defect 1</p>
+                                </div>
+                            </div>
+                        </div><!--.slider-details__slide-->
+                        
+                    </div><!--.slider-details-->
+                    
+                    
+                    <div class="slider-thumbs left-align-slick">
+                        <div class="slider-thumbs__slide">
+                            <img src="content/slide-1-small.jpg" data-number="1" />
+                            <div class="slider-thumbs__slide-number">1</div>
+                        </div>
+                        <div class="slider-thumbs__slide">
+                            <img src="content/slide-2-small.jpg" data-number="2" />
+                            <div class="slider-thumbs__slide-number">2</div>
+                        </div>
+                        <div class="slider-thumbs__slide">
+                            <img src="content/slide-3-small.jpg" data-number="3" />
+                            <div class="slider-thumbs__slide-number">3</div>
+                        </div>
+                        
+                        <div class="slider-thumbs__slide">
+                            <img src="content/slide-4-small.jpg" data-number="4" />
+                            <div class="slider-thumbs__slide-number">4</div>
+                        </div>
+                        <div class="slider-thumbs__slide">
+                            <img src="content/slide-5-small.jpg" data-number="5" />
+                            <div class="slider-thumbs__slide-number">5</div>
+                        </div>
+                        <div class="slider-thumbs__slide">
+                            <img src="content/slide-6-small.jpg" data-number="6" />
+                            <div class="slider-thumbs__slide-number">6</div>
+                        </div>
+                        <div class="slider-thumbs__slide">
+                            <img src="content/slide-4-small.jpg" data-number="7" />
+                            <div class="slider-thumbs__slide-number">7</div>
+                        </div>
+                        <div class="slider-thumbs__slide">
+                            <img src="content/slide-5-small.jpg" data-number="8" />
+                            <div class="slider-thumbs__slide-number">8</div>
+                        </div>
+                        
+                        <div class="slider-thumbs__slide">
+                            <img src="content/slide-5-small.jpg" data-number="9" />
+                            <div class="slider-thumbs__slide-number">9</div>
+                        </div>
+                        <div class="slider-thumbs__slide">
+                            <img src="content/slide-6-small.jpg" data-number="10" />
+                            <div class="slider-thumbs__slide-number">10</div>
+                        </div>
+                        <div class="slider-thumbs__slide">
+                            <img src="content/slide-4-small.jpg" data-number="11" />
+                            <div class="slider-thumbs__slide-number">11</div>
+                        </div>
+                        <div class="slider-thumbs__slide">
+                            <img src="content/slide-5-small.jpg" data-number="12" />
+                            <div class="slider-thumbs__slide-number">12</div>
+                        </div>
+                    </div><!--.slider-thumbs-->
+                    <div class="thumbs-paging"></div>
+                                        
+                </div><!--.page-row_slider-->
+                
+                
+                
+                <div class="col-md-5 page-row_charts">
+                	<h2>Results of inspection</h2>
+                    
+                    <div class="indicators">
+                        <div class="indicator-item">
+                            <div class="indicator-item__text">QUANTITY:</div>
+                            <div class="indicator-item__value">
+                                <div class="circle-value">15</div>
+                            </div>
+                        </div><!--.indicator-item-->
+                        
+                        <div class="indicator-item">
+                            <div class="indicator-item__text">1-st category:</div>
+                            <div class="indicator-item__value">
+                                <div class="circle-value circle-green">10</div>
+                            </div>
+                        </div><!--.indicator-item-->
+                        
+                        <div class="indicator-item">
+                            <div class="indicator-item__text">Other categories:</div>
+                            <div class="indicator-item__value">
+                                <div class="circle-value circle-red">5</div>
+                            </div>
+                        </div><!--.indicator-item-->
+                    </div>
+                    
+                    
+                    <h3>Detected defects:</h3>
+                    <div class="chart-container" id="chart-defects" style="height: 180px;"></div>
+                    
+                    <h3>Categories:</h3>
+                    <div class="chart-container" id="chart-categories" style="height: 150px;"></div>
+                    
+                    <br/>
+                    <br/>
+                    <div class="align-right">
+                    	<button type="button" class="btn btn-default btn--green">New inspection</button>
+                    </div>
+                    
+                </div><!--.page-row_charts-->
+            </div><!--.page-row-->
+            
+            
+            
+			<script>
+            $(document).ready(function(){
+				
+				/*--------- скрипт для примера ---------*/
+				$(document).on('click', '.js--test--add-slide', function(){
+					
+					// добавление слайдов
+					$('.slider-thumbs').slick('slickAdd', 
+					'<div>\
+						<div class="slider-thumbs__slide">\
+							<img src="content/slide-1-small.jpg" data-number="'+(slides_count+1)+'" />\
+							<div class="slider-thumbs__slide-number">'+(slides_count+1)+'</div>\
+						</div>\
+					</div>').slick('slickGoTo', slides_count+1,  false);
+					
+					$('.slider-details').slick('slickAdd', 
+					'<div>\
+						<div class="slider-details__slide">\
+							<div class="row photo-slide-row">\
+								<div class="col-7 photo-slide-row__photo">\
+									<img src="content/slide-1.jpg" />\
+								</div>\
+								<div class="col-5 photo-slide-row__info">\
+									<h2>Conclusion</h2>\
+									<h3>Category:</h3>\
+									<p class="big-text color-red-dark">New Category</p>\
+									<h3>Defects:</h3>\
+									<p class="big-text color-red-dark">New Defect</p>\
+								</div>\
+							</div>\
+						</div>\
+					</div>').slick('slickGoTo', slides_count+1,  false);
+					
+					// для подсветки активного номера
+					$('.slider-thumbs__slide').removeClass('selected-number');
+					$('.slider-thumbs .slick-slide[data-slick-index="'+(slides_count-1)+'"]').find('.slider-thumbs__slide').addClass('selected-number');
+					
+				});
+				
+				
+				$(document).on('click', '.js--test--add-bar', function(){
+					defects_categories.push('new defect');
+					myChart_defects.xAxis[0].setCategories(defects_categories);
+					myChart_defects.series[0].addPoint({ y: 12, color: '#ed1b34' });
+					
+					// обновление высоты
+					$('#chart-defects').height(myChart_defects.series[0].points.length*36);
+					
+					// нужно для перерисовки графика
+					var resizeEvent = window.document.createEvent('UIEvents'); 
+					resizeEvent.initUIEvent('resize', true, false, window, 0); 
+					window.dispatchEvent(resizeEvent);
+				});
+				/*--------- скрипт для примера ---------*/
+				
+				
+				
+				
+				
+				$('.slider-details').slick({
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: false,
+					arrows: false,
+					fade: true,
+					adaptiveHeight: true,
+					swipe: false,
+				});
+				
+				
+				var $sliderDetails = $('.slider-details');
+				var $sliderThumbs = $('.slider-thumbs');
+				var $thumbs_status = $('.thumbs-paging');
+				var slides_count = 0;
+				
+				
+				$sliderThumbs.on('init', function (event, slick, currentSlide, nextSlide) {
+					$sliderThumbs.find('.slick-slide .slider-thumbs__slide').first().addClass('selected-number');
+				});
+				$sliderThumbs.on('init reInit', function (event, slick, currentSlide, nextSlide) {
+					var i = (currentSlide ? currentSlide : 0) + 1;
+					$thumbs_status.html('<span class="thumbs-paging__current">' + i + '</span>' + ' of ' + slick.slideCount);
+					slides_count = slick.slideCount;
+				});
+				
+				$('.slider-thumbs').slick({
+					slidesToShow: 6,
+					slidesToScroll: 6,
+					centerMode: false,
+					infinite: false,
+					arrows: true,
+				});
+				
+				$(document).on('click', '.slider-thumbs__slide img', function(){
+					var number = $(this).data('number');
+					$('.slider-thumbs__slide').removeClass('selected-number');
+					$(this).parent('.slider-thumbs__slide').addClass('selected-number');
+					$('.slider-details').slick('slickGoTo', number-1,  false);
+					$('.thumbs-paging__current').text(number);
+					return false;
+				});	
+				
+				
+				$('.slider-thumbs').slick('slickGoTo', slides_count,  false);
+				$('.slider-details').slick('slickGoTo', slides_count,  false);
+				$('.slider-thumbs__slide').removeClass('selected-number');
+$('.slider-thumbs .slick-slide[data-slick-index="'+(slides_count-1)+'"]').find('.slider-thumbs__slide').addClass('selected-number');
+				
+				
+								
+				var defects_categories = [
+					'Defect 1',
+					'Defect 2',
+					'Defect 3',
+					'Defect 4',
+					'Defect 5'
+				];
+				
+				var myChart_defects = Highcharts.chart('chart-defects', {
+					chart: {
+						type: 'column',
+						inverted: true,
+						backgroundColor: 'rgba(255, 255, 255, 0.0)',
+						style: {
+							fontFamily: 'Montserrat, sans-serif'
+						}
+					},
+					title: {
+						text: ''
+					},
+					legend: {
+						enabled: false
+					},
+					xAxis: {
+						categories: defects_categories,
+						lineWidth: 0,
+						tickWidth: 0,
+						labels: {
+							style: {
+								fontSize: '14px',
+								color: '#000000',
+							}
+						}
+					},
+					yAxis: {
+						allowDecimals: false,
+						title: {
+							text: '',
+						},
+						labels: {
+							style: {
+								fontSize: '14px',
+								color: '#000000',
+							}
+						},
+					},
+					plotOptions: {
+						series: {
+							marker: {
+								enabled: false,
+							},
+							borderWidth: 0,
+						},
+						column: {
+							stacking: 'normal',
+						}
+					},
+					series: [{
+						name: 'Detected defects',
+						data: [
+							{y: 2, color: '#a61324'},
+							{y: 4, color: '#b21427'},
+							{y: 5, color: '#be162a'},
+							{y: 4, color: '#c9172c'},
+							{y: 6, color: '#ed1b34'},
+						],
+					}],
+				});
+				
+				
+				
+				var myChart_categories = Highcharts.chart('chart-categories', {
+					chart: {
+						type: 'column',
+						inverted: true,
+						backgroundColor: 'rgba(255, 255, 255, 0.0)',
+						style: {
+							fontFamily: 'Montserrat, sans-serif'
+						}
+					},
+					title: {
+						text: ''
+					},
+					legend: {
+						enabled: false
+					},
+					xAxis: {
+						categories: [
+							'1-st category',
+							'1-st category mismatch',
+							'2-nd category mismatch',
+							'Waste',
+						],
+						lineWidth: 0,
+						tickWidth: 0,
+						labels: {
+							style: {
+								fontSize: '14px',
+								color: '#000000',
+							}
+						}
+					},
+					yAxis: {
+						allowDecimals: false,
+						title: {
+							text: '',
+						},
+						labels: {
+							style: {
+								fontSize: '14px',
+								color: '#000000',
+							}
+						},
+					},
+					plotOptions: {
+						series: {
+							marker: {
+								enabled: false,
+							},
+							borderWidth: 0,
+						},
+						column: {
+							stacking: 'normal',
+						}
+					},
+					series: [{
+						name: 'Detected defects',
+						data: [
+							{y: 10, color: '#37760e'},
+							{y: 2, color: '#459313'},
+							{y: 1, color: '#51ad17'},
+							{y: 2, color: '#75d437'},
+						],
+					}],
+				});
+				
+				
+            });
+            </script>
+            
+            
+        </div>
+	</main><!-- .content -->
+    
+    
+    
+
+</div><!-- .wrapper -->
+
+
+<footer class="footer">
+    <div class="container-fluid main-container">
+    	
+    </div>
+</footer>
+<!-- .footer -->
+
+<script src="js/libs/highcharts.js"></script>
+<script src="js/libs/slick.js"></script>
+<script src="js/libs/chosen.jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

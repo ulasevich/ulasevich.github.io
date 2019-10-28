@@ -1,0 +1,39 @@
+/* CSS */
+.map-columns a {color: #000}
+
+/* Статические страницы */
+.page-wrapper {text-align: justify;}
+.page-wrapper ul {list-style: disc;}
+.page-wrapper ul, .page-wrapper ol {margin-left: 20px;}
+.page-wrapper ul li, .page-wrapper ol li {margin-left: 18px;}
+
+/* Фотогалерея */
+.photo-controls-btn ul{float: right}
+.photo-controls-btn ul li {float: left;}
+.photo-controls-btn ul li a {color: #000}
+.photo-controls-btn ul li a:hover {color: #FF9000;}
+.photo-controls-btn .btn-album-upload {padding-left: 10px}
+.photo-top-controls a, .photo-show-more a {color: #000}
+.photo-top-controls a:hover, .photo-show-more a:hover {color: #FF9000;}
+
+/* Контакты */
+html .contacts td {background: none; padding: 0px;}
+.bg-gray {background: #E8E8E8}
+.bg-white {background: #fff; padding: 0px 50px}
+
+/* Технико-экономические показатели */
+.indicators thead tr {background: #F5F5F5}
+.indicators tbody tr:nth-child(odd) {background: #F5F5DC}
+.indicators tbody tr:nth-child(even) {background: #F5F5F5}
+.indicators td, .indicators th {border: 1px Solid #DCDCDC; border-collapse: collapse; font-size: 11px;}
+.indicators td {text-align: center; padding: 7px 2px; margin: 0px;}
+.indicators td li {text-align: left}
+
+/* Фильтр новостей */
+.filter-apply {color: #9DC83C}
+.filter-apply:hover {text-decoration: none}
+
+.h-phone { left:137px; }
+
+/* Список загружаемых файлов */
+.list-download .file-info {color: #777;}

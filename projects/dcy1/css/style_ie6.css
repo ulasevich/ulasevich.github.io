@@ -1,0 +1,12 @@
+.zone a {
+    margin-bottom:20px;
+}
+
+* HTML .gray-table thead th {
+    padding-left: expression(this.previousSibling==null ?'12px' :'') ;
+	padding-right: expression(this.previousSibling==null ?'12px' :'');
+}
+* HTML .gray-table tr td {
+    padding-left: expression(this.previousSibling==null ?'12px' :'') ;
+	padding-right: expression(this.previousSibling==null ?'12px' :'');
+}
