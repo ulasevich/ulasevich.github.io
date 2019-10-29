@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	
+	<title>Главная &#8212; ККБМК &#8212; Краснодарский краевой базовый медицинский колледж</title>
+	
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen, projection" />
+    
+    <!--[if IE]> 
+    <link href="css/style_ie.css" rel= "stylesheet" media="all" type="text/css" />
+    <![endif]-->
+    <!-- Таблица стилей для IE<9 -->
+        
+    <script src="script/jquery-1.7.1.min.js"></script>
+    <script src="script/site-kkbmk.js"></script>
+    
+    
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <header class="header">
+        <div class="h-inside">
+            
+            <a href="index.html" title="Главная страница" class="h-logo-link"></a>
+            <div class="h-logo-name">Краснодарский краевой базовый медицинский колледж</div>
+            <div class="h-search-form">
+                <form name="" action="" method="get">
+                    <input type="text" name="" class="h-s-text" value="Поиск по сайту" onclick="if (this.value=='Поиск по сайту') {this.value=''}; $(this).css('color','#6f737a')" onblur="if (this.value=='') {this.value='Поиск по сайту'}; $(this).css('color','#999999')">
+                    <input type="submit" name="" class="h-s-btn" value="" title="Найти">
+                </form>
+            </div>
+            <!--.h-search-form-->
+            
+            <div class="h-phone"><small>Тел. горячей линии:</small><br/> 8-800-775-94-30</div>
+            
+            <span class="h-feedback-btn" title="Напишите нам"></span>
+            <div class="h-feedback-form">
+                <div class="h-f-tab">
+                    <span class="h-f-btn-hover"></span>
+                </div>
+                <div class="h-f-body">
+                    <form name="" method="post" action="">
+                        <div class="h-f-label">Имя</div>
+                        <input type="text" name="" class="h-f-text">
+                        <div class="h-f-label">E-mail</div>
+                        <input type="text" name="" class="h-f-text">
+                        <div class="h-f-label">Сообщение</div>
+                        <textarea name="" class="h-f-textarea"></textarea>
+                        <input type="submit" name="" class="btn red-btn" value="Отправить">
+                    </form>
+                </div>
+            </div>
+            <!--.h-feedback-form-->
+            
+            <nav class="h-menu">
+                
+                <a href="news.html">Новости</a>
+                <a href="about.html">О колледже</a>
+                <a href="activities.html">Образовательная деятельность</a>
+                <a href="training.html">Отдел повышения квалификации</a>
+                <a href="students.html">Студентам</a>
+                
+            </nav>
+        </div>
+        <!--.h-inside-->
+    </header>
+    <!-- .header-->
+    
+    <!-- InstanceBeginEditable name="Pattern_region" -->
+    <div class="middle-top-pattern m-d-p-wave">
+        <div><!--.m-d-p-wave для главной страницы, .m-d-p-line для остальных--></div>
+    </div>
+    
+        
+    <div class="w-inside">
+        
+        <section class="middle">
+            
+            
+			<script type="text/javascript" src="script/jquery.cycle.all.js"></script>
+            
+			<script type="text/javascript">
+                $(document).ready(function() {
+                    // для главного слайдера 
+					$('#index-main-slider').cycle({ 
+                        fx:    'scrollHorz',
+						timeout: 0, 
+                        next:   '#i-m-s-next', 
+                        prev:   '#i-m-s-prev',
+                        before: onBefore_main
+                    });
+                    function onBefore_main() { 
+                        $('#i-m-s-text span').html(this.title);
+                    }
+                    
+					// для слайдера объявлений и новостей
+					$("#i-c-s-total").html( $(".one-column").length );
+					$('#index-column-slider').cycle({ 
+                        fx:    'scrollHorz',
+						timeout: 0, 
+                        next:   '#i-c-s-next', 
+                        prev:   '#i-c-s-prev',
+						before: onBefore_column
+                    });
+                    function onBefore_column() { 
+                        $('#i-c-s-current').html(this.id.substr(7));
+                    }
+                });
+            </script>
+            
+            
+            <div class="i-m-s-controls">
+                <table class="i-m-s-text" id="i-m-s-text"> <tr> <td><span></span></td> </tr> </table>
+                <span class="i-m-s-prev" id="i-m-s-prev"></span>
+                <span class="i-m-s-next" id="i-m-s-next"></span>
+                <div class="i-m-s-l-shadow"></div>
+                <div class="i-m-s-r-shadow"></div>
+            </div>
+            <div class="index-main-slider" id="index-main-slider">
+                <img src="content/index-slide-1.jpg" width="1060" height="373" title="Двери колледжа открыты для всех, кто хочет посвятить свою жизнь самой благодарной профессии.">
+                <img src="content/index-slide-2.jpg" width="1060" height="373" title="Текст 2">
+                <img src="content/index-slide-3.jpg" width="1060" height="373" title="Текст 3">
+                <img src="content/index-slide-4.jpg" width="1060" height="373" title="Текст 4">
+            </div>
+            <div class="i-m-s-b-shadow"></div>
+            
+            <div class="middle-top-line"></div>
+            
+            
+            <div class="index-left-column f-left">
+                <span class="i-c-s-prev" id="i-c-s-prev"></span>
+                <span class="i-c-s-next" id="i-c-s-next"></span>
+                <div class="i-c-s-counter"> <span id="i-c-s-current">1</span>/<span id="i-c-s-total"></span> </div>
+                <h2>Новости колледжа</h2>
+                <div class="index-column-slider" id="index-column-slider">
+                    <div class="one-column" id="column-1">
+                        <span class="advert-item clearfix">
+                            <div class="i-c-s-link"><a href="news-item.html">Факел игр в Сочи, который доставят на МКС и с которым состоится выход в космос</a> </div>
+                            <span class="adv-img f-left"><img src="content/news-preview-1.jpg" width="105" height="105"></span>
+                            <p>Комментируя деятельность правозащитных организаций на заседании СПЧ, Путин заявил, что в центре внимания правозащитников должен быть «человек с его житейскими заботами и ежедневными проблемами».</p>
+                        </span>
+                        <span class="advert-item clearfix">
+                            <div class="i-c-s-link"><small class="remark">(объявление)</small> <a href="news-item.html">Украинские националисты вступились за раненого на Азове рыбака</a></div>
+                            <span class="adv-img f-left"><img src="content/news-preview-2.jpg" width="105" height="105"></span>
+                            Помимо всех работ по истории, «Антиплагиат» также выборочно проверил работы по экономике и естественно-научным дисциплинам. В экономических работах процент некорректных заимствований.
+                        </span>
+                        <span class="advert-item clearfix">
+                            <div class="i-c-s-link"><small class="remark">(объявление)</small> <a href="news-item.html">Евросоюз объяснил</a> </div>
+                            <span class="adv-img f-left"><img src="content/news-preview-3.jpg" width="105" height="105"></span>
+                            Тексты соглашений по ассоциации и зоне свободной торговли с ЕС Армения планировала парафировать (предварительно утвердить) на предстоящем саммите «Восточного партнерства».
+                        </span>
+                    </div>
+                    <div class="one-column" id="column-2">
+                        <span class="advert-item clearfix">
+                            <div class="i-c-s-link"> <a href="news-item.html">Факел игр в Сочи, который доставят на МКС, и с которым состоится выход в космос</a> </div>
+                            <span class="adv-img f-left"><img src="content/news-preview-4.jpg" width="105" height="105"></span>
+                            Комментируя деятельность правозащитных 
+                        </span>
+                        <span class="advert-item clearfix">
+                            <div class="i-c-s-link"> <a href="news-item.html">Украинские националисты вступились за раненого на Азове рыбака</a> </div>
+                            <span class="adv-img f-left"><img src="content/news-preview-5.jpg" width="105" height="105"></span>
+                            Помимо всех работ по истории, «Антиплагиат» 
+                        </span>
+                        <span class="advert-item clearfix">
+                            <div class="i-c-s-link"> <a href="news-item.html">Евросоюз объяснил Армении цену присоединения к ТС</a> </div>
+                            <span class="adv-img f-left"><img src="content/news-preview-6.jpg" width="105" height="105"></span>
+                            Тексты соглашений по ассоциации и зоне свободной 
+                        </span>
+                    </div>
+                    <div class="one-column" id="column-3">
+                        <span class="advert-item clearfix">
+                            <div class="i-c-s-link"> <a href="news-item.html">Большой Брат подсматривает через твое плечо :) </a> </div>
+                            <span class="adv-img f-left"><img src="content/news-preview-7.jpg" width="105" height="105"></span>
+                            Вчера полдня безуспешно пыталась заставить себя сесть и продолжить написание гранта... но не шмогла, торжественно сдалась, попырилась в ютуб, узнав как тяжело живется людям-альбиносам. 
+                        </span>
+                        <span class="advert-item clearfix">
+                            <div class="i-c-s-link"> <a href="news-item.html">УВиртуальный 3D-тур по нашему колледжу</a> </div>
+                            <span class="adv-img f-left"><img src="content/news-preview-8.jpg" width="105" height="105"></span>
+                            Помимо всех работ по истории, «Антиплагиат» также выборочно проверил работы по экономике и естественно-научным дисциплинам. В экономических работах процент некорректных заимствований.
+                        </span>
+                        <span class="advert-item clearfix">
+                            <div class="i-c-s-link"> <a href="news-item.html">Евросоюз объяснил Армении цену присоединения к ТС</a> </div>
+                            <span class="adv-img f-left"><img src="content/news-preview-9.jpg" width="105" height="105"></span>
+                            Армения планировала парафировать (предварительно утвердить) на предстоящем саммите «Восточного партнерства».
+                        </span>
+                    </div>
+                    <div class="one-column" id="column-4">
+                        <span class="advert-item clearfix">
+                            <div class="i-c-s-link"> <a href="news-item.html">Просто так-2</a> </div>
+                            <span class="adv-img f-left"><img src="content/news-preview-10.jpg" width="105" height="105"></span>
+                            Прекрасную статью выпустили в Science не британские, но однако аж целое международное собрание ученых. 
+                        </span>
+                        <span class="advert-item clearfix">
+                            <div class="i-c-s-link"> <a href="news-item.html">Прекрасное и летнее</a> </div>
+                            <span class="adv-img f-left"><img src="content/news-preview-11.jpg" width="105" height="105"></span>
+                            Расскажите мне, что вы тоже работаете на выходных дома или на работе. 
+                        </span>
+                    </div>
+                </div>
+                <!--#index-news-slider-->
+                
+                <span class="box-link b-l-160"><a href="news.html">Архив новостей</a></span>
+            </div>
+            <!--.index-column-slider-->
+            
+            
+            <div class="index-right-column f-right">
+                <div class="block-left-shadow"></div>
+                <h2>Новости здравоохранения</h2>
+                <span class="box-link b-l-310"><a href="#" rel="nofollow">Министерство здравоохранеия КК</a></span>
+                <div class="news-item">
+                    <span class="n-date"><span>10:24</span> 10 Сентебря 2013</span> <br/>
+                    <a href="news-item.html">Более трети россиян поддержали предоставление Сноудену убежища в РФ</a>
+                </div>
+                <div class="news-item">
+                    <span class="n-date"><span>09:24</span> 8 Сентебря 2013</span> <br/>
+                    <a href="news-item.html">Саммит G20 можно будет считать успешным, если все заранее подготовленные документы будут </a>
+                </div>
+                <div class="news-item">
+                    <span class="n-date"><span>21:24</span> 8 Сентебря 2013</span> <br/>
+                    <a href="news-item.html">Путин не поддержал только одну поправку академиков о реформе РАН</a>
+                </div>
+                <div class="news-item">
+                    <span class="n-date"><span>10:24</span> 7 Сентебря 2013</span> <br/>
+                    <a href="news-item.html">Продление конкурса фонда Олега Дерипаска «Вольное дело»</a>
+                </div>
+                <div class="news-item">
+                    <span class="n-date"><span>15:24</span> 5 Сентебря 2013</span> <br/>
+                    <a href="news-item.html">Потомки Агаты Кристи согласились «воскресить» Эркюля Пуаро</a>
+                </div>
+                <div class="news-item">
+                    <span class="n-date"><span>04:24</span> 4 августа 2013</span> <br/>
+                    <a href="news-item.html">80 столичных школьников поздравили кого-то.. </a>
+                </div>
+            </div>
+            <!--.index-news-column-->
+            
+            
+			
+            <div class="clear"></div>
+            
+        </section>
+        <!-- .middle-->
+        
+    </div>
+    <!-- .w-inside -->
+</div>
+<!-- .wrapper -->
+
+<footer class="footer">
+    <div class="f-inside">
+        <nav class="f-menu">
+			
+            <a href="news.html">Новости</a>
+            <a href="about.html">О колледже</a>
+            <a href="activities.html">Образовательная деятельность</a>
+            <a href="training.html">Отдел повышения квалификации</a>
+            <a href="students.html">Студентам</a>
+            <a href="incoming.html">Поступающим</a>
+            
+        </nav>
+        <!--.f-menu-->
+        <a href="#" title="Наша страница Вконтакте" class="f-vk-link"></a>
+        <div class="f-address">
+            г.Краснодар ул. Таманская, 137<br/>
+            Телефон/Факс: (861) 239-72-48<br/>
+            E-mail: kbmk@yandex.ru<br/>
+        </div>
+        <div class="f-copyright">&copy; 2013  Краснодарский краевой базовый медицинский колледж</div>
+        <a href="#" rel="nofollow" class="f-fskn"></a>
+        <a href="#" rel="nofollow" class="f-kcst"></a>
+        <a href="#" rel="nofollow" class="f-inventum"></a>
+        <a href="#" rel="nofollow" class="f-developer">Ссылка на разработчиков</a>
+    </div>
+    <!--.f-inside-->
+</footer>
+<!-- .footer -->
+
+</body>
+</html>

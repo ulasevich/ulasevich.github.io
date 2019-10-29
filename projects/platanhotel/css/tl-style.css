@@ -1,0 +1,10 @@
+#tl-search-form{
+    position: relative;
+    top: 100px;
+}
+
+@media(max-width: 1024px) {
+    #tl-search-form{
+        top: 70px;
+    }
+}

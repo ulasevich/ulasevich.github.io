@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	
+	<title>Друзья &#8212; Личный кабинет &#8212; Краснодог &#8212; приют для пострадавших животных</title>
+	
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen, projection" />
+    
+    <!--[if IE]> 
+    <link href="css/style_ie.css" rel= "stylesheet" media="all" type="text/css" />
+    <![endif]-->
+    <!-- Таблица стилей для IE<9 -->
+    
+    <!--[if lte IE 8]> 
+    <link href="css/style_ie8.css" rel= "stylesheet" media="all" type="text/css" />
+    <![endif]-->
+    <!-- Таблица стилей для IE<8 -->
+        
+    <script src="script/jquery-1.7.1.min.js"></script>
+    <script src="script/krasnodog.js"></script>
+    
+    <!-- для стилизации скроллов -->
+	<script type="text/javascript" src="script/jquery.jscrollpane.min.js"></script>
+    <script type="text/javascript" src="script/jquery.mousewheel.js"></script>
+    <link rel="stylesheet" href="css/jquery.jscrollpane.css" type="text/css" media="screen, projection" />
+    
+    <!-- для стилизации select -->
+	<script type="text/javascript" src="script/chosen.jquery.min.js"></script>
+    <link rel="stylesheet" href="css/chosen.css" type="text/css" media="screen, projection" />
+    
+    <!-- для вкладок -->
+    <script src="script/jquery.idTabs.min.js"></script>
+    
+</head>
+
+<body>
+
+<div class="wrapper">
+
+
+    <header class="header clearfix">
+        <div class="h-inside">
+            <div class="f-left h-icon-animals"> <a href="animals-our.html" class="h-link">Наши животные</a> <span class="h-count">(353)</span> </div>
+            <div class="f-left h-icon-home"> <a href="#" class="h-link">Уже дома</a> <span class="h-count">(3084)</span> </div>
+            <div class="f-left h-icon-shop"> <a href="shop.html" class="h-link">Интернет-магазин</a> </div>
+            <div class="f-left h-more-block"> <span class="h-more-link">Ещё</span> </div>
+            <div class="h-more-menu"> 
+                <div><a href="#">Уставные документы</a></div>
+                <div><a href="#">Отчеты</a></div>
+                <div><a href="#">Пресса о нас</a></div>
+            </div>
+            <!--.h-more-menu-->
+            <div class="f-left h-help-block"> <a href="#" class="h-help-link">Хочу помочь</a> </div>
+            
+            <div class="f-right">
+                
+            <span class="h-link auth-private-link">Личный кабинет</span>
+            
+            </div>
+            
+            <div class="auth-form" style="display:none;">
+                <form method="post" action="private-main.html">
+                    <span class="h-auth-close" title="Закрыть"></span>
+                    <div><input type="text" class="h-auth-text" value="логин" onclick="if (this.value=='логин') {this.value=''}; $(this).css('color','#777')" onblur="if (this.value=='') {this.value='логин'}; $(this).css('color','#999999')"></div>
+                    <div><input type="password" class="h-auth-text"></div>
+                    <div><label class="h-checkbox"> <input type="checkbox"> <span>Запомнить меня</span> </label></div>
+                    <div><input type="submit" value="Войти" class="h-auth-submit"> <a href="#" class="h-auth-restore">Восстановить пароль</a></div>
+                </form>
+            </div>
+            <!--.auth-form ( Authorization form )-->
+            
+        </div>
+        <!--.h-inside-->
+    </header>
+    <!-- .header-->
+    
+    
+<div class="private-bar">
+    <div class="p-b-inside clearfix">
+        <div class="f-left p-b-user">
+            <img src="content/avatar-small-1.jpg" width="30" height="30">
+            <span>Светлана Повякалова</span>
+            <a href="index.html?logout=yes" class="logout-btn">Выйти</a>
+        </div>
+        
+        <div class="f-right p-b-points">
+            <a href="#" class="tip-link p-b-p-heart">21 <span></span></a>
+            <a href="#" class="tip-link p-b-p-bone">10 <span>купить косточки</span></a>
+            <a href="#" class="tip-link p-b-p-fish">0 <span>купить рыбу</span></a>
+        </div>
+        <a href="private-gifts.html" class="f-right tip-link p-b-section p-b-s-gifts">Подарки <span>2 новых подарка</span></a>
+        <a href="private-messages.html" class="f-right tip-link p-b-section p-b-s-messages">Сообщения <span>5 новых сообщений</span></a>
+        <a href="private-events.html" class="f-right tip-link p-b-section p-b-s-events">События <span>3 новых</span></a>
+        <a href="private-friends.html" class="f-right tip-link p-b-section p-b-s-friends active">Друзья <span>2 заявки в друзья</span></a>
+        <a href="private-animals.html" class="f-right tip-link p-b-section p-b-s-animals">Мой питомец <span>3 питомца</span></a>
+        <a href="private-main.html" class="f-right tip-link p-b-section p-b-s-main">Личные данные</a>
+        <div class="p-b-tip"> <div></div> <span></span> </div>
+    </div>
+    <!--.p-b-inside-->
+    
+</div>
+<!--.private-bar-->
+           
+
+
+    <div class="w-inside">
+    
+        <div class="logo-banner"></div>
+        <img src="images/cat.png" class="cat">
+        
+        <div class="site-face">
+            
+            <a href="index.html" title="Главная страница" class="logo-link"></a>
+            <div class="logo-slogan">
+                Мы помогаем животным и людям найти друг друга!
+            </div>
+            <div class="logo-info">
+                <span class="l-i-phone">+7 (988) 505-2-505</span> <br/>
+                Диспетчер, с 10:00 до 17:00
+            </div>
+            <div class="share-links clearfix">
+                <!--noindex--><a href="https://www.facebook.com/farfolen" class="s-l-facebook" target="_blank" rel="nofollow" title="Наша страница в Facebook"></a><!--/noindex-->
+                <!--noindex--><a href="http://www.odnoklassniki.ru/group/51853960872042" class="s-l-odnoklassniki" target="_blank" rel="nofollow" title="Краснодог в Одноклассниках"></a><!--/noindex-->
+                <!--noindex--><a href="http://vk.com/club6322452" class="s-l-vkontakte" target="_blank" rel="nofollow" title="Краснодог ВКонтакте"></a><!--/noindex-->
+                <!--noindex--><a href="https://twitter.com/krasnodog" class="s-l-twitter" target="_blank" rel="nofollow" title="Twitter Краснодога"></a><!--/noindex-->
+                <!--noindex--><a href="http://www.youtube.com/user/KrasnodogPriut?feature=watch" class="s-l-youtube" target="_blank" rel="nofollow" title="Наш канал в Youtube"></a><!--/noindex-->
+                <!--noindex--><a href="http://krasnodog.livejournal.com/" class="s-l-livejournal" target="_blank" rel="nofollow" title="Наш блог в ЖЖ"></a><!--/noindex-->
+            </div>
+        </div>
+        <!--.site-face-->
+        
+        <section class="middle">
+            <div class="container">
+                <div class="content">
+                    
+                    
+                    <div class="green-header">
+                        <h2>Личный кабинет</h2> &rarr; <h1>Друзья</h1>
+                    </div>
+                    
+                    
+                    <div class="gray-block">
+                        
+                        <div class="white-tabs">
+                            <a href="private-main.html" title="Личные данные"><span class="private-tab private-tab-main"></span></a>
+                            <a href="private-animals.html" title="Питомцы"><span class="private-tab private-tab-animals"></span></a>
+                            <a href="private-friends.html" class="selected" title="Друзья"><span class="private-tab private-tab-friends"></span></a>
+                            <a href="private-events.html" title="События"><span class="private-tab private-tab-events"></span></a>
+                            <a href="private-messages.html" title="Сообщения"><span class="private-tab private-tab-messages"></span></a>
+                            <a href="private-gifts.html" title="Подарки"><span class="private-tab private-tab-gifts"></span></a>
+                            <a href="private-ads.html" title="Объявления"><span class="private-tab private-tab-ads"></span></a>
+                            <a href="private-blacklist.html" title="Чёрный список"><span class="private-tab private-tab-blacklist"></span></a>
+                            <a href="private-favorites.html" title="Любимцы"><span class="private-tab private-tab-favorites"></span></a>
+                        </div>
+                        
+                        <div class="contentTabs">
+                            
+                            <div id="private-tab">
+                                
+                                <div class="tab-search-panel clearfix">
+                                    <div class="f-left">
+                                        <strong>У Вас 95 друзей</strong>
+                                        <span class="t-s-p-links">
+                                            <a href="#" class="active">Все друзья</a>
+                                            <a href="#">Друзья онлайн</a>
+                                            <a href="#">Заявки в друзья</a>
+                                        </span>
+                                    </div>
+                                    
+                                    <div class="form-search f-right">
+                                        <form action="" method="get">
+                                            <input type="text" onblur="if (this.value=='') {this.value='Имя друга'}; $(this).css('color','#ababab')" onclick="if (this.value=='Имя друга') {this.value=''}; $(this).css('color','#474747')" value="Имя друга" class="f-s-text" name="" style="color: rgb(171, 171, 171);">
+                                            <input type="submit" title="Найти" value="" class="f-s-submit" name="">
+                                        </form>
+                                    </div>                                    
+                                </div>
+                                <!--.tab-search-panel-->
+                                
+                                <div class="k-content-scroll">
+                                    <div class="k-c-s-body">
+                                        <table class="private-table">
+                                            <tr>
+                                                <td class="p-t-img"> <img src="content/friend-1.jpg" width="100" height="100"> </td>
+                                                <td class="p-t-info">
+                                                    <a href="user-profile.html" class="green-link">Наташа Бакланова</a> <br/>
+                                                    <span class="green-color">Online</span> <br/>
+                                                    <span class="remark">Питомец:</span> Том, Мурка. <br/>
+                                                </td>
+                                                <td class="p-t-actions">
+                                                    <a href="#" rel="nofollow">Написать сообщение</a> <br/>
+                                                    <a href="#" rel="nofollow">Просмотреть друзей</a> <br/>
+                                                    <a href="#" rel="nofollow">Убрать из друзей</a> <br/>
+                                                    <a href="#" rel="nofollow">Перенести в черный список</a> <br/>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-t-img"> <img src="content/friend-2.jpg" width="100" height="100"> </td>
+                                                <td class="p-t-info">
+                                                    <a href="user-profile.html" class="green-link">Марина</a> <br/>
+                                                    <span class="remark">Питомец:</span> Мурзик. <br/>
+                                                </td>
+                                                <td class="p-t-actions">
+                                                    <a href="#" rel="nofollow">Написать сообщение</a> <br/>
+                                                    <a href="#" rel="nofollow">Просмотреть друзей</a> <br/>
+                                                    <a href="#" rel="nofollow">Убрать из друзей</a> <br/>
+                                                    <a href="#" rel="nofollow">Перенести в черный список</a> <br/>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-t-img"> <img src="content/friend-3.jpg" width="100" height="100"> </td>
+                                                <td class="p-t-info">
+                                                    <a href="user-profile.html" class="green-link">Анна</a> <br/>
+                                                    <span class="green-color">Online</span> <br/>
+                                                    <span class="remark">Питомец:</span> Маша. <br/>
+                                                </td>
+                                                <td class="p-t-actions">
+                                                    <a href="#" rel="nofollow">Написать сообщение</a> <br/>
+                                                    <a href="#" rel="nofollow">Просмотреть друзей</a> <br/>
+                                                    <a href="#" rel="nofollow">Убрать из друзей</a> <br/>
+                                                    <a href="#" rel="nofollow">Перенести в черный список</a> <br/>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-t-img"> <img src="content/friend-4.jpg" width="100" height="100"> </td>
+                                                <td class="p-t-info">
+                                                    <a href="user-profile.html" class="green-link">Светлана Иванова</a> <br/>
+                                                    <span class="remark">Питомец:</span> Мурзик. <br/>
+                                                </td>
+                                                <td class="p-t-actions">
+                                                    <a href="#" rel="nofollow">Написать сообщение</a> <br/>
+                                                    <a href="#" rel="nofollow">Просмотреть друзей</a> <br/>
+                                                    <a href="#" rel="nofollow">Убрать из друзей</a> <br/>
+                                                    <a href="#" rel="nofollow">Перенести в черный список</a> <br/>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-t-img"> <img src="content/friend-1.jpg" width="100" height="100"> </td>
+                                                <td class="p-t-info">
+                                                    <a href="user-profile.html" class="green-link">Наташа Бакланова</a> <br/>
+                                                    <span class="remark">Питомец:</span> Барбос. <br/>
+                                                </td>
+                                                <td class="p-t-actions">
+                                                    <a href="#" rel="nofollow">Написать сообщение</a> <br/>
+                                                    <a href="#" rel="nofollow">Просмотреть друзей</a> <br/>
+                                                    <a href="#" rel="nofollow">Убрать из друзей</a> <br/>
+                                                    <a href="#" rel="nofollow">Перенести в черный список</a> <br/>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!--.k-c-s-body-->
+                                </div>
+                                <!--.k-content-scroll-->
+                                
+                            </div>
+                            <!---friends (Друзья)-->
+                            
+                        </div>
+                        <!--.contentTabs-->
+                        
+                    </div>
+                    <!--.gray-block-->
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                               
+                </div>
+                <!-- .content-->
+            
+            </div>
+            <!-- .container-->
+            
+            <aside class="sideLeft">
+                
+                
+                
+                <nav class="l-menu">
+                    
+                    <a href="about.html">О нас</a>
+                    <a href="blog.html">Блог</a>
+                    <a href="life.html">«КРАСНОДОГ» life</a>
+                    <a href="news.html">Новости</a>
+                    <a href="guest.html">Гостевая</a>
+                    <a href="contests.html">Наши конкурсы</a>
+                    <a href="krasnoteka.html">Краснотека</a>
+                    <a href="contacts.html">Контакты</a>
+                    <a href="forum.html">Форум</a>
+                    <a href="krasnodog.html">Движение «КРАСНОДОГ»</a>
+                    <a href="child.html">Детское направление</a>
+                    <a href="events.html">Наши мероприятия</a>
+                                  
+                </nav>
+                <!-- .l-menu -->
+                
+                <div class="form-search">
+                    <form method="post" action="">
+                        <input type="text" name="" class="f-s-text" value="Поиск по сайту" onclick="if (this.value=='Поиск по сайту') {this.value=''}; $(this).css('color','#474747')" onblur="if (this.value=='') {this.value='Поиск по сайту'}; $(this).css('color','#ababab')">
+                        <input type="submit" name="" class="f-s-submit" value="" title="Найти">
+                    </form>
+                </div>
+                <!--.form-search-->
+                
+                <div class="help-block">
+                    <h2 class="red-header">Как нам помочь?</h2>
+                    <nav class="l-menu">
+						
+                        <a href="#">Лично</a>
+                        <a href="#">Электронные деньги</a>
+                        <a href="#">Банковский перевод</a>
+                        <a href="#">SMS-сообщение</a>
+                        <a href="#">Боксы для пожертвований</a>
+                        <a href="#">QIWI-терминалы</a>
+                        <a href="#">День «стольника»</a>
+                                      
+                    </nav>
+                    <!-- .l-menu -->
+                </div>
+                <!--.help-block-->
+                
+            </aside>
+            <!-- .sideLeft -->
+            
+            <div class="clear"></div>
+            
+            <div class="clearfix">
+                <div class="f-left">
+                    <a href="#"><img src="content/banner468-60.png"></a>
+                </div>
+                <div class="f-right">
+                    <a href="#"><img src="content/banner468-60.png"></a>
+                </div>
+            </div>
+            
+        </section>
+        <!-- .middle-->
+        
+    </div>
+    <!-- .w-inside -->
+</div>
+<!-- .wrapper -->
+
+<footer class="footer">
+    <div class="f-inside">
+        <div class="f-left">
+            &copy; 2013. Приют «Краснодог»
+        </div>
+        <div class="f-left">
+            Телефон: +7 988 505 2 505 (ежедневно с 10:00 до 17:00) <a href="#">Размещение рекламы на сайте</a> 
+        </div>
+        <div class="f-right">
+            <a href="#">Информация о разработчиках сайта</a>
+        </div>
+    </div>
+    <!--.f-inside-->
+</footer>
+<!-- .footer -->
+
+</body>
+</html>

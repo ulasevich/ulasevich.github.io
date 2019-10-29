@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	
+	<title>Кабинеты и лаборатории &#8212; ККБМК &#8212; Краснодарский краевой базовый медицинский колледж</title>
+	
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen, projection" />
+    
+    <!--[if IE]> 
+    <link href="css/style_ie.css" rel= "stylesheet" media="all" type="text/css" />
+    <![endif]-->
+    <!-- Таблица стилей для IE<9 -->
+        
+    <script src="script/jquery-1.7.1.min.js"></script>
+    <script src="script/site-kkbmk.js"></script>
+    
+    
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <header class="header">
+        <div class="h-inside">
+            
+            <a href="index.html" title="Главная страница" class="h-logo-link"></a>
+            <div class="h-logo-name">Краснодарский краевой базовый медицинский колледж</div>
+            <div class="h-search-form">
+                <form name="" action="" method="get">
+                    <input type="text" name="" class="h-s-text" value="Поиск по сайту" onclick="if (this.value=='Поиск по сайту') {this.value=''}; $(this).css('color','#6f737a')" onblur="if (this.value=='') {this.value='Поиск по сайту'}; $(this).css('color','#999999')">
+                    <input type="submit" name="" class="h-s-btn" value="" title="Найти">
+                </form>
+            </div>
+            <!--.h-search-form-->
+            
+            <div class="h-phone"><small>Тел. горячей линии:</small><br/> 8-800-775-94-30</div>
+            
+            <span class="h-feedback-btn" title="Напишите нам"></span>
+            <div class="h-feedback-form">
+                <div class="h-f-tab">
+                    <span class="h-f-btn-hover"></span>
+                </div>
+                <div class="h-f-body">
+                    <form name="" method="post" action="">
+                        <div class="h-f-label">Имя</div>
+                        <input type="text" name="" class="h-f-text">
+                        <div class="h-f-label">E-mail</div>
+                        <input type="text" name="" class="h-f-text">
+                        <div class="h-f-label">Сообщение</div>
+                        <textarea name="" class="h-f-textarea"></textarea>
+                        <input type="submit" name="" class="btn red-btn" value="Отправить">
+                    </form>
+                </div>
+            </div>
+            <!--.h-feedback-form-->
+            
+            <nav class="h-menu">
+                
+                <a href="news.html">Новости</a>
+                <a href="about.html">О колледже</a>
+                <a href="activities.html" class="active">Образовательная деятельность</a>
+                <a href="training.html">Отдел повышения квалификации</a>
+                <a href="students.html">Студентам</a>
+                
+            </nav>
+        </div>
+        <!--.h-inside-->
+    </header>
+    <!-- .header-->
+    
+    <!-- InstanceBeginEditable name="Pattern_region" -->
+    <div class="middle-top-pattern m-d-p-line">
+        <div><!--.m-d-p-wave для главной страницы, .m-d-p-line для остальных--></div>
+    </div>
+    
+        
+    <div class="w-inside">
+        
+        <section class="middle">
+            
+            
+            <div class="middle-top-line"></div>
+            
+            <aside class="sideLeft">
+                <nav class="l-menu">
+                    <!-- InstanceBeginEditable name="Left_menu_region" -->
+                    <div class="l-m-link"><a href="activities.html">Нормативная база</a></div>
+                    <div class="l-m-link"><a href="#">Педагогический состав</a></div>
+                    <div class="l-m-link"><a href="activities-technical-laboratories.html" class="active">Материально-техническая база</a></div>
+                    <div class="l-m-link"><a href="#">Платные услуги</a></div>
+                    <div class="l-m-link"><a href="#">Практическое обучение</a></div>
+                    <div class="l-m-link"><a href="#">Вакантные места</a></div>
+                    
+                </nav>
+                <!--.l-menu-->
+            </aside>
+            <!-- .sideLeft -->
+            
+            <div class="content">
+                <!-- InstanceBeginEditable name="Content_region" -->
+                
+				<script type="text/javascript" src="script/jquery.cycle.all.js"></script>
+                
+                <script type="text/javascript">
+                    $(document).ready(function() {
+                        // для фото слайдера
+                        $("#p-s-total").html( $("#photo-slider img").length );
+						$('#photo-slider').cycle({ 
+                            timeout: 8000, 
+                            next:   '#p-s-next', 
+                            prev:   '#p-s-prev',
+                            before: onBefore_photo
+                        });
+                        function onBefore_photo() { 
+                            $('#p-s-text').html(this.title);
+							$('#p-s-current').html(this.id.substr(6));
+							//alert(this);
+                        }
+                        
+                    });
+                </script>
+                
+                <div class="breadcrumbs">
+                    <a href="index.html">Главная</a> <span class="b-arr"></span> <a href="activities.html">Образовательная деятельность</a> <span class="b-arr"></span> <a href="activities-technical.html">Материально-техническая база</a>
+                </div>
+                <!--.breadcrumbs-->
+                
+                <div class="c-block subsection-menu">
+                    <a href="activities-technical-laboratories.html" class="active">Кабинеты и лаборатории</a> <a href="#">Библиотека</a> <a href="#">Спортивная база</a>
+                </div>
+                <!--.subsection-menu-->
+                
+                <div class="c-block">
+                    <h1>Кабинеты и лаборатории</h1>
+                    
+                    <p>Что снует между стебельками, наблюдаю эти неисчислимые, непостижимые разновидности червяков и мошек и чувствую близость всемогущего, создавшего нас по своему подобию, веяние вселюбящего, судившего нам парить в вечном блаженстве, когда взор мой туманится и все вокруг меня и небо надо мной запечатлены в моей душе, точно образ возлюбленной, - тогда, дорогой друг, меня часто томит мысль: "Ах!</p>
+                    
+                    <div class="photo-slider">
+                        <div id="photo-slider">
+                            <img src="content/laboratory-1.jpg" width="640" height="383" title="Фотография лаборатории" id="photo-1">
+                            <img src="content/laboratory-2.jpg" width="640" height="383" title="Фотография лаборатории 2" id="photo-2">
+                        </div>
+                        <span class="p-s-counter"> <span id="p-s-current">1</span>/<span id="p-s-total"></span> </span>
+                        <span class="p-s-prev" id="p-s-prev"></span>
+                        <span class="p-s-next" id="p-s-next"></span>
+                        <span class="p-s-text" id="p-s-text"></span>
+                    </div>
+                    <!--.photo-slider-->
+                    
+                    <p>Что снует между стебельками, наблюдаю эти неисчислимые, непостижимые разновидности червяков и мошек и чувствую близость всемогущего, создавшего нас по своему подобию, веяние вселюбящего, судившего нам парить в вечном блаженстве, когда взор мой туманится и все вокруг меня и небо надо мной запечатлены в моей душе, точно образ возлюбленной, - тогда, дорогой друг, меня часто томит мысль: "Ах!</p>
+                    <p>Как бы выразить, как бы вдохнуть в рисунок то, что так полно, так трепетно живет во мне, запечатлеть отражение моей души, как душа моя - отражение предвечного бога!</p>
+                    
+                    <h3>Документы для скачивания</h3>
+                    
+                    <div>
+                        <a href="#" class="download-link">Название файла.doc</a> <a href="#" class="download-link">Длинное название файла.xls</a> <a href="#" class="download-link">Очень длинное название файла.doc</a> <a href="#" class="download-link">Название файла 2.doc</a> <a href="#" class="download-link">Название файла 3.doc</a>
+                    </div>
+                    
+                </div>
+                
+                <div class="c-shadow"></div>
+                
+                
+            </div>
+            <!-- .content-->
+			
+            <div class="clear"></div>
+            
+        </section>
+        <!-- .middle-->
+        
+    </div>
+    <!-- .w-inside -->
+</div>
+<!-- .wrapper -->
+
+<footer class="footer">
+    <div class="f-inside">
+        <nav class="f-menu">
+			
+            <a href="news.html">Новости</a>
+            <a href="about.html">О колледже</a>
+            <a href="activities.html" class="active">Образовательная деятельность</a>
+            <a href="training.html">Отдел повышения квалификации</a>
+            <a href="students.html">Студентам</a>
+            
+        </nav>
+        <!--.f-menu-->
+        <a href="#" title="Наша страница Вконтакте" class="f-vk-link"></a>
+        <div class="f-address">
+            г.Краснодар ул. Таманская, 137<br/>
+            Телефон/Факс: (861) 239-72-48<br/>
+            E-mail: kbmk@yandex.ru<br/>
+        </div>
+        <div class="f-copyright">&copy; 2013  Краснодарский краевой базовый медицинский колледж</div>
+        <a href="#" rel="nofollow" class="f-fskn"></a>
+        <a href="#" rel="nofollow" class="f-kcst"></a>
+        <a href="#" rel="nofollow" class="f-inventum"></a>
+        <a href="#" rel="nofollow" class="f-developer">Ссылка на разработчиков</a>
+    </div>
+    <!--.f-inside-->
+</footer>
+<!-- .footer -->
+
+</body>
+</html>

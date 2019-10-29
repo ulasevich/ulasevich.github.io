@@ -1,0 +1,179 @@
+/* Preload images */
+body:after {
+    content: url(../img/lightbox-close.png) url(../img/lightbox-loading.gif) url(../img/lightbox-prev.png) url(../img/lightbox-next.png);
+    display: none;
+}
+.lightboxOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: black;
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+    opacity: 0.3;
+    display: none;
+}
+.lightbox {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    text-align: center;
+    line-height: 0;
+    font-weight: normal;
+}
+.lightbox .lb-image {
+    display: block;
+    height: auto;
+    max-width: inherit;/*-webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;*/
+}
+.lightbox a img { border: none; }
+.lb-outerContainer {
+    position: relative;
+    background: #fafafa url(../img/gallery-bg.png) repeat-x bottom center;/**/
+ *zoom: 1;
+    /*width: 250px;
+  height: 250px;*/
+    margin: 0 auto;
+    border: solid 2px #fafafa;
+    overflow: visible;
+}
+/*.lb-outerContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}*/
+.lb-outerContainer:after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 12px;
+    left: 0;
+    bottom: -14px;
+    background: url(../img/gallery-shadow.png) no-repeat bottom center;
+}
+.lb-container { padding: 28px 60px 0; }
+.lb-loader {
+    position: absolute;
+    top: 43%;
+    left: 0;
+    height: 25%;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+}
+.lb-cancel {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    background: url(../img/lightbox-loading.gif) no-repeat;
+}
+.lb-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+.lb-container > .nav { left: 0; }
+.lb-nav a {
+    outline: none;
+    background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+}
+.lb-prev, .lb-next {
+    height: 100%;
+    cursor: pointer;
+    display: block;
+}
+.lb-nav a.lb-prev {
+    width: 34%;
+    left: 0;
+    float: left;
+    background: url(../img/lightbox-prev.png) left 48% no-repeat;
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+    opacity: 0.1;
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+    -o-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+}
+.lb-nav a.lb-prev:hover {
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
+.lb-nav a.lb-next {
+    width: 64%;
+    right: 0;
+    float: right;
+    background: url(../img/lightbox-next.png) right 48% no-repeat;
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+    opacity: 0.1;
+    -webkit-transition: opacity 0.6s;
+    -moz-transition: opacity 0.6s;
+    -o-transition: opacity 0.6s;
+    transition: opacity 0.6s;
+}
+.lb-nav a.lb-next:hover {
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
+.lb-dataContainer {
+    margin: 0 auto;
+ *zoom: 1;
+    width: 100%;
+    display: block;
+}
+.lb-dataContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.lb-data {
+    padding: 0 4px;
+    color: #ccc;
+}
+.lb-data .lb-details {
+    text-align: left;
+    padding: 0px 60px 28px;
+}
+.lb-data .lb-caption {
+    line-height: 1em;
+    line-height: 130%;
+    font-weight: normal;
+    font-style: italic;
+    color: #1a1a1a;
+}
+.lb-data .lb-number {
+    display: none !important;
+    clear: left;
+    padding-bottom: 1em;
+    font-size: 12px;
+    color: #999999;
+}
+.lb-closeContainer { z-index: 22; }
+.lb-close {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 27px;
+    height: 27px;
+    background: url(../img/lightbox-close.png) center center no-repeat;
+    text-align: right;
+    outline: none;
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    opacity: 0.2;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+    z-index: 23;
+}
+.lb-close:hover {
+    cursor: pointer;
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+}

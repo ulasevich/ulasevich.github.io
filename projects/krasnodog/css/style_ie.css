@@ -1,0 +1,11 @@
+/* Styles for IE (border-radius etc.)
+-----------------------------------------------------------------------------*/
+.more-link, .l-menu a, .report-tabs a {
+    behavior: url(css/PIE.htc);
+}
+.logo-banner {
+	top:15px;
+}
+.cat {
+	top:283px;
+}

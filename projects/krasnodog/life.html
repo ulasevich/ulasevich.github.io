@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	
+	<title>«КРАСНОДОГ» life &#8212; Краснодог &#8212; приют для пострадавших животных</title>
+	
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen, projection" />
+    
+    <!--[if IE]> 
+    <link href="css/style_ie.css" rel= "stylesheet" media="all" type="text/css" />
+    <![endif]-->
+    <!-- Таблица стилей для IE<9 -->
+    
+    <!--[if lte IE 8]> 
+    <link href="css/style_ie8.css" rel= "stylesheet" media="all" type="text/css" />
+    <![endif]-->
+    <!-- Таблица стилей для IE<8 -->
+        
+    <script src="script/jquery-1.7.1.min.js"></script>
+    <script src="script/krasnodog.js"></script>
+    
+    <!-- для стилизации скроллов -->
+	<script type="text/javascript" src="script/jquery.jscrollpane.min.js"></script>
+    <script type="text/javascript" src="script/jquery.mousewheel.js"></script>
+    <link rel="stylesheet" href="css/jquery.jscrollpane.css" type="text/css" media="screen, projection" />
+    
+    <!-- для стилизации select -->
+	<script type="text/javascript" src="script/chosen.jquery.min.js"></script>
+    <link rel="stylesheet" href="css/chosen.css" type="text/css" media="screen, projection" />
+    
+    <!-- для вкладок -->
+    <script src="script/jquery.idTabs.min.js"></script>
+    
+</head>
+
+<body>
+
+<div class="wrapper">
+
+
+    <header class="header clearfix">
+        <div class="h-inside">
+            <div class="f-left h-icon-animals"> <a href="animals-our.html" class="h-link">Наши животные</a> <span class="h-count">(353)</span> </div>
+            <div class="f-left h-icon-home"> <a href="#" class="h-link">Уже дома</a> <span class="h-count">(3084)</span> </div>
+            <div class="f-left h-icon-shop"> <a href="shop.html" class="h-link">Интернет-магазин</a> </div>
+            <div class="f-left h-more-block"> <span class="h-more-link">Ещё</span> </div>
+            <div class="h-more-menu"> 
+                <div><a href="#">Уставные документы</a></div>
+                <div><a href="#">Отчеты</a></div>
+                <div><a href="#">Пресса о нас</a></div>
+            </div>
+            <!--.h-more-menu-->
+            <div class="f-left h-help-block"> <a href="#" class="h-help-link">Хочу помочь</a> </div>
+            
+            <div class="f-right">
+                
+            <button class="auth-btn">Войти</button> <a href="registration.html" class="h-link">Зарегистрироваться</a>
+            
+            </div>
+            
+            <div class="auth-form" style="display:none;">
+                <form method="post" action="private-main.html">
+                    <span class="h-auth-close" title="Закрыть"></span>
+                    <div><input type="text" class="h-auth-text" value="логин" onclick="if (this.value=='логин') {this.value=''}; $(this).css('color','#777')" onblur="if (this.value=='') {this.value='логин'}; $(this).css('color','#999999')"></div>
+                    <div><input type="password" class="h-auth-text"></div>
+                    <div><label class="h-checkbox"> <input type="checkbox"> <span>Запомнить меня</span> </label></div>
+                    <div><input type="submit" value="Войти" class="h-auth-submit"> <a href="#" class="h-auth-restore">Восстановить пароль</a></div>
+                </form>
+            </div>
+            <!--.auth-form ( Authorization form )-->
+            
+        </div>
+        <!--.h-inside-->
+    </header>
+    <!-- .header-->
+    
+    
+           
+
+
+    <div class="w-inside">
+    
+        <div class="logo-banner"></div>
+        <img src="images/cat.png" class="cat">
+        
+        <div class="site-face">
+            
+            <a href="index.html" title="Главная страница" class="logo-link"></a>
+            <div class="logo-slogan">
+                Мы помогаем животным и людям найти друг друга!
+            </div>
+            <div class="logo-info">
+                <span class="l-i-phone">+7 (988) 505-2-505</span> <br/>
+                Диспетчер, с 10:00 до 17:00
+            </div>
+            <div class="share-links clearfix">
+                <!--noindex--><a href="https://www.facebook.com/farfolen" class="s-l-facebook" target="_blank" rel="nofollow" title="Наша страница в Facebook"></a><!--/noindex-->
+                <!--noindex--><a href="http://www.odnoklassniki.ru/group/51853960872042" class="s-l-odnoklassniki" target="_blank" rel="nofollow" title="Краснодог в Одноклассниках"></a><!--/noindex-->
+                <!--noindex--><a href="http://vk.com/club6322452" class="s-l-vkontakte" target="_blank" rel="nofollow" title="Краснодог ВКонтакте"></a><!--/noindex-->
+                <!--noindex--><a href="https://twitter.com/krasnodog" class="s-l-twitter" target="_blank" rel="nofollow" title="Twitter Краснодога"></a><!--/noindex-->
+                <!--noindex--><a href="http://www.youtube.com/user/KrasnodogPriut?feature=watch" class="s-l-youtube" target="_blank" rel="nofollow" title="Наш канал в Youtube"></a><!--/noindex-->
+                <!--noindex--><a href="http://krasnodog.livejournal.com/" class="s-l-livejournal" target="_blank" rel="nofollow" title="Наш блог в ЖЖ"></a><!--/noindex-->
+            </div>
+        </div>
+        <!--.site-face-->
+        
+        <section class="middle">
+            <div class="container">
+                <div class="content">
+                    
+                    
+                    <div class="green-header">
+                        <h1>«КРАСНОДОГ» life</h1>
+                    </div>
+                    
+                    <div class="gray-item clearfix">
+                        <img src="content/life-1.jpg" width="127" class="gray-border f-left">
+                        
+                        <div class="pad-left-145">
+                            <div class="g-i-line">
+                                <a href="life-item.html" class="green-link font-18">Мухино счастье</a>
+                            </div>
+                            <div class="g-i-line">
+                                <span class="remark">1 июля 2013</span>
+                                <span class="remark"><a href="life-item.html#comments">Комментариев: 3</a></span>
+                                <span class="remark">Категория: <a href="#">Новости приюта</a></span>
+                            </div>
+                            <div class="g-i-line">
+                                На прошлой неделе в «Краснодоге» побывали Наталья Юницына, директор международного фонда помощи животным «Дарящие надежду» и кинолог Ашот Петросян. Основатель приюта Наталья ... 
+                            </div>
+                            <div class="g-i-line">
+								<script type="text/javascript">(function() {
+									if (window.pluso) if (typeof window.pluso.start == "function") return;
+									var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+									s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+									s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+									var h=d[g]('head')[0] || d[g]('body')[0];
+									h.appendChild(s);
+									})()
+                                </script>
+                                <div data-url="http://krasnodog.ru/athome/3794/" class="pluso" data-background="transparent" data-options="small,round,line,horizontal,nocounter,theme=06" data-services="facebook,odnoklassniki,vkontakte,twitter,google,livejournal"></div>
+                            </div>
+                            
+                        </div>
+                        <!--.life-item-content-->
+                    </div>
+                    <!--.gray-item-->
+                    
+                    <div class="gray-item clearfix">
+                        <img src="content/life-2.jpg" width="127" class="gray-border f-left">
+                        
+                        <div class="pad-left-145">
+                            <div class="g-i-line">
+                                <a href="life-item.html" class="green-link font-18">Привет от Оскара!</a>
+                            </div>
+                            <div class="g-i-line">
+                                <span class="remark">30 июня 2013</span>
+                                <span class="remark"><a href="life-item.html#comments">Комментариев: 2</a></span>
+                                <span class="remark">Категория: <a href="#">Уже дома</a></span>
+                            </div>
+                            <div class="g-i-line">
+                                <p>Пса Оскара сбила машина. У него пострадали передние лапы.  Благодаря стараниям наших врачей Оскар быстро шёл на поправку. Сейчас от былых травм не осталось и следа. Оскар мечтает ... На прошлой неделе в «Краснодоге» побывали Наталья Юницына, директор международного фонда помощи животным «Дарящие надежду» и кинолог Ашот Петросян. Основатель приюта Наталья ...</p>
+                                Вчера полдня безуспешно пыталась заставить себя сесть и продолжить написание гранта... но не шмогла, торжественно сдалась, попырилась в ютуб, узнав как тяжело живется людям-альбиносам.
+                            </div>
+                            <div class="g-i-line">
+								<script type="text/javascript">(function() {
+									if (window.pluso) if (typeof window.pluso.start == "function") return;
+									var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+									s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+									s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+									var h=d[g]('head')[0] || d[g]('body')[0];
+									h.appendChild(s);
+									})()
+                                </script>
+                                <div data-url="http://krasnodog.ru/athome/3794/" class="pluso" data-background="transparent" data-options="small,round,line,horizontal,nocounter,theme=06" data-services="facebook,odnoklassniki,vkontakte,twitter,google,livejournal"></div>
+                            </div>
+                        </div>
+                        <!--.life-item-content-->
+                    </div>
+                    <!--.gray-item-->
+                    
+                    <div class="gray-item clearfix">
+                        <img src="content/life-3.jpg" width="127" class="gray-border f-left">
+                        
+                        <div class="pad-left-145">
+                            <div class="g-i-line">
+                                <a href="life-item.html" class="green-link font-18">У Супера всё супер!!!</a>
+                            </div>
+                            <div class="g-i-line">
+                                <span class="remark">25 июня 2013</span>
+                                <span class="remark"><a href="life-item.html#comments">Комментариев: 7</a></span>
+                                <span class="remark">Категория: <a href="#">Новости приюта</a></span>
+                            </div>
+                            <div class="g-i-line">
+                                "Краснодог, здравствуйте!  Кот Супер передает Вам привет! Хочу выразить огромную благодарность за этого сорванца - сплошной позитив.  С Боней(рыжий кот) подружились и теперь вместе по ... 
+                            </div>
+                            <div class="g-i-line">
+                            </div>
+                        </div>
+                        <!--.life-item-content-->
+                    </div>
+                    <!--.gray-item-->
+                    
+                    <div class="gray-item clearfix">
+                        <img src="content/life-4.jpg" width="127" class="gray-border f-left">
+                        
+                        <div class="pad-left-145">
+                            <div class="g-i-line">
+                                <a href="life-item.html" class="green-link font-18">Генеологическое древо Cержа</a>
+                            </div>
+                            <div class="g-i-line">
+                                <span class="remark">22 июня 2013</span>
+                                <span class="remark"><a href="life-item.html#comments">Комментариев: 12</a></span>
+                                <span class="remark">Категория: <a href="#">Уже дома</a></span>
+                            </div>
+                            <div class="g-i-line">
+                                Прекрасную статью выпустили в Science не британские, но однако аж целое международное собрание ученых.
+                            </div>
+                            <div class="g-i-line">
+                            </div>
+                        </div>
+                        <!--.life-item-content-->
+                    </div>
+                    <!--.gray-item-->
+                    
+                    <div class="gray-item clearfix">
+                        <img src="content/life-5.jpg" width="127" class="gray-border f-left">
+                        
+                        <div class="pad-left-145">
+                            <div class="g-i-line">
+                                <a href="life-item.html" class="green-link font-18">Просто так-2</a>
+                            </div>
+                            <div class="g-i-line">
+                                <span class="remark">20 июня 2013</span>
+                                <span class="remark"><a href="life-item.html#comments">Комментариев: 15</a></span>
+                                <span class="remark">Категория: <a href="#">Уже дома</a></span>
+                            </div>
+                            <div class="g-i-line">
+                                Если вы работаете переводчиком с русского на английский, и у вас сейчас время есть, а денег нет и в гости некуда пойти, то ...
+                            </div>
+                            <div class="g-i-line">
+                            </div>
+                        </div>
+                        <!--.life-item-content-->
+                    </div>
+                    <!--.gray-item-->
+                    
+                    <div class="gray-item clearfix">
+                        <img src="content/life-6.jpg" width="127" class="gray-border f-left">
+                        
+                        <div class="pad-left-145">
+                            <div class="g-i-line">
+                                <a href="life-item.html" class="green-link font-18">Прекрасное и летнее</a>
+                            </div>
+                            <div class="g-i-line">
+                                <span class="remark">11 июня 2013</span>
+                                <span class="remark"><a href="life-item.html#comments">Комментариев: 15</a></span>
+                                <span class="remark">Категория: <a href="#">Новости приюта</a></span>
+                            </div>
+                            <div class="g-i-line">
+                                Расскажите мне, что вы тоже работаете на выходных дома или на работе.
+                            </div>
+                            <div class="g-i-line">
+                            </div>
+                        </div>
+                        <!--.life-item-content-->
+                    </div>
+                    <!--.gray-item-->
+                    
+                    <div class="gray-item clearfix">
+                        <img src="content/life-1.jpg" width="127" class="gray-border f-left">
+                        
+                        <div class="pad-left-145">
+                            <div class="g-i-line">
+                                <a href="life-item.html" class="green-link font-18">Мухино счастье</a>
+                            </div>
+                            <div class="g-i-line">
+                                <span class="remark">1 июля 2013</span>
+                                <span class="remark"><a href="life-item.html#comments">Комментариев: 3</a></span>
+                                <span class="remark">Категория: <a href="#">Новости приюта</a></span>
+                            </div>
+                            <div class="g-i-line">
+                                На прошлой неделе в «Краснодоге» побывали Наталья Юницына, директор международного фонда помощи животным «Дарящие надежду» и кинолог Ашот Петросян. Основатель приюта Наталья ... 
+                            </div>
+                            <div class="g-i-line">
+                            </div>
+                        </div>
+                        <!--.life-item-content-->
+                    </div>
+                    <!--.gray-item-->
+                    
+                    <div class="gray-item clearfix">
+                        <img src="content/life-2.jpg" width="127" class="gray-border f-left">
+                        
+                        <div class="pad-left-145">
+                            <div class="g-i-line">
+                                <a href="life-item.html" class="green-link font-18">Привет от Оскара!</a>
+                            </div>
+                            <div class="g-i-line">
+                                <span class="remark">30 июня 2013</span>
+                                <span class="remark"><a href="life-item.html#comments">Комментариев: 2</a></span>
+                                <span class="remark">Категория: <a href="#">Уже дома</a></span>
+                            </div>
+                            <div class="g-i-line">
+                                Пса Оскара сбила машина. У него пострадали передние лапы.  Благодаря стараниям наших врачей Оскар быстро шёл на поправку. Сейчас от былых травм не осталось и следа. Оскар мечтает ... 
+                            </div>
+                            <div class="g-i-line">
+                            </div>
+                        </div>
+                        <!--.life-item-content-->
+                    </div>
+                    <!--.gray-item-->
+                    
+                    <div class="gray-item clearfix">
+                        <img src="content/life-3.jpg" width="127" class="gray-border f-left">
+                        
+                        <div class="pad-left-145">
+                            <div class="g-i-line">
+                                <a href="life-item.html" class="green-link font-18">У Супера всё супер!!!</a>
+                            </div>
+                            <div class="g-i-line">
+                                <span class="remark">25 июня 2013</span>
+                                <span class="remark"><a href="life-item.html#comments">Комментариев: 7</a></span>
+                                <span class="remark">Категория: <a href="#">Новости приюта</a></span>
+                            </div>
+                            <div class="g-i-line">
+                                "Краснодог, здравствуйте!  Кот Супер передает Вам привет! Хочу выразить огромную благодарность за этого сорванца - сплошной позитив.  С Боней(рыжий кот) подружились и теперь вместе по ... 
+                            </div>
+                            <div class="g-i-line">
+                            </div>
+                        </div>
+                        <!--.life-item-content-->
+                    </div>
+                    <!--.gray-item-->
+                    
+                    <div class="gray-item clearfix">
+                        <img src="content/life-4.jpg" width="127" class="gray-border f-left">
+                        
+                        <div class="pad-left-145">
+                            <div class="g-i-line">
+                                <a href="life-item.html" class="green-link font-18">Генеологическое древо Cержа</a>
+                            </div>
+                            <div class="g-i-line">
+                                <span class="remark">22 июня 2013</span>
+                                <span class="remark"><a href="life-item.html#comments">Комментариев: 12</a></span>
+                                <span class="remark">Категория: <a href="#">Уже дома</a></span>
+                            </div>
+                            <div class="g-i-line">
+                                Прекрасную статью выпустили в Science не британские, но однако аж целое международное собрание ученых.
+                            </div>
+                            <div class="g-i-line">
+                            </div>
+                        </div>
+                        <!--.life-item-content-->
+                    </div>
+                    <!--.gray-item-->
+                    
+                    
+                    <div class="gray-item clearfix">
+                        <div class="f-left page-count">
+                            1-10 из 353
+                        </div>
+                        <div class="f-right pager">
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            ...
+                            <a href="#">20</a>
+                        </div>
+                    </div>
+
+                    
+                               
+                </div>
+                <!-- .content-->
+            
+            </div>
+            <!-- .container-->
+            
+            <aside class="sideLeft">
+                
+                
+                
+                <nav class="l-menu">
+                    
+                    <a href="about.html">О нас</a>
+                    <a href="blog.html">Блог</a>
+                    <a href="life.html" class="active">«КРАСНОДОГ» life</a>
+                    <a href="news.html">Новости</a>
+                    <a href="guest.html">Гостевая</a>
+                    <a href="contests.html">Наши конкурсы</a>
+                    <a href="krasnoteka.html">Краснотека</a>
+                    <a href="contacts.html">Контакты</a>
+                    <a href="forum.html">Форум</a>
+                    <a href="krasnodog.html">Движение «КРАСНОДОГ»</a>
+                    <a href="child.html">Детское направление</a>
+                    <a href="events.html">Наши мероприятия</a>
+                                  
+                </nav>
+                <!-- .l-menu -->
+                
+                <div class="form-search">
+                    <form method="post" action="">
+                        <input type="text" name="" class="f-s-text" value="Поиск по сайту" onclick="if (this.value=='Поиск по сайту') {this.value=''}; $(this).css('color','#474747')" onblur="if (this.value=='') {this.value='Поиск по сайту'}; $(this).css('color','#ababab')">
+                        <input type="submit" name="" class="f-s-submit" value="" title="Найти">
+                    </form>
+                </div>
+                <!--.form-search-->
+                
+                <div class="help-block">
+                    <h2 class="red-header">Как нам помочь?</h2>
+                    <nav class="l-menu">
+						
+                        <a href="#">Лично</a>
+                        <a href="#">Электронные деньги</a>
+                        <a href="#">Банковский перевод</a>
+                        <a href="#">SMS-сообщение</a>
+                        <a href="#">Боксы для пожертвований</a>
+                        <a href="#">QIWI-терминалы</a>
+                        <a href="#">День «стольника»</a>
+                                      
+                    </nav>
+                    <!-- .l-menu -->
+                </div>
+                <!--.help-block-->
+                
+            </aside>
+            <!-- .sideLeft -->
+            
+            <div class="clear"></div>
+            
+            <div class="clearfix">
+                <div class="f-left">
+                    <a href="#"><img src="content/banner468-60.png"></a>
+                </div>
+                <div class="f-right">
+                    <a href="#"><img src="content/banner468-60.png"></a>
+                </div>
+            </div>
+            
+        </section>
+        <!-- .middle-->
+        
+    </div>
+    <!-- .w-inside -->
+</div>
+<!-- .wrapper -->
+
+<footer class="footer">
+    <div class="f-inside">
+        <div class="f-left">
+            &copy; 2013. Приют «Краснодог»
+        </div>
+        <div class="f-left">
+            Телефон: +7 988 505 2 505 (ежедневно с 10:00 до 17:00) <a href="#">Размещение рекламы на сайте</a> 
+        </div>
+        <div class="f-right">
+            <a href="#">Информация о разработчиках сайта</a>
+        </div>
+    </div>
+    <!--.f-inside-->
+</footer>
+<!-- .footer -->
+
+</body>
+</html>
