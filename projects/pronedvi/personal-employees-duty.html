@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html><!-- InstanceBegin template="/Templates/Pronedvi_main.dwt" codeOutsideHTMLIsLocked="false" --><head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+	<!-- InstanceBeginEditable name="doctitle" -->
+	<title>Дежурства сотрудников | Портал недвижимости ProNedvi</title>
+	<!-- InstanceEndEditable -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<meta name="description" content="" />
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    
+    <!--SEO and Share-->
+	<!-- InstanceBeginEditable name="meta" -->    
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Портал недвижимости ProNedvi">
+    <meta property="og:title" content="Заголовок">
+    <meta property="og:description" content="Описание">
+    <meta property="og:url" content="http://example.com/page.html">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:image" content="http://example.com/img/social_cover.jpg">
+    <meta property="og:image:width" content="968">
+    <meta property="og:image:height" content="504"> 
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Заголовок">
+    <meta name="twitter:description" content="Описание">
+    <meta name="twitter:image:src" content="http://example.com/img/social_cover.jpg">
+    <meta name="twitter:url" content="http://example.com/page.html">
+    <meta name="twitter:domain" content="example.com">
+    <meta name="twitter:site" content="@">
+    <!-- InstanceEndEditable -->  
+    <!--SEO and Share-->  
+    
+    <!--favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#ffffff">
+    
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!--favicons-->
+    
+    
+    
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/chosen.css">
+    <link rel="stylesheet" href="css/fotorama.css">
+    <link rel="stylesheet" href="css/flatpickr.min.css">
+	<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/dev.css">
+   
+   
+    <script src="js/modernizr-custom.js"></script>
+    <script src="js/jquery-1.12.2.min.js"></script>
+    <!-- InstanceBeginEditable name="head" -->
+    <!-- InstanceEndEditable -->
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<header class="header">
+		
+        <div class="header__top">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                	<div class="col-md-auto header__top-logo">
+                    	<a href="index.html" title="Главная страница"><img src="img/logo-header.png" alt="Портал недвижимости pronedvi.ru" role="img"></a>
+                    </div>
+                    
+                    <div class="col-md-auto header__top-menu">
+                    	<nav class="header-menu">
+                            <ul class="not-list">
+                            	<li> <a href="consultation.html">Бесплатная консультация</a> </li>
+                                <li> <a href="docs.html">Шаблоны документов</a> </li>
+                                <li> <a href="calc.html">Калькулятор ипотеки</a> </li>
+                            </ul>
+                        </nav><!--.header-menu-->
+                    </div>
+                    
+                    <div class="col-md-auto ml-auto header__top-account">
+                    	<nav class="header-menu">
+                            <ul class="not-list">
+                            	<li> <a href="new-publication.html" class="btn btn-default btn--small">Добавить объявление </a> </li>
+								<!-- InstanceBeginEditable name="Account_region" -->
+                                <li> <a href="bookmarks.html" title="Избранное" class="link-bookmark"><i class="far fa-bookmark"><span class="header-bookmark-value">12</span></i> </a> </li>
+                                <li> <a href="personal-data.html" class="link-personal"> <span class="header-menu-link-icon" style="background-image: url(content/default-avatar.png)"></span> Юрий Николаевич</a> </li>
+                                <li> <a href="index.html" class="header-menu-link--simple">Выйти</a> </li>
+                                <!-- InstanceEndEditable -->
+                            </ul>
+                        </nav><!--.header-menu-->
+                    </div>
+                    
+                    <div class="col-md-auto header__top-mobile">
+                    </div>
+                                        
+                </div><!--.row-->
+            </div><!--.container-fluid-->
+        </div><!--.header__top-->
+        
+                
+		<!-- InstanceBeginEditable name="Personal_region" -->
+        <div class="header__bottom">
+            <div class="container-fluid">
+                <nav class="header-menu">
+                    <ul class="not-list">
+                        <li> <a href="personal-data.html"> <span class="header-menu-link-icon h-m-icon--account"></span> Учётная запись</a> </li>
+                        <li> <a href="personal-agency.html"> <span class="header-menu-link-icon h-m-icon--agency"></span> Агентство</a> </li>
+                        <li> <a href="personal-employees.html" class="active"> <span class="header-menu-link-icon h-m-icon--employees"></span> Сотрудники</a> </li>
+                        <li> <a href="personal-calls.html"> <span class="header-menu-link-icon h-m-icon--calls"></span> Звонки</a> </li>
+                        <li> <a href="personal-messages.html"> <span class="header-menu-link-icon h-m-icon--messages"></span> Сообщения</a> </li>
+                        <li> <a href="personal-objects.html"> <span class="header-menu-link-icon h-m-icon--estates"></span> Объекты</a> </li>
+                        <li> <a href="personal-publications.html"> <span class="header-menu-link-icon h-m-icon--adverts"></span> Объявления</a> </li>
+                    </ul>
+                </nav><!--.header-menu-->
+            </div><!--.container-fluid-->
+        </div><!--.header__bottom-->
+        <!-- InstanceEndEditable -->
+        
+        
+        <!-- InstanceBeginEditable name="Change_MO_region" -->
+        <div class="header__country-region">
+            <div class="container-fluid">
+                <div class="header__country-region__note">
+                    <i class="fas fa-map-marker-alt"></i> <span>Ваш регион - Краснодарский край?</span>
+                    <a href="#" class="btn btn-default btn--tiny">Да</a>
+                    <a href="#" class="btn btn-default btn--tiny btn--white" data-toggle="modal" data-target="#changeRegion">Нет, выбрать другой</a>
+                </div>
+            </div>
+        </div>
+        <!-- InstanceEndEditable -->
+        
+	</header><!-- .header-->
+    
+    
+    <div class="modal form fade form--filtr form--region" id="changeRegion" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false" data-categoryid="4">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть"><i class="fas fa-times"></i></button>
+                    <h2>Выберите регион</h2>
+                    
+                    
+                    <div class="row region-row">
+                    	
+                        <div class="col-12 region-row__col region-row__col--main">
+                        	<div class="region-row__col__link"><a href="#">Москва и МО</a></div>
+                            <div class="region-row__col__link"><a href="#" class="active">Санкт-Петербург и ЛО</a></div>
+                            <div class="region-row__col__link"><a href="#">Еще регион</a></div>
+                        </div>
+                        
+                        <div class="col-xl-3 col-md-6 region-row__col">
+                        	
+                            <h3>А</h3>
+                            <div class="region-row__col__link"><a href="#">Адыгея</a></div>
+                            <div class="region-row__col__link"><a href="#">Алтай (Республика)</a></div>
+                            <div class="region-row__col__link"><a href="#">Алтайский край</a></div>
+                            <div class="region-row__col__link"><a href="#">Амурская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Архангельская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Астраханская область</a></div>
+                        
+                            <h3>Б</h3>
+                            <div class="region-row__col__link"><a href="#">Башкортостан</a></div>
+                            <div class="region-row__col__link"><a href="#">Белгородская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Брянская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Бурятия</a></div>
+                        
+                            <h3>В</h3>
+                            <div class="region-row__col__link"><a href="#">Владимирская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Волгоградская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Вологодская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Воронежская область</a></div>
+                        
+                            <h3>Д</h3>
+                            <div class="region-row__col__link"><a href="#">Дагестан</a></div>
+                        
+                            <h3>Е</h3>
+                            <div class="region-row__col__link"><a href="#">Еврейская АО</a></div>
+                        
+                            <h3>З</h3>
+                            <div class="region-row__col__link"><a href="#">Забайкальский край</a></div>                            
+                        </div><!--.region-row__col-->
+                        
+                        
+                        <div class="col-xl-3 col-md-6 region-row__col">
+                        	
+                            <h3>И</h3>
+                            <div class="region-row__col__link"><a href="#">Ивановская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Ингушетия</a></div>
+                            <div class="region-row__col__link"><a href="#">Иркутская область</a></div>
+
+                            <h3>К</h3>
+                            <div class="region-row__col__link"><a href="#">Кабардино-Балкария</a></div>
+                            <div class="region-row__col__link"><a href="#">Калининградская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Калмыкия</a></div>
+                            <div class="region-row__col__link"><a href="#">Калужская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Камчатский край</a></div>
+                            <div class="region-row__col__link"><a href="#">Карачаево-Черкесия</a></div>
+                            <div class="region-row__col__link"><a href="#">Карелия</a></div>
+                            <div class="region-row__col__link"><a href="#">Кемеровская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Кировская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Коми</a></div>
+                            <div class="region-row__col__link"><a href="#">Костромская область</a></div>
+                            <div class="region-row__col__link"><a href="#" class="active">Краснодарский край</a></div>
+                            <div class="region-row__col__link"><a href="#">Красноярский край</a></div>
+                            <div class="region-row__col__link"><a href="#">Крым</a></div>
+                            <div class="region-row__col__link"><a href="#">Курганская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Курская область</a></div>
+
+                            <h3>Л</h3>
+                            <div class="region-row__col__link"><a href="#">Липецкая область</a></div>
+
+                            <h3>М</h3>
+                            <div class="region-row__col__link"><a href="#">Магаданская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Марий Эл</a></div>
+                            <div class="region-row__col__link"><a href="#">Мордовия</a></div>
+                            <div class="region-row__col__link"><a href="#">Мурманская область</a></div>
+                        	
+                        </div><!--.region-row__col-->
+                        
+                        
+                        <div class="col-xl-3 col-md-6 region-row__col">
+                        	
+                            <h3>Н</h3>
+                            <div class="region-row__col__link"><a href="#">Ненецкий АО</a></div>
+                            <div class="region-row__col__link"><a href="#">Нижегородская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Новгородская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Новосибирская область</a></div>
+
+                            <h3>О</h3>
+                            <div class="region-row__col__link"><a href="#">Омская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Оренбургская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Орловская область</a></div>
+
+                            <h3>П</h3>
+                            <div class="region-row__col__link"><a href="#">Пензенская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Пермский край</a></div>
+                            <div class="region-row__col__link"><a href="#">Приморский край</a></div>
+                            <div class="region-row__col__link"><a href="#">Псковская область</a></div>
+
+                            <h3>Р</h3>
+                            <div class="region-row__col__link"><a href="#">Ростовская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Рязанская область</a></div>
+
+                            <h3>С</h3>
+                            <div class="region-row__col__link"><a href="#">Самарская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Саратовская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Саха (Якутия)</a></div>
+                            <div class="region-row__col__link"><a href="#">Сахалинская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Свердловская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Севастополь</a></div>
+                            <div class="region-row__col__link"><a href="#">Северная Осетия-Алания</a></div>
+                            <div class="region-row__col__link"><a href="#">Смоленская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Ставропольский край</a></div>
+                            
+                        </div><!--.region-row__col-->
+                        
+                        
+                        <div class="col-xl-3 col-md-6 region-row__col">
+                        	
+                            <h3>Т</h3>
+                            <div class="region-row__col__link"><a href="#">Тамбовская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Татарстан</a></div>
+                            <div class="region-row__col__link"><a href="#">Тверская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Томская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Тульская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Тыва</a></div>
+                            <div class="region-row__col__link"><a href="#">Тюменская область</a></div>
+
+                            <h3>У</h3>
+                            <div class="region-row__col__link"><a href="#">Удмуртия</a></div>
+                            <div class="region-row__col__link"><a href="#">Ульяновская область</a></div>
+
+                            <h3>Х</h3>
+                            <div class="region-row__col__link"><a href="#">Хабаровский край</a></div>
+                            <div class="region-row__col__link"><a href="#">Хакасия</a></div>
+                            <div class="region-row__col__link"><a href="#">Ханты-Мансийский АО</a></div>
+
+                            <h3>Ч</h3>
+                            <div class="region-row__col__link"><a href="#">Челябинская область</a></div>
+                            <div class="region-row__col__link"><a href="#">Чечня</a></div>
+                            <div class="region-row__col__link"><a href="#">Чувашия</a></div>
+                            <div class="region-row__col__link"><a href="#">Чукотский АО</a></div>
+
+                            <h3>Я</h3>
+                            <div class="region-row__col__link"><a href="#">Ямало-Ненецкий АО</a></div>
+                            <div class="region-row__col__link"><a href="#">Ярославская область</a></div>
+                            
+                        </div><!--.region-row__col-->
+                        
+                        <div class="col-12 form-submit">
+                            <button type="button" class="btn btn-default">Сохранить</button>
+                        </div><!--.region-row__col-->
+                    </div><!--.region-row-->
+                    
+                </div><!--.modal-body-->
+                
+            </div>
+        </div><!--.modal-dialog-->
+    </div><!--.modal form-->
+    
+    
+	<div class="middle">
+		
+        <!-- InstanceBeginEditable name="Filtr_region" -->
+        <!-- InstanceEndEditable -->
+        
+        <div class="container-fluid">
+			<main class="content">
+				<!-- InstanceBeginEditable name="Content_region" -->
+                                
+                
+                <h1>Управление сотрудниками агентства</h1>
+                
+                
+                <div class="content__header">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <div class="nav btn-group btn-group-toggle">
+                                <a href="personal-employees.html" class="btn btn-secondary btn--sec-big">
+                                    Сотрудники
+                                </a>
+                                
+                                <a href="personal-employees-duty.html" class="btn btn-secondary btn--sec-big active">
+                                    Дежурство
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm align-right">
+                        </div>
+                    </div>
+                </div><!--.content__header-->
+                
+                                
+                
+                <div class="form-line">
+                	<form>
+                    	<div class="row">
+                            <div class="col-auto">
+                                <div class="text text--primary">
+                                    <input type="text" class="js--datepicker" value="30.09.2018" style="width: 150px">
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="select select--primary">
+                                    <select class="image-select">
+                                        <option value="1" data-img-src="content/team-person-1.jpg">Константинопольский Константин</option>
+                                        <option value="2" data-img-src="content/team-person-2.jpg">Денисов Сергей</option>
+                                        <option value="3" data-img-src="content/team-person-3.jpg">Алексеева Анастасия</option>
+                                        <option value="4" data-img-src="content/team-person-4.jpg">Андреев Денис</option>
+                                        <option value="5" data-img-src="content/team-person-5.jpg">Васильев Александр</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="select select--primary">
+                                    <select>
+                                        <option value="1">Горячая линия </option>
+                                        <option value="2">Чат</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="text text--primary">
+                                    <input type="text" class="js--timepicker" value="" placeholder="с" style="width: 110px">
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="text text--primary">
+                                    <input type="text" class="js--timepicker" value="" placeholder="до" style="width: 110px">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="btn btn-default btn--100">Добавить в дежурство</button>
+                            </div>
+                        </div>
+                    </form>
+                </div><!--.form-line-->
+                
+                
+                
+                
+                <div class="row duty-row">
+                	<div class="col-md col-md-8 duty-row__table">
+                    	<h3>Уже на дежурстве</h3>
+                        
+                        <div class="data-table table-responsive">
+                            <table id="dataTable">
+                                <thead>
+                                    <tr>
+                                        <th> Дата и время </th>
+                                        <th> </th>
+                                        <th> Сотрудник </th>
+                                        <th> Дежурства </th>
+                                        <th>  </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <!--span с таким форматом timestamp нужен для правильной сортировки-->
+                                            <!-- 1520192220 = 04.03.2018 19:37 -->
+                                        	<span class="hidden">1520192220</span>
+                                            <div class="duty-time">04.03.2018 <b>&middot;</b> 19:37 - 21:00</div>
+                                        </td>
+                                        <td class="td-photo-small"> <img src="content/team-person-1.jpg" width="55" class="img-rounded"> </td>
+                                        <td>
+                                            Константинопольский <br>
+                                            Константин
+                                        </td>
+                                        <td>
+                                            Горячая линия
+                                        </td>
+                                        <td class="td-actions">
+                                            <button type="button" class="btn btn-action" data-toggle="modal" data-target="#editDuty" title="Редактировать дежурство"><i class="fas fa-pencil-alt"></i></button>
+                                            <button type="button" class="btn btn-action" data-toggle="modal" data-target="#deleteDuty" title="Удалить дежурство"><i class="fas fa-times"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                        	<span class="hidden">1518432300</span>
+                                            <div class="duty-time">12.02.2018 <b>&middot;</b> 10:45 - 17:00</div>
+                                        </td>
+                                        <td class="td-photo-small"> <img src="content/team-person-3.jpg" width="55" class="img-rounded"> </td>
+                                        <td>
+                                            Алексеева <br>
+                                            Анастасия
+                                        </td>
+                                        <td>
+                                            Чат
+                                        </td>
+                                        <td class="td-actions">
+                                            <button type="button" class="btn btn-action" data-toggle="modal" data-target="#editDuty" title="Редактировать дежурство"><i class="fas fa-pencil-alt"></i></button>
+                                            <button type="button" class="btn btn-action" data-toggle="modal" data-target="#deleteDuty" title="Удалить дежурство"><i class="fas fa-times"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                        	<span class="hidden">1526509500</span>
+                                            <div class="duty-time">16.05.2018 <b>&middot;</b> 22:25 - 23:30</div>
+                                        </td>
+                                        <td class="td-photo-small"> <img src="content/team-person-4.jpg" width="55" class="img-rounded"> </td>
+                                        <td>
+                                            Андреев <br>
+                                            Денис
+                                        </td>
+                                        <td>
+                                            Горячая линия
+                                        </td>
+                                        <td class="td-actions">
+                                            <button type="button" class="btn btn-action" data-toggle="modal" data-target="#editDuty" title="Редактировать дежурство"><i class="fas fa-pencil-alt"></i></button>
+                                            <button type="button" class="btn btn-action" data-toggle="modal" data-target="#deleteDuty" title="Удалить дежурство"><i class="fas fa-times"></i></button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                        	<span class="hidden">1500764700</span>
+                                            <div class="duty-time">22.07.2017 <b>&middot;</b> 23:05 - 23:50</div>
+                                        </td>
+                                        <td class="td-photo-small"> <img src="content/team-person-5.jpg" width="55" class="img-rounded"> </td>
+                                        <td>
+                                            Васильева <br>
+                                            Александра
+                                        </td>
+                                        <td>
+                                            Горячая линия
+                                        </td>
+                                        <td class="td-actions">
+                                            <button type="button" class="btn btn-action" data-toggle="modal" data-target="#editDuty" title="Редактировать дежурство"><i class="fas fa-pencil-alt"></i></button>
+                                            <button type="button" class="btn btn-action" data-toggle="modal" data-target="#deleteDuty" title="Удалить дежурство"><i class="fas fa-times"></i></button>
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div><!--.data-table-->
+                    </div><!--.duty-row__table-->
+                    
+                    
+                    <div class="col-md col-md-4 duty-row__calendar">
+                    	<h3>
+                        	Нагрузка на 
+                            <div class="select select--primary select--inline">
+                                <select>
+                                    <option value="1" selected>август 2018</option>
+                                    <option value="2">сентябрь 2018</option>
+                                    <option value="3">октябрь 2018</option>
+                                </select>
+                            </div>
+                        </h3>
+                        
+                        <div class="calendar-legend">
+                        	<span class="calendar-line calendar-line--hotline" style="width: 30px"></span>
+                            <span class="calendar-legend-title">Горячая линия</span>
+                            <span class="calendar-line calendar-line--chat" style="width: 30px"></span>
+                            <span class="calendar-legend-title">Чат</span>
+                        </div>
+                        
+                        <table class="calendar-table">
+                        	<thead>
+                            	<tr>
+                                	<th></th>
+                                    <th>
+                                    	<div class="row calendar-legend-time">
+                                        	<div class="col">00:00</div>
+                                            <div class="col align-center">12:00</div>
+                                            <div class="col align-right">24:00</div>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            	<tr>
+                                	<td class="calendar-td-day">01</td>
+                                    <td class="calendar-td-hours">
+                                    	<div class="calendar-line-day">
+                                        	<span class="calendar-line calendar-line--hotline" style="width: 50%; margin-left: 25%" data-duty-type="Горячая линия" data-duty-name="Константинопольский Константин" data-duty-photo="content/team-person-1.jpg" data-duty-time="6:00 - 18:00"></span>
+                                        </div>
+                                        <div class="calendar-line-day">
+                                        	<span class="calendar-line calendar-line--chat" style="width: 55%; margin-left: 30%;" data-duty-type="Чат" data-duty-name="Алексеева Анастасия" data-duty-photo="content/team-person-3.jpg" data-duty-time="7:12 - 20:24"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                	<td class="calendar-td-day">02</td>
+                                    <td class="calendar-td-hours">
+                                    	<div class="calendar-line-day">
+                                        	<span class="calendar-line calendar-line--hotline" style="width: 60%; margin-left: 20%" data-duty-type="Горячая линия" data-duty-name="Андреев Денис" data-duty-photo="content/team-person-4.jpg" data-duty-time="4:48 - 19:12"></span>
+                                        </div>
+                                        <div class="calendar-line-day">
+                                        	<span class="calendar-line calendar-line--chat" style="width: 50%; margin-left: 35%;" data-duty-type="Чат" data-duty-name="Васильева Александра" data-duty-photo="content/team-person-5.jpg" data-duty-time="8:24 - 20:24"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                	<td class="calendar-td-day">03</td>
+                                    <td class="calendar-td-hours">
+                                    	<div class="calendar-line-day">
+                                        	<span class="calendar-line calendar-line--hotline" style="width: 40%; margin-left: 15%" data-duty-type="Горячая линия" data-duty-name="Алексеева Анастасия" data-duty-photo="content/team-person-3.jpg" data-duty-time="3:36 - 13:12"></span>
+                                            <span class="calendar-line calendar-line--hotline" style="width: 30%; margin-left: 60%" data-duty-type="Горячая линия" data-duty-name="Константинопольский Константин" data-duty-photo="content/team-person-1.jpg" data-duty-time="14:24 - 21:36"></span>
+                                        </div>
+                                        <div class="calendar-line-day">
+                                        	<span class="calendar-line calendar-line--chat" style="width: 35%; margin-left: 55%;" data-duty-type="Чат" data-duty-name="Андреев Денис" data-duty-photo="content/team-person-4.jpg" data-duty-time="13:12 - 21:36"></span>
+                                            <span class="calendar-line calendar-line--chat" style="width: 10%; margin-left: 30%;" data-duty-type="Чат" data-duty-name="Васильева Александра" data-duty-photo="content/team-person-5.jpg" data-duty-time="7:12 - 9:36"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                	<td class="calendar-td-day">04</td>
+                                    <td class="calendar-td-hours">
+                                    	<div class="calendar-line-day">
+                                        	
+                                        </div>
+                                        <div class="calendar-line-day">
+                                        	
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                	<td class="calendar-td-day">...</td>
+                                    <td class="calendar-td-hours">
+                                    	<div class="calendar-line-day">
+                                        	
+                                        </div>
+                                        <div class="calendar-line-day">
+                                        	
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                	<td class="calendar-td-day">29</td>
+                                    <td class="calendar-td-hours">
+                                    	<div class="calendar-line-day">
+                                        	
+                                        </div>
+                                        <div class="calendar-line-day">
+                                        	
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                	<td class="calendar-td-day">30</td>
+                                    <td class="calendar-td-hours">
+                                    	<div class="calendar-line-day">
+                                        	<span class="calendar-line calendar-line--hotline" style="width: 60%; margin-left: 20%" data-duty-type="Горячая линия" data-duty-name="Андреев Денис" data-duty-photo="content/team-person-4.jpg" data-duty-time="4:48 - 19:12"></span>
+                                        </div>
+                                        <div class="calendar-line-day">
+                                        	<span class="calendar-line calendar-line--chat" style="width: 50%; margin-left: 35%;" data-duty-type="Чат" data-duty-name="Васильева Александра" data-duty-photo="content/team-person-5.jpg" data-duty-time="8:24 - 20:24"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                	<td class="calendar-td-day">31</td>
+                                    <td class="calendar-td-hours">
+                                    	<div class="calendar-line-day">
+                                        	<span class="calendar-line calendar-line--hotline" style="width: 50%; margin-left: 25%" data-duty-type="Горячая линия" data-duty-name="Константинопольский Константин" data-duty-photo="content/team-person-1.jpg" data-duty-time="6:00 - 18:00"></span>
+                                        </div>
+                                        <div class="calendar-line-day">
+                                        	<span class="calendar-line calendar-line--chat" style="width: 55%; margin-left: 30%;" data-duty-type="Чат" data-duty-name="Алексеева Анастасия" data-duty-photo="content/team-person-3.jpg" data-duty-time="7:12 - 20:24"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><!--.duty-row__calendar-->
+                    
+                </div><!--.duty-row-->
+                
+                
+                
+                <div class="modal form fade form--small" id="editDuty" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Закрыть"><i class="fas fa-times"></i></button>
+                                <h2>Изменить дежурство</h2>
+                                <form action="" method="post">
+                                	<div class="row form-elements">
+                                        <div class="col-12">
+                                            <div class="select select--primary">
+                                                <select class="image-select">
+                                                    <option value="1" data-img-src="content/team-person-1.jpg">Константинопольский Константин</option>
+                                                    <option value="2" data-img-src="content/team-person-2.jpg">Денисов Сергей</option>
+                                                    <option value="3" data-img-src="content/team-person-3.jpg">Алексеева Анастасия</option>
+                                                    <option value="4" data-img-src="content/team-person-4.jpg">Андреев Денис</option>
+                                                    <option value="5" data-img-src="content/team-person-5.jpg">Васильев Александр</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-12">
+                                            <div class="text text--primary">
+                                                <input type="text" class="js--datepicker" value="30.09.2018">
+                                            </div>
+                                        </div>
+                                                                                
+                                        <div class="col-12">
+                                            <div class="select select--primary">
+                                                <select>
+                                                    <option value="1">Горячая линия </option>
+                                                    <option value="2">Чат</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="text text--primary">
+                                                <input type="text" class="js--timepicker" value="" placeholder="с">
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="text text--primary">
+                                                <input type="text" class="js--timepicker" value="" placeholder="до">
+                                            </div>
+                                        </div>
+                                    </div><!--.row form-elements-->
+                                	<button type="submit" class="btn btn-default">Обновить</button>
+                                </form>
+                                
+                            </div><!--.modal-body-->
+                        </div>
+                    </div><!--.modal-dialog-->
+                </div><!--.modal form-->
+                
+                
+                
+                <div class="modal form fade form--small" id="deleteDuty" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <h2>Вы хотите убрать дежурство данного сотрудника?</h2>
+                                
+                                <div class="form-submit">
+                                    <button type="button" class="btn btn-default btn--white" data-dismiss="modal">Отмена</button>
+                                    <button type="button" class="btn btn-default">Удалить</button>
+                                </div>
+                            </div><!--.modal-body-->
+                        </div>
+                    </div><!--.modal-dialog-->
+                </div><!--.modal form-->
+                
+                
+                <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script> 
+                <script>
+                $(document).ready(function() { 
+					App.DutyPopovers();
+					
+					$("#dataTable").tablesorter({
+						headers: { // отчет колонок начинается с 0. Отключаем сортировку в колонках с данными индексами
+							1: {
+								sorter: false
+							},
+							4: {
+								sorter: false
+							}
+						}
+					}); 
+										
+				}); 
+                </script>
+                                
+                <!-- InstanceEndEditable -->
+			</main><!-- .content -->
+		</div><!-- .container-fluid-->
+
+	</div><!-- .middle-->
+
+</div><!-- .wrapper -->
+
+
+
+<footer class="footer">
+	
+    <div class="footer__top">
+    	<div class="container-fluid">
+            <div class="row">
+                <div class="col-sm col-sm-4 footer__top-menu">
+                    <h5>Жилая</h5>
+                    <ul class="not-list">
+                        <li> <a href="catalog-resident.html">Квартира</a> </li>
+                        <li> <a href="catalog-resident.html">Доля в квартире</a> </li>
+                        <li> <a href="catalog-resident.html">Комната</a> </li>
+                        <li> <a href="catalog-resident.html">Дом</a> </li>
+                        <li> <a href="catalog-resident.html">Часть дома</a> </li>
+                        <li> <a href="catalog-resident.html">Дача</a> </li>
+                        <li> <a href="catalog-resident.html">Таунхаус</a> </li>
+                        <li> <a href="catalog-resident.html">Коттедж</a> </li>
+                        <li> <a href="catalog-resident.html">Участок</a> </li>
+                    </ul>
+                </div>
+                
+                <div class="col-sm col-sm-4 footer__top-menu">
+                    <h5>Коммерческая</h5>
+                    <ul class="not-list">
+                        <li> <a href="catalog-commercial.html">Гостиница</a> </li>
+                        <li> <a href="catalog-commercial.html">Готовый бизнес</a> </li>
+                        <li> <a href="catalog-commercial.html">Здание</a> </li>
+                        <li> <a href="catalog-commercial.html">Офисное помещение</a> </li>
+                        <li> <a href="catalog-commercial.html">Производство</a> </li>
+                        <li> <a href="catalog-commercial.html">Свободное назначение</a> </li>
+                        <li> <a href="catalog-commercial.html">Склад</a> </li>
+                        <li> <a href="catalog-commercial.html">Торговое</a> </li>
+                        <li> <a href="catalog-commercial.html">Участок</a> </li>
+                    </ul>
+                </div>
+                
+                <div class="col-sm col-sm-4 footer__top-menu">
+                    <h5>Гаражи и машиноместа</h5>
+                    <ul class="not-list">
+                        <li> <a href="catalog-garages.html">Гараж</a> </li>
+                        <li> <a href="catalog-garages.html">Машиноместо</a> </li>
+                    </ul>
+                </div>
+            </div><!--.row-->
+        </div><!--.container-fluid-->
+    </div><!--.footer__top-->
+    
+    <div class="footer__bottom">
+    	<div class="container-fluid">
+        	<div class="footer__bottom-links">
+            	<div class="row align-items-center">
+                	<div class="col-sm col-sm-3 footer__bottom-copyright">
+                    	<span class="nowrap">&copy; 2018 ProNedvi.</span>
+                        <span class="nowrap">Все права защищены</span>
+                    </div>
+                    
+                    <div class="col-sm col-sm-6 footer__bottom-agreement">
+                    	<a href="privacy.html">Политика пресональных данных</a>
+                        <a href="agreement.html">Пользовательствое соглашение</a>
+                    </div>
+                    
+                    <div class="col-sm col-sm-3 footer__bottom-dev">
+                    	Дизайн <a href="#" rel="nofollow"><img src="img/logo-design.png" alt="Дизайн Creative" role="img"></a>
+                    </div>
+                </div><!--.row-->
+            </div><!--.footer__bottom-links-->
+        </div><!--.container-fluid-->
+    </div><!--.footer__bottom-->
+    
+</footer><!-- .footer -->
+
+
+
+
+
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.sidr.min.js"></script>
+<script src="js/jquery.touchSwipe.min.js"></script>
+<script src="js/imask.min.js"></script>
+<script src="js/bootstrap-multiselect.js"></script>
+<script src="js/fotorama.js"></script>
+<script src="js/chosen.jquery.min.js"></script>
+<script src="js/chosenImage.jquery.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/flatpickr.min.js"></script>
+<script src="js/flatpickr-ru.js"></script>
+<script src="js/stacktable.js"></script>
+<script src="js/main.js"></script>
+<script src="js/dev.js"></script>
+
+</body>
+<!-- InstanceEnd --></html>

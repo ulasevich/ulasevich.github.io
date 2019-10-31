@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	
+	<title>Заказать стенд &#8212; Презент-М</title>
+	
+    <meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen, projection" />
+        
+    <!--[if IE]> 
+    <link href="css/style_ie.css" rel= "stylesheet" media="all" type="text/css" />
+    <![endif]-->
+    <!-- styles for IE<9 -->
+    
+    <!--[if IE 6]> 
+    <link href="css/style_ie6.css" rel= "stylesheet" media="all" type="text/css" /> 
+    <script type="text/javascript" src="script/ie6fix.js"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('.f-bread-crumbs, .h-logo-address, .h-phone, .menu-left a, .menu-top a, .contact-link');
+    </script>
+    <![endif]-->
+    <!-- для IE6 -->
+	
+	<script src="script/jquery-1.7.1.min.js"></script>
+    
+	
+	<link href="css/cusel.css" rel="stylesheet" type="text/css" />
+	<script src="script/cusel-min-2.5.js"></script>
+    <script src="script/jquery.mousewheel.js"></script>
+    
+    <script type="text/javascript">
+		
+		$(document).ready(function() {
+		
+			//это нужно, чтобы в будущем выводить предупреждения про покупную мебель
+			$(".o-purchased").each(function(index) {
+				$(this).children("option:last").val("buy");
+			});
+			
+			//add style to select
+			var params = {
+				changedEl: "select",
+				visRows: 7
+			}
+			cuSel(params);
+			
+			
+			//hide or show some options
+			var select_id = "";
+			$(".yes-or-not").change( function() {
+				select_id = $(this).attr("id").slice(11);
+				if ( $("#" + select_id).val() == 0 ) { $(this).siblings("div").css("display", "none"); }
+				if ( $("#" + select_id).val() == 1 ) { $(this).siblings("div").css("display", "block"); }
+			});
+			
+			//add more options
+			var new_select_count = 0;
+			$(".o-add-link").live("click", function() {
+			    $(this).prev(".o-additional").clone().insertBefore( $(this) ).find( $("* [id]") ).attr("id", "new_select_"+new_select_count);
+				new_select_count++;
+				return false;
+			});
+						
+			//если выбрана опция "покупная мебель" выводим подсказку
+			$(".o-purchased").live("change", function() {
+			    if ( $("#" + $(this).attr("id") + " :last").val() == "buy" ) 
+					{ $(this).siblings(".o-postscript").css("display", "block"); }
+				else { $(this).siblings(".o-postscript").css("display", "none"); }
+			});
+			
+			// меняем опции при выборе "витрины"
+			$(".o-showcase").change( function() {
+				select_id = $(this).attr("id").slice(11);
+				$(this).siblings("div").css("display", "none");
+				$( ".o-showcase-" + $("#" + select_id).val() ).css("display", "block");
+			});
+			
+		});
+		
+    </script>
+    
+	
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<div class="w-inside">
+    
+        <header class="header">
+            <nav class="menu-top">
+                
+                <a href="index.html">Главная</a>
+                <a href="about.html">О компании</a>
+                <a href="work.html">Наши работы</a>
+                <a href="awards.html">Награды и отзывы</a>
+                <a href="order.html" class="active">Заказать стенд</a>
+                <a href="contacts.html">Контакты</a>
+                           
+            </nav>
+            <div class="clear"></div>
+            <div class="h-lang">
+                <a href="#" class="active">RU</a> <a href="#">EN</a>
+            </div>
+            <div class="h-logo-address">
+                Москва, ул. Коцюбитского, 4<br>
+                <big class="h-phone"><span class="phone-code">(495)</span> 221 65 57</big>
+            </div>
+       </header>
+        <!-- .header-->
+    
+		
+            
+        <section class="middle m-other clearfix">
+            
+            <div class="container">
+                <div class="content">
+					
+                    
+                    <a href="#" class="back-link">Вернуться</a>
+                    
+                    <h1>Заказать стенд</h1>
+                    
+                    <p class="p-big">Данный раздел включает в себя набор элементарных вопросов, которые дадут нам достаточно информации для предварительной оценки и дальнейшей работы.</p>
+                    
+                    <form method="post" action="" class="order-form">
+                    
+                        <h3>Информация о Заказчике</h3>
+                        
+                        <table>
+                            <tr>
+                                <td class="first-td"><b class="required">*</b> Компания:</td>
+                                <td><input type="text" name="" value="" class="o-text o-t-largest"></td>
+                            </tr>
+                            <tr>
+                                <td class="first-td"><b class="required">*</b> Контактное лицо:</td>
+                                <td><input type="text" name="" value="" class="o-text o-t-largest"></td>
+                            </tr>
+                            <tr>
+                                <td class="first-td"><b class="required">*</b> Телефон/факс:</td>
+                                <td><input type="text" name="" value="" class="o-text o-t-middle"></td>
+                            </tr>
+                            <tr>
+                                <td class="first-td"><b class="required">*</b> E-mail:</td>
+                                <td><input type="text" name="" value="" class="o-text o-t-bigger"></td>
+                            </tr>
+                            <tr>
+                                <td class="first-td">Сайт:</td>
+                                <td><input type="text" name="" value="" class="o-text o-t-bigger"></td>
+                            </tr>
+                            <tr>
+                                <td class="first-td"><b class="required">*</b> Название выставки:</td>
+                                <td><input type="text" name="" value="" class="o-text o-t-largest"></td>
+                            </tr>
+                            <tr>
+                                <td class="first-td"><b class="required">*</b> Время проведения:</td>
+                                <td><input type="text" name="" value="" class="o-text o-t-middle"></td>
+                            </tr>
+                            <tr>
+                                <td class="first-td">Прикрепить планировку зала:</td>
+                                <td>
+                                    <!--[if !(IE 6)]><!-->
+                                    <div class="file-input-box">
+                                        <input id="room-plan" class="file-input-text" readonly="readonly" />
+                                        <input class="file-input" name="" type="file" onChange="document.getElementById('room-plan').value=this.value;" />
+                                    </div>
+                                    <!--<![endif]-->
+                                    <!--[if IE 6]> <input type="file" name=""> <![endif]-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first-td">Номер места на плане:</td>
+                                <td> <input type="text" name="" value="" class="o-text o-t-middle"> </td>
+                            </tr>
+                        </table>
+                        
+                        
+                        <h3>Требования к стенду</h3>
+                        
+                        <table>
+                            <tr>
+                                <td class="first-td">Напольное покрытие:</td>
+                                <td>
+                                    <select>
+                                        <option value="0">Выберите материал</option>
+                                        <option value="1">ковролин</option>
+                                        <option value="2">ламинат</option>
+                                        <option value="3">другое</option>
+                                    </select>
+                                </td>
+                                <td width="186">
+                                    <select>
+                                        <option value="0">Выберите настил</option>
+                                        <option value="1">настил 32мм</option>
+                                        <option value="2">подиум 100мм</option>
+                                        <option value="3">подиум 100мм+подсветка по краю</option>
+                                        <option value="4">другое</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first-td">Этажность:</td>
+                                <td colspan="2">
+                                    <select>
+                                        <option value="0">Выберите</option>
+                                        <option value="1">1 этаж</option>
+                                        <option value="2">2 этажа</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first-td">Переговорные комнаты:</td>
+                                <td colspan="2">
+                                    <select class="yes-or-not">
+                                        <option value="0">Нет</option>
+                                        <option value="1">Да</option>
+                                    </select>
+                                    <div style="display:none;">
+                                        <div class="o-additional">
+                                            Кол-во, шт.: 
+                                            <input type="text" name="" value="" class="o-text o-t-small o-margin-right" maxlength="4">
+                                            примерная площадь, кв.м.: 
+                                            <input type="text" name="" value="" class="o-text o-t-small" maxlength="4">
+                                        </div>                                            
+                                    </div>
+                                    <!-- style="display:none;" -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first-td">Подсобные помещения:</td>
+                                <td colspan="2">
+                                    <select class="yes-or-not">
+                                        <option value="0">Нет</option>
+                                        <option value="1">Да</option>
+                                    </select>
+                                    <div style="display:none;">
+                                        <div class="o-additional">
+                                            Кол-во, шт.: 
+                                            <input type="text" name="" value="" class="o-text o-t-small o-margin-right" maxlength="4">
+                                            примерная площадь, кв.м.: 
+                                            <input type="text" name="" value="" class="o-text o-t-small" maxlength="4">
+                                        </div>                                            
+                                    </div>
+                                    <!-- style="display:none;" -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first-td">Дополнительные пожелания:</td>
+                                <td colspan="2"> <textarea class="o-text">стенд открытый/закрытый;</textarea> </td>
+                            </tr>
+                        </table>
+                        
+                        
+                        <h3>Наполнение стенда</h3>
+                        
+                        <table>
+                            <tr>
+                                <td class="first-td">Информационные стойки:</td>
+                                <td>
+                                    <select class="yes-or-not">
+                                        <option value="0">Нет</option>
+                                        <option value="1">Да</option>
+                                    </select>
+                                    
+                                    <div style="display:none;">
+                                    
+                                        <div class="o-additional">
+                                            <select class="select-big o-margin-bottom">
+                                                <option value="1">Стойка из конструктива</option>
+                                                <option value="2">Эксклюзивная стойка (МДФ,ДСП,стекло, покраска)</option>
+                                            </select><br>
+                                            Кол-во, шт.: 
+                                            <input type="text" name="" value="" class="o-text o-t-small o-margin-right" maxlength="4">
+                                            Кол-во чел. за стойкой: 
+                                            <input type="text" name="" value="" class="o-text o-t-small" maxlength="4">
+                                        </div>
+                                                                                
+                                        <a href="#" class="o-add-link">Добавить еще</a>
+                                    
+                                    </div>
+                                    <!-- style="display:none;" -->
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first-td">Витрины:</td>
+                                <td>
+                                    <select class="yes-or-not">
+                                        <option value="0">Нет</option>
+                                        <option value="1">Да</option>
+                                    </select>
+                                    
+                                    <div style="display:none;">
+                                    
+                                        <div class="o-additional">
+                                            <select class="select-big o-margin-bottom o-showcase">
+                                                <option value="1">Витрина из конструктива</option>
+                                                <option value="2">Эксклюзивная витрина (МДФ, ДСП, стекло, покраска)</option>
+                                                <option value="3">Покупная витрина</option>
+                                            </select>
+                                            <div class="o-showcase-1">
+                                                <select>
+                                                    <option value="1">Высокая</option>
+                                                    <option value="2">Низкая</option>
+                                                </select>
+                                                <select>
+                                                    <option value="1">С подсветкой</option>
+                                                    <option value="2">Без подсветки</option>
+                                                </select>
+                                                <select>
+                                                    <option value="1">Прямоугольная</option>
+                                                    <option value="2">Квадратная</option>
+                                                    <option value="3">Радиусная</option>
+                                                </select>
+                                            </div>
+                                            <div class="o-showcase-2" style="display:none;">
+                                                Кол-во, шт.: 
+                                                <input type="text" name="" value="" class="o-text o-t-small o-margin-right o-margin-bottom" maxlength="4"><br>
+                                                Площадь, кв.м.: 
+                                                <input type="text" name="" value="" class="o-text o-t-small o-margin-right o-margin-bottom" maxlength="4"><br>
+                                                Количество полок, шт.: 
+                                                <input type="text" name="" value="" class="o-text o-t-small" maxlength="4">
+                                            </div>
+                                            <div class="o-showcase-3" style="display:none;">
+                                                Кол-во, шт.: 
+                                                <input type="text" name="" value="" class="o-text o-t-small o-margin-right" maxlength="4">
+                                                <div class="o-postscript" style="display:block;">Покупные витрины обсуждаются с заказчиком</div>
+                                            </div>
+                                            
+                                        </div>
+                                        <!--.o-additional-->
+                                    </div>
+                                    <!-- style="display:none;" -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first-td">Полки:</td>
+                                <td>
+                                    <select class="yes-or-not">
+                                        <option value="0">Нет</option>
+                                        <option value="1">Да</option>
+                                    </select>
+                                    
+                                    <div style="display:none;">
+                                        
+                                        <div class="o-additional">
+                                            <select class="select-big o-purchased">
+                                                <option value="1">Стандартная полка 1000мм х 300мм</option>
+                                                <option value="2">Эксклюзивная полка (МДФ,ДСП,стекло, покраска)</option>
+                                            </select>
+                                            <div class="o-a-count">
+                                                Кол-во, шт.: 
+                                                <input type="text" name="" value="" class="o-text o-t-small" maxlength="4"> 
+                                            </div>
+                                            <div class="o-postscript">полки обсуждаются с заказчиком</div>
+                                        </div>
+                                        <!--.o-additional-->
+                                        <a href="#" class="o-add-link">Добавить еще</a>
+                                        
+                                    </div>
+                                    <!-- style="display:none;" -->
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first-td">Стеллажи:</td>
+                                <td>
+                                    <select class="yes-or-not">
+                                        <option value="0">Нет</option>
+                                        <option value="1">Да</option>
+                                    </select>
+                                    
+                                    <div style="display:none;">
+                                        
+                                        <div class="o-additional">
+                                            <select class="select-big">
+                                                <option value="1">Стеллаж из пяти полок 300*1000*2500</option>
+                                                <option value="2">Стеллаж из пяти полок 500*1000*2500</option>
+                                                <option value="3">Стеллаж из пяти полок 500*500*2500</option>
+                                                <option value="4">Стеллаж из пяти полок 1000*1000*2500</option>
+                                            </select>
+                                            <div class="o-a-count">
+                                                Кол-во, шт.: 
+                                                <input type="text" name="" value="" class="o-text o-t-small" maxlength="4"> 
+                                            </div>
+                                            <div class="o-postscript">полки обсуждаются с заказчиком</div>
+                                        </div>
+                                        <!--.o-additional-->
+                                        <a href="#" class="o-add-link">Добавить еще</a>
+                                        
+                                    </div>
+                                    <!-- style="display:none;" -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first-td">Оборудование:</td>
+                                <td>
+                                    <select class="yes-or-not">
+                                        <option value="0">Нет</option>
+                                        <option value="1">Да</option>
+                                    </select>
+                                    
+                                    <div style="display:none;">
+                                        
+                                        <div class="o-additional">
+                                            <select class="select-big">
+                                                <option value="1">Монитор (samsung 19")</option>
+                                                <option value="2">Плазменная панель 42"</option>
+                                                <option value="3">Плазменная панель 50"</option>
+                                                <option value="4">Плазменная панель 60"</option>
+                                                <option value="5">DVD</option>
+                                            </select>
+                                            <div class="o-a-count">
+                                                Кол-во, шт.: 
+                                                <input type="text" name="" value="" class="o-text o-t-small" maxlength="4"> 
+                                            </div>
+                                            <div class="o-postscript">полки обсуждаются с заказчиком</div>
+                                        </div>
+                                        <!--.o-additional-->
+                                        <a href="#" class="o-add-link">Добавить еще</a>
+                                        
+                                    </div>
+                                    <!-- style="display:none;" -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first-td">Дополнительные пожелания:</td>
+                                <td> <textarea class="o-text"></textarea> </td>
+                            </tr>
+                        </table>
+                        
+                        
+                        <h3>Наполнение мебелью помещений или открытых зон</h3>
+                        
+                        <table>
+                            <tr>
+                                <td class="first-td">Закрытая переговорная:</td>
+                                <td colspan="2">
+                                    <select class="yes-or-not">
+                                        <option value="0">Нет</option>
+                                        <option value="1">Да</option>
+                                    </select>
+                                    
+                                    <div style="display:none;">
+                                    
+                                        <div class="o-additional">
+                                            <select class="select-big o-purchased">
+                                                <option value="1">Стол стеклянный d800</option>
+                                                <option value="2">Стол 800*800</option>
+                                                <option value="3">Стол 700х1100</option>
+                                                <option value="4">Стол d700</option>
+                                                <option value="5">Стол барный d800</option>
+                                                <option value="6">Стол стеклянный журнальный (овальный) 600*1000</option>
+                                                <option value="7">Покупной стол</option>
+                                            </select>
+                                            <div class="o-a-count">
+                                                Кол-во, шт.: 
+                                                <input type="text" name="" value="" class="o-text o-t-small" maxlength="4"> 
+                                            </div>
+                                            <div class="o-postscript">Покупные столы обсуждаются с заказчиком</div>
+                                        </div>
+                                        <!--.o-additional-->
+                                        <a href="#" class="o-add-link">Добавить еще</a>
+                                        
+                                        <div class="o-additional">
+                                            <select class="select-big o-purchased">
+                                                <option value="1">Стул мягкий</option>
+                                                <option value="2">Стул «Икеа»</option>
+                                                <option value="3">Стул барный</option>
+                                                <option value="4">Кресло одноместное</option>
+                                                <option value="5">Диван двухмесный</option>
+                                                <option value="6">Покупной стул</option>
+                                            </select>
+                                            <div class="o-a-count">
+                                                Кол-во, шт.: 
+                                                <input type="text" name="" value="" class="o-text o-t-small" maxlength="4"> 
+                                            </div>
+                                            <div class="o-postscript">Покупные стулья обсуждаются с заказчиком</div>
+                                        </div>
+                                        <!--.o-additional-->
+                                        <a href="#" class="o-add-link">Добавить еще</a>
+                                    
+                                    </div>
+                                    <!-- style="display:none;" -->
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first-td">Открытая переговорная:</td>
+                                <td colspan="2">
+                                    <select class="yes-or-not">
+                                        <option value="0">Нет</option>
+                                        <option value="1">Да</option>
+                                    </select>
+                                    
+                                    <div style="display:none;">
+                                    
+                                        <div class="o-additional">
+                                            <select class="select-big o-purchased">
+                                                <option value="1">Стол стеклянный d800</option>
+                                                <option value="2">Стол 800*800</option>
+                                                <option value="3">Стол 700х1100</option>
+                                                <option value="4">Стол d700</option>
+                                                <option value="5">Стол барный d800</option>
+                                                <option value="6">Стол стеклянный журнальный (овальный) 600*1000</option>
+                                                <option value="7">Покупной стол</option>
+                                            </select>
+                                            <div class="o-a-count">
+                                                Кол-во, шт.: 
+                                                <input type="text" name="" value="" class="o-text o-t-small" maxlength="4"> 
+                                            </div>
+                                            <div class="o-postscript">Покупные столы обсуждаются с заказчиком</div>
+                                        </div>
+                                        <!--.o-additional-->
+                                        <a href="#" class="o-add-link">Добавить еще</a>
+                                        
+                                        <div class="o-additional">
+                                            <select class="select-big o-purchased">
+                                                <option value="1">Стул мягкий</option>
+                                                <option value="2">Стул «Икеа»</option>
+                                                <option value="3">Стул барный</option>
+                                                <option value="4">Кресло одноместное</option>
+                                                <option value="5">Диван двухмесный</option>
+                                                <option value="6">Покупной стул</option>
+                                            </select>
+                                            <div class="o-a-count">
+                                                Кол-во, шт.: 
+                                                <input type="text" name="" value="" class="o-text o-t-small" maxlength="4"> 
+                                            </div>
+                                            <div class="o-postscript">Покупные стулья обсуждаются с заказчиком</div>
+                                        </div>
+                                        <!--.o-additional-->
+                                        <a href="#" class="o-add-link">Добавить еще</a>
+                                    
+                                    </div>
+                                    <!-- style="display:none;" -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first-td">Кухня:</td>
+                                <td colspan="2">
+                                    <select class="yes-or-not">
+                                        <option value="0">Нет</option>
+                                        <option value="1">Да</option>
+                                    </select>
+                                    
+                                    <div style="display:none;">
+                                    
+                                        <div class="o-additional">
+                                            <select class="select-big o-purchased">
+                                                <option value="1">Стол стеклянный d800</option>
+                                                <option value="2">Стол 800*800</option>
+                                                <option value="3">Стол 700х1100</option>
+                                                <option value="4">Стол d700</option>
+                                                <option value="5">Стол барный d800</option>
+                                                <option value="6">Стол стеклянный журнальный (овальный) 600*1000</option>
+                                                <option value="7">Покупной стол</option>
+                                            </select>
+                                            <div class="o-a-count">
+                                                Кол-во, шт.: 
+                                                <input type="text" name="" value="" class="o-text o-t-small" maxlength="4"> 
+                                            </div>
+                                            <div class="o-postscript">Покупные столы обсуждаются с заказчиком</div>
+                                        </div>
+                                        <!--.o-additional-->
+                                        <a href="#" class="o-add-link">Добавить еще</a>
+                                        
+                                        <div class="o-additional">
+                                            <select class="select-big o-purchased">
+                                                <option value="1">Стул мягкий</option>
+                                                <option value="2">Стул «Икеа»</option>
+                                                <option value="3">Стул барный</option>
+                                                <option value="4">Кресло одноместное</option>
+                                                <option value="5">Диван двухмесный</option>
+                                                <option value="6">Покупной стул</option>
+                                            </select>
+                                            <div class="o-a-count">
+                                                Кол-во, шт.: 
+                                                <input type="text" name="" value="" class="o-text o-t-small" maxlength="4"> 
+                                            </div>
+                                            <div class="o-postscript">Покупные стулья обсуждаются с заказчиком</div>
+                                        </div>
+                                        <!--.o-additional-->
+                                        <a href="#" class="o-add-link">Добавить еще</a>
+                                    
+                                    </div>
+                                    <!-- style="display:none;" -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first-td">Подсобное помещение:</td>
+                                <td colspan="2">
+                                    <select class="yes-or-not">
+                                        <option value="0">Нет</option>
+                                        <option value="1">Да</option>
+                                    </select>
+                                    
+                                    <div style="display:none;">
+                                    
+                                        <div class="o-additional">
+                                            <select class="select-big o-purchased">
+                                                <option value="1">Стол стеклянный d800</option>
+                                                <option value="2">Стол 800*800</option>
+                                                <option value="3">Стол 700х1100</option>
+                                                <option value="4">Стол d700</option>
+                                                <option value="5">Стол барный d800</option>
+                                                <option value="6">Стол стеклянный журнальный (овальный) 600*1000</option>
+                                                <option value="7">Покупной стол</option>
+                                            </select>
+                                            <div class="o-a-count">
+                                                Кол-во, шт.: 
+                                                <input type="text" name="" value="" class="o-text o-t-small" maxlength="4"> 
+                                            </div>
+                                            <div class="o-postscript">Покупные столы обсуждаются с заказчиком</div>
+                                        </div>
+                                        <!--.o-additional-->
+                                        <a href="#" class="o-add-link">Добавить еще</a>
+                                        
+                                        <div class="o-additional">
+                                            <select class="select-big o-purchased">
+                                                <option value="1">Стул мягкий</option>
+                                                <option value="2">Стул «Икеа»</option>
+                                                <option value="3">Стул барный</option>
+                                                <option value="4">Кресло одноместное</option>
+                                                <option value="5">Диван двухмесный</option>
+                                                <option value="6">Покупной стул</option>
+                                            </select>
+                                            <div class="o-a-count">
+                                                Кол-во, шт.: 
+                                                <input type="text" name="" value="" class="o-text o-t-small" maxlength="4"> 
+                                            </div>
+                                            <div class="o-postscript">Покупные стулья обсуждаются с заказчиком</div>
+                                        </div>
+                                        <!--.o-additional-->
+                                        <a href="#" class="o-add-link">Добавить еще</a>
+                                    
+                                    </div>
+                                    <!-- style="display:none;" -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first-td">Дополнительные пожелания:</td>
+                                <td colspan="2"> <textarea class="o-text"></textarea> </td>
+                            </tr>
+                        </table>
+                        
+                        
+                        <h3>Художественное оформление</h3>
+                        
+                        <table>
+                            <tr>
+                                <td class="first-td">Логотип:</td>
+                                <td>
+                                    <!--[if !(IE 6)]><!-->
+                                    <div class="file-input-box">
+                                        <input id="logo-file" class="file-input-text" readonly="readonly" value='"*.jpg"; "*.cdr"; "*ai"; ".pdf"; "*.rar"; "*.zip"' />
+                                        <input class="file-input" name="" type="file" onChange="document.getElementById('logo-file').value=this.value;" />
+                                    </div>
+                                    <!--<![endif]-->
+                                    <!--[if IE 6]> <input type="file" name=""> <![endif]-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first-td">Слоган, надписи:</td>
+                                <td> <input type="text" name="" value="" class="o-text o-t-largest"> </td>
+                            </tr>
+                            <tr>
+                                <td class="first-td">Цветовая гамма стенда:</td>
+                                <td> <input type="text" name="" value="" class="o-text o-t-bigger"> </td>
+                            </tr>
+                            <tr>
+                                <td class="first-td">Баннеры:</td>
+                                <td>
+                                    <!--[if !(IE 6)]><!-->
+                                    <div class="file-input-box">
+                                        <input id="banner-file" class="file-input-text" readonly="readonly" value='"*.jpg"; "*.cdr"; "*ai"; ".pdf"; "*.rar"; "*.zip"' />
+                                        <input class="file-input" name="" type="file" onChange="document.getElementById('banner-file').value=this.value;" />
+                                    </div>
+                                    <!--<![endif]-->
+                                    <!--[if IE 6]> <input type="file" name=""> <![endif]-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="first-td">Дополнительная информация:</td>
+                                <td colspan="2"> <textarea class="o-text"></textarea> </td>
+                            </tr>
+                            <tr>
+                                <td class="first-td">Ориентировочный бюджет:</td>
+                                <td><input type="text" name="" value="" class="o-text o-t-middle"></td>
+                            </tr>
+                            <tr>
+                                <td class="first-td">Дата сдачи проекта:</td>
+                                <td><input type="text" name="" value="" class="o-text o-t-middle"></td>
+                            </tr>
+                        </table>
+                        
+                        <table>
+                            <tr>
+                                <td style="vertical-align:middle;">
+                                    Поля отмеченные <b class="required">*</b> обязательны для заполнения.<br>
+                                    Файлы больше 10 Мб отправлять на managerexpo@mail.ru.
+                                </td>
+                                <td align="right"> <input type='submit' class="d-submit" value=""> </td>
+                            </tr>
+                        </table>
+
+                    </form>
+                    
+					
+                </div>
+                <!-- .content-->
+            </div>
+            <!-- .container-->
+    
+            <aside class="sideLeft">
+                <nav class="menu-left">
+                    
+                    <a href="order.html" class="active">Заказать стенд Online</a>
+                    <span></span>
+                     
+                </nav>
+            </aside>
+            <!-- .sideLeft -->
+            
+        </section>
+        <!-- .middle-->
+            
+		
+    
+    </div>
+    <!-- .w-inside -->
+
+</div>
+<!-- .wrapper -->
+
+
+
+<footer class="footer-other">
+	
+    <div class="f-bread-crumbs">
+		<div class="f-content">
+			<div class="f-b-c-links">
+				
+                <a href="index.html">Главная</a> <span>&rsaquo;</span> <a href="order.html">Заказать стенд</a> <span>&rsaquo;</span>
+                
+            </div>
+        </div>
+        <!--.f-content-->
+    </div>
+    
+    <div class="f-contacts">
+        <div class="f-content">
+            <div class="f-info">
+                &copy; 2012   г. Москва, ул. Коцюбитского, 4   |   тел.: +7 (495) 221 65 57<br>
+                <a href="sitemap.html">Карта сайта</a> 
+            </div>
+        </div>
+        <!--.f-content-->
+    </div>
+    <!--.f-content-->
+    
+</footer>
+<!-- .footer -->
+
+
+
+</body>
+</html>

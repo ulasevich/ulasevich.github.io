@@ -1,0 +1,24 @@
+/* Дополнительный файл стилей */
+/* */
+
+.popover-content .catalog__item-status {
+    padding:0 15px 0 15px;
+    margin:10px 0;
+}
+.popover-content .catalog__item-name {
+    padding:0 15px 0 15px;
+    margin:10px 0;
+}
+.popover-content .catalog__item-price {
+    padding:0 15px 0 15px;
+    margin:10px 0;
+}
+.popover-content .catalog__item-address {
+    padding:0 15px 0 15px;
+    margin:10px 0;
+    white-space: normal;
+}
+.popover-content .catalog__item-owner {
+    padding:0 15px 15px 15px;
+    margin:10px 0;
+}
