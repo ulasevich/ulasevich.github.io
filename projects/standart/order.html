@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+<title>Заказать стенд | Строительно-монтажная фирма «СтендАрт»</title>
+
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="icon" type="image/x-icon" href="favicon.ico" />
+<link href="css/style.css" rel="stylesheet">
+<link href="css/chosen.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/chosen.jquery.min.js"></script>
+<script type="text/javascript" src="js/standart-script.js"></script>
+
+<link href="css/jquery.datetimepicker.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.datetimepicker.js"></script>
+<script type="text/javascript" src="js/jquery.idTabs.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('.date-input').datetimepicker({format:'d.m.Y H:i', lang:'ru', mask:true});
+});
+</script>
+
+</head>
+
+<body>
+<div class="wrapper">
+    
+    <header class="header">
+        
+        <a href="index.html" title="Главная" class="h-logo"><img src="images/h-logo.png"></a>
+        
+        <div class="h-block">
+            <div class="clearfix">
+                <div class="fl-left h-search">
+                	<form method="get" action="search.html">
+                    	<input class="h-search-text" type="text" name="" value="" placeholder="поиск по сайту">
+                        <button type="submit" class="h-search-btn" title="поиск по сайту"><img src="images/h-search.png"></button>
+                    </form>
+                </div>
+                <!--<div class="fl-left h-lang">
+                    <span>RUS</span> | <a href="#">ENG</a>
+                </div>-->
+                <div class="fl-right h-phone">8 800 555 55 00</div>
+            </div>
+            <a href="#" class="w-f-link call-request" data-form="w-f-order-call">Заказать звонок</a>
+        </div><!--.h-block-->
+        
+        <nav class="h-menu">
+            
+            <a href="about.html">О компании</a>
+            <a href="stands.html">Строительство стендов</a>
+            <a href="accreditation.html">Техническая аккредитация</a>
+            <a href="contacts.html">Контакты</a>
+            
+        </nav>
+        
+    </header><!-- .header-->
+    
+    <div class="middle">
+        
+		
+        
+        
+        
+        <aside class="left-sidebar">
+            <div class="l-white-block">
+				
+                <ul class="l-menu">
+                    <li><a href="about.html">О компании</a></li>
+                    <li>
+                        <a href="stands.html">Строительство стендов</a>
+                        <ul>
+                        	<li><a href="stands-standart.html">Стандартные стенды</a></li>
+                            <li><a href="stands-standart.html">Эксклюзивные стенды</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="accreditation.html">Техническая аккредитация</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="#">Заказать звонок</a></li>
+                </ul>
+                
+                <a href="order.html" class="blue-btn">Заказать стенд</a>
+                
+            </div>
+            
+			
+            <div class="l-white-block">
+                <div class="black-header">Новости</div>
+                <a href="news-item.html" class="index-news-item">
+                    <div class="i-n-item-title">Выставка-ярмарка Технологии.</div>
+                    <div class="i-n-item-date">Сентябрь 21, 2014</div>
+                    <hr>
+                    До открытия крупнейшего мероприятия рынка недвижимости - выставки-ярмарки Технологии. Оборудование. - остался один день! Приглашаем всех желающих!
+                    <hr>
+                </a>
+                <div class="all-news-link"><a href="news.html">Все новости</a></div>
+            </div>
+            <!--.l-white-block-->
+            
+            
+        </aside><!-- .left-sidebar --> 
+        
+        <main class="content">
+			
+            <ul class="breadcrumbs">
+            	<li><a href="index.html">Главная</a></li>
+                <li>Заказать стенд</li>
+            </ul><!--.breadcrumbs-->
+            
+            
+            <h1>Заказать стенд</h1>
+            
+            
+            <div class="stand-form">
+            
+                <p>Данный раздел включает в себя набор элементарных вопросов, которые дадут нам достаточно информации для предварительной оценки и дальнейшей работы.</p>
+                
+                <h3>Оставьте заявку и наши менеджеры свяжутся с Вами для уточнения подробностей</h3>
+                
+                <hr>
+                
+                <h2>Информация о Заказчике</h2>
+                
+                <form method="post">
+                    <p> <span class="required">*</span> - Обязательные для заполнения поля </p>
+                    
+                    <div class="triple-fieldset">
+                        
+                        
+                        <fieldset>
+                            <div class="caption">Контактное лицо <span class="required">*</span></div>
+                            <input type="text" class="w-text">
+                        </fieldset>
+                        
+                        <fieldset>
+                            <div class="caption">Телефон/факс <span class="required">*</span></div>
+                            <input type="text" class="w-text">
+                        </fieldset>
+                        
+                        <fieldset>
+                            <div class="caption">E-mail <span class="required">*</span></div>
+                            <input type="text" class="w-text">
+                        </fieldset>
+                    </div><!--.triple-fieldset-->
+                    
+                    
+                    <div class="triple-fieldset">
+                        <fieldset>
+                            <div class="caption">Компания <span class="required">*</span></div>
+                            <input type="text" class="w-text">
+                        </fieldset>
+                        
+                        <fieldset>
+                            <div class="caption">Сайт</div>
+                            <input type="text" class="w-text">
+                        </fieldset>
+                        
+                    </div><!--.triple-fieldset-->
+                    
+                    <fieldset>
+                        <div class="caption">Название выставки <span class="required">*</span></div>
+                        <input type="text" class="w-text">
+                    </fieldset>
+                    
+                    
+                    <div class="triple-fieldset">
+                        <fieldset>
+                            <div class="caption">Время проведения <span class="required">*</span></div>
+                            <input type="text" class="w-text date-input">
+                        </fieldset>
+                        
+                        <fieldset>
+                            <div class="caption">Прикрепить планировку зала</div>
+                            <div class="file-input-box">
+                                <input readonly class="file-input-text" id="hall-plan-text" onclick="$('#hall-plan-file').click()">
+                                <input id="hall-plan-file" type="file" onchange="$('#hall-plan-text').val(this.value)" name="" class="file-input">
+                            </div>
+                            <div class="form-note">*.jpg"; "*.cdr"; "*ai"; ".pdf"; "*.rar"; "*.zip"</div>
+                        </fieldset> 
+                                          
+                        <fieldset>
+                            <div class="caption">Номер места на плане</div>
+                            <input type="text" class="w-text">
+                        </fieldset>
+                    </div><!--.triple-fieldset-->
+                    
+                    
+                    
+                    <hr>
+                    
+                    
+                    
+                    <h3>Более подробная информация о заказе <span style="text-transform:lowercase">(к заполнению по желанию)</span>:</h3>
+                    
+                    <div class="idTabs order-tabs clearfix">
+                        <a href="#tab-requirements">Кострукция</a>
+                        <a href="#tab-content">Наполнение</a>
+                        <a href="#tab-furniture">Мебель</a>
+                        <a href="#tab-decoration">Художественное оформление</a>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div id="tab-requirements" class="order-tab">
+                        
+                        <h2>Требования к стенду</h2>
+                        
+                        <div class="double-fieldset">
+                            <fieldset>
+                                <div class="caption">Материал напольного покрытия </div>
+                                <select data-placeholder="Выберите материал покрытия" class="chosen-select">
+                                    <option value=""></option>
+                                    <option value="1">Ковролин</option>
+                                    <option value="2">Ламинат</option>
+                                    <option value="3">Материал 3</option>
+                                    <option value="4">Материал 4</option>
+                                    <option value="5">Материал 5</option>
+                                    <option value="6">Материал ещй какой-то текст...</option>
+                                    <option value="7">Материал 7</option>
+                                    <option value="8">Материал 8</option>
+                                    <option value="9">Материал 9</option>
+                                    <option value="10">Материал 10</option>
+                                    <option value="11">Материал 11</option>
+                                    <option value="12">Материал 12</option>
+                                </select>
+                            </fieldset>
+                            
+                            <fieldset>
+                                <div class="caption">Настил </div>
+                                <select data-placeholder="Выберите настил" class="chosen-select">
+                                    <option value=""></option>
+                                    <option value="1">настил 32мм</option>
+                                    <option value="2">подиум 100мм</option>
+                                    <option value="3">подиум 100мм+подсветка по краю</option>
+                                    <option value="4">Материал настила 4</option>
+                                    <option value="5">Материал настила 5</option>
+                                    <option value="6">другое</option>
+                                </select>
+                            </fieldset>
+                        </div><!--.double-fieldset-->
+                        
+                        <div class="double-fieldset">
+                            <fieldset>
+                                <div class="caption">Этажность </div>
+                                <select data-placeholder="Выберите" class="chosen-select">
+                                    <option value=""></option>
+                                    <option value="1" selected>1 этаж</option>
+                                    <option value="2">2 этажа</option>
+                                </select>
+                            </fieldset>
+                            
+                            <fieldset>
+                                <div class="caption">Переговорные комнаты </div>
+                                <select data-placeholder="Выберите" class="chosen-select yes-or-not">
+                                    <option value=""></option>
+                                    <option value="0" selected>не требуется</option>
+                                    <option value="1">требуется</option>
+                                </select>
+                                <div class="f-hidden">
+                                    <div class="f-additional clearfix">
+                                        <div class="fl-left">
+                                            <div class="caption-small">Кол-во, шт.:</div>
+                                            <input type="text" name="" value="" class="w-text width-small" maxlength="4">
+                                        </div>
+                                        <div class="fl-right">
+                                            <div class="caption-small">примерная площадь, кв.м.:</div>
+                                            <input type="text" name="" value="" class="w-text width-small" maxlength="4">
+                                        </div>
+                                    </div>                                            
+                                </div>
+                            </fieldset>
+                        </div><!--.double-fieldset-->
+                        
+                        <div class="double-fieldset">
+                            <fieldset>
+                                <div class="caption">Подсобные помещения </div>
+                                <select data-placeholder="Выберите" class="chosen-select yes-or-not">
+                                    <option value=""></option>
+                                    <option value="0" selected>не требуется</option>
+                                    <option value="1">требуется</option>
+                                </select>
+                                <div class="f-hidden">
+                                    <div class="f-additional clearfix">
+                                        <div class="fl-left">
+                                            <div class="caption-small">Кол-во, шт.:</div>
+                                            <input type="text" name="" value="" class="w-text width-small" maxlength="4">
+                                        </div>
+                                        <div class="fl-right">
+                                            <div class="caption-small">примерная площадь, кв.м.:</div>
+                                            <input type="text" name="" value="" class="w-text width-small" maxlength="4">
+                                        </div>
+                                    </div>                                            
+                                </div>
+                            </fieldset>
+                        </div><!--.double-fieldset-->
+                        
+                        <fieldset>
+                            <div class="caption">Дополнительные пожелания</div>
+                            <textarea class="w-textarea"></textarea>
+                        </fieldset>
+                        
+                    </div><!--#tab-requirements-->
+                    
+                    
+                    
+                    
+                    <div id="tab-content" class="order-tab">
+                    
+                        <h2>Наполнение стенда</h2>
+                        
+                        <div class="double-fieldset">
+                            <fieldset>
+                                <div class="caption">Информационные стойки </div>
+                                <select data-placeholder="Выберите" class="chosen-select yes-or-not">
+                                    <option value=""></option>
+                                    <option value="0" selected>не требуется</option>
+                                    <option value="1">требуется</option>
+                                </select>
+                                <div class="f-hidden">
+                                    <div class="f-additional clearfix">
+                                        <span class="f-delete" title="Удалить"></span>
+                                        <select data-placeholder="Выберите" class="chosen-select">
+                                            <option value=""></option>
+                                            <option value="0" selected>Стойка из конструктива</option>
+                                            <option value="1">Эксклюзивная пппппппппппппппппппппппппппппппппппппппп</option>
+                                        </select>
+                                        <div class="fl-left">
+                                            <div class="caption-small">Кол-во чел. за стойкой:</div>
+                                            <input type="text" name="" value="" class="w-text width-small" maxlength="4">
+                                        </div>
+                                        <div class="fl-right">
+                                            <div class="caption-small">Кол-во, шт.:</div>
+                                            <input type="text" name="" value="" class="w-text width-small" maxlength="4">
+                                        </div>
+                                    </div>
+                                    <span href="#" class="f-add">Добавить</span>                                            
+                                </div>
+                            </fieldset>
+                            
+                            <fieldset>
+                                <div class="caption">Витрины </div>
+                                <select data-placeholder="Выберите" class="chosen-select yes-or-not">
+                                    <option value=""></option>
+                                    <option value="0" selected>не требуется</option>
+                                    <option value="1">требуется</option>
+                                </select>
+                                <div class="f-hidden">
+                                    <div class="f-additional clearfix">
+                                        <span class="f-delete" title="Удалить"></span>
+                                        <select data-placeholder="Выберите" class="chosen-select f-switch">
+                                            <option></option>
+                                            <option value="1">Витрина из конструктива</option>
+                                            <option value="2">Эксклюзивная витрина (МДФ, ДСП, стекло, покраска)</option>
+                                            <option value="3">Покупная витрина</option>
+                                        </select>
+                                        <div class="f-switch f-switch-1">
+                                            <select class="chosen-select width-half">
+                                                <option value="1">Высокая</option>
+                                                <option value="2">Низкая</option>
+                                            </select>
+                                            <select class="chosen-select width-half">
+                                                <option value="1">С подсветкой</option>
+                                                <option value="2">Без подсветки</option>
+                                            </select>
+                                            <select class="chosen-select width-half">
+                                                <option value="1">Прямоугольная</option>
+                                                <option value="2">Квадратная</option>
+                                                <option value="3">Радиусная</option>
+                                            </select>
+                                        </div>
+                                        <div class="f-switch f-switch-2">
+                                            <div class="f-line">
+                                                <div class="caption-small">Кол-во, шт.</div>
+                                                <input type="text" name="" value="" class="w-text width-small" maxlength="4">
+                                            </div>
+                                            <div class="f-line">
+                                                <div class="caption-small">Площадь, кв.м.</div>
+                                                <input type="text" name="" value="" class="w-text width-small" maxlength="4">
+                                            </div>
+                                            <div class="f-line">
+                                                <div class="caption-small">Количество полок, шт.</div>
+                                                <input type="text" name="" value="" class="w-text width-small" maxlength="4">
+                                            </div>
+                                        </div>
+                                        <div class="f-switch f-switch-3">
+                                            <div class="f-line">
+                                                <div class="caption-small">Кол-во, шт.:</div>
+                                                <input type="text" name="" value="" class="w-text width-small" maxlength="4">
+                                                <div class="form-note">Покупные витрины обсуждаются с заказчиком</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span href="#" class="f-add">Добавить</span> 
+                                </div>
+                            </fieldset>
+                        </div><!--.double-fieldset-->
+                        
+                        <div class="double-fieldset">
+                            <fieldset>
+                                <div class="caption">Полки </div>
+                                <select data-placeholder="Выберите" class="chosen-select yes-or-not">
+                                    <option value=""></option>
+                                    <option value="0" selected>не требуется</option>
+                                    <option value="1">требуется</option>
+                                </select>
+                                <div class="f-hidden">
+                                    <div class="f-additional clearfix">
+                                        <span class="f-delete" title="Удалить"></span>
+                                        <select data-placeholder="Выберите" class="chosen-select">
+                                            <option value=""></option>
+                                            <option value="0" selected>Стандартная полка 1000мм х 300мм</option>
+                                            <option value="1">Эксклюзивная полка (МДФ, ДСП, стекло, покраска)</option>
+                                        </select>
+                                        <div class="f-line">
+                                            <div class="caption-small">Кол-во, шт.:</div>
+                                            <input type="text" name="" value="" class="w-text width-small" maxlength="4">
+                                        </div>
+                                    </div>
+                                    <span href="#" class="f-add">Добавить</span>                                            
+                                </div>
+                            </fieldset>
+                            
+                            <fieldset>
+                                <div class="caption">Стеллажи </div>
+                                <select data-placeholder="Выберите" class="chosen-select yes-or-not">
+                                    <option value=""></option>
+                                    <option value="0" selected>не требуется</option>
+                                    <option value="1">требуется</option>
+                                </select>
+                                <div class="f-hidden">
+                                    <div class="f-additional clearfix">
+                                        <span class="f-delete" title="Удалить"></span>
+                                        <select data-placeholder="Выберите" class="chosen-select">
+                                            <option value=""></option>
+                                            <option value="0" selected>Стеллаж из пяти полок 300*1000*2500</option>
+                                            <option value="1">Стеллаж из пяти полок 500*1000*2500</option>
+                                            <option value="2">Стеллаж из пяти полок 500*500*2500</option>
+                                            <option value="3">Стеллаж из пяти полок 1000*1000*2500</option>
+                                        </select>
+                                        <div class="f-line">
+                                            <div class="caption-small">Кол-во, шт.:</div>
+                                            <input type="text" name="" value="" class="w-text width-small" maxlength="4">
+                                        </div>
+                                    </div>
+                                    <span href="#" class="f-add">Добавить</span>                                            
+                                </div>
+                            </fieldset>
+                        </div><!--.double-fieldset-->
+                        
+                        <div class="double-fieldset">
+                            <fieldset>
+                                <div class="caption">Оборудование </div>
+                                <select data-placeholder="Выберите" class="chosen-select yes-or-not">
+                                    <option value=""></option>
+                                    <option value="0" selected>не требуется</option>
+                                    <option value="1">требуется</option>
+                                </select>
+                                <div class="f-hidden">
+                                    <div class="f-additional clearfix">
+                                        <span class="f-delete" title="Удалить"></span>
+                                        <select data-placeholder="Выберите" class="chosen-select">
+                                            <option value=""></option>
+                                            <option value="0" selected>Монитор (samsung 19")</option>
+                                            <option value="1">Плазменная панель 42"</option>
+                                            <option value="2">Плазменная панель 50"</option>
+                                            <option value="3">Плазменная панель 60"</option>
+                                            <option value="4">DVD</option>
+                                        </select>
+                                        <div class="f-line">
+                                            <div class="caption-small">Кол-во, шт.:</div>
+                                            <input type="text" name="" value="" class="w-text width-small" maxlength="4">
+                                        </div>
+                                    </div>
+                                    <span href="#" class="f-add">Добавить</span>                                            
+                                </div>
+                            </fieldset>
+                        </div><!--.double-fieldset-->
+                        
+                        <fieldset>
+                            <div class="caption">Дополнительные пожелания</div>
+                            <textarea class="w-textarea"></textarea>
+                        </fieldset>
+                    
+                    </div><!--#tab-content-->
+                    
+                    
+                    
+                    
+                    <div id="tab-furniture" class="order-tab">
+                    
+                        <h2>Наполнение мебелью помещений или открытых зон</h2>
+                        
+                        <div class="double-fieldset">
+                            <fieldset>
+                                <div class="caption">Закрытая переговорная </div>
+                                <select data-placeholder="Выберите" class="chosen-select yes-or-not">
+                                    <option value=""></option>
+                                    <option value="0" selected>не требуется</option>
+                                    <option value="1">требуется</option>
+                                </select>
+                                <div class="f-hidden">
+                                    <div class="f-additional clearfix">
+                                        <span class="f-delete" title="Удалить"></span>
+                                        <select data-placeholder="Выберите" class="chosen-select">
+                                            <option value=""></option>
+                                            <option value="0" selected>Стол стеклянный d800</option>
+                                            <option value="1">Стол 800*800</option>
+                                            <option value="2">Стол 700х1100</option>
+                                            <option value="3">Стол d700</option>
+                                            <option value="4">Стол барный d800</option>
+                                            <option value="4">Стол стеклянный журнальный (овальный) 600*1000</option>
+                                            <option value="4">Покупной стол</option>
+                                        </select>
+                                        <div class="f-line">
+                                            <div class="caption-small">Кол-во, шт.:</div>
+                                            <input type="text" name="" value="" class="w-text width-small" maxlength="4">
+                                        </div>
+                                    </div>
+                                    <span href="#" class="f-add">Добавить</span>
+                                    
+                                    <div class="f-additional clearfix">
+                                        <span class="f-delete" title="Удалить"></span>
+                                        <select data-placeholder="Выберите" class="chosen-select">
+                                            <option value=""></option>
+                                            <option value="0" selected>Стул мягкий</option>
+                                            <option value="1">Стул «Икеа»</option>
+                                            <option value="2">Стул барный</option>
+                                            <option value="3">Кресло одноместное</option>
+                                            <option value="4">Диван двухмесный</option>
+                                            <option value="4">Покупной стул</option>
+                                        </select>
+                                        <div class="f-line">
+                                            <div class="caption-small">Кол-во, шт.:</div>
+                                            <input type="text" name="" value="" class="w-text width-small" maxlength="4">
+                                        </div>
+                                    </div>
+                                    <span href="#" class="f-add">Добавить</span>                                         
+                                </div>
+                            </fieldset>
+                            
+                            <fieldset>
+                                <div class="caption">Открытая переговорная </div>
+                                <select data-placeholder="Выберите" class="chosen-select yes-or-not">
+                                    <option value=""></option>
+                                    <option value="0" selected>не требуется</option>
+                                    <option value="1">требуется</option>
+                                </select>
+                                <div class="f-hidden">
+                                    <div class="f-additional clearfix">
+                                        <span class="f-delete" title="Удалить"></span>
+                                        <select data-placeholder="Выберите" class="chosen-select">
+                                            <option value=""></option>
+                                            <option value="0" selected>Стол стеклянный d800</option>
+                                            <option value="1">Стол 800*800</option>
+                                            <option value="2">Стол 700х1100</option>
+                                            <option value="3">Стол d700</option>
+                                            <option value="4">Стол барный d800</option>
+                                            <option value="4">Стол стеклянный журнальный (овальный) 600*1000</option>
+                                            <option value="4">Покупной стол</option>
+                                        </select>
+                                        <div class="f-line">
+                                            <div class="caption-small">Кол-во, шт.:</div>
+                                            <input type="text" name="" value="" class="w-text width-small" maxlength="4">
+                                        </div>
+                                    </div>
+                                    <span href="#" class="f-add">Добавить</span>
+                                    
+                                    <div class="f-additional clearfix">
+                                        <span class="f-delete" title="Удалить"></span>
+                                        <select data-placeholder="Выберите" class="chosen-select">
+                                            <option value=""></option>
+                                            <option value="0" selected>Стул мягкий</option>
+                                            <option value="1">Стул «Икеа»</option>
+                                            <option value="2">Стул барный</option>
+                                            <option value="3">Кресло одноместное</option>
+                                            <option value="4">Диван двухмесный</option>
+                                            <option value="4">Покупной стул</option>
+                                        </select>
+                                        <div class="f-line">
+                                            <div class="caption-small">Кол-во, шт.:</div>
+                                            <input type="text" name="" value="" class="w-text width-small" maxlength="4">
+                                        </div>
+                                    </div>
+                                    <span href="#" class="f-add">Добавить</span>                                         
+                                </div>
+                            </fieldset>
+                        </div><!--.double-fieldset-->
+                        
+                        <div class="double-fieldset">
+                            <fieldset>
+                                <div class="caption">Кухня </div>
+                                <select data-placeholder="Выберите" class="chosen-select yes-or-not">
+                                    <option value=""></option>
+                                    <option value="0" selected>не требуется</option>
+                                    <option value="1">требуется</option>
+                                </select>
+                                <div class="f-hidden">
+                                    <div class="f-additional clearfix">
+                                        <span class="f-delete" title="Удалить"></span>
+                                        <select data-placeholder="Выберите" class="chosen-select">
+                                            <option value=""></option>
+                                            <option value="0" selected>Стол стеклянный d800</option>
+                                            <option value="1">Стол 800*800</option>
+                                            <option value="2">Стол 700х1100</option>
+                                            <option value="3">Стол d700</option>
+                                            <option value="4">Стол барный d800</option>
+                                            <option value="4">Стол стеклянный журнальный (овальный) 600*1000</option>
+                                            <option value="4">Покупной стол</option>
+                                        </select>
+                                        <div class="f-line">
+                                            <div class="caption-small">Кол-во, шт.:</div>
+                                            <input type="text" name="" value="" class="w-text width-small" maxlength="4">
+                                        </div>
+                                    </div>
+                                    <span href="#" class="f-add">Добавить</span>
+                                    
+                                    <div class="f-additional clearfix">
+                                        <span class="f-delete" title="Удалить"></span>
+                                        <select data-placeholder="Выберите" class="chosen-select">
+                                            <option value=""></option>
+                                            <option value="0" selected>Стул мягкий</option>
+                                            <option value="1">Стул «Икеа»</option>
+                                            <option value="2">Стул барный</option>
+                                            <option value="3">Кресло одноместное</option>
+                                            <option value="4">Диван двухмесный</option>
+                                            <option value="4">Покупной стул</option>
+                                        </select>
+                                        <div class="f-line">
+                                            <div class="caption-small">Кол-во, шт.:</div>
+                                            <input type="text" name="" value="" class="w-text width-small" maxlength="4">
+                                        </div>
+                                    </div>
+                                    <span href="#" class="f-add">Добавить</span>                                         
+                                </div>
+                            </fieldset>
+                            
+                            <fieldset>
+                                <div class="caption">Подсобное помещение </div>
+                                <select data-placeholder="Выберите" class="chosen-select yes-or-not">
+                                    <option value=""></option>
+                                    <option value="0" selected>не требуется</option>
+                                    <option value="1">требуется</option>
+                                </select>
+                                <div class="f-hidden">
+                                    <div class="f-additional clearfix">
+                                        <span class="f-delete" title="Удалить"></span>
+                                        <select data-placeholder="Выберите" class="chosen-select">
+                                            <option value=""></option>
+                                            <option value="0" selected>Стол стеклянный d800</option>
+                                            <option value="1">Стол 800*800</option>
+                                            <option value="2">Стол 700х1100</option>
+                                            <option value="3">Стол d700</option>
+                                            <option value="4">Стол барный d800</option>
+                                            <option value="4">Стол стеклянный журнальный (овальный) 600*1000</option>
+                                            <option value="4">Покупной стол</option>
+                                        </select>
+                                        <div class="f-line">
+                                            <div class="caption-small">Кол-во, шт.:</div>
+                                            <input type="text" name="" value="" class="w-text width-small" maxlength="4">
+                                        </div>
+                                    </div>
+                                    <span href="#" class="f-add">Добавить</span>
+                                    
+                                    <div class="f-additional clearfix">
+                                        <span class="f-delete" title="Удалить"></span>
+                                        <select data-placeholder="Выберите" class="chosen-select">
+                                            <option value=""></option>
+                                            <option value="0" selected>Стул мягкий</option>
+                                            <option value="1">Стул «Икеа»</option>
+                                            <option value="2">Стул барный</option>
+                                            <option value="3">Кресло одноместное</option>
+                                            <option value="4">Диван двухмесный</option>
+                                            <option value="4">Покупной стул</option>
+                                        </select>
+                                        <div class="f-line">
+                                            <div class="caption-small">Кол-во, шт.:</div>
+                                            <input type="text" name="" value="" class="w-text width-small" maxlength="4">
+                                        </div>
+                                    </div>
+                                    <span href="#" class="f-add">Добавить</span>                                         
+                                </div>
+                            </fieldset>
+                        </div><!--.double-fieldset-->
+                        
+                        <fieldset>
+                            <div class="caption">Дополнительные пожелания</div>
+                            <textarea class="w-textarea"></textarea>
+                        </fieldset>
+                    
+                    </div><!--#tab-furniture-->
+                    
+                    
+                    
+                    
+                    <div id="tab-decoration" class="order-tab">
+                    
+                        <h2>Художественное оформление</h2>
+                        
+                        <div class="double-fieldset">
+                            <fieldset>
+                                <div class="caption">Логотип</div>
+                                <div class="file-input-box">
+                                    <input readonly class="file-input-text" id="logo-text" onclick="$('#logo-file').click()">
+                                    <input id="logo-file" type="file" onchange="$('#logo-text').val(this.value)" name="" class="file-input">
+                                </div>
+                                <div class="form-note">*.jpg"; "*.cdr"; "*ai"; ".pdf"; "*.rar"; "*.zip"</div>
+                            </fieldset>
+                            
+                            <fieldset>
+                                <div class="caption">Слоган, надписи</div>
+                                <input type="text" class="w-text">
+                            </fieldset>
+                        </div><!--.double-fieldset-->
+                        
+                        <div class="double-fieldset">
+                            <fieldset>
+                                <div class="caption">Цветовая гамма стенда</div>
+                                <input type="text" class="w-text">
+                            </fieldset>
+                            
+                            <fieldset>
+                                <div class="caption">Баннеры</div>
+                                <div class="file-input-box">
+                                    <input readonly class="file-input-text" id="banner-text" onclick="$('#banner-file').click()">
+                                    <input id="banner-file" type="file" onchange="$('#banner-text').val(this.value)" name="" class="file-input">
+                                </div>
+                                <div class="form-note">*.jpg"; "*.cdr"; "*ai"; ".pdf"; "*.rar"; "*.zip"</div>
+                            </fieldset>
+                        </div><!--.double-fieldset-->
+                        
+                        <fieldset>
+                            <div class="caption">Дополнительные пожелания</div>
+                            <textarea class="w-textarea"></textarea>
+                        </fieldset>
+                    
+                    </div><!--#tab-decoration-->
+                    
+                    
+                    <hr>
+                    
+                    
+                    <div class="double-fieldset">
+                        <fieldset>
+                            <div class="caption">Ориентировочный бюджет</div>
+                            <input type="text" class="w-text">
+                        </fieldset>
+                        
+                        <fieldset>
+                            <div class="caption">Ориентировочная дата сдачи проекта</div>
+                            <input type="text" class="w-text">
+                        </fieldset>
+                    </div><!--.double-fieldset-->
+                    
+                    
+                    <hr>
+                       
+                    
+                    <div class="double-fieldset">               
+                        <fieldset>
+                            <div class="caption">Введите код с картинки <span class="required">*</span></div>
+                            <input type="text" class="w-text width-half">
+                            <img src="content/captcha.png" class="captcha">
+                        </fieldset>
+                        
+                        <input type="submit" class="blue-btn fl-right" value="Отправить заказ">
+                    </div><!--.double-fieldset-->
+                    
+                </form>
+                
+            </div><!--.stand-form-->
+            
+            
+			
+        </main><!-- .content --> 
+        
+        
+    </div><!-- .middle--> 
+    
+</div>
+<!-- .wrapper -->
+
+<footer class="footer">
+    <div class="f-copyright">
+        © 2015. StandArt.
+    </div>
+    
+    <!--<div class="f-search">
+        <form name="" method="get" action="../search.html">
+            <input type="text" placeholder="Поиск..." name="" class="f-search-text">
+            <input type="submit" name="" class="f-search-submit" value="">
+        </form>
+    </div>--><!--.search-form-->
+    
+    <!--<div class="f-social">
+        <a href="#" class="f-s-link f-s-skype" title="Скайп"></a>
+        <a href="#" class="f-s-link f-s-facebook" title="Мы в Фэйсбук"></a>
+    </div>-->
+    
+</footer><!-- .footer -->
+
+<div class="white-form" id="w-f-order-stand-form">
+    <a href="#" class="w-f-close" title="Закрыть"></a>
+    <div class="w-f-content">
+        <article class="w-f-padding">
+            <form name="" action="" method="get">
+                <fieldset>
+                    <div class="caption">Наименование юридического лица </div>
+                    <div class="text-block"><input type="text" name="" class="i-text"></div>
+                </fieldset>
+                <fieldset>
+                    <div class="caption">ФИО </div>
+                    <div class="text-block"><input type="text" name="" class="i-text"></div>
+                </fieldset>
+                <fieldset>
+                    <div class="caption">Контактный телефон </div>
+                    <div class="text-block"><input type="text" name="" class="i-text"></div>
+                </fieldset>
+                <fieldset class="w-f-submit">
+                    <input type="submit" name="" class="blue-btn" value="Заказать стенд">
+                </fieldset>
+            </form>
+        </article>
+        <!--.w-f-padding-->
+    </div>
+    <!--.w-f-content-->
+</div>
+<!--.white-form-->
+
+<div class="white-form" id="w-f-order-call-form">
+    <a href="#" class="w-f-close" title="Закрыть"></a>
+    <div class="w-f-content">
+        <article class="w-f-padding">
+            <form name="" action="" method="get">
+                <fieldset>
+                    <div class="caption">Наименование юридического лица </div>
+                    <div class="text-block"><input type="text" name="" class="i-text"></div>
+                </fieldset>
+                <fieldset>
+                    <div class="caption">ФИО </div>
+                    <div class="text-block"><input type="text" name="" class="i-text"></div>
+                </fieldset>
+                <fieldset>
+                    <div class="caption">Контактный телефон </div>
+                    <div class="text-block"><input type="text" name="" class="i-text"></div>
+                </fieldset>
+                <fieldset class="w-f-submit">
+                    <input type="submit" name="" class="blue-btn" value="Заказать звонок">
+                </fieldset>
+            </form>
+        </article>
+        <!--.w-f-padding-->
+    </div>
+    <!--.w-f-content-->
+</div>
+<!--.white-form-->
+
+
+</body>
+</html>

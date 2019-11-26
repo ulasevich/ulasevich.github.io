@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 39 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Стрелка" transform="translate(-16.000000, 2.000000)" class="svg-arr" stroke="#00A098" stroke-width="4">
+            <g id="Group-2" transform="translate(16.000000, 0.000000)">
+                <path d="M35.5287456,10 L0,10" id="Stroke-1"></path>
+                <polyline id="Stroke-3" points="25.5183896 20.8052505 35.5183896 10.471666 25.5183896 0.138081491"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1331 414">
+    <defs>
+        <path id="a" d="M0 .429h1335.93V282.86H0z"/>
+        <path id="c" d="M0 .404h1335.93v250.817H0z"/>
+        <path id="e" d="M0 .175h1335.93V219.61H0z"/>
+        <path id="g" d="M0 .162h1335.93v187.317H0z"/>
+        <path id="i" d="M0 .309h1335.93v156.536H0z"/>
+        <path id="k" d="M0 .062h1335.93v152.112H0z"/>
+        <path id="m" d="M0 .191h1335.93v166.223H0z"/>
+        <path id="o" d="M0 .43h1335.93v183.086H0z"/>
+        <path id="q" d="M0 .264h1335.93v203.02H0z"/>
+        <path id="s" d="M0 .374h1335.93v227.828H0z"/>
+        <path id="u" d="M0 .233h1335.93v266.211H0z"/>
+        <path id="w" d="M0 .107h1335.93v317.221H0z"/>
+        <path id="y" d="M0 .443h1335.93v369.754H0z"/>
+        <path id="A" d="M0 .316h1335.93v421.68H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(-5 29)">
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <path stroke="#00A19A" stroke-dasharray="0,22" stroke-linecap="round" stroke-linejoin="round" stroke-width="8" d="M-80.583 9.992C36.233 72.057 257.277 186.26 511.012 42.328c306.926-174.104 473.973 251.383 859.75 240.32" mask="url(#b)"/>
+        </g>
+        <g transform="translate(-5 37)">
+            <mask id="d" fill="#fff">
+                <use xlink:href="#c"/>
+            </mask>
+            <path stroke="#00A19A" stroke-dasharray="0,22" stroke-linecap="round" stroke-linejoin="round" stroke-width="7.615" d="M-77.348 31.35c116.97 58.933 328.543 154.171 590.486 10.097 300.014-165.014 476.154 221.658 865.947 209.492" mask="url(#d)"/>
+        </g>
+        <g transform="translate(-5 44)">
+            <mask id="f" fill="#fff">
+                <use xlink:href="#e"/>
+            </mask>
+            <path stroke="#00A19A" stroke-dasharray="0,22" stroke-linecap="round" stroke-linejoin="round" stroke-width="7.231" d="M-74.113 52.762c117.125 55.81 319.12 131.96 589.377-12.185 292.912-156.23 478.335 191.936 872.145 178.661" mask="url(#f)"/>
+        </g>
+        <g transform="translate(-5 51)">
+            <mask id="h" fill="#fff">
+                <use xlink:href="#g"/>
+            </mask>
+            <path stroke="#00A19A" stroke-dasharray="0,22" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.846" d="M-70.877 74.317c117.279 52.42 309.587 109.022 588.266-34.35 285.642-146.954 480.516 161.344 878.343 147.027" mask="url(#h)"/>
+        </g>
+        <g transform="translate(-5 57)">
+            <mask id="j" fill="#fff">
+                <use xlink:href="#i"/>
+            </mask>
+            <path stroke="#00A19A" stroke-dasharray="0,22" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.462" d="M-67.642 96.633c117.433 49.293 299.95 86.528 587.157-56.618 278.218-138.666 482.698 131.616 884.54 116.191" mask="url(#j)"/>
+        </g>
+        <g transform="translate(-5 64)">
+            <mask id="l" fill="#fff">
+                <use xlink:href="#k"/>
+            </mask>
+            <path stroke="#00A19A" stroke-dasharray="0,22" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.077" d="M-64.406 118.89C53.182 165.01 225.796 182.647 521.64 40.027c270.66-130.478 484.88 101.735 890.74 85.216" mask="url(#l)"/>
+        </g>
+        <g transform="translate(-5 69)">
+            <mask id="n" fill="#fff">
+                <use xlink:href="#m"/>
+            </mask>
+            <path stroke="#00A19A" stroke-dasharray="0,22" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.692" d="M-61.171 141.976c117.742 42.91 280.347 40.749 584.937-101.046 262.98-122.425 487.06 71.793 896.937 54.19" mask="url(#n)"/>
+        </g>
+        <g transform="translate(-5 74)">
+            <mask id="p" fill="#fff">
+                <use xlink:href="#o"/>
+            </mask>
+            <path stroke="#00A19A" stroke-dasharray="0,22" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.308" d="M-57.936 165.954C59.961 205.662 212.444 183.5 525.892 42.753c255.196-114.59 489.241 41.883 903.135 23.199" mask="url(#p)"/>
+        </g>
+        <g transform="translate(-5 78)">
+            <mask id="r" fill="#fff">
+                <use xlink:href="#q"/>
+            </mask>
+            <path stroke="#00A19A" stroke-dasharray="0,22" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.923" d="M-54.7 190.83c118.051 36.51 260.3-5.888 582.717-145.336 247.323-106.97 491.423 12.008 909.333-7.757" mask="url(#r)"/>
+        </g>
+        <g transform="translate(-5 79)">
+            <mask id="t" fill="#fff">
+                <use xlink:href="#s"/>
+            </mask>
+            <path stroke="#00A19A" stroke-dasharray="0,22" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.538" d="M-51.465 219.399c118.206 33.46 250.105-29.715 581.608-168.184 239.374-99.987 493.604-17.915 915.53-38.852" mask="url(#t)"/>
+        </g>
+        <g transform="translate(-5 66)">
+            <mask id="v" fill="#fff">
+                <use xlink:href="#u"/>
+            </mask>
+            <path stroke="#00A19A" stroke-dasharray="0,22" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.154" d="M-48.23 260.292c118.36 30.233 239.792-53.78 580.498-190.23 231.364-92.66 495.786-47.825 921.73-69.829" mask="url(#v)"/>
+        </g>
+        <g transform="translate(-5 42)">
+            <mask id="x" fill="#fff">
+                <use xlink:href="#w"/>
+            </mask>
+            <path stroke="#00A19A" stroke-dasharray="0,22" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.769" d="M-44.994 313.07c118.514 27.015 229.356-78.164 579.388-212.232C757.7 15.308 1032.36 23.177 1462.32.107" mask="url(#x)"/>
+        </g>
+        <g transform="translate(-5 17)">
+            <mask id="z" fill="#fff">
+                <use xlink:href="#y"/>
+            </mask>
+            <path stroke="#00A19A" stroke-dasharray="0,22" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.385" d="M-41.759 367.288C76.911 391.164 177.038 264.061 536.52 132.4 751.736 53.576 1036.668 24.65 1470.645.443" mask="url(#z)"/>
+        </g>
+        <g transform="translate(-5 -8)">
+            <mask id="B" fill="#fff">
+                <use xlink:href="#A"/>
+            </mask>
+            <path stroke="#00A19A" stroke-dasharray="0,22" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M-38.523 420.064C146.982 452.329 260.5 70.632 1478.968.316" mask="url(#B)"/>
+        </g>
+    </g>
+</svg>

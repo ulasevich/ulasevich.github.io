@@ -1,0 +1,16 @@
+/* CSS */
+
+/* Прикреплённые файлы */
+.files-extensions {margin: 20px 0px 0px}
+.files-extensions .item-extensions {margin: 5px 0px 0px}
+
+/* Меню */
+.sub-menu-hover {
+	transition: all 0.5s ease 0s;
+	background: #ff0000;
+	color: #fff; 
+}
+
+.b-portfolio a {line-height: 50px; text-transform: uppercase;}
+
+.error-form {color: #C02026}

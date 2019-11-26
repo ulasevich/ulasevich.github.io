@@ -1,0 +1,23 @@
+.m-first-level a {
+	margin-right:28px;
+}
+.rounded, .round-inside {
+    /*behavior: url(css/PIE.htc);*/
+}
+.index-news .preview:last-child {
+    margin-right:0;
+	width:220px;
+}
+.contacts {
+    margin-bottom:1em;
+}
+.dotted-block {
+	zoom:1;
+	display:inline;
+}
+.article {
+	margin-bottom:20px;
+}
+.promotional {
+	margin-bottom:20px;
+}
