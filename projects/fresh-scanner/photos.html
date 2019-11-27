@@ -2,9 +2,12 @@
 <html>
 <head>
 	<meta charset="utf-8" />
+	
 	<title>Main page | Fresh scanner</title>
+	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
     
     <!--head css, js-->
     <link rel="stylesheet" href="css/libs/bootstrap-reboot.min.css">
@@ -12,17 +15,27 @@
     <link rel="stylesheet" href="css/libs/slick.css">
     <link rel="stylesheet" href="css/libs/slick-theme.css">
     <link rel="stylesheet" href="css/libs/chosen.css">
+    <link rel="stylesheet" href="css/libs/magnific-popup.css">
+    <link rel="stylesheet" href="css/libs/flatpickr.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/modernizr-custom.js"></script>
     <script src="js/jquery-1.12.2.min.js"></script>
     <!--head css, js-->
     
     <link href="css/main.css" rel="stylesheet">
+    
 </head>
 
 <body>
 
+
 <div class="wrapper">
+    
+	<!-- блок только для тестирования -->
+    <div style="position: absolute; top: 3px; right: 15px; font-size: 10px;">
+        <button type="button" class="js--test--add-bar">добавить столбец</button>
+    </div>
+    <!-- блок только для тестирования -->
     
     <header class="header">
 		<div class="container-fluid main-container">
@@ -34,25 +47,30 @@
                         </object>
                     </a>
                 </div>
-                <div class="col header-row__menu">
+                <div class="col header-row__info">
+                	<span class="info-item">Invoice: <strong>259985421</strong></span>
+                    <span class="info-item">Product: <strong>Tomato</strong></span>
+                    <span class="info-item">Product kind: <strong>Chernomor</strong></span>
+                </div>
+                <div class="col-auto header-row__menu">
                 	<ul class="not-list">
-                    	<li> <button type="button" class="btn btn-default btn--red">Take photo</button> </li>
-                        <li> <button type="button" class="btn btn-default btn--transparent">Show all results</button> </li>
-                        <li> <button type="button" class="btn btn-default btn--transparent">Add to report</button> </li>
+                    	
+                        <li> <button type="button" class="btn btn-default btn--gray btn--download">Download report</button> </li>
+                        <li> <a href="report.html" class="btn btn-default btn--white">Go to report</a> </li>
+                        <li> <button type="button" class="btn btn-default btn--red">Finish inspection</button> </li>
+                        <li>
+                            <button type="button" class="btn btn-icon" title="Save">
+                                <div class="icon-item">
+                                    <i class="icon icon--save"></i>
+                                </div>
+                            </button>
+                        </li>
                     </ul>
                 </div>
             </div><!--.header-row-->
         </div>
 	</header><!-- .header-->
-    
-    
-	<!-- блок только для тестирования -->
-    <div style="position: absolute; top: 10px; right: 15px; font-size: 10px;">
-    	<button type="button" class="js--test--add-slide">добавить слайд</button>
-        <button type="button" class="js--test--add-bar">добавить столбец</button>
-    </div>
-    <!-- блок только для тестирования -->
-    
+        
     
 	<main class="content">
 		<div class="container-fluid main-container">
@@ -221,6 +239,123 @@
                         <div class="slider-details__slide">
                         	<div class="row photo-slide-row">
                             	<div class="col-7 photo-slide-row__photo">
+                                	<img src="content/slide-1.jpg" />
+                                </div>
+                                <div class="col-5 photo-slide-row__info">
+                                	<h2>Conclusion</h2>
+                                    <h3>Category:</h3>
+                                    <p class="big-text color-red-dark">Отход</p>
+                                    <h3>Defects:</h3>
+                                    <p class="big-text color-red-dark">Незарубцевавшаяся механика</p>
+                                    <p class="big-text color-red-dark">Зарубцевавшаяся механика</p>
+                                    <p class="big-text color-red-dark">Нажим</p>
+                                    <p class="big-text color-red-dark">Гниль</p>
+                                </div>
+                            </div>
+                        </div><!--.slider-details__slide-->
+                        
+                        <div class="slider-details__slide">
+                        	<div class="row photo-slide-row">
+                            	<div class="col-7 photo-slide-row__photo">
+                                	<img src="content/slide-1.jpg" />
+                                </div>
+                                <div class="col-5 photo-slide-row__info">
+                                	<h2>Conclusion</h2>
+                                    <h3>Category:</h3>
+                                    <p class="big-text color-red-dark">2-nd category mismatch</p>
+                                    <h3>Defects:</h3>
+                                    <p class="big-text color-red-dark">Rot</p>
+                                </div>
+                            </div><!--.photo-slide-row-->
+                        </div><!--.slider-details__slide-->
+                        <div class="slider-details__slide">
+                        	<div class="row photo-slide-row">
+                            	<div class="col-7 photo-slide-row__photo">
+                                	<img src="content/slide-2.jpg" />
+                                </div>
+                                <div class="col-5 photo-slide-row__info">
+                                	<h2>Conclusion</h2>
+                                    <h3>Category:</h3>
+                                    <p class="big-text color-red-dark">1-nd category mismatch</p>
+                                    <h3>Defects:</h3>
+                                    <p class="big-text color-red-dark">Defect 2</p>
+                                </div>
+                            </div>
+                        </div><!--.slider-details__slide-->
+                        <div class="slider-details__slide">
+                        	<div class="row photo-slide-row">
+                            	<div class="col-7 photo-slide-row__photo">
+                                	<img src="content/slide-3.jpg" />
+                                </div>
+                                <div class="col-5 photo-slide-row__info">
+                                	<h2>Conclusion</h2>
+                                    <h3>Category:</h3>
+                                    <p class="big-text color-red-dark">3-nd category mismatch</p>
+                                    <h3>Defects:</h3>
+                                    <p class="big-text color-red-dark">Defect 1</p>
+                                </div>
+                            </div>
+                        </div><!--.slider-details__slide-->
+                        
+                        <div class="slider-details__slide">
+                        	<div class="row photo-slide-row">
+                            	<div class="col-7 photo-slide-row__photo">
+                                	<img src="content/slide-4.jpg" />
+                                </div>
+                                <div class="col-5 photo-slide-row__info">
+                                	<h2>Conclusion</h2>
+                                    <h3>Category:</h3>
+                                    <p class="big-text color-red-dark">1-nd category mismatch</p>
+                                    <h3>Defects:</h3>
+                                    <p class="big-text color-red-dark">Defect 3</p>
+                                </div>
+                            </div>
+                        </div><!--.slider-details__slide-->
+                        <div class="slider-details__slide">
+                        	<div class="row photo-slide-row">
+                            	<div class="col-7 photo-slide-row__photo">
+                                	<img src="content/slide-5.jpg" />
+                                </div>
+                                <div class="col-5 photo-slide-row__info">
+                                	<h2>Conclusion</h2>
+                                    <h3>Category:</h3>
+                                    <p class="big-text color-red-dark">Waste</p>
+                                    <h3>Defects:</h3>
+                                    <p class="big-text color-red-dark">Defect 2</p>
+                                </div>
+                            </div>
+                        </div><!--.slider-details__slide-->
+                        <div class="slider-details__slide">
+                        	<div class="row photo-slide-row">
+                            	<div class="col-7 photo-slide-row__photo">
+                                	<img src="content/slide-6.jpg" />
+                                </div>
+                                <div class="col-5 photo-slide-row__info">
+                                	<h2>Conclusion</h2>
+                                    <h3>Category:</h3>
+                                    <p class="big-text color-red-dark">3-nd category mismatch</p>
+                                    <h3>Defects:</h3>
+                                    <p class="big-text color-red-dark">Defect 1</p>
+                                </div>
+                            </div>
+                        </div><!--.slider-details__slide-->
+                        <div class="slider-details__slide">
+                        	<div class="row photo-slide-row">
+                            	<div class="col-7 photo-slide-row__photo">
+                                	<img src="content/slide-4.jpg" />
+                                </div>
+                                <div class="col-5 photo-slide-row__info">
+                                	<h2>Conclusion</h2>
+                                    <h3>Category:</h3>
+                                    <p class="big-text color-red-dark">12345</p>
+                                    <h3>Defects:</h3>
+                                    <p class="big-text color-red-dark">Defect 1</p>
+                                </div>
+                            </div>
+                        </div><!--.slider-details__slide-->
+                        <div class="slider-details__slide">
+                        	<div class="row photo-slide-row">
+                            	<div class="col-7 photo-slide-row__photo">
                                 	<img src="content/slide-5.jpg" />
                                 </div>
                                 <div class="col-5 photo-slide-row__info">
@@ -233,63 +368,55 @@
                             </div>
                         </div><!--.slider-details__slide-->
                         
+                        <div class="slider-details__slide">
+                        	<div class="row photo-slide-row">
+                            	<div class="col-7 photo-slide-row__photo">
+                                	<img src="content/slide-1.jpg" />
+                                </div>
+                                <div class="col-5 photo-slide-row__info">
+                                	<h2>Conclusion</h2>
+                                    <h3>Category:</h3>
+                                    <p class="big-text color-red-dark">2-nd category mismatch</p>
+                                    <h3>Defects:</h3>
+                                    <p class="big-text color-red-dark">Rot</p>
+                                </div>
+                            </div><!--.photo-slide-row-->
+                        </div><!--.slider-details__slide-->
+                        <div class="slider-details__slide">
+                        	<div class="row photo-slide-row">
+                            	<div class="col-7 photo-slide-row__photo">
+                                	<img src="content/slide-2.jpg" />
+                                </div>
+                                <div class="col-5 photo-slide-row__info">
+                                	<h2>Conclusion</h2>
+                                    <h3>Category:</h3>
+                                    <p class="big-text color-red-dark">1-nd category mismatch</p>
+                                    <h3>Defects:</h3>
+                                    <p class="big-text color-red-dark">Defect 2</p>
+                                </div>
+                            </div>
+                        </div><!--.slider-details__slide-->
+                        <div class="slider-details__slide">
+                        	<div class="row photo-slide-row">
+                            	<div class="col-7 photo-slide-row__photo">
+                                	<img src="content/slide-3.jpg" />
+                                </div>
+                                <div class="col-5 photo-slide-row__info">
+                                	<h2>Conclusion</h2>
+                                    <h3>Category:</h3>
+                                    <p class="big-text color-red-dark">3-nd category mismatch</p>
+                                    <h3>Defects:</h3>
+                                    <p class="big-text color-red-dark">Defect 1</p>
+                                </div>
+                            </div>
+                        </div><!--.slider-details__slide-->
+                        
                     </div><!--.slider-details-->
                     
+                    <div class="btn-block">
+                    	<button type="button" class="btn btn-default btn--red">Take photo</button>
+                    </div>
                     
-                    <div class="slider-thumbs left-align-slick">
-                        <div class="slider-thumbs__slide">
-                            <img src="content/slide-1-small.jpg" data-number="1" />
-                            <div class="slider-thumbs__slide-number">1</div>
-                        </div>
-                        <div class="slider-thumbs__slide">
-                            <img src="content/slide-2-small.jpg" data-number="2" />
-                            <div class="slider-thumbs__slide-number">2</div>
-                        </div>
-                        <div class="slider-thumbs__slide">
-                            <img src="content/slide-3-small.jpg" data-number="3" />
-                            <div class="slider-thumbs__slide-number">3</div>
-                        </div>
-                        
-                        <div class="slider-thumbs__slide">
-                            <img src="content/slide-4-small.jpg" data-number="4" />
-                            <div class="slider-thumbs__slide-number">4</div>
-                        </div>
-                        <div class="slider-thumbs__slide">
-                            <img src="content/slide-5-small.jpg" data-number="5" />
-                            <div class="slider-thumbs__slide-number">5</div>
-                        </div>
-                        <div class="slider-thumbs__slide">
-                            <img src="content/slide-6-small.jpg" data-number="6" />
-                            <div class="slider-thumbs__slide-number">6</div>
-                        </div>
-                        <div class="slider-thumbs__slide">
-                            <img src="content/slide-4-small.jpg" data-number="7" />
-                            <div class="slider-thumbs__slide-number">7</div>
-                        </div>
-                        <div class="slider-thumbs__slide">
-                            <img src="content/slide-5-small.jpg" data-number="8" />
-                            <div class="slider-thumbs__slide-number">8</div>
-                        </div>
-                        
-                        <div class="slider-thumbs__slide">
-                            <img src="content/slide-5-small.jpg" data-number="9" />
-                            <div class="slider-thumbs__slide-number">9</div>
-                        </div>
-                        <div class="slider-thumbs__slide">
-                            <img src="content/slide-6-small.jpg" data-number="10" />
-                            <div class="slider-thumbs__slide-number">10</div>
-                        </div>
-                        <div class="slider-thumbs__slide">
-                            <img src="content/slide-4-small.jpg" data-number="11" />
-                            <div class="slider-thumbs__slide-number">11</div>
-                        </div>
-                        <div class="slider-thumbs__slide">
-                            <img src="content/slide-5-small.jpg" data-number="12" />
-                            <div class="slider-thumbs__slide-number">12</div>
-                        </div>
-                    </div><!--.slider-thumbs-->
-                    <div class="thumbs-paging"></div>
-                                        
                 </div><!--.page-row_slider-->
                 
                 
@@ -318,6 +445,20 @@
                                 <div class="circle-value circle-red">5</div>
                             </div>
                         </div><!--.indicator-item-->
+                        
+                        <!--<div class="indicator-item">
+                            <div class="indicator-item__text">Sent:</div>
+                            <div class="indicator-item__value">
+                                <div class="circle-value">87</div>
+                            </div>
+                        </div>
+                        
+                        <div class="indicator-item">
+                            <div class="indicator-item__text">Received:</div>
+                            <div class="indicator-item__value">
+                                <div class="circle-value">65</div>
+                            </div>
+                        </div>-->
                     </div>
                     
                     
@@ -327,57 +468,228 @@
                     <h3>Categories:</h3>
                     <div class="chart-container" id="chart-categories" style="height: 150px;"></div>
                     
+                    <!--
                     <br/>
                     <br/>
                     <div class="align-right">
                     	<button type="button" class="btn btn-default btn--green">New inspection</button>
                     </div>
+                    -->
                     
                 </div><!--.page-row_charts-->
+                
+                                
+                
+                <div class="col-12 page-row_thumbs">
+                	
+                    <h3>Filter:</h3>
+                    
+                    <div class="row form-elements thumbs-filtr align-items-center">
+                    	<div class="col thumbs-filtr__select">
+                            <div class="select-block">
+                                <label class="field-label">Defect</label>
+                                <select name="">
+                                    <option value="" selected="" disabled=""> choose defect </option>
+                                    <option value="1"> Незарубцевавшаяся механика </option>
+                                    <option value="2"> Зарубцевавшаяся механика </option>
+                                    <option value="3"> Нажим </option>
+                                    <option value="4"> Гниль </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col thumbs-filtr__checking">    
+                            <label class="form-label">
+                                <input type="checkbox" name="" value="" />
+                                <span><i>Result obtained</i></span>
+                            </label>
+                            <label class="form-label">
+                                <input type="checkbox" name="" value="" checked />
+                                <span><i>1-st cat.</i></span>
+                            </label>
+                            <label class="form-label">
+                                <input type="checkbox" name="" value="" />
+                                <span><i>Other cat.</i></span>
+                            </label>
+                        </div>
+                        <div class="col-auto thumbs-filtr__info">
+                             <span class="info-item">Sent: <strong>10</strong></span>
+                             <span class="info-item">Received: <strong>10</strong></span>
+                        </div>
+                    </div><!--.form-elements-->
+                    
+					
+					<div class="thumbs-paging-wrapper">
+                    	<div class="thumbs-paging">
+                        	<span class="thumbs-paging__current"> [n] </span> of [nnn]
+                        </div>
+                    </div>
+					
+                    <div class="slider-thumbs-new">                   
+                        <div class="slider-thumbs-new__slide">
+                            <div class="thumbs-item">
+                                <div class="thumbs-item-img">
+                                    <img src="content/slide-1-small.jpg" data-number="1" />
+                                </div>
+                                <div class="thumbs-item-number">1</div>
+                            </div>
+                            <div class="thumbs-item">
+                                <div class="thumbs-item-img">
+                                    <img src="content/slide-2-small.jpg" data-number="2" />
+                                </div>
+                                <div class="thumbs-item-number">2</div>
+                            </div>
+                            <div class="thumbs-item thumbs-item-active">
+                                <div class="thumbs-item-img">
+                                    <img src="content/slide-3-small.jpg" data-number="3" />
+                                </div>
+                                <div class="thumbs-item-number">3</div>
+                            </div>
+                            
+                            <div class="thumbs-item">
+                                <div class="thumbs-item-img">
+                                    <img src="content/slide-4-small.jpg" data-number="4" />
+                                </div>
+                                <div class="thumbs-item-number">4</div>
+                            </div>
+                            <div class="thumbs-item">
+                                <div class="thumbs-item-img">
+                                    <img src="content/slide-5-small.jpg" data-number="5" />
+                                </div>
+                                <div class="thumbs-item-number">5</div>
+                            </div>
+                            <div class="thumbs-item">
+                                <div class="thumbs-item-img">
+                                    <img src="content/slide-6-small.jpg" data-number="6" />
+                                </div>
+                                <div class="thumbs-item-number">6</div>
+                            </div>
+                            <div class="thumbs-item">
+                                <div class="thumbs-item-img">
+                                    <img src="content/slide-4-small.jpg" data-number="7" />
+                                </div>
+                                <div class="thumbs-item-number">7</div>
+                            </div>
+                            <div class="thumbs-item">
+                                <div class="thumbs-item-img">
+                                    <img src="content/slide-5-small.jpg" data-number="8" />
+                                </div>
+                                <div class="thumbs-item-number">8</div>
+                            </div>
+                            
+                            <div class="thumbs-item">
+                                <div class="thumbs-item-img">
+                                    <img src="content/slide-5-small.jpg" data-number="9" />
+                                </div>
+                                <div class="thumbs-item-number">9</div>
+                            </div>
+                            <div class="thumbs-item thumbs-item-active">
+                                <div class="thumbs-item-img">
+                                    <img src="content/slide-6-small.jpg" data-number="10" />
+                                </div>
+                                <div class="thumbs-item-number">10</div>
+                            </div>
+                            <div class="thumbs-item">
+                                <div class="thumbs-item-img">
+                                    <img src="content/slide-4-small.jpg" data-number="11" />
+                                </div>
+                                <div class="thumbs-item-number">11</div>
+                            </div>
+                            <div class="thumbs-item">
+                                <div class="thumbs-item-img">
+                                    <img src="content/slide-5-small.jpg" data-number="12" />
+                                </div>
+                                <div class="thumbs-item-number">12</div>
+                            </div>
+                            
+                            <div class="thumbs-item">
+                                <div class="thumbs-item-img">
+                                    <img src="content/slide-1-small.jpg" data-number="13" />
+                                </div>
+                                <div class="thumbs-item-number">13</div>
+                            </div>
+                            <div class="thumbs-item">
+                                <div class="thumbs-item-img">
+                                    <img src="content/slide-2-small.jpg" data-number="14" />
+                                </div>
+                                <div class="thumbs-item-number">14</div>
+                            </div>
+                            <div class="thumbs-item thumbs-item-active">
+                                <div class="thumbs-item-img">
+                                    <img src="content/slide-3-small.jpg" data-number="15" />
+                                </div>
+                                <div class="thumbs-item-number">15</div>
+                            </div>
+                            
+                            <div class="thumbs-item">
+                                <div class="thumbs-item-img">
+                                    <img src="content/slide-4-small.jpg" data-number="16" />
+                                </div>
+                                <div class="thumbs-item-number">16</div>
+                            </div>
+                            <div class="thumbs-item">
+                                <div class="thumbs-item-img">
+                                    <img src="content/slide-5-small.jpg" data-number="17" />
+                                </div>
+                                <div class="thumbs-item-number">17</div>
+                            </div>
+                            <div class="thumbs-item">
+                                <div class="thumbs-item-img">
+                                    <img src="content/slide-6-small.jpg" data-number="18" />
+                                </div>
+                                <div class="thumbs-item-number">18</div>
+                            </div>
+                            <div class="thumbs-item">
+                                <div class="thumbs-item-img">
+                                    <img src="content/slide-4-small.jpg" data-number="19" />
+                                </div>
+                                <div class="thumbs-item-number">19</div>
+                            </div>
+                            <div class="thumbs-item">
+                                <div class="thumbs-item-img">
+                                    <img src="content/slide-5-small.jpg" data-number="20" />
+                                </div>
+                                <div class="thumbs-item-number">20</div>
+                            </div>
+                        </div><!--.slider-thumbs-new__slide-->
+                        
+                        <div class="slider-thumbs-new__slide">
+                            <div class="thumbs-item">
+                                <div class="thumbs-item-img">
+                                    <img src="content/slide-1-small.jpg" data-number="21" />
+                                </div>
+                                <div class="thumbs-item-number">21</div>
+                            </div>
+                            <div class="thumbs-item">
+                                <div class="thumbs-item-img">
+                                    <img src="content/slide-2-small.jpg" data-number="22" />
+                                </div>
+                                <div class="thumbs-item-number">23</div>
+                            </div>
+                            <div class="thumbs-item thumbs-item-active">
+                                <div class="thumbs-item-img">
+                                    <img src="content/slide-3-small.jpg" data-number="23" />
+                                </div>
+                                <div class="thumbs-item-number">24</div>
+                            </div>
+                        </div><!--.slider-thumbs-new__slide-->
+                    </div><!--.slider-thumbs-new-->
+                                        
+                </div><!--.page-row_thumbs-->
+                
+                
+                
             </div><!--.page-row-->
+            
+            
+            
+            
             
             
             
 			<script>
             $(document).ready(function(){
 				
-				/*--------- скрипт для примера ---------*/
-				$(document).on('click', '.js--test--add-slide', function(){
-					
-					// добавление слайдов
-					$('.slider-thumbs').slick('slickAdd', 
-					'<div>\
-						<div class="slider-thumbs__slide">\
-							<img src="content/slide-1-small.jpg" data-number="'+(slides_count+1)+'" />\
-							<div class="slider-thumbs__slide-number">'+(slides_count+1)+'</div>\
-						</div>\
-					</div>').slick('slickGoTo', slides_count+1,  false);
-					
-					$('.slider-details').slick('slickAdd', 
-					'<div>\
-						<div class="slider-details__slide">\
-							<div class="row photo-slide-row">\
-								<div class="col-7 photo-slide-row__photo">\
-									<img src="content/slide-1.jpg" />\
-								</div>\
-								<div class="col-5 photo-slide-row__info">\
-									<h2>Conclusion</h2>\
-									<h3>Category:</h3>\
-									<p class="big-text color-red-dark">New Category</p>\
-									<h3>Defects:</h3>\
-									<p class="big-text color-red-dark">New Defect</p>\
-								</div>\
-							</div>\
-						</div>\
-					</div>').slick('slickGoTo', slides_count+1,  false);
-					
-					// для подсветки активного номера
-					$('.slider-thumbs__slide').removeClass('selected-number');
-					$('.slider-thumbs .slick-slide[data-slick-index="'+(slides_count-1)+'"]').find('.slider-thumbs__slide').addClass('selected-number');
-					
-				});
-				
-				
+				/*--------- скрипт для примера ---------*/				
 				$(document).on('click', '.js--test--add-bar', function(){
 					defects_categories.push('new defect');
 					myChart_defects.xAxis[0].setCategories(defects_categories);
@@ -409,50 +721,51 @@
 				
 				
 				var $sliderDetails = $('.slider-details');
-				var $sliderThumbs = $('.slider-thumbs');
+				var $sliderThumbs = $('.slider-thumbs-new');
 				var $thumbs_status = $('.thumbs-paging');
 				var slides_count = 0;
+				var thumbs_count = $('.thumbs-item').length;
 				
 				
 				$sliderThumbs.on('init', function (event, slick, currentSlide, nextSlide) {
-					$sliderThumbs.find('.slick-slide .slider-thumbs__slide').first().addClass('selected-number');
+					$sliderThumbs.find('.thumbs-item').first().addClass('selected-number');
 				});
 				$sliderThumbs.on('init reInit', function (event, slick, currentSlide, nextSlide) {
 					var i = (currentSlide ? currentSlide : 0) + 1;
-					$thumbs_status.html('<span class="thumbs-paging__current">' + i + '</span>' + ' of ' + slick.slideCount);
+					$thumbs_status.html('<span class="thumbs-paging__current">' + i + '</span>' + ' of ' + thumbs_count);
 					slides_count = slick.slideCount;
 				});
 				
-				$('.slider-thumbs').slick({
-					slidesToShow: 6,
-					slidesToScroll: 6,
-					centerMode: false,
+				$('.slider-thumbs-new').slick({
+					slidesToShow: 1,
+					slidesToScroll: 1,
 					infinite: false,
 					arrows: true,
+					adaptiveHeight: true
 				});
 				
-				$(document).on('click', '.slider-thumbs__slide img', function(){
-					var number = $(this).data('number');
-					$('.slider-thumbs__slide').removeClass('selected-number');
-					$(this).parent('.slider-thumbs__slide').addClass('selected-number');
+				$(document).on('click', '.thumbs-item', function(){
+					var number = $(this).find('img').data('number');
+					$('.thumbs-item').removeClass('selected-number');
+					$(this).addClass('selected-number');
 					$('.slider-details').slick('slickGoTo', number-1,  false);
 					$('.thumbs-paging__current').text(number);
 					return false;
 				});	
 				
 				
-				$('.slider-thumbs').slick('slickGoTo', slides_count,  false);
+				$('.slider-thumbs-new').slick('slickGoTo', slides_count,  false);
 				$('.slider-details').slick('slickGoTo', slides_count,  false);
-				$('.slider-thumbs__slide').removeClass('selected-number');
-$('.slider-thumbs .slick-slide[data-slick-index="'+(slides_count-1)+'"]').find('.slider-thumbs__slide').addClass('selected-number');
+				$('.thumbs-item').removeClass('selected-number');
+$('.slider-thumbs-new .slick-slide[data-slick-index="'+(slides_count-1)+'"]').find('.thumbs-item').last().addClass('selected-number');
 				
 				
 								
 				var defects_categories = [
-					'Defect 1',
-					'Defect 2',
-					'Defect 3',
-					'Defect 4',
+					'Незарубцевавшаяся механика',
+					'Нажим',
+					'Зарубцевавшаяся механика',
+					'Гниль',
 					'Defect 5'
 				];
 				
@@ -589,25 +902,30 @@ $('.slider-thumbs .slick-slide[data-slick-index="'+(slides_count-1)+'"]').find('
             </script>
             
             
-        </div>
+        </div><!--.container-fluid-->
 	</main><!-- .content -->
     
     
-    
-
 </div><!-- .wrapper -->
 
 
+<!--
 <footer class="footer">
     <div class="container-fluid main-container">
-    	
     </div>
 </footer>
-<!-- .footer -->
+-->
+
+
+
+
 
 <script src="js/libs/highcharts.js"></script>
 <script src="js/libs/slick.js"></script>
 <script src="js/libs/chosen.jquery.min.js"></script>
+<script src="js/libs/jquery.magnific-popup.min.js"></script>
+<script src="js/libs/flatpickr.min.js"></script>
+<script src="js/libs/flatpickr-ru.js"></script>
 <script src="js/main.js"></script>
 
 </body>

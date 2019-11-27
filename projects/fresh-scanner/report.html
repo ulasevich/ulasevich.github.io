@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	
+	<title>Report | Fresh scanner</title>
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    
+    <!--head css, js-->
+    <link rel="stylesheet" href="css/libs/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/libs/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/libs/slick.css">
+    <link rel="stylesheet" href="css/libs/slick-theme.css">
+    <link rel="stylesheet" href="css/libs/chosen.css">
+    <link rel="stylesheet" href="css/libs/magnific-popup.css">
+    <link rel="stylesheet" href="css/libs/flatpickr.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/modernizr-custom.js"></script>
+    <script src="js/jquery-1.12.2.min.js"></script>
+    <!--head css, js-->
+    
+    <link href="css/main.css" rel="stylesheet">
+    
+</head>
+
+<body>
+
+
+<div class="wrapper">
+	
+	<!-- блок только для тестирования -->
+    <div style="position: absolute; top: 3px; right: 15px; font-size: 10px;">
+    	<button type="button" class="js--test--form-1">modal dialog 1</button>
+        <button type="button" class="js--test--form-2">modal dialog 1</button>
+    </div>
+    <!-- блок только для тестирования -->
+    
+    <header class="header">
+		<div class="container-fluid">
+            <div class="row header-row align-items-center">
+            	<div class="col-auto header-row__logo">
+                	<a href="index.html" class="header-logo">
+                        <object type="image/svg+xml" data="img/header-logo.svg">
+                        	<img src="img/header-logo.png" alt="Fresh scanner logo" />
+                        </object>
+                    </a>
+                </div>
+                <div class="col header-row__info">
+                	<span class="info-item">Invoice: <strong>259985421</strong></span>
+                    <span class="info-item">Product: <strong>Tomato</strong></span>
+                    <span class="info-item">Product kind: <strong>Chernomor</strong></span>
+                </div>
+                <div class="col-auto header-row__menu">
+                	<ul class="not-list">
+                    	
+                        <li> <button type="button" class="btn btn-default btn--gray btn--download">Download report</button> </li>
+                        <li> <a href="photos.html" class="btn btn-default btn--white">Go to Photo</a> </li>
+                        <li> <button type="button" class="btn btn-default btn--red">Finish inspection</button> </li>
+                        <li>
+                            <button type="button" class="btn btn-icon" title="Save">
+                                <div class="icon-item">
+                                    <i class="icon icon--save"></i>
+                                </div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div><!--.header-row-->
+        </div>
+	</header><!-- .header-->
+    
+    
+    <aside class="sidebar">
+    	<div class="sidebar-content">
+        	<nav class="sidebar-menu">
+            	<ul class="not-list">
+                	<li> <a href="#" class="link-active">General information</a> </li>
+                    <li> <a href="#" class="link-checked">Information about packaging</a> </li>
+                    <li> <a href="#" class="link-checked">Temperature and seal data</a> </li>
+                    <li> <a href="#">Quantity</a> </li>
+                    <li> <a href="#">Talman expense</a> </li>
+                    <li> <a href="#" class="link-waiting">The results of the inspection</a> </li>
+                    <li> <a href="#">Conclusion</a> </li>
+                    <li> <a href="#">Attaching photos</a> </li>
+                </ul>
+            </nav>
+        </div><!--.sidebar-content-->
+    </aside>
+        
+    
+	<main class="content">
+		<div class="container-fluid main-container">
+    		
+            <h1>General information</h1>
+            
+            <div class="row row-timeline align-items-center">
+                <div class="col-auto row-timeline__step step-active">
+                    <div class="step-point">
+                        <div class="step-point-core"></div>
+                    </div>
+                    <div class="step-text"> 1 </div>
+                </div>
+                
+                <div class="col row-timeline__path path-active">
+                    <div class="step-line"></div>
+                </div>
+                
+                <div class="col-auto row-timeline__step step-checked">
+                    <div class="step-point">
+                        <div class="step-point-core"></div>
+                    </div>
+                    <div class="step-text"> 2 </div>
+                </div>
+                
+                <div class="col row-timeline__path">
+                    <div class="step-line"></div>
+                </div>
+                
+                <div class="col-auto row-timeline__step step-checked">
+                    <div class="step-point">
+                        <div class="step-point-core"></div>
+                    </div>
+                    <div class="step-text"> 3 </div>
+                </div>
+                
+                <div class="col row-timeline__path">
+                    <div class="step-line"></div>
+                </div>
+                
+                <div class="col-auto row-timeline__step">
+                    <div class="step-point">
+                        <div class="step-point-core"></div>
+                    </div>
+                    <div class="step-text"> 4 </div>
+                </div>
+                
+                <div class="col row-timeline__path">
+                    <div class="step-line"></div>
+                </div>
+                
+                <div class="col-auto row-timeline__step">
+                    <div class="step-point">
+                        <div class="step-point-core"></div>
+                    </div>
+                    <div class="step-text"> 5 </div>
+                </div>
+                
+                <div class="col row-timeline__path">
+                    <div class="step-line"></div>
+                </div>
+                
+                <div class="col-auto row-timeline__step step-waiting">
+                    <div class="step-point">
+                        <div class="step-point-core"></div>
+                    </div>
+                    <div class="step-text"> 6 </div>
+                </div>
+                
+                <div class="col row-timeline__path">
+                    <div class="step-line"></div>
+                </div>
+                
+                <div class="col-auto row-timeline__step">
+                    <div class="step-point">
+                        <div class="step-point-core"></div>
+                    </div>
+                    <div class="step-text"> 7 </div>
+                </div>
+                
+                <div class="col row-timeline__path">
+                    <div class="step-line"></div>
+                </div>
+                
+                <div class="col-auto row-timeline__step">
+                    <div class="step-point">
+                        <div class="step-point-core"></div>
+                    </div>
+                    <div class="step-text"> 8 </div>
+                </div>
+            </div><!--.row-timeline-->
+            
+            
+            <div class="shadow-block">
+            	<form name="" action="">
+                    <div class="row form-elements">
+                    	<div class="col-12">
+                            <label class="field-label">Поставщик</label>
+                            <div class="select-block">
+                                <select name="">
+                                    <option value="" disabled> выберите поставщика </option>
+                                    <option value="1" selected> ООО РОСБЕЛКОМ </option>
+                                    <option value="2"> Поставщик 2 </option>
+                                    <option value="3"> Поставщик 3 </option>
+                                    <option value="4"> Поставщик 4 </option>
+                                    <option value="5"> Поставщик 5 </option>
+                                    <option value="6"> Поставщик 6 </option>
+                                    <option value="7"> Поставщик 7 </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="field-label">Тип продукции</label>
+                            <div class="select-block">
+                                <select name="">
+                                    <option value="" disabled> выберите </option>
+                                    <option value="1"> Apple / Яблоко </option>
+                                    <option value="2"> Peach / Персик </option>
+                                    <option value="3"> Pepper / Перец </option>
+                                    <option value="4"> Tomato / Томат </option>
+                                    <option value="5" selected> Cucumber / Огурец </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="field-label">Инвойс</label>
+                            <div class="text-block">
+                                <input type="text" placeholder="..." name="" value="003-Т" />
+                            </div>
+                        </div>
+                        
+                        <div class="col-12">
+                        	<h3>Паллет, шт.</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="field-label">Заявленное количество</label>
+                            <div class="text-block">
+                                <input type="text" placeholder="" name="" value="26" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="field-label">Фактическое количество</label>
+                            <div class="text-block">
+                                <input type="text" placeholder="" name="" value="24" />
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <label class="field-label">Недостача</label>
+                            <div class="text-block block-error">
+                                <input type="text" placeholder="" name="" value="-" />
+                                <span class="error">Error text 1</span>
+                            </div>
+                            <small class="field-tip">= "Заявленное количество" - "Фактическое количество"</small>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="field-label">Излишек</label>
+                            <div class="select-block">
+                                <select name="">
+                                    <option value="" disabled> выберите </option>
+                                    <option value="1" selected> - </option>
+                                    <option value="2"> Излишек 1 </option>
+                                    <option value="3"> Излишек 2 </option>
+                                    <option value="4"> Излишек 3 </option>
+                                    <option value="5"> Излишек 4 </option>
+                                </select>
+                            </div>
+                            <small class="field-tip">= "Фактическое количество" - "Заявленное количество"</small>
+                        </div>
+                        
+                        <div class="col-12">
+                        	<h3>Коробок, шт.</h3>
+                        </div>
+                        <div class="col-12">
+                            <label class="field-label">Заявленное количество</label>
+                            <div class="text-block">
+                                <input type="text" placeholder="" name="" value="26" />
+                            </div>
+                            <small class="field-tip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sodales turpis fringilla nunc velit quam velit elit est diam</small>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <label class="field-label">Дата (двойное поле)</label>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="text-block">
+                                        <input type="text" placeholder="От" name="" value="" class="js--datepicker" />
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="text-block">
+                                        <input type="text" placeholder="До" name="" value="" class="js--datepicker" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <label class="field-label">Дата (одно поле)</label>
+                            <div class="text-block">
+                                <input type="text" placeholder="..." name="" value="" class="js--datepicker" />
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="col-12">
+                        	<h3>Information about packaging</h3>
+                        </div>
+                        
+                        <div class="col-12">
+                        	<label class="field-label">Вид упаковки <span class="color-gray">(макс. 5)</span></label>
+                            <div class="file-box">
+                                <label><input type="file" name="" class="inputfile" data-multiple-caption="{count} file(s) selected"><strong>Add a photo</strong> <span></span> </label>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12">
+                        	<label class="field-label">Стикер с маркировкой на русском языке</label>
+                            
+                            <div class="upload-previews">
+                            	<div class="upload-previews__item">
+                                    <img src="content/photo-preview-1.jpg">
+                                    <button title="Delete file" type="button" class="btn btn-preview-remove">
+                                        <i class="icon icon--remove-red"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="file-box">
+                                <label><input type="file" name="" class="inputfile" data-multiple-caption="{count} file(s) selected"><strong>Add a photo</strong> <span></span> </label>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12">
+                        	<label class="field-label">Маркировка на коробках <span class="color-gray">(макс. 5)</span></label>
+                            <div class="upload-previews">
+                            	<div class="upload-previews__item">
+                                    <img src="content/photo-preview-2.jpg">
+                                    <button title="Delete file" type="button" class="btn btn-preview-remove">
+                                        <i class="icon icon--remove-red"></i>
+                                    </button>
+                                </div>
+                                <div class="upload-previews__item">
+                                    <img src="content/photo-preview-2.jpg">
+                                    <button title="Delete file" type="button" class="btn btn-preview-remove">
+                                        <i class="icon icon--remove-red"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="file-box">
+                                <label><input type="file" name="" class="inputfile" data-multiple-caption="{count} file(s) selected"><strong>Add a photo</strong> <span></span> </label>
+                            </div>
+                        </div>
+                        
+                    </div><!--.form-elements-->
+                    
+                    <div class="form-nav">
+                    	<a href="#" class="arr-link arr-link-prev disabled" title="Previous"></a>
+                        <a href="#" class="arr-link arr-link-next" title="Next"></a>
+                    </div>
+                </form>
+                                
+            </div><!--.shadow-block-->
+            
+            
+            <div class="popup-form zoom-anim-dialog mfp-hide" id="modal-form-1">
+                <div class="form-wrapper">
+                    
+                    <form name="" method="post" action="">
+                        <div class="row form-elements">
+                            <div class="col-12 align-center">
+                            	Вы действительно хотите завершить инспекцию?
+                            </div>
+                            <div class="col-12 form-submit">
+                                <div class="form-submit">
+                                    <button type="button" class="btn btn-default btn--red">Да</button>
+                                    <button type="button" class="btn btn-default btn--gray">Нет</button>
+                                </div>
+                            </div><!--.form-submit-->
+                        </div><!--.form-elements-->
+                    </form>
+                    
+                </div><!--.form-wrapper-->
+            </div><!--.popup-form-->
+            
+            
+            <div class="popup-form zoom-anim-dialog mfp-hide" id="modal-form-2">
+                <div class="form-wrapper">
+                    
+                    <div class="align-center">
+                        Вы не можее завершить экспертизу пока полностью не заполните отчет.
+                    </div>
+                    
+                </div><!--.form-wrapper-->
+            </div><!--.popup-form-->
+            
+            
+            
+			<script>
+            $(document).ready(function(){
+				
+				/*--------- скрипт для примера ---------*/
+				$(document).on('click', '.js--test--form-1', function(){
+					$.magnificPopup.open({
+					    items: {
+							src: '#modal-form-1'
+					    },
+						fixedContentPos: false,
+						fixedBgPos: true,
+						overflowY: 'auto',
+						closeBtnInside: true,
+						preloader: false,
+						midClick: true,
+						removalDelay: 300,
+						mainClass: 'my-mfp-zoom-in'
+					});
+				});
+				
+				$(document).on('click', '.js--test--form-2', function(){
+					$.magnificPopup.open({
+					    items: {
+							src: '#modal-form-2'
+					    },
+						fixedContentPos: false,
+						fixedBgPos: true,
+						overflowY: 'auto',
+						closeBtnInside: true,
+						preloader: false,
+						midClick: true,
+						removalDelay: 300,
+						mainClass: 'my-mfp-zoom-in'
+					});
+				});
+				/*--------- скрипт для примера ---------*/
+				
+				
+				
+            });
+            </script>
+            
+        </div><!--.container-fluid-->
+	</main><!-- .content -->
+    
+    
+</div><!--.wrapper-->
+
+
+
+<script src="js/libs/highcharts.js"></script>
+<script src="js/libs/slick.js"></script>
+<script src="js/libs/chosen.jquery.min.js"></script>
+<script src="js/libs/jquery.magnific-popup.min.js"></script>
+<script src="js/libs/flatpickr.min.js"></script>
+<script src="js/libs/flatpickr-ru.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
