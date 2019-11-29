@@ -1,0 +1,65 @@
+.uas-panel {
+	position: fixed;
+	width: 250px;
+	height: 200px;
+	left: -250px;
+	margin-left: 40px;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+	transition-property: left;
+	top: 50%;
+	margin-top: -100px;
+	z-index: 99999;
+}
+.uas-panel.uas-panel--opened {
+	left: -40px;
+}
+.uas-panel * {
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 12px !important;
+	line-height: 1.2em !important;
+	-moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+}
+.uas-panel-wrapper {
+	position: relative;
+	background-color: #CFC;
+	-webkit-border-radius: 0 10px 10px 0;
+	-moz-border-radius: 0 10px 10px 0;
+	border-radius: 0 10px 10px 0;
+}
+.uas-panel-side {
+	position: absolute;
+	width: 40px;
+	height: 100%;
+	top: 0;
+	right: 0;
+	background-color: #CCC;
+	text-align: center;
+	padding: 4px;
+	-webkit-border-radius: 0 10px 10px 0;
+	-moz-border-radius: 0 10px 10px 0;
+	border-radius: 0 10px 10px 0;
+}
+.uas-panel-content {
+	padding: 10px 50px 10px 10px;
+}
+.uas-panel-content p {
+	margin: 10px 0;
+}
+.uas-panel-side-btn {
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.uas-panel-close {
+	display: none;
+}
+.uas-panel--opened .uas-panel-close {
+	display: block;
+}
+.uas-panel--opened .uas-panel-show {
+	display: none;
+}

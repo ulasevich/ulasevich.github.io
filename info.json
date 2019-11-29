@@ -1,0 +1,9 @@
+{
+  "year": 2019,
+  "title": "Название проекта",
+  "description": "Короткое описание проекта",
+  "en": {
+    "title": "Project title",
+    "description": "Short project description"
+  }
+}
