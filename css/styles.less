@@ -1117,11 +1117,18 @@ Forms, Popups
 	}
 }
 .detail-row {
-	margin: 2em 0 0;
+	margin-top: 2em;
+	margin-bottom: 2em;
 	> div[class*="col"] {
 		@media @mobile-992 {
 			padding-bottom: 25px;
 		}
+	}
+}
+.detail-row__contacts {
+	padding-bottom: 20px;
+	@media @mobile-768 {
+		text-align: center;
 	}
 }
 .col-text-row {

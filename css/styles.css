@@ -1075,11 +1075,20 @@ Forms, Popups
   border-radius: 50%;
 }
 .detail-row {
-  margin: 2em 0 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 @media all and (max-width: 991.98px) {
   .detail-row > div[class*="col"] {
     padding-bottom: 25px;
+  }
+}
+.detail-row__contacts {
+  padding-bottom: 20px;
+}
+@media all and (max-width: 767.98px) {
+  .detail-row__contacts {
+    text-align: center;
   }
 }
 .col-text-row {

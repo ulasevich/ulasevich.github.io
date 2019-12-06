@@ -54,6 +54,12 @@ var Panel = {
 					<div class="uas-panel-side">\
 						<div class="uas-panel-side-btn uas-panel-show"></div>\
 						<div class="uas-panel-side-btn uas-panel-close"></div>\
+						<div class="uas-panel-side-text">\
+							И<br/>\
+							Н<br/>\
+							Ф<br/>\
+							О<br/>\
+						</div>\
 					</div>\
 					<div class="uas-panel-container">\
 						<div class="uas-panel-content">\

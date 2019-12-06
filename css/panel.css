@@ -86,12 +86,22 @@
 .uas-panel-side-btn:hover {
 	opacity: 0.7;
 }
+.uas-panel-side-text {
+	text-align: center;
+	text-transform: uppercase;
+	color: #bbb !important;
+	font-family: Verdana, Geneva, sans-serif !important;
+	font-size: 20px !important;
+	font-weight: 900 !important;
+	line-height: 1.4em !important;
+	cursor: default;
+}
 .uas-panel-show {
-	background-image: url("/img/info.svg");
+	background-image: url("../img/info.svg");
 }
 .uas-panel-close {
 	display: none;
-	background-image: url("/img/close.svg");
+	background-image: url("../img/close.svg");
 }
 .uas-panel--opened .uas-panel-close {
 	display: block;
