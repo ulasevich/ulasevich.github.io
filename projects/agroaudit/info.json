@@ -1,9 +1,10 @@
 {
   "year": 2019,
   "title": "Агроаудит",
-  "description": "Верстка лэндинга для Агроаудит",
+  "description": "Верстка лэндинга для сервиса Direct.Farm — Агроаудит",
+  "site": "http://scout.direct.farm/",
   "en": {
     "title": "Agroaudit",
-    "description": "The layout of the landing page for Agroaudit"
+    "description": "The layout of the landing page for the Direct.Farm service — Agroaudit"
   }
 }

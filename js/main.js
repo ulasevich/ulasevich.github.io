@@ -30,8 +30,22 @@ App.Other = function () {
 	if (App.is_mobile) {
 		$('html').addClass('is_mobile');
 	}
+	$('.lazy').lazy({
+		effect: 'fadeIn',
+		effectTime: 2000,
+        threshold: 0,
+		afterLoad: function(element) {
+			console.log(element);
+			console.log('loaded');
+        },
+		onError: function(element) {
+            console.log(element);
+			console.log('load error');
+        },
+	});
 };
 
 
 $(document).ready(function(){
+	App.Other();
 });

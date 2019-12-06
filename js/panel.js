@@ -2,10 +2,8 @@
 var Panel = {
     win: $(window),
 	doc: $(document),
-	is_mobile: detectmob(), // браузер мобильный или нет
 	ms_ie: /(MSIE|Trident\/|Edge\/)/i.test(navigator.userAgent), // Браузер - ie или нет
 };
-
 
 /* Spell chat */
 /*Плагин для модуля чата */
@@ -29,7 +27,7 @@ var Panel = {
 				
 				$.getJSON('info.json').done(function(data){
 					panel_data = data;
-					console.log(panel_data);
+					//console.log(panel_data);
 					methods.build.call(this_);
 				})
 				.fail(function(jqxhr){
@@ -42,27 +40,29 @@ var Panel = {
 			var settings = $.extend({ // опции оформления
 				color: "black",
 				backgroundColor: "white",
-				svg_icon_close: '<svg class="spchat-svg-icon" enable-background="new 0 0 32 32" height="32px" id="Слой_1" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Cancel"><path clip-rule="evenodd" d="M16,0C7.163,0,0,7.163,0,16c0,8.836,7.163,16,16,16   c8.836,0,16-7.163,16-16C32,7.163,24.836,0,16,0z M16,30C8.268,30,2,23.732,2,16C2,8.268,8.268,2,16,2s14,6.268,14,14   C30,23.732,23.732,30,16,30z"/><path clip-rule="evenodd" d="M22.729,21.271l-5.268-5.269l5.238-5.195   c0.395-0.391,0.395-1.024,0-1.414c-0.394-0.39-1.034-0.39-1.428,0l-5.231,5.188l-5.309-5.31c-0.394-0.396-1.034-0.396-1.428,0   c-0.394,0.395-0.394,1.037,0,1.432l5.301,5.302l-5.331,5.287c-0.394,0.391-0.394,1.024,0,1.414c0.394,0.391,1.034,0.391,1.429,0   l5.324-5.28l5.276,5.276c0.394,0.396,1.034,0.396,1.428,0C23.123,22.308,23.123,21.667,22.729,21.271z"/></g><g/><g/><g/><g/><g/><g/></svg>',
-				svg_icon_show: '<svg class="spchat-svg-icon" enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M24.291,14.276L14.705,4.69c-0.878-0.878-2.317-0.878-3.195,0l-0.8,0.8c-0.878,0.877-0.878,2.316,0,3.194  L18.024,16l-7.315,7.315c-0.878,0.878-0.878,2.317,0,3.194l0.8,0.8c0.878,0.879,2.317,0.879,3.195,0l9.586-9.587  c0.472-0.471,0.682-1.103,0.647-1.723C24.973,15.38,24.763,14.748,24.291,14.276z"/></svg>',
 			}, options );
-			
-			console.log(panel_data);
-			
+						
 			$(this).addClass('uas-panel');
+			
+			var panel_data_site = '';
+			if (panel_data.site) {
+				panel_data_site = '<p><div>Сайт:</div><a href="'+panel_data.site+'" target="_blank" rel="nofollow">'+panel_data.site+'</a></p>';
+			}
 			
 			$(this).append(
 				'<div class="uas-panel-wrapper">\
 					<div class="uas-panel-side">\
-						<div class="uas-panel-side-btn uas-panel-show">'+settings.svg_icon_show+'</div>\
-						<div class="uas-panel-side-btn uas-panel-close">'+settings.svg_icon_close+'</div>\
+						<div class="uas-panel-side-btn uas-panel-show"></div>\
+						<div class="uas-panel-side-btn uas-panel-close"></div>\
 					</div>\
-					<div class="uas-panel-content">\
-						<p>'+panel_data.title+'<br/>\
-						Год: '+panel_data.year+'</p>\
-						<p>\
-						'+panel_data.description+'\
-						</p>\
-						<p><a href="#">&larr; Ссылка на портфолио</a></p>\
+					<div class="uas-panel-container">\
+						<div class="uas-panel-content">\
+							<div class="uas-project-title">'+panel_data.title+'</div>\
+							<p>Год: '+panel_data.year+'</p>\
+							<p><div>Задача:</div>'+panel_data.description+'</p>'
+							+panel_data_site+'\
+							<p><a href="/" class="uas-back-link"><span class="uas-arr">&lsaquo;</span> <span class="uas-back-text">Назад в портфолио</span></a></p>\
+						</div>\
 					</div>\
 				</div>'
 			);
@@ -91,7 +91,7 @@ var Panel = {
 				return false;
 			}
 		},
-		update : function( content ) {
+		update : function(content) {
 			//
 		}
 	};
@@ -108,17 +108,22 @@ var Panel = {
 	
 })( jQuery );
 
-
+function addCSS(filename){
+	var head = document.getElementsByTagName('head')[0];
+	var style = document.createElement('link');
+	style.href = filename;
+	style.type = 'text/css';
+	style.rel = 'stylesheet';
+	head.append(style);
+}
 
 var Panel_el;
 
-
 $(document).ready(function(){
+	addCSS('/css/panel.css');
 	$('body').append('<div id="uas-portfolio-panel"></div>');
-	
 	Panel_el = $( "#uas-portfolio-panel" ).uasPanel({
 		//color: "white"
 	});
-	
 	console.log(Panel_el);
 });
