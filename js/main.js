@@ -31,9 +31,9 @@ App.Other = function () {
 		$('html').addClass('is_mobile');
 	}
 	$('.lazy').lazy({
-		effect: 'fadeIn',
-		effectTime: 2000,
-        threshold: 0,
+		//effect: 'fadeIn',
+		//effectTime: 1000,
+        //threshold: 0,
 		afterLoad: function(element) {
 			console.log(element);
 			console.log('loaded');

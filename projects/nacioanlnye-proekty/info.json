@@ -1,0 +1,10 @@
+{
+  "year": 2019,
+  "title": "Региональные проекты",
+  "description": "Верстка для сайта национальных проектов в Краснодарском крае",
+  "site": "https://np.krasnodar.ru/",
+  "en": {
+    "title": "Regional projects",
+    "description": "Layout for the site of national projects in the Krasnodar region"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "year": 2019,
+  "title": "Fresh Scanner",
+  "description": "Верстка для веб-сервиса распознавания качества овощей и фруктов",
+  "en": {
+    "title": "Fresh Scanner",
+    "description": "Layout for web service of recognition of quality of vegetables and fruits"
+  }
+}

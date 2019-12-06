@@ -241,6 +241,22 @@ h2 {
 h3 {
   font-size: 1.2em;
 }
+.heading-borders {
+  position: relative;
+  padding: 23px 0;
+  margin-bottom: 28px;
+}
+.heading-borders:after {
+  position: absolute;
+  content: '';
+  height: 3px;
+  border-radius: 3px;
+  background-color: #999;
+  width: 160px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -80px;
+}
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -336,12 +352,18 @@ ul > li:after {
   display: block;
   content: '';
   position: absolute;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background-color: #2f3235;
-  top: 10px;
+  top: 9px;
   left: 0;
+  /*width: 4px;
+		height: 4px;
+		border-radius: 50%;
+		background-color: #999;*/
+
+  width: 0;
+  height: 0;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-left: 5px solid #999;
 }
 ul.not-list,
 .select ul,
