@@ -1,0 +1,10 @@
+{
+  "year": 2018,
+  "title": "da Vinci Surgery",
+  "description": "Верстка и установка на Bitrix сайта робота-хирурга Da Vinci Surgery",
+  "site": "http://davinchi.life/",
+  "en": {
+    "title": "da Vinci Surgery",
+    "description": "The layout (and installation to CMS Bitrix) of the site Da Vinci Surgery (robot surgeon)"
+  }
+}

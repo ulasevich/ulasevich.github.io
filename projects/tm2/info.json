@@ -1,0 +1,10 @@
+{
+  "year": 2020,
+  "title": "TM2",
+  "description": "Верстка и установка на Bitrix сайта TM2 — биржи металлов",
+  "site": "http://test.wehub.online/",
+  "en": {
+    "title": "TM2",
+    "description": "The layout (and installation to CMS Bitrix) of the TM2 site — the technology metals market"
+  }
+}
