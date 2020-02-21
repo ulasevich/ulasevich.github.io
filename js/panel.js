@@ -73,6 +73,7 @@ var Panel = {
 				</div>'
 			);
 			
+			/*
 			$(this).find('.uas-panel-show').on( "click", function() {
 				methods.show_panel.call(this_);
 			});
@@ -80,8 +81,20 @@ var Panel = {
 			$(this).find('.uas-panel-close').on( "click", function() {
 				methods.hide_panel.call(this_);
 			});
+			*/
+			
+			$('.uas-panel-side').on( "click", function() {
+				methods.switch_panel.call(this_);
+			});
 		},
 		destroy : function( ) {
+		},
+		switch_panel : function(el) {
+			if ($(this).hasClass(defaults.class_status_opened)) {
+				$(this).removeClass(defaults.class_status_opened);
+			} else {
+				$(this).addClass(defaults.class_status_opened);
+			}
 		},
 		show_panel : function(el) {
 			if ($(this).hasClass(defaults.class_status_opened)) {

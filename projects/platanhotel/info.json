@@ -1,0 +1,10 @@
+{
+  "year": 2017,
+  "title": "Отель Платан",
+  "description": "Верстка сайта. Установка шаблона на CMS Bitrix, настройка структуры и различных компонентов сайта отеля Платан",
+  "site": "https://www.platanhotel.ru/",
+  "en": {
+    "title": "Hotel Platan",
+    "description": "The layout of the site. Installing a template on the Bitrix CMS, configuring the structure and various components of the site"
+  }
+}

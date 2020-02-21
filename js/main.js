@@ -35,13 +35,24 @@ App.Other = function () {
 		//effectTime: 1000,
         //threshold: 0,
 		afterLoad: function(element) {
-			console.log(element);
-			console.log('loaded');
+			//console.log(element);
+			//console.log('loaded');
         },
 		onError: function(element) {
-            console.log(element);
-			console.log('load error');
+            //console.log(element);
+			//console.log('load error');
         },
+	});
+	
+	
+	//$('.portfolio-row').css({"height": 600});
+	
+	$('.js-show-all').on( "click", function() {
+		var scrollHeight = $('.portfolio-row').prop("scrollHeight");
+		scrollHeight = scrollHeight+'px';
+		$('.portfolio-row').animate({"height": scrollHeight}, 600);
+		$('.portfolio-row__switch').fadeOut();
+		return false;
 	});
 };
 
