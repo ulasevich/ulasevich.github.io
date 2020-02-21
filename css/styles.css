@@ -1106,10 +1106,15 @@ Forms, Popups
   position: relative;
   margin: 0 -8px 50px;
   overflow: hidden;
-  height: 640px;
+  height: 840px;
 }
 .portfolio-row > div[class*="col"] {
   padding: 0 8px 16px 8px;
+}
+@media all and (max-width: 1400px) {
+  .portfolio-row {
+    height: 640px;
+  }
 }
 @media all and (max-width: 767.98px) {
   .portfolio-row {
