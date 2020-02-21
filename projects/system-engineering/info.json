@@ -2,7 +2,6 @@
   "year": 2018,
   "title": "System Engineering",
   "description": "Верстка и установка на Bitrix сайта System Engineering",
-  "site": "http://test.wehub.online/",
   "en": {
     "title": "System Engineering",
     "description": "The layout (and installation to CMS Bitrix) of the site System Engineering"
