@@ -2,6 +2,7 @@
   "year": 2018,
   "title": "System Engineering",
   "description": "Верстка и установка на Bitrix сайта System Engineering",
+  "site": "https://systemengine.ru/",
   "en": {
     "title": "System Engineering",
     "description": "The layout (and installation to CMS Bitrix) of the site System Engineering"
