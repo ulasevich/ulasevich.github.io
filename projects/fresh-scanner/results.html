@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	
+	<title>Report | Fresh scanner</title>
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!--head css, js-->
+    <link rel="stylesheet" href="css/libs/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/libs/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/libs/slick.css">
+    <link rel="stylesheet" href="css/libs/slick-theme.css">
+    <link rel="stylesheet" href="css/libs/chosen.css">
+    <link rel="stylesheet" href="css/libs/magnific-popup.css">
+    <link rel="stylesheet" href="css/libs/flatpickr.min.css">
+    <link rel="stylesheet" href="css/libs/jBox.all.min.css">
+    <link rel="stylesheet" href="css/libs/fotorama.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/modernizr-custom.js"></script>
+    <script src="js/jquery-1.12.2.min.js"></script>
+    <!--head css, js-->
+        
+	<script src="/js/panel.js"></script>
+</head>
+
+<body>
+
+<div class="wrapper">
+	
+	<!-- блок только для тестирования -->
+    <!-- блок только для тестирования -->
+    
+    <style>
+    /* стили для типов дефектов */
+    .bg-type-1, .btn-type-1 {
+    	background-color: #FFFD7F;
+    }
+    .btn-type-1:hover {
+        background-color: #fffc4c;
+    }
+    
+    .bg-type-2, .btn-type-2 {
+        background-color: #BBCCE2;
+    }
+    .btn-type-2:hover {
+        background-color: #97b1d3;
+    }
+    
+    .bg-type-3, .btn-type-3 {
+        background-color: #EF8383;
+    }
+    .btn-type-3:hover {
+        background-color: #e95656;
+    }
+    
+    .bg-type-4, .btn-type-4 {
+        background-color: #CCC;
+    }
+    .btn-type-4:hover {
+        background-color: #999;
+    }
+    
+    .bg-type-5, .btn-type-5 {
+        background-color: #CCC;
+    }
+    .btn-type-5:hover {
+        background-color: #999;
+    }
+    
+    .bg-type-6, .btn-type-6 {
+        background-color: #CCC;
+    }
+    .btn-type-6:hover {
+        background-color: #999;
+    }
+    </style>
+    
+    <header class="header">
+		<div class="container-fluid">
+            <div class="row header-row align-items-center">
+            	<div class="col-auto header-row__logo">
+                	<a href="index.html" class="header-logo">
+                        <object type="image/svg+xml" data="img/header-logo.svg">
+                        	<img src="img/header-logo.png" alt="Fresh scanner logo" />
+                        </object>
+                    </a>
+                </div>
+                <div class="col header-row__info">
+                	<span class="info-item">Invoice: <strong>259985421</strong></span>
+                    <span class="info-item">Product: <strong>Tomato</strong></span>
+                    <span class="info-item">Product kind: <strong>Chernomor</strong></span>
+                </div>
+                <div class="col-auto header-row__menu">
+                	<ul class="not-list">
+                    	
+                        <li> <button type="button" class="btn btn-default btn--gray btn--download">Download report</button> </li>
+                        <li> <a href="photos.html" class="btn btn-default btn--white">Go to Photo</a> </li>
+                        <li> <button type="button" class="btn btn-default btn--red">Finish inspection</button> </li>
+                        <li>
+                            <button type="button" class="btn btn-icon" title="Save">
+                                <div class="icon-item">
+                                    <i class="icon icon--save"></i>
+                                </div>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div><!--.header-row-->
+        </div>
+	</header><!-- .header-->
+    
+    
+    <aside class="sidebar">
+    	<div class="sidebar-content">
+        	<nav class="sidebar-menu">
+            	<ul class="not-list">
+                	<li> <a href="report.html">General information</a> </li>
+                    <li>
+                    	<a href="results.html" class="link-active">The results of the inspection</a>
+                        <ul>
+                        	<li> <a href="results.html" class=" link-checked">Фотографии дефектов</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div><!--.sidebar-content-->
+    </aside><!--.sidebar-->
+    
+    
+    <aside class="right-sidebar">
+    	<div class="right-sidebar-content">
+        	
+            <div class="right-sidebar-top">
+                
+                <div class="margin-bottom-20">
+                    <button type="button" class="btn btn-default btn--green btn--full-width js-add-container">Добавить контейнер</button>
+                </div>
+                
+                <form class="js-container-form">
+                    <div class="row form-elements small-form-elements align-items-end">
+                        <div class="col-md-6">
+                            <label class="field-label label-required">Упаковочная станция <!--<span class="color-red">*</span>--></label>
+                            <div class="text-block">
+                                <input type="text" placeholder="" name="container_name" value="" class="js-container-input" autocomplete="off" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="field-label label-required">Количество гроздей</label>
+                            <div class="text-block">
+                                <input type="text" placeholder="" name="container_clusters" value="" class="js-container-input" autocomplete="off" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="field-label label-required">Количесто пальцев</label>
+                            <div class="text-block">
+                                <input type="text" placeholder="" name="container_fingers" value="" class="js-container-input" autocomplete="off" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="field-label label-required">Вес брутто, кг</label>
+                            <div class="text-block">
+                                <input type="text" placeholder="" name="container_weight_gross" value="" class="js-container-input" autocomplete="off" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="field-label">Температура, С</label>
+                            <div class="text-block">
+                                <input type="text" placeholder="" name="container_temp" value="" class="js-container-input" autocomplete="off" />
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="field-label">Вес тары, кг</label>
+                            <div class="text-block">
+                                <input type="text" placeholder="" name="container_weight_tare" value="" class="js-container-input" autocomplete="off" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div><!--.right-sidebar-top-->
+            
+            <div class="right-sidebar-bottom scroll-overflow">
+            	<div class="row row-previews upload-previews">
+                    <div class="col-6">
+                        <!--<button type="button" class="btn btn-default btn--gray">
+                            <i class="icon icon--add-image"></i>
+                        </button>-->
+                        
+                        <div class="file-control btn--gray">
+                        	<label>
+                                <input type="file" name="" class="" accept=".gif,.jpg,.jpeg,.png" onChange="testUploadFile()" />
+                                <i class="icon icon--add-image"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="upload-previews__item js-preview-item" data-image="content/photo-big-3.jpg" data-id="2" data-container="" data-defects="{}">
+                            <div class="preview-item-img">
+                            	<img src="content/photo-preview-3.jpg" />
+                            </div>
+                            <label class="thumbs-item-checkbox">
+                                <input type="checkbox" name="" value="" />
+                                <span></span>
+                            </label>
+                            <button title="Delete file" type="button" class="btn btn-preview-remove">
+                                <i class="icon icon--remove-red"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="upload-previews__item js-preview-item" data-image="content/photo-big-3.jpg" data-id="10" data-container="" data-defects="{}">
+                            <div class="preview-item-img">
+                            	<img src="content/photo-preview-3.jpg" />
+                            </div>
+                            <label class="thumbs-item-checkbox">
+                                <input type="checkbox" name="" value="" />
+                                <span></span>
+                            </label>
+                            <button title="Delete file" type="button" class="btn btn-preview-remove">
+                                <i class="icon icon--remove-red"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="upload-previews__item js-preview-item" data-image="content/photo-big-4.jpg" data-id="12" data-container="" data-defects="{}">
+                            <div class="preview-item-img">
+                            	<img src="content/photo-preview-4.jpg" />
+                            </div>
+                            <label class="thumbs-item-checkbox">
+                                <input type="checkbox" name="" value="" />
+                                <span></span>
+                            </label>
+                            <button title="Delete file" type="button" class="btn btn-preview-remove">
+                                <i class="icon icon--remove-red"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="upload-previews__item js-preview-item" data-image="content/photo-big-4.jpg" data-id="15" data-container="" data-defects="{}">
+                            <div class="preview-item-img">
+                            	<img src="content/photo-preview-4.jpg" />
+                            </div>
+                            <label class="thumbs-item-checkbox">
+                                <input type="checkbox" name="" value="" />
+                                <span></span>
+                            </label>
+                            <button title="Delete file" type="button" class="btn btn-preview-remove">
+                                <i class="icon icon--remove-red"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="upload-previews__item js-preview-item" data-image="content/photo-big-4.jpg" data-id="19" data-container="" data-defects="{}">
+                            <div class="preview-item-img">
+                            	<img src="content/photo-preview-4.jpg" />
+                            </div>
+                            <label class="thumbs-item-checkbox">
+                                <input type="checkbox" name="" value="" />
+                                <span></span>
+                            </label>
+                            <button title="Delete file" type="button" class="btn btn-preview-remove">
+                                <i class="icon icon--remove-red"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="upload-previews__item js-preview-item" data-image="content/photo-big-5.jpg" data-id="22" data-container="" data-defects="{}">
+                            <div class="preview-item-img">
+                            	<img src="content/photo-preview-5.jpg" />
+                            </div>
+                            <label class="thumbs-item-checkbox">
+                                <input type="checkbox" name="" value="" />
+                                <span></span>
+                            </label>
+                            <button title="Delete file" type="button" class="btn btn-preview-remove">
+                                <i class="icon icon--remove-red"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="upload-previews__item js-preview-item" data-image="content/photo-big-6.jpg" data-id="32" data-container="" data-defects="{}">
+                            <div class="preview-item-img">
+                            	<img src="content/photo-preview-6.jpg" />
+                            </div>
+                            <label class="thumbs-item-checkbox">
+                                <input type="checkbox" name="" value="" />
+                                <span></span>
+                            </label>
+                            <button title="Delete file" type="button" class="btn btn-preview-remove">
+                                <i class="icon icon--remove-red"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="upload-previews__item js-preview-item" data-image="content/photo-big-6.jpg" data-id="35" data-container="" data-defects="{}">
+                            <div class="preview-item-img">
+                            	<img src="content/photo-preview-6.jpg" />
+                            </div>
+                            <label class="thumbs-item-checkbox">
+                                <input type="checkbox" name="" value="" />
+                                <span></span>
+                            </label>
+                            <button title="Delete file" type="button" class="btn btn-preview-remove">
+                                <i class="icon icon--remove-red"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="upload-previews__item js-preview-item" data-image="content/photo-big-6.jpg" data-id="44" data-container="" data-defects="{}">
+                            <div class="preview-item-img">
+                            	<img src="content/photo-preview-6.jpg" />
+                            </div>
+                            <label class="thumbs-item-checkbox">
+                                <input type="checkbox" name="" value="" />
+                                <span></span>
+                            </label>
+                            <button title="Delete file" type="button" class="btn btn-preview-remove">
+                                <i class="icon icon--remove-red"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="upload-previews__item js-preview-item" data-image="content/photo-big-6.jpg" data-id="105" data-container="" data-defects="{}">
+                            <div class="preview-item-img">
+                            	<img src="content/photo-preview-6.jpg" />
+                            </div>
+                            <label class="thumbs-item-checkbox">
+                                <input type="checkbox" name="" value="" />
+                                <span></span>
+                            </label>
+                            <button title="Delete file" type="button" class="btn btn-preview-remove">
+                                <i class="icon icon--remove-red"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="upload-previews__item js-preview-item" data-image="content/photo-big-7.jpg" data-id="114" data-container="" data-defects="{}">
+                            <div class="preview-item-img">
+                            	<img src="content/photo-preview-7.jpg" />
+                            </div>
+                            <label class="thumbs-item-checkbox">
+                                <input type="checkbox" name="" value="">
+                                <span></span>
+                            </label>
+                            <button title="Delete file" type="button" class="btn btn-preview-remove">
+                                <i class="icon icon--remove-red"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="upload-previews__item js-preview-item" data-image="content/photo-big-7.jpg" data-id="122" data-container="" data-defects="{}">
+                            <div class="preview-item-img">
+                            	<img src="content/photo-preview-7.jpg" />
+                            </div>
+                            <label class="thumbs-item-checkbox">
+                                <input type="checkbox" name="" value="">
+                                <span></span>
+                            </label>
+                            <button title="Delete file" type="button" class="btn btn-preview-remove">
+                                <i class="icon icon--remove-red"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="upload-previews__item js-preview-item" data-image="content/photo-big-7.jpg" data-id="129" data-container="" data-defects="{}">
+                            <div class="preview-item-img">
+                            	<img src="content/photo-preview-7.jpg" />
+                            </div>
+                            <label class="thumbs-item-checkbox">
+                                <input type="checkbox" name="" value="">
+                                <span></span>
+                            </label>
+                            <button title="Delete file" type="button" class="btn btn-preview-remove">
+                                <i class="icon icon--remove-red"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="upload-previews__item js-preview-item" data-image="content/photo-big-7.jpg" data-id="135" data-container="" data-defects="{}">
+                            <div class="preview-item-img">
+                            	<img src="content/photo-preview-7.jpg" />
+                            </div>
+                            <label class="thumbs-item-checkbox">
+                                <input type="checkbox" name="" value="">
+                                <span></span>
+                            </label>
+                            <button title="Delete file" type="button" class="btn btn-preview-remove">
+                                <i class="icon icon--remove-red"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="upload-previews__item js-preview-item" data-image="content/photo-big-8.jpg" data-id="146" data-container="" data-defects="{}">
+                            <div class="preview-item-img">
+                            	<img src="content/photo-preview-8.jpg" />
+                            </div>
+                            <label class="thumbs-item-checkbox">
+                                <input type="checkbox" name="" value="" />
+                                <span></span>
+                            </label>
+                            <button title="Delete file" type="button" class="btn btn-preview-remove">
+                                <i class="icon icon--remove-red"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div><!--.upload-previews-->
+            </div><!--.right-sidebar-bottom-->
+            
+        </div>
+    </aside><!--.right-sidebar-->
+    
+    
+	<main class="content">
+		<div class="container-fluid main-container">
+    		
+            <!--<h1>Результаты инспекции груза</h1>-->
+                        
+            
+            <div class="margin-bottom-20 scroll-overflow">
+            	<div class="nowrap js-station-btns-wrapper">
+                	<button type="button" class="btn btn-default btn--gray btn--small btn--width-110 btn--border js-btn-container " data-id="12" data-container='{"name": "РМ-069", "clusters": 1, "fingers": 107, "weight_gross": 20.7, "temp": "", "weight_tare": ""}'>
+                    	<div>Упаковочная<br/> станция</div>
+                        <div class="js-container_name">РМ-069</div>
+                    </button>
+                    <button type="button" class="btn btn-default btn--gray btn--small btn--width-110 btn--border js-btn-container" data-id="44" data-container='{"name": "РМ-070", "clusters": 2, "fingers": 67, "weight_gross": 68.4, "temp": 33.7, "weight_tare": 5}'>
+                    	<div>Упаковочная<br/> станция</div>
+                        <div class="js-container_name">РМ-070</div>
+                    </button>
+                    <button type="button" class="btn btn-default btn--gray btn--small btn--width-110 btn--border js-btn-container" data-id="66" data-container='{"name": "РМ-071", "clusters": 4, "fingers": 2, "weight_gross": 207, "temp": "", "weight_tare": 12.9}'>
+                    	<div>Упаковочная<br/> станция</div>
+                        <div class="js-container_name">РМ-071</div>
+                    </button>
+                </div>
+            </div>
+            
+            
+            <div class="margin-bottom-20 scroll-overflow bg-color-white border-gray-light">
+            	<table class="data-table width-auto">
+                	<tbody>
+                    	<tr>
+                        	<td class="border-none" colspan="9"> Незначительные дефекты </td>
+                            <td class="border-none" colspan="3"> Значительные </td>
+                            <td class="border-none" colspan="12"> Грубые механические повреждения и отход </td>
+                            <td class="border-none">  </td>
+                        </tr>
+                        <tr>
+                        	<td class="td-small bg-type-1"> PB </td>
+                            <td class="td-small bg-type-1"> KI </td>
+                            <td class="td-small bg-type-1"> SC </td>
+                            <td class="td-small bg-type-1"> INS </td>
+                            <td class="td-small bg-type-1"> DT </td>
+                            <td class="td-small bg-type-1"> LS </td>
+                            <td class="td-small bg-type-1"> TS </td>
+                            <td class="td-small bg-type-1"> CF </td>
+                            <td class="td-small bg-type-1"> CHL <br/> 1-2 </td>
+                            
+                            <td class="td-small bg-type-2"> BR </td>
+                            <td class="td-small bg-type-2"> NI </td>
+                            <td class="td-small bg-type-2"> SC>4 </td>
+                            
+                            <td class="td-small bg-type-3"> ANT </td>
+                            <td class="td-small bg-type-3"> CR </td>
+                            <td class="td-small bg-type-3"> PR </td>
+                            <td class="td-small bg-type-3"> FR </td>
+                            <td class="td-small bg-type-3"> NR </td>
+                            <td class="td-small bg-type-3"> SP </td>
+                            <td class="td-small bg-type-3"> YC </td>
+                            <td class="td-small bg-type-3"> C </td>
+                            <td class="td-small bg-type-3"> CER </td>
+                            <td class="td-small bg-type-3"> RO </td>
+                            <td class="td-small bg-type-3"> RMD </td>
+                            <td class="td-small bg-type-3"> CHL <br/> 3-4 </td>
+                            
+                            <td class="td-small bg-color-green-light color-white"> OK </td>
+                        </tr>
+                        <tr>
+                        	<td class="td-defect-value" id="value-PB"> 0 </td>
+                            <td class="td-defect-value" id="value-KI"> 0 </td>
+                            <td class="td-defect-value" id="value-SC"> 0 </td>
+                            <td class="td-defect-value" id="value-INS"> 0 </td>
+                            <td class="td-defect-value" id="value-DT"> 0 </td>
+                            <td class="td-defect-value" id="value-LS"> 0 </td>
+                            <td class="td-defect-value" id="value-TS"> 0 </td>
+                            <td class="td-defect-value" id="value-CF"> 0 </td>
+                            <td class="td-defect-value" id="value-CHL_1_2"> 0 </td>
+                            
+                            <td class="td-defect-value" id="value-BR"> 0 </td>
+                            <td class="td-defect-value" id="value-NI"> 0 </td>
+                            <td class="td-defect-value" id="value-SC_4"> 0 </td>
+                            
+                            <td class="td-defect-value" id="value-ANT"> 0 </td>
+                            <td class="td-defect-value" id="value-CR"> 0 </td>
+                            <td class="td-defect-value" id="value-PR"> 0 </td>
+                            <td class="td-defect-value" id="value-FR"> 0 </td>
+                            <td class="td-defect-value" id="value-NR"> 0 </td>
+                            <td class="td-defect-value" id="value-SP"> 0 </td>
+                            <td class="td-defect-value" id="value-YC"> 0 </td>
+                            <td class="td-defect-value" id="value-C"> 0 </td>
+                            <td class="td-defect-value" id="value-CER"> 0 </td>
+                            <td class="td-defect-value" id="value-RO"> 0 </td>
+                            <td class="td-defect-value" id="value-RMD"> 0 </td>
+                            <td class="td-defect-value" id="value-CHL_3_4"> 0 </td>
+                            
+                            <td id="defects-total"> 0 </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            
+            <div class="row slider-and-buttons-row">
+            	<div class="col-md-7">
+                    <div class="fotorama-slider">
+                        <!--
+                        <a href="content/photo-big-3.jpg"></a>
+                        <a href="content/photo-big-4.jpg"></a>
+                        <a href="content/photo-big-5.jpg"></a>
+                        -->
+                    </div>
+                    
+                    <div class="fotorama-gallery-buttons">
+                        
+                        <!--<div class="js-photo-defects" id="photo-defects-12">
+                            <span class="js-btn-defect-small-wrapper" id="wrapper-btn-PB"></span>
+                            <span class="js-btn-defect-small-wrapper" id="wrapper-btn-KI"></span>
+                            <span class="js-btn-defect-small-wrapper" id="wrapper-btn-SC"></span>
+                            <span class="js-btn-defect-small-wrapper" id="wrapper-btn-INS"></span>
+                            <span class="js-btn-defect-small-wrapper" id="wrapper-btn-DT"></span>
+                            <span class="js-btn-defect-small-wrapper" id="wrapper-btn-LS"></span>
+                            <span class="js-btn-defect-small-wrapper" id="wrapper-btn-TS"></span>
+                            <span class="js-btn-defect-small-wrapper" id="wrapper-btn-CF"></span>
+                            <span class="js-btn-defect-small-wrapper" id="wrapper-btn-CHL_1_2"></span>
+                            
+                            <span class="js-btn-defect-small-wrapper" id="wrapper-btn-BR"></span>
+                            <span class="js-btn-defect-small-wrapper" id="wrapper-btn-NI"></span>
+                            <span class="js-btn-defect-small-wrapper" id="wrapper-btn-SC_4"></span>
+                            
+                            <span class="js-btn-defect-small-wrapper" id="wrapper-btn-ANT"></span>
+                            <span class="js-btn-defect-small-wrapper" id="wrapper-btn-CR"></span>
+                            <span class="js-btn-defect-small-wrapper" id="wrapper-btn-PR"></span>
+                            <span class="js-btn-defect-small-wrapper" id="wrapper-btn-FR"></span>
+                            <span class="js-btn-defect-small-wrapper" id="wrapper-btn-NR"></span>
+                            <span class="js-btn-defect-small-wrapper" id="wrapper-btn-SP"></span>
+                            <span class="js-btn-defect-small-wrapper" id="wrapper-btn-YC"></span>
+                            <span class="js-btn-defect-small-wrapper" id="wrapper-btn-C"></span>
+                            <span class="js-btn-defect-small-wrapper" id="wrapper-btn-CER"></span>
+                            <span class="js-btn-defect-small-wrapper" id="wrapper-btn-RO"></span>
+                            <span class="js-btn-defect-small-wrapper" id="wrapper-btn-RMD"></span>
+                            <span class="js-btn-defect-small-wrapper" id="wrapper-btn-CHL_3_4"></span>
+                        </div>-->
+                        
+                        <button type="button" class="btn btn-default btn--white-gray btn--border js-btn-defect-clear">
+                            <i class="icon icon--remove-green"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="col-md-5">
+                	
+                    <div class="row defect-btns-row">
+                        <div class="col-4">
+                            <button type="button" class="btn btn-default btn-grid btn-type-1 btn--border js-btn-defect-big" data-id="PB" data-type="1">
+                                <div class="btn__content">
+                                    <div class="font-size-big bold">PB</div>
+                                    <div>точечные нажимы</div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-default btn-grid btn-type-1 btn--border js-btn-defect-big" data-id="KI" data-type="1">
+                                <div class="btn__content">
+                                    <div class="font-size-big bold">KI</div>
+                                    <div>ножевые повреждения</div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-default btn-grid btn-type-1 btn--border js-btn-defect-big" data-id="SC" data-type="1">
+                                <div class="btn__content">
+                                    <div class="font-size-big bold">SC</div>
+                                    <div> потертости, рубцы 2-4 см</div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-default btn-grid btn-type-1 btn--border js-btn-defect-big" data-id="INS" data-type="1">
+                                <div class="btn__content">
+                                    <div class="font-size-big bold">INS</div>
+                                    <div>повреждения насекомыми</div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-default btn-grid btn-type-1 btn--border js-btn-defect-big" data-id="DT" data-type="1">
+                                <div class="btn__content">
+                                    <div class="font-size-big bold">DT</div>
+                                    <div>грязные плоды</div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-default btn-grid btn-type-1 btn--border js-btn-defect-big" data-id="LS" data-type="1">
+                                <div class="btn__content">
+                                    <div class="font-size-big bold">LS</div>
+                                    <div> пятна латекса</div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-default btn-grid btn-type-1 btn--border js-btn-defect-big" data-id="TS" data-type="1">
+                                <div class="btn__content">
+                                    <div class="font-size-big bold">TS</div>
+                                    <div>короткие плоды</div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-default btn-grid btn-type-1 btn--border js-btn-defect-big" data-id="CF" data-type="1">
+                                <div class="btn__content">
+                                    <div class="font-size-big bold">CF</div>
+                                    <div>срезанный палец </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-default btn-grid btn-type-1 btn--border js-btn-defect-big" data-id="CHL_1_2" data-type="1">
+                                <div class="btn__content">
+                                    <div class="font-size-big bold">CHL 1-2</div>
+                                    <div> повреждение холодом</div>
+                                </div>
+                            </button>
+                        </div>
+                        
+                        <div class="col-4">
+                            <button type="button" class="btn btn-default btn-grid btn-type-2 btn--border js-btn-defect-big" data-id="BR" data-type="2">
+                                <div class="btn__content">
+                                    <div class="font-size-big bold">BR</div>
+                                    <div> пятна, ушибы </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-default btn-grid btn-type-2 btn--border js-btn-defect-big" data-id="NI" data-type="2">
+                                <div class="btn__content">
+                                    <div class="font-size-big bold">NI</div>
+                                    <div> порезы, потертость на шейке от тары </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-default btn-grid btn-type-2 btn--border js-btn-defect-big" data-id="SC_4" data-type="2">
+                                <div class="btn__content">
+                                    <div class="font-size-big bold">SC>4</div>
+                                    <div> потертости, рубцы более 4 см </div>
+                                </div>
+                            </button>
+                        </div>
+                        
+                        <div class="col-4">
+                            <button type="button" class="btn btn-default btn-grid btn-type-3 btn--border js-btn-defect-big" data-id="ANT" data-type="3">
+                                <div class="btn__content">
+                                    <div class="font-size-big bold">ANT</div>
+                                    <div> антраканоз </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-default btn-grid btn-type-3 btn--border js-btn-defect-big" data-id="CR" data-type="3">
+                                <div class="btn__content">
+                                    <div class="font-size-big bold">CR</div>
+                                    <div> гниение кроны  </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-default btn-grid btn-type-3 btn--border js-btn-defect-big" data-id="PR" data-type="3">
+                                <div class="btn__content">
+                                    <div class="font-size-big bold">PR</div>
+                                    <div> загневание кожуры  </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-default btn-grid btn-type-3 btn--border js-btn-defect-big" data-id="FR" data-type="3">
+                                <div class="btn__content">
+                                    <div class="font-size-big bold">FR</div>
+                                    <div> гниение кончика пальца </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-default btn-grid btn-type-3 btn--border js-btn-defect-big" data-id="NR" data-type="3">
+                                <div class="btn__content">
+                                    <div class="font-size-big bold">NR</div>
+                                    <div> загнивание шейки </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-default btn-grid btn-type-3 btn--border js-btn-defect-big" data-id="SP" data-type="3">
+                                <div class="btn__content">
+                                    <div class="font-size-big bold">SP</div>
+                                    <div> расщепление кожуры до мякоти</div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-default btn-grid btn-type-3 btn--border js-btn-defect-big" data-id="YC" data-type="3">
+                                <div class="btn__content">
+                                    <div class="font-size-big bold">YC</div>
+                                    <div> желтая крона </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-default btn-grid btn-type-3 btn--border js-btn-defect-big" data-id="C" data-type="3">
+                                <div class="btn__content">
+                                    <div class="font-size-big bold">C</div>
+                                    <div> сигарный плод </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-default btn-grid btn-type-3 btn--border js-btn-defect-big" data-id="CER" data-type="3">
+                                <div class="btn__content">
+                                    <div class="font-size-big bold">CER</div>
+                                    <div> церкоспороз </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-default btn-grid btn-type-3 btn--border js-btn-defect-big" data-id="RO" data-type="3">
+                                <div class="btn__content">
+                                    <div class="font-size-big bold">RO</div>
+                                    <div> зрелые/перезрелые  </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-default btn-grid btn-type-3 btn--border js-btn-defect-big" data-id="RMD" data-type="3">
+                                <div class="btn__content">
+                                    <div class="font-size-big bold">RMD</div>
+                                    <div> механич/грубые повреждения </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-4">
+                            <button type="button" class="btn btn-default btn-grid btn-type-3 btn--border js-btn-defect-big" data-id="CHL_3_4" data-type="3">
+                                <div class="btn__content">
+                                    <div class="font-size-big bold">CHL 3-4</div>
+                                    <div> повреждение холодом </div>
+                                </div>
+                            </button>
+                        </div>
+                	</div><!--.defect-btns-row-->
+                </div>
+            </div><!--.slider-and-buttons-row-->
+                        
+            
+            <script>
+			// ------- только для демонстрации в верстке ----------- 
+			function testUploadFile() {
+				console.log('test new photo');
+				var $new_photo = $('<div class="col-6">\
+					<div class="upload-previews__item js-preview-item">\
+						<div class="preview-item-img">\
+							<img src="content/photo-preview-9.jpg" />\
+						</div>\
+						<label class="thumbs-item-checkbox">\
+							<input type="checkbox" name="" value="" />\
+							<span></span>\
+						</label>\
+						<button title="Delete file" type="button" class="btn btn-preview-remove">\
+							<i class="icon icon--remove-red"></i>\
+						</button>\
+					</div>\
+				</div>');
+				var random_photo_id = Date.now();
+				$new_photo.children(".js-preview-item").data("id", random_photo_id);
+				$new_photo.children(".js-preview-item").data("image", "content/photo-big-9.jpg");
+				$new_photo.children(".js-preview-item").data("defects", {"PB": 0, "KI": 0, "SC": 0, "INS": 0, "DT": 0, "LS": 0, "TS": 0, "CF": 0, "CHL_1_2": 0, "BR": 0, "NI": 0, "SC_4": 0, "ANT": 0, "CR": 0, "PR": 0, "FR": 0, "NR": 0, "SP": 0, "YC": 0, "C": 0, "CER": 0, "RO": 0, "RMD": 0, "CHL_3_4": 0});
+				$('.row-previews').append($new_photo);
+				
+				all_photos[random_photo_id] = {};
+				all_photos[random_photo_id]['container'] = '';
+				all_photos[random_photo_id]['defects'] = {};				
+				
+				new_image_path = $new_photo.children('.js-preview-item').data('image');
+				fotoramaData.push({img: new_image_path});
+				//fotoramaData.show('>>'); // показываем последний (добавленный)
+				$('.row-previews .preview-item-img').last().trigger('click');
+				
+				//
+				var $new_photo_defects = $('<div class="js-photo-defects" id="photo-defects-'+random_photo_id+'"></div>');
+				$('.js-btn-defect-big').each(function () { 
+					$new_photo_defects.append('<span class="js-btn-defect-small-wrapper" id="wrapper-btn-'+$(this).data('id')+'"></span>');
+				});
+				$new_photo_defects.insertBefore($('.js-btn-defect-clear'));
+			}
+			// ------- только для демонстрации в верстке ----------- 
+            </script>
+            
+            
+                        
+			<script>
+            var all_containers = [];
+			var all_photos = [];
+			
+			var current_container_id;
+			var current_container_data = {};
+			
+			var current_photo_id; // id фото, отмеченного рамкой (.selected-item)
+			var current_photo_defects_data = {}; // его данные по дефектам
+			var current_photo_index = 0; // индекс текущей фотографии из всех (начиная с 0)
+			
+			var $fotoramaSlider;
+			var fotoramaData;
+						
+			$(document).ready(function(){
+				
+				// Добавление нового контейнера
+				$('.js-add-container').on('click', function(){
+					var $new_container = $('<button type="button" class="btn btn-default btn--gray btn--small btn--width-110 btn--border js-btn-container" >\
+                    	<div>Упаковочная<br/> станция</div>\
+                        <div class="js-container_name">_</div>\
+                    </button>');
+					
+					var random_cont_id = Date.now();
+					$new_container.data("id", random_cont_id).data("container", {"name": "", "clusters": 0, "fingers": 0, "weight_gross": 0, "temp": "", "weight_tare": ""});
+					
+					$('.js-station-btns-wrapper').append($new_container);
+										
+					$('.js-btn-container').last().trigger('click');
+					
+					updateContainerTable();
+				});
+				
+				
+				// вывести параметры контейнера
+				$('.js-station-btns-wrapper').on('click', '.js-btn-container', function(){ 
+					$('.js-btn-container').removeClass('btn-active-white');
+					$(this).addClass('btn-active-white');
+										
+					current_container_id = $(this).data('id');
+					
+					current_container_data = $(this).data('container');
+					$('[name="container_name"]').val(current_container_data.name);
+					$('[name="container_clusters"]').val(current_container_data.clusters);
+					$('[name="container_fingers"]').val(current_container_data.fingers);
+					$('[name="container_weight_gross"]').val(current_container_data.weight_gross);
+					$('[name="container_temp"]').val(current_container_data.temp);
+					$('[name="container_weight_tare"]').val(current_container_data.weight_tare);
+					
+					all_containers[current_container_id] = current_container_data;
+					
+					console.info('Current container: ' + current_container_id);
+					console.info('All containers:');
+					console.log(all_containers);
+										
+					checkPhotoContainer();
+					
+					$('.js-container-defects').addClass('hidden');
+					$('#container-defects-'+current_container_id).removeClass('hidden');
+					
+					updateContainerTable();
+				});
+								
+				
+				// обновление параметров контейнера при изменении полей
+				$('.js-container-form').on('keyup change paste', '.js-container-input', function(){ 
+					if (!$('.js-btn-container.btn-active-white').length) {
+						alert("Выберите станцию");
+						return false;
+					}
+					
+					var $currentBtn = $('.js-btn-container.btn-active-white');
+					
+					current_container_id = $currentBtn.data("id");
+					
+					current_container_data.name = $('[name="container_name"]').val();
+					current_container_data.clusters = $('[name="container_clusters"]').val();
+					current_container_data.fingers = $('[name="container_fingers"]').val();
+					current_container_data.weight_gross = $('[name="container_weight_gross"]').val();
+					current_container_data.temp = $('[name="container_temp"]').val();
+					current_container_data.weight_tare = $('[name="container_weight_tare"]').val();
+										
+					$currentBtn.data("id", current_container_id);
+					$currentBtn.children(".js-container_name").text(current_container_data.name);
+					$currentBtn.data("container", current_container_data);
+					
+					all_containers[current_container_id] = current_container_data;
+					
+					console.info('Current container: ' + current_container_id);
+					console.log(all_containers[current_container_id]);
+				});				
+								
+				
+				// переключение активного превью-изображения
+				$('.row-previews').on('click', '.preview-item-img', function(){
+					if (!$('.js-btn-container.btn-active-white').length) {
+						alert("Выберите станцию");
+						return false;
+					}
+					
+					$('.row-previews .js-preview-item').removeClass('selected-item');
+					$(this).parent('.js-preview-item').addClass('selected-item');
+					
+					current_photo_id = $(this).parent('.js-preview-item').data('id');
+					
+					$(this).parent('.js-preview-item').find('input[type="checkbox"]').prop('checked', true).trigger('change'); // автоматически отмечаем чекбокс
+					
+					// Индекс текущего выделенного фото
+					var index = $('.selected-item').index(".js-preview-item");
+					fotoramaData.show(index);
+					console.log(index);
+					
+				});
+				
+				
+				$('.row-previews').on('change', 'input[type="checkbox"]', function(){ 					
+					if (!$('.js-btn-container.btn-active-white').length) {
+						alert("Выберите станцию");
+						return false;
+					}
+					
+					var photo_id = $(this).parents('.js-preview-item').data('id');
+									
+					if ($(this).is(':checked')) {
+						$(this).parents('.js-preview-item').addClass('checked-item');
+						$(this).parents('.js-preview-item').data('container', $('.js-btn-container.btn-active-white').data('id'));
+						console.log(photo_id);
+						console.log(all_photos);
+						console.log(all_photos[photo_id]);
+						all_photos[photo_id]['container'] = $('.js-btn-container.btn-active-white').data('id');
+					} else {
+						$(this).parents('.js-preview-item').removeClass('checked-item');
+						$(this).parents('.js-preview-item').data('container', '');
+						all_photos[photo_id]['container'] = '';
+					}
+					
+					console.info('Current photo:');
+					console.log(all_photos[photo_id]);
+					
+					document.activeElement.blur(); // чтобы корректно работало перелистывание клавишами	
+					
+					updateContainerTable();
+				});
+				
+				
+				// удаление превью и его данных из массива
+				$('.row-previews').on('click', '.btn-preview-remove', function(){
+					if (confirm('Удалить фото?')) {
+						var photo_id = $(this).parents('.js-preview-item').data("id");
+						delete all_photos[photo_id];
+						console.log(all_photos);
+						$(this).parents('.col-6').remove();
+					} else {
+						// Do nothing!
+					}
+				});
+				
+				
+				// Добавление дефекта к текущему изображению
+				$('.js-btn-defect-big').on('click', function(){
+					if (!$('.js-preview-item.selected-item').length) {
+						alert("Фото не выбрано");
+						return false;
+					}
+					var type = $(this).data('type');
+					var defect_id = $(this).data('id');
+					var defect_code = $(this).find('.font-size-big').text();
+					
+					var count = 1;
+					// если такого дефекта еще нет, добавляем кнопку
+					if (!$('#photo-defects-'+current_photo_id+' .js-btn-defect-small[data-id="'+defect_id+'"]').length) {
+						var $new_defect = $('<button type="button" class="btn btn-default btn-type-'+type+' btn--border js-btn-defect-small" data-type="'+type+'" data-id="'+defect_id+'"> '+defect_code+' <span class="red-circle hidden">1</span>\
+						</button>');
+						$new_defect.data("count", count);
+						$('#photo-defects-'+current_photo_id+' #wrapper-btn-'+defect_id).append($new_defect);
+					} else {
+						// если есть, просто увеличиваем счетчик
+						count = $('#photo-defects-'+current_photo_id+' .js-btn-defect-small[data-id="'+defect_id+'"]').data('count')+1;
+						$('#photo-defects-'+current_photo_id+' .js-btn-defect-small[data-id="'+defect_id+'"]').data('count', count);
+						$('#photo-defects-'+current_photo_id+' .js-btn-defect-small[data-id="'+defect_id+'"]').children('span.red-circle').removeClass('hidden').text(count);
+					}
+					
+					all_photos[current_photo_id]['defects'][defect_id] = count;
+					
+					updateContainerTable();
+				});
+				
+				
+				// удаление всех дефектов у текущей фотографии
+				$('.js-btn-defect-clear').on('click', function(){
+					if (!$('.js-preview-item.selected-item').length) {
+						alert("Фото не выбрано");
+						return false;
+					}
+					
+					// полностью обнулим дефекты для данного фото и удалим его кнопки					
+					$('#photo-defects-'+current_photo_id+' .js-btn-defect-small').each(function () { 
+						var defect_id = $(this).data('id');
+						
+						all_photos[current_photo_id]['defects'][defect_id] = 0;
+						$(this).remove();
+					});
+					
+					updateContainerTable();
+					
+				});
+				
+				
+				// уменьшение одного конкретного дефекта с шагом 1
+				$('.fotorama-gallery-buttons').on('click', '.js-btn-defect-small', function(){
+					var count = $(this).data('count')-1;
+					var defect_id = $(this).data('id');
+					if (count==0) {
+						$(this).remove();
+					} else {
+						$(this).data('count', count);
+						$(this).children('span.red-circle').text(count);
+						if (count==1) {
+							$(this).children('span.red-circle').addClass('hidden');
+						}
+					}
+					all_photos[current_photo_id]['defects'][defect_id] = count;
+					
+					updateContainerTable();
+				});
+				
+				
+				$(document).on('keydown', function(e){
+					if (fotoramaData.size>1) {
+						// значит слайдер непустой
+						if (e.keyCode == 37) {
+							fotoramaData.show('<');
+						}
+						if (e.keyCode == 39) {
+							fotoramaData.show('>');
+						}
+					}
+				});
+				
+																
+				getAllContainersData();
+				getAllPhotos();
+				checkPhotoContainer();
+				
+				$('.js-btn-container').first().trigger('click'); // чтобы по умолчанию был активен первый контейнер, если есть
+				
+				updateContainerTable();
+				
+            });
+			
+			
+			// собрать текущие данные из всех контейнеров (кнопок)
+			function getAllContainersData() { 
+				var container_id;
+				var container_data;
+				
+				$('.js-btn-container').each(function () { 
+					container_id = $(this).data('id');
+					container_data = $(this).data('container');
+					
+					all_containers[container_id] = container_data;
+				});
+				console.info('All containers:');
+				console.log(all_containers);
+			}
+			
+			// собрать все текущие фото, собрать галерею
+			function getAllPhotos() { 
+				var photo_id;
+				
+				$('.js-preview-item').each(function () {
+					photo_id = $(this).data('id');
+					$('.fotorama-slider').append('<a href="'+$(this).data('image')+'"></a>');
+					all_photos[photo_id] = {};
+					all_photos[photo_id]['container'] = '';
+					all_photos[photo_id]['defects'] = {};
+					
+					// для каждого фото предварительно создать контейнеры для кнопок-счетчиков
+					var $new_photo_defects = $('<div class="js-photo-defects" id="photo-defects-'+photo_id+'"></div>');
+					$('.js-btn-defect-big').each(function () { 
+						$new_photo_defects.append('<span class="js-btn-defect-small-wrapper" id="wrapper-btn-'+$(this).data('id')+'"></span>');
+					});
+					$new_photo_defects.insertBefore($('.js-btn-defect-clear'));
+					
+				});
+				
+				$fotoramaSlider = $('.fotorama-slider').fotorama({
+					nav: false,
+					allowfullscreen: true,
+					//maxwidth: '850px',
+				});
+				fotoramaData = $fotoramaSlider.data('fotorama');
+				
+				// чтобы при перелистывании слайдов создавалась привязка к контейнеру и смещалаь зеленая рамка
+				$('.fotorama-slider').on(
+					'fotorama:show fotorama:ready',
+					function (e, fotorama, extra) {
+						$('.row-previews .js-preview-item').removeClass('selected-item');
+						$('.row-previews .js-preview-item').eq(fotoramaData.activeIndex).addClass('selected-item');
+						console.log(fotoramaData);
+						//если произошло перелистывание на 1 позицию в сторону
+						if (Math.abs(current_photo_index - fotoramaData.activeIndex)==1) {
+							//console.log('соседний элемент');
+							// если фото уже не пренадлежит другому контейнеру, добавляем его к текущему
+							if (!$('.js-preview-item').eq(current_photo_index).hasClass('disabled-item')) {
+								$('.js-preview-item').eq(current_photo_index).find('input[type="checkbox"]').prop('checked', true).trigger('change');
+							}
+						}
+						current_photo_index = fotoramaData.activeIndex;
+						current_photo_id = $('.js-preview-item').eq(current_photo_index).data('id');
+						
+						$('.js-photo-defects').addClass('hidden');
+						$('#photo-defects-'+current_photo_id).removeClass('hidden');
+						
+						$('.right-sidebar-bottom.scroll-overflow').scrollTo('div[data-id="'+current_photo_id+'"]');
+					}
+				);
+				
+				//fotoramaData.splice(0); // удалить все слайды
+			}
+			
+			
+			// проверяем, какие фото пренадлежат данному контейнеру, а какие нет
+			function checkPhotoContainer() { 
+				$('.js-preview-item').removeClass('disabled-item');
+				
+				$('.row-previews input[type="checkbox"]:checked').each(function () {
+					console.log($(this).parents('.js-preview-item').data('container'));
+					console.log($('.js-btn-container.btn-active-white').data('id'));
+					
+					if ($(this).parents('.js-preview-item').data('container') != $('.js-btn-container.btn-active-white').data('id')) {
+						$(this).parents('.js-preview-item').addClass('disabled-item');
+					}
+				});
+			}
+			
+			
+			// обновить сводную таблицу дефектов для текущего контейнера
+			function updateContainerTable() {
+				$('.td-defect-value').text(0);
+				$('#defects-total').text(0);
+				
+				
+				//all_photos.forEach(function(photo) {
+				Object.keys(all_photos).forEach(function (id) {
+					//console.log( i );
+					console.log( all_photos[id] );
+					
+					if (all_photos[id]['container'] == current_container_id) {
+						var photo_defects = all_photos[id]['defects'];
+						console.log(photo_defects);
+						
+						Object.keys(photo_defects).forEach(function (code) {
+							var key_value = parseInt($('#value-'+code).text());
+							$('#value-'+code).text(key_value + photo_defects[code]);
+						});
+					}
+				});
+				
+				var defects_total = 0;
+				$('.td-defect-value').each(function () {
+					defects_total = defects_total + parseInt($(this).text());
+				});
+				$('#defects-total').text(defects_total);
+			}
+			
+            </script>
+            
+        </div><!--.container-fluid-->
+	</main><!-- .content -->
+    
+    
+</div><!--.wrapper-->
+
+<script src="js/libs/highcharts.js"></script>
+<script src="js/libs/slick.js"></script>
+<script src="js/libs/chosen.jquery.min.js"></script>
+<script src="js/libs/jquery.magnific-popup.min.js"></script>
+<script src="js/libs/flatpickr.min.js"></script>
+<script src="js/libs/flatpickr-ru.js"></script>
+<script src="js/libs/jBox.all.min.js"></script>
+<script src="js/libs/blowup.js"></script>
+<script src="js/libs/fotorama.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+<!-- InstanceEnd --></html>

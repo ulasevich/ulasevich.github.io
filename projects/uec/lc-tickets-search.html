@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	
+	<title>Поиск | Покупка билетов | УЭК | Универсальная электронная карта</title>
+	
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Play:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/uec-mobile-script.js"></script>
+    
+	<script src="/js/panel.js"></script>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<header class="header-top">
+		<div class="container table">
+            
+            <div class="cell back-cell"><a href="lc-tickets.html" class="h-back-link" title="Назад"></a></div>
+            <div class="cell"><h1>Покупка билетов</h1></div>
+            
+        </div><!--.container-->
+	</header><!-- .header-top-->
+    
+    <header class="header-bottom">
+		
+        <div class="container table h-authorized">
+            <div class="h-logo cell">
+                <a href="index.html" class="h-logo-link clearfix" title="На главную">
+                    <img src="images/logo.png" class="f-left">
+                    <div class="h-title">Универсальная электронная карта</div>
+                    <div class="h-tip">Краснодарский край</div>
+                </a>
+            </div><!--.h-logo-->
+            <div class="h-phone cell">
+                <div class="h-number">8 (800) 1000 900</div>
+                <div class="h-tip">Бесплатная горячая линия</div>
+            </div>
+            <div class="h-profile cell">
+            	<div class="table">
+                	<div class="cell h-profile-img"><img src="content/profile.jpg"></div>
+                    <div class="cell h-profile-name"><a href="profile.html">Карулин Сергей Алексеевич</a></div>
+                    <div class="cell h-profile-links"> <a href="profile.html">Профиль</a> <a href="index.html" class="logout-link">Выйти</a> </div>
+                </div>
+            </div><!--.h-profile-->
+        </div><!--.container-->
+        
+    </header><!-- .header-bottom-->
+    
+	<div class="container">
+        <main class="content">
+            
+            
+            <p class="align-right">
+            	<a class="btn" href="lc-tickets.html">Информация</a>
+                <a class="btn" href="lc-tickets-booked.html">Куплено/забронировано</a>
+                <a class="btn active" href="lc-tickets-search.html">Поиск</a>
+            </p>
+            
+            <h3>Покупка билетов</h3>
+            
+            <form name="" method="post" action="">
+            	<div class="form-table">
+                	<div class="table">
+                    	<div class="row">
+                        	<div class="cell">
+                                <label>Пункт отправления:</label>
+                                <select class="select">
+                                    <option value="17">Анапа АВ</option>
+                                    <option value="241">Краснодар АВ</option>
+                                    <option value="244">КраснодарАС_2</option>
+                                </select>
+                            </div>
+                            <div class="cell">
+                                <label>Пункт назначения:</label>
+                                <select class="select">
+                                    <option value="17">Анапа АВ</option>
+                                    <option value="241">Краснодар АВ</option>
+                                    <option value="244">КраснодарАС_2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div><!--.table-->
+                    
+                    <label>Дата отправления:</label>
+                    <div class="table date-filter-table">
+                        <div class="row date-from-row">
+                            <div class="cell">
+                                <label>День</label>
+                                <select class="select">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                            </div>
+                            <div class="cell">
+                                <label>Месяц</label>
+                                <select class="select">
+                                    <option value="1">Январь</option>
+                                    <option value="2">Февраль</option>
+                                    <option value="3">Март</option>
+                                    <option value="4">Апрель</option>
+                                </select>
+                            </div>
+                            <div class="cell">
+                                <label>Год</label>
+                                <select class="select">
+                                    <option value="2013">2013</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                </select>
+                            </div>
+                        </div><!--.row-->
+                    </div><!--.table-->
+                    <div class="align-center"><input type="submit" name="" value="Найти" class="btn"></div>
+                </div><!--.form-table-->
+            </form>
+            
+            
+            <h3>Расписание движения</h3>
+            <div class="data-count">Найдено: 3</div>
+            <div class="data-table">
+                <div class="table">
+                    <div class="row table-head">
+                        <div class="cell"> Номер маршрута </div>
+                        <div class="cell"> Отправление </div>
+                        <div class="cell"> Прибытие </div>
+                        <div class="cell"> Название атобуса </div>
+                        <div class="cell"> Тип </div>
+                        <div class="cell"> Свободно мест </div>
+                        <div class="cell"> Всего мест </div>
+                        <div class="cell"> Комиссия </div>
+                        <div class="cell"> Страховка </div>
+                        <div class="cell"> Цена билета </div>
+                        <div class="cell">  </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell">
+                        	<span class="data-title">Номер маршрута</span>
+                            <span class="data-value">50116</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Отправление</span>
+                            <span class="data-value">25.12.2015 12:15</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Прибытие</span>
+                            <span class="data-value">25.12.2015 14:00</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Название атобуса</span>
+                            <span class="data-value">Анапа АВ-Краснодар АВ</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Тип</span>
+                            <span class="data-value">м</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Свободно мест</span>
+                            <span class="data-value">31</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Всего мест</span>
+                            <span class="data-value">43</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Комиссия</span>
+                            <span class="data-value">0</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Страховка</span>
+                            <span class="data-value">0</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Цена билета</span>
+                            <span class="data-value">135</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title"></span>
+                            <span class="data-value"><a href="#" class="btn">Купить</a></span>
+                        </div>
+                    </div><!--.row-->
+                    <div class="row">
+                        <div class="cell">
+                        	<span class="data-title">Номер маршрута</span>
+                            <span class="data-value">23668</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Отправление</span>
+                            <span class="data-value">27.12.2015 16:15</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Прибытие</span>
+                            <span class="data-value">27.12.2015 19:00</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Название атобуса</span>
+                            <span class="data-value">Геленджик АВ-Краснодар АВ</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Тип</span>
+                            <span class="data-value">м</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Свободно мест</span>
+                            <span class="data-value">44</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Всего мест</span>
+                            <span class="data-value">66</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Комиссия</span>
+                            <span class="data-value">0</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Страховка</span>
+                            <span class="data-value">0</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Цена билета</span>
+                            <span class="data-value">235</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title"></span>
+                            <span class="data-value"><a href="#" class="btn">Купить</a></span>
+                        </div>
+                    </div><!--.row-->
+                    <div class="row">
+                        <div class="cell">
+                        	<span class="data-title">Номер маршрута</span>
+                            <span class="data-value">20336</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Отправление</span>
+                            <span class="data-value">30.12.2015 12:15</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Прибытие</span>
+                            <span class="data-value">30.12.2015 14:00</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Название атобуса</span>
+                            <span class="data-value">Анапа АВ-Краснодар АВ</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Тип</span>
+                            <span class="data-value">м</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Свободно мест</span>
+                            <span class="data-value">31</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Всего мест</span>
+                            <span class="data-value">43</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Комиссия</span>
+                            <span class="data-value">0</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Страховка</span>
+                            <span class="data-value">0</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Цена билета</span>
+                            <span class="data-value">155</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title"></span>
+                            <span class="data-value"><a href="#" class="btn">Купить</a></span>
+                        </div>
+                    </div><!--.row-->
+                </div><!--.table-->
+            </div><!--.data-table-->
+            
+			
+        </main><!-- .content -->
+    </div><!--.container-->
+
+</div><!-- .wrapper -->
+
+<footer class="footer">
+	<div class="container">
+        <div class="f-info">
+            © 2010 — 2015 ГУП КК «ЦИТ» Все права защищены. <br/>
+            Контактный e-mail: <a href="mailto:cit@krasnodar.ru">cit@krasnodar.ru</a>
+        </div>
+    </div><!--.container-->
+</footer><!-- .footer -->
+
+<div class="waiter"></div>
+</body>
+</html>

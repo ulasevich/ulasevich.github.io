@@ -8,7 +8,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
-    
     <!--head css, js-->
     <link rel="stylesheet" href="css/libs/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/libs/bootstrap-grid.min.css">
@@ -17,6 +16,7 @@
     <link rel="stylesheet" href="css/libs/chosen.css">
     <link rel="stylesheet" href="css/libs/magnific-popup.css">
     <link rel="stylesheet" href="css/libs/flatpickr.min.css">
+    <link rel="stylesheet" href="css/libs/jBox.all.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/modernizr-custom.js"></script>
     <script src="js/jquery-1.12.2.min.js"></script>
@@ -26,7 +26,6 @@
 </head>
 
 <body>
-
 
 <div class="wrapper">
 	
@@ -76,14 +75,10 @@
     	<div class="sidebar-content">
         	<nav class="sidebar-menu">
             	<ul class="not-list">
-                	<li> <a href="#" class="link-active">General information</a> </li>
-                    <li> <a href="#" class="link-checked">Information about packaging</a> </li>
-                    <li> <a href="#" class="link-checked">Temperature and seal data</a> </li>
-                    <li> <a href="#">Quantity</a> </li>
-                    <li> <a href="#">Talman expense</a> </li>
-                    <li> <a href="#" class="link-waiting">The results of the inspection</a> </li>
-                    <li> <a href="#">Conclusion</a> </li>
-                    <li> <a href="#">Attaching photos</a> </li>
+                	<li> <a href="report.html" class="link-active">General information</a> </li>
+                    <li>
+                    	<a href="results.html" class="link-waiting">The results of the inspection</a>
+                    </li>
                 </ul>
             </nav>
         </div><!--.sidebar-content-->
@@ -200,10 +195,28 @@
                                 </select>
                             </div>
                         </div>
+                        <div class="col-12">
+                            <label class="field-label">Поставщик</label>
+                            <div class="select-block">
+                                <select name="" multiple>
+                                    <option value=""> выберите поставщика 34533 535 43 34634 </option>
+                                    <option value="1" selected> ООО РОСБЕЛКОМ </option>
+                                    <option value="2"> Поставщик 2 </option>
+                                    <option value="3"> Поставщик 3 </option>
+                                    <option value="4"> Поставщик 4 363 3346346 36 </option>
+                                    <option value="4"> Поставщик 4 363 3346346 36 </option>
+                                    <option value="4"> Поставщик 4 363 3346346 36 </option>
+                                    <option value="4"> Поставщик 4 363 3346346 36 </option>
+                                    <option value="5"> Поставщик 5 </option>
+                                    <option value="6"> Поставщик 6 </option>
+                                    <option value="7"> Поставщик 7 </option>
+                                </select>
+                            </div>
+                        </div>
                         <div class="col-md-6">
                             <label class="field-label">Тип продукции</label>
                             <div class="select-block">
-                                <select name="">
+                                <select name="" disabled>
                                     <option value="" disabled> выберите </option>
                                     <option value="1"> Apple / Яблоко </option>
                                     <option value="2"> Peach / Персик </option>
@@ -226,13 +239,15 @@
                         <div class="col-md-6">
                             <label class="field-label">Заявленное количество</label>
                             <div class="text-block">
-                                <input type="text" placeholder="" name="" value="26" />
+                                <input type="text" placeholder="" name="" value="26" disabled />
+                                
                             </div>
                         </div>
                         <div class="col-md-6">
                             <label class="field-label">Фактическое количество</label>
-                            <div class="text-block">
-                                <input type="text" placeholder="" name="" value="24" />
+                            <div class="text-block block-error">
+                                <input type="text" placeholder="" name="" value="24" disabled />
+                                <span class="error">Error text 2</span>
                             </div>
                         </div>
                         
@@ -246,8 +261,8 @@
                         </div>
                         <div class="col-md-6">
                             <label class="field-label">Излишек</label>
-                            <div class="select-block">
-                                <select name="">
+                            <div class="select-block block-error">
+                                <select name="" disabled>
                                     <option value="" disabled> выберите </option>
                                     <option value="1" selected> - </option>
                                     <option value="2"> Излишек 1 </option>
@@ -310,7 +325,9 @@
                             
                             <div class="upload-previews">
                             	<div class="upload-previews__item">
-                                    <img src="content/photo-preview-1.jpg">
+                                    <a href="content/photo-1.jpg" class="image-single" title="Подпись к фото">
+                                    	<img src="content/photo-preview-1.jpg" class="qqq" />
+                                    </a>
                                     <button title="Delete file" type="button" class="btn btn-preview-remove">
                                         <i class="icon icon--remove-red"></i>
                                     </button>
@@ -325,20 +342,96 @@
                         	<label class="field-label">Маркировка на коробках <span class="color-gray">(макс. 5)</span></label>
                             <div class="upload-previews">
                             	<div class="upload-previews__item">
-                                    <img src="content/photo-preview-2.jpg">
+                                    <a href="content/3.jpg" class="image-gallery" title="Подпись к фото 2">
+                                    	<img src="content/photo-preview-2.jpg" />
+                                    </a>
+                                    <label class="thumbs-item-checkbox">
+                                        <input type="checkbox" name="" value="" checked />
+                                        <span></span>
+                                    </label>
                                     <button title="Delete file" type="button" class="btn btn-preview-remove">
                                         <i class="icon icon--remove-red"></i>
                                     </button>
                                 </div>
                                 <div class="upload-previews__item">
-                                    <img src="content/photo-preview-2.jpg">
+                                    <a href="content/photo-3.jpeg" class="image-gallery" title="Подпись к фото 3">
+                                    	<img src="content/photo-preview-2.jpg" />
+                                    </a>
+                                    <label class="thumbs-item-checkbox">
+                                        <input type="checkbox" name="" value="" />
+                                        <span></span>
+                                    </label>
+                                    <button title="Delete file" type="button" class="btn btn-preview-remove">
+                                        <i class="icon icon--remove-red"></i>
+                                    </button>
+                                </div>
+                                <div class="upload-previews__item">
+                                    <a href="content/133.jpg" class="image-gallery">
+                                    	<img src="content/photo-preview-2.jpg" />
+                                    </a>
+                                    <label class="thumbs-item-checkbox">
+                                        <input type="checkbox" name="" value="" checked disabled />
+                                        <span></span>
+                                    </label>
                                     <button title="Delete file" type="button" class="btn btn-preview-remove">
                                         <i class="icon icon--remove-red"></i>
                                     </button>
                                 </div>
                             </div>
+                            
+                            
                             <div class="file-box">
                                 <label><input type="file" name="" class="inputfile" data-multiple-caption="{count} file(s) selected"><strong>Add a photo</strong> <span></span> </label>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12">
+                        	<button type="button" class="js-notice-btn-red">Уведомление red</button> <br/>
+                            <button type="button" class="js-notice-btn-white">Уведомление white</button> <br/>
+                            <button type="button" class="js-notice-btn-black">Уведомление black</button> <br/>
+                            <button type="button" class="js-notice-btn-green">Уведомление green</button> <br/>
+                            <button type="button" class="js-notice-btn-blue">Уведомление blue</button> <br/>
+                            <button type="button" class="js-notice-btn-yellow">Уведомление yellow</button> <br/>
+                        </div>
+                        
+                        <div class="col-12">
+                            <h3>Previews with checkboxes</h3>
+                            <div class="upload-previews">
+                                <div class="upload-previews__item">
+                                    <img src="content/photo-preview-2.jpg" />
+                                    <label class="thumbs-item-checkbox">
+                                        <input type="checkbox" name="" value="">
+                                        <span></span>
+                                    </label>
+                                </div>
+                                <div class="upload-previews__item">
+                                    <img src="content/photo-preview-1.jpg" />
+                                    <label class="thumbs-item-checkbox">
+                                        <input type="checkbox" name="" value="" checked />
+                                        <span></span>
+                                    </label>
+                                </div>
+                                <div class="upload-previews__item">
+                                    <img src="content/photo-preview-2.jpg" />
+                                    <label class="thumbs-item-checkbox">
+                                        <input type="checkbox" name="" value="" />
+                                        <span></span>
+                                    </label>
+                                </div>
+                                <div class="upload-previews__item">
+                                    <img src="content/photo-preview-1.jpg" />
+                                    <label class="thumbs-item-checkbox">
+                                        <input type="checkbox" name="" value="" checked disabled />
+                                        <span></span>
+                                    </label>
+                                </div>
+                                <div class="upload-previews__item">
+                                    <img src="content/photo-preview-2.jpg" />
+                                    <label class="thumbs-item-checkbox">
+                                        <input type="checkbox" name="" value="" disabled />
+                                        <span></span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                         
@@ -360,6 +453,34 @@
                         <div class="row form-elements">
                             <div class="col-12 align-center">
                             	Вы действительно хотите завершить инспекцию?
+                            </div>
+                            <div class="col-12">
+                            	<ul class="not-list">
+                                	<li>
+                                        <label class="form-label">
+                                            <input type="radio" name="test[]" value="">
+                                            <span><i>Всегда спрашивать</i></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="form-label">
+                                            <input type="radio" name="test[]" value="">
+                                            <span><i>Загрузить из файла</i></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="form-label">
+                                            <input type="radio" name="test[]" value="">
+                                            <span><i>Стационарная камера</i></span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="form-label">
+                                            <input type="radio" name="test[]" value="">
+                                            <span><i>Мобильная камера</i></span>
+                                        </label>
+                                    </li>
+                                </ul>
                             </div>
                             <div class="col-12 form-submit">
                                 <div class="form-submit">
@@ -421,9 +542,107 @@
 						mainClass: 'my-mfp-zoom-in'
 					});
 				});
+				
+				
+				$('.image-gallery').magnificPopup({
+					type: 'image',
+					tLoading: 'Loading image #%curr%...',
+					mainClass: 'mfp-with-zoom',
+					image: {
+						tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+					},
+					zoom: {
+						enabled: true,
+						duration: 300
+					},
+					gallery: {
+						enabled: true,
+						navigateByImgClick: true,
+						preload: [0,1]
+					},
+					
+				});
+				
+				function initLoupe() {
+					$(".mfp-img").blowup({
+						width : 500,
+						height : 500,
+						scale: 1,
+					});
+				};
+				
+				$('.image-gallery').on('mfpOpen mfpUpdateStatus', function(e /*, params */) {
+					initLoupe();
+				});
+				
+				
+				
+				
+				$('.image-single').magnificPopup({
+					type: 'image',
+					tLoading: 'Loading image #%curr%...',
+					closeOnContentClick: true,
+					closeBtnInside: false,
+					fixedContentPos: true,
+					mainClass: 'mfp-with-zoom',
+					image: {
+						tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+					},
+					zoom: {
+						enabled: true,
+						duration: 300
+					},
+					
+				});
+				
+				$('.image-single').on('mfpOpen mfpUpdateStatus', function(e /*, params */) {
+					initLoupe();
+				});
+				
 				/*--------- скрипт для примера ---------*/
 				
 				
+				
+				
+				
+				/*--------- примеры уведомлений ---------*/
+				$(document).on('click', '.js-notice-btn-red', function(){
+					new jBox('Notice', {
+						content: 'Полундра!',
+						color: 'red'
+					});
+				});
+				$(document).on('click', '.js-notice-btn-black', function(){
+					new jBox('Notice', {
+						content: 'black black black black',
+						color: 'black'
+					});
+				});
+				$(document).on('click', '.js-notice-btn-white', function(){
+					new jBox('Notice', {
+						content: 'Обычное уведомление',
+						color: 'white'
+					});
+				});	
+				$(document).on('click', '.js-notice-btn-green', function(){
+					new jBox('Notice', {
+						content: 'Усрешно!',
+						color: 'green'
+					});
+				});	
+				$(document).on('click', '.js-notice-btn-blue', function(){
+					new jBox('Notice', {
+						content: 'Как вариант',
+						color: 'blue'
+					});
+				});	
+				$(document).on('click', '.js-notice-btn-yellow', function(){
+					new jBox('Notice', {
+						content: 'Внимание!',
+						color: 'yellow'
+					});
+				});	
+				/*--------- примеры уведомлений ---------*/
 				
             });
             </script>
@@ -434,15 +653,14 @@
     
 </div><!--.wrapper-->
 
-
-
 <script src="js/libs/highcharts.js"></script>
 <script src="js/libs/slick.js"></script>
 <script src="js/libs/chosen.jquery.min.js"></script>
 <script src="js/libs/jquery.magnific-popup.min.js"></script>
 <script src="js/libs/flatpickr.min.js"></script>
 <script src="js/libs/flatpickr-ru.js"></script>
+<script src="js/libs/jBox.all.min.js"></script>
+<script src="js/libs/blowup.js"></script>
 <script src="js/main.js"></script>
-
 </body>
 </html>

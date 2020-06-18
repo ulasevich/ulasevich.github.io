@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	
+	<title>Данные по карте | Транспортный сервис | УЭК | Универсальная электронная карта</title>
+	
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Play:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/uec-mobile-script.js"></script>
+    
+	<script src="/js/panel.js"></script>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<header class="header-top">
+		<div class="container table">
+            
+            <div class="cell back-cell"><a href="lc-transport.html" class="h-back-link" title="Назад"></a></div>
+            <div class="cell"><h1>Транспортный сервис</h1></div>
+            
+        </div><!--.container-->
+	</header><!-- .header-top-->
+    
+    <header class="header-bottom">
+		
+        <div class="container table h-authorized">
+            <div class="h-logo cell">
+                <a href="index.html" class="h-logo-link clearfix" title="На главную">
+                    <img src="images/logo.png" class="f-left">
+                    <div class="h-title">Универсальная электронная карта</div>
+                    <div class="h-tip">Краснодарский край</div>
+                </a>
+            </div><!--.h-logo-->
+            <div class="h-phone cell">
+                <div class="h-number">8 (800) 1000 900</div>
+                <div class="h-tip">Бесплатная горячая линия</div>
+            </div>
+            <div class="h-profile cell">
+            	<div class="table">
+                	<div class="cell h-profile-img"><img src="content/profile.jpg"></div>
+                    <div class="cell h-profile-name"><a href="profile.html">Карулин Сергей Алексеевич</a></div>
+                    <div class="cell h-profile-links"> <a href="profile.html">Профиль</a> <a href="index.html" class="logout-link">Выйти</a> </div>
+                </div>
+            </div><!--.h-profile-->
+        </div><!--.container-->
+        
+    </header><!-- .header-bottom-->
+    
+	<div class="container">
+        <main class="content">
+            
+            
+            <p class="align-right">
+            	<a class="btn" href="lc-transport.html">Информация</a>
+                <a class="btn active" href="lc-transport-card.html">Данные по карте</a>
+                <a class="btn" href="lc-transport-points.html">Пункты пополнения</a>
+            </p>
+            
+            <h3>Транспортный сервис</h3>
+            <div class="form-table">
+                <div class="table">
+                    <div class="row">
+                        <div class="cell form-row-title"> Текущий баланс транспортного приложения </div>
+                        <div class="cell"> --- </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell form-row-title"> Дата окончания действия карты </div>
+                        <div class="cell"> 2025-01-19 </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell form-row-title"> Номер карты в системе удобного маршрута </div>
+                        <div class="cell"> 555555 </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell form-row-title"> Льгота </div>
+                        <div class="cell"> --- </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell form-row-title"> Серия транспортной карты </div>
+                        <div class="cell"> --- </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell form-row-title"> Статус карт </div>
+                        <div class="cell"> --- </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell form-row-title"> Тип транспортной карты </div>
+                        <div class="cell"> --- </div>
+                    </div>
+                </div><!--.table-->
+            </div><!--.form-table-->
+            
+            
+            <h3>Перечень поездок по транспортной карте</h3>
+            <form name="" method="post" action="">
+                <div class="form-table">
+                    <div class="table date-filter-table">
+                        <div class="row date-from-row">
+                            <div class="cell">
+                                <label><strong>От:</strong> День</label>
+                                <select class="select">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                            </div>
+                            <div class="cell">
+                                <label>Месяц</label>
+                                <select class="select">
+                                    <option value="1">Январь</option>
+                                    <option value="2">Февраль</option>
+                                    <option value="3">Март</option>
+                                    <option value="4">Апрель</option>
+                                </select>
+                            </div>
+                            <div class="cell">
+                                <label>Год</label>
+                                <select class="select">
+                                    <option value="2013">2013</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                </select>
+                            </div>
+                        </div><!--.row-->
+                        <div class="row date-to-row">
+                            <div class="cell">
+                                <label><strong>До:</strong> День</label>
+                                <select class="select">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                            </div>
+                            <div class="cell">
+                                <label>Месяц</label>
+                                <select class="select">
+                                    <option value="1">Январь</option>
+                                    <option value="2">Февраль</option>
+                                    <option value="3">Март</option>
+                                    <option value="4">Апрель</option>
+                                </select>
+                            </div>
+                            <div class="cell">
+                                <label>Год</label>
+                                <select class="select">
+                                    <option value="2013">2013</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                </select>
+                            </div>
+                        </div><!--.row-->
+                    </div><!--.table-->
+                    <div class="align-center"><input type="submit" name="" value="Найти" class="btn"></div>
+                </div><!--.form-table-->
+            </form>
+            
+            <div class="data-count">Найдено: 3</div>
+            <div class="data-table">
+                <div class="table">
+                    <div class="row table-head">
+                        <div class="cell"> Перевозчик </div>
+                        <div class="cell"> Дата и время операции </div>
+                        <div class="cell"> Сумма </div>
+                        <div class="cell"> Маршрут </div>
+                        <div class="cell"> Тип транспорта </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell">
+                        	<span class="data-title">Перевозчик</span>
+                            <span class="data-value">Перевозчик 1</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Дата и время операции</span>
+                            <span class="data-value">2015-01-19</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Сумма</span>
+                            <span class="data-value">200р.</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Маршрут</span>
+                            <span class="data-value">Пункт А - Пункт Б</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Тип транспорта</span>
+                            <span class="data-value">Автобус</span>
+                        </div>
+                    </div><!--.row-->
+                    <div class="row">
+                        <div class="cell">
+                        	<span class="data-title">Перевозчик</span>
+                            <span class="data-value">Перевозчик 2</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Дата и время операции</span>
+                            <span class="data-value">2015-12-07</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Сумма</span>
+                            <span class="data-value">250р.</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Маршрут</span>
+                            <span class="data-value">Пункт Г - Пункт Д</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Тип транспорта</span>
+                            <span class="data-value">Автобус</span>
+                        </div>
+                    </div><!--.row-->
+                    <div class="row">
+                        <div class="cell">
+                        	<span class="data-title">Перевозчик</span>
+                            <span class="data-value">Перевозчик 45</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Дата и время операции</span>
+                            <span class="data-value">2016-03-08</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Сумма</span>
+                            <span class="data-value">180р.</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Маршрут</span>
+                            <span class="data-value">Пункт C - Пункт D</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Тип транспорта</span>
+                            <span class="data-value">Маршрутное такси</span>
+                        </div>
+                    </div><!--.row-->
+                </div><!--.table-->
+            </div><!--.data-table-->
+            
+            
+            <h3>Перечень пополнения по транспортной карте</h3>
+            <form name="" method="post" action="">
+                <div class="form-table">
+                    <div class="table date-filter-table">
+                        <div class="row date-from-row">
+                            <div class="cell">
+                                <label><strong>От:</strong> День</label>
+                                <select class="select">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                            </div>
+                            <div class="cell">
+                                <label>Месяц</label>
+                                <select class="select">
+                                    <option value="1">Январь</option>
+                                    <option value="2">Февраль</option>
+                                    <option value="3">Март</option>
+                                    <option value="4">Апрель</option>
+                                </select>
+                            </div>
+                            <div class="cell">
+                                <label>Год</label>
+                                <select class="select">
+                                    <option value="2013">2013</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                </select>
+                            </div>
+                        </div><!--.row-->
+                        <div class="row date-to-row">
+                            <div class="cell">
+                                <label><strong>До:</strong> День</label>
+                                <select class="select">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                            </div>
+                            <div class="cell">
+                                <label>Месяц</label>
+                                <select class="select">
+                                    <option value="1">Январь</option>
+                                    <option value="2">Февраль</option>
+                                    <option value="3">Март</option>
+                                    <option value="4">Апрель</option>
+                                </select>
+                            </div>
+                            <div class="cell">
+                                <label>Год</label>
+                                <select class="select">
+                                    <option value="2013">2013</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                </select>
+                            </div>
+                        </div><!--.row-->
+                    </div><!--.table-->
+                    <div class="align-center"><input type="submit" name="" value="Найти" class="btn"></div>
+                </div><!--.form-table-->
+            </form>
+            
+            <div class="data-count">Найдено: 1</div>
+            <div class="data-table">
+                <div class="table">
+                    <div class="row table-head">
+                        <div class="cell"> Подразделение агента выполнившего пополнение </div>
+                        <div class="cell"> Дата и время операции </div>
+                        <div class="cell"> Сумма </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell">
+                        	<span class="data-title">Подразделение агента</span>
+                            <span class="data-value">Подразделение 1</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Дата и время операции</span>
+                            <span class="data-value">2015-01-19</span>
+                        </div>
+                        <div class="cell">
+                        	<span class="data-title">Сумма</span>
+                            <span class="data-value">200р.</span>
+                        </div>
+                    </div><!--.row-->
+                </div><!--.table-->
+            </div><!--.data-table-->
+            
+			
+        </main><!-- .content -->
+    </div><!--.container-->
+
+</div><!-- .wrapper -->
+
+<footer class="footer">
+	<div class="container">
+        <div class="f-info">
+            © 2010 — 2015 ГУП КК «ЦИТ» Все права защищены. <br/>
+            Контактный e-mail: <a href="mailto:cit@krasnodar.ru">cit@krasnodar.ru</a>
+        </div>
+    </div><!--.container-->
+</footer><!-- .footer -->
+
+<div class="waiter"></div>
+</body>
+</html>
