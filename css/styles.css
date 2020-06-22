@@ -243,8 +243,8 @@ h3 {
 }
 .heading-borders {
   position: relative;
-  padding: 23px 0;
-  margin-bottom: 28px;
+  padding: 10px 0 20px;
+  margin-bottom: 30px;
 }
 .heading-borders:after {
   position: absolute;
@@ -1185,7 +1185,7 @@ Forms, Popups
   height: 100%;
   top: 0;
   left: 0;
-  border: solid 1px rgba(170, 170, 170, 0.3);
+  border: solid 1px rgba(170, 170, 170, 0.4);
 }
 .lazyload {
   opacity: 0;

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <title>Beyaz etiketli enfeksiyon izleme yazılımı - COVID-19</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />     
+    
+    <!--SEO and Share-->
+    <meta name="description" content="Sağlık kuruluşları ve kamu yetkilileri için white label enfeksiyon takip yazılımı" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="COVID Tracker" />
+    <meta property="og:title" content="Enfeksiyon takipçisi: COVID-19" />
+    <meta property="og:description" content="Sağlık kuruluşları ve kamu yetkilileri için white label enfeksiyon takip yazılımı" />
+    <meta property="og:url" content="http://example.com/index-tr.html" />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:image" content="http://example.com/img/social_cover.png" />
+    <meta property="og:image:width" content="968" />
+    <meta property="og:image:height" content="504" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Infection tracker: COVID-19" />
+    <meta name="twitter:description" content="Sağlık kuruluşları ve kamu yetkilileri için white label enfeksiyon takip yazılımı" />
+    <meta name="twitter:image:src" content="http://example.com/img/social_cover.png" />
+    <meta name="twitter:url" content="http://example.com/index-tr.html" />
+    <meta name="twitter:domain" content="example.com" />
+    <meta name="twitter:site" content="@" />
+    <!--SEO and Share-->
+    
+    <!--favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#ffffff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#172b57">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#172b57">
+    <!--favicons-->
+    <!--head css, js-->
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs/fullpage.css">
+    <link rel="stylesheet" href="css/libs/animate.css">
+    <link rel="stylesheet" href="css/libs/magnific-popup.css">
+    <link rel="stylesheet" href="css/main.css?v=10">
+    <script src="js/libs/modernizr-custom.js"></script>
+    <script src="js/libs/jquery-1.12.2.min.js"></script>
+    <!--head css, js-->
+    
+    <script src="/js/panel.js"></script>
+</head>
+
+
+<body lang="tr">
+
+<div class="virtracker-fullpage" id="virtracker-fullpage">
+	    
+    <div class="section section-index section-gray">
+        
+        <div class="section-bg section-bg-index wow fadeInDown"></div>
+        <i class="icon icon--virus section-icon icon-66 wow zoomIn"></i>
+        <i class="icon icon--virus section-icon icon-270 wow zoomIn"></i>
+        
+        <div class="container-fluid index-container">
+            <article class="article">
+                                
+				
+                <div class="index-text">
+                    <h5 class="wow fadeInDown"> Enfeksiyon takipçisi : COVID-19. <i class="icon icon--virus icon-24"></i> </h5>
+                    <h1 class="wow fadeInUp">Sağlık kuruluşları ve kamu yetkilileri için white label enfeksiyon takip yazılımı.</h1>
+                    
+                    
+                    
+                    <div class="form-links middle-text wow fadeInRight">
+                        <a href="#" class="link-popup-video js-popup" data-mfp-src="#popup-video">
+                            <div class="icon-item">
+                                <span class="icon-item__text">Videoyu izle</span>
+                                <i class="icon icon--circle-watch"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="link-popup-order js-popup" data-mfp-src="#popup-order">
+                            <div class="icon-item">
+                                <span class="icon-item__text">Demo'yu dene</span>
+                                <i class="icon icon--circle-watch"></i>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="index-image wow fadeInUp">
+                        <div class="smartphone">
+                            <picture>
+                                <source srcset="content/index/01-x.webp" type="image/webp">
+                                <source srcset="content/index/01-x.png" type="image/png"> 
+                                <img src="content/index/01-x.png" alt="COVID Tracker" />
+                            </picture>
+                        </div>
+                        
+                        <div class="policy-tip">
+                        	<p>Sadece şunlar için uygundur</p>
+                            <div class="row small-tile-row">
+                            	<div class="col-6">
+                                	<div class="default-block">
+                                    	<div class="col-icon">
+                                            <i class="icon icon--black-caduceus"></i>
+                                        </div>
+                                        Sağlık kuruluşları
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                	<div class="default-block">
+                                    	<div class="col-icon">
+                                            <i class="icon icon--black-government"></i>
+                                        </div>
+                                        Kamu yetkilileri
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="color-gray">Apple ve Google politikasına göre</p>
+                        </div>
+                    </div>
+                    
+                    <div class="wow fadeInUp">
+                        <p class="middle-text">Halka açık alanları ziyaret etmeden, toplu taşıma kullanmadan ve hatta başka ülkelere seyahat etmeden önce enfeksiyon riskinizi önceden kontrol edin. Bu, müşterilerinizin gezi ve seyahatlerini önceden planlamalarına ve güvenli seçeneklerini peşinen öğrenmelerine yardımcı olacaktır.</p>
+                        <p class="middle-text"><img src="content/WHO.png" class="fl-right" alt="World Health Organization" /> COVID-19 ile enfekte olma riskinin takibi, kanıtlanmış bilimsel araştırma çalışmalarına, WHO ve kabul gören üniversitelerin verileri ile, anonim olarak hareketlerinizin ve ziyaret ettiğiniz kamusal alanların izlenmesine dayanır.</p>
+                    </div>
+                </div><!--.index-text-->
+                
+                
+            </article>
+        </div>
+    </div><!--.section-->
+            
+    
+    
+    <div class="section section-features overflow-hidden">
+        
+        <i class="icon icon--virus section-icon icon-120 wow zoomIn"></i>
+        <i class="icon icon--virus section-icon icon-270 wow zoomIn"></i>
+        <i class="icon icon--virus section-icon icon-400 wow zoomIn"></i>
+        
+        <div class="container-fluid main-container">
+        	<article class="article">
+                
+                
+                <h2 class="wow fadeInDown">Özellikler</h3>
+                <h3 class="wow fadeInDown">Şunun tarafından enfekte olma riskini hesapla</h3>
+                
+                <div class="row default-row justify-content-center col-align-center">
+                	<div class="col-md-4 wow fadeInLeft">
+                        <div class="col-icon">
+                        	<i class="icon icon-66 icon--truck"></i>
+                        </div>
+                        <h4 class="align-center min-height">İkamet edilen yeri değiştirme</h4>
+                        <div class="smartphone">
+                            <picture>
+                                <source srcset="content/features/01-xx.webp" type="image/webp">
+                                <source srcset="content/features/01-xx.png" type="image/png"> 
+                                <img src="content/features/01-xx.png" alt="COVID Tracker. İkamet edilen yeri değiştirme" />
+                            </picture>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 wow fadeInUp">
+                        <div class="col-icon">
+                        	<i class="icon icon-66 icon--flights"></i>
+                        </div>
+                        <h4 class="align-center min-height">Geziler, uçuşlar, halka açık alan ziyaretleri ekleme</h4>
+                        <div class="smartphone">
+                            <picture>
+                                <source srcset="content/features/02-xx.webp" type="image/webp">
+                                <source srcset="content/features/02-xx.png" type="image/png"> 
+                                <img src="content/features/02-xx.png" alt="COVID Tracker. Geziler, uçuşlar, halka açık alan ziyaretleri ekleme" />
+                            </picture>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 wow fadeInRight">
+                        <div class="col-icon">
+                        	<i class="icon icon-66 icon--fever"></i>
+                        </div>
+                        <h4 class="align-center min-height">Belirti ekleme</h4>
+                        <div class="smartphone">
+                            <picture>
+                                <source srcset="content/features/03-xx.webp" type="image/webp">
+                                <source srcset="content/features/03-xx.png" type="image/png"> 
+                                <img src="content/features/03-xx.png" alt="COVID Tracker. Belirti ekleme" />
+                            </picture>
+                        </div>
+                    </div>
+                </div><!--.default-row-->
+                
+                <h3 class="wow fadeInDown">Şunun tarafından şiddetli belirtiler yaşama riskini hesapla</h3>
+                
+                <div class="row default-row justify-content-center col-align-center">
+                    <div class="col-md-4 wow fadeInUp">
+                        <div class="col-icon">
+                        	<i class="icon icon-66 icon--conditions"></i>
+                        </div>
+                        <h4 class="align-center min-height">Önceden bulunan sağlık durumlarını ekleme</h4>
+                        <div class="smartphone">
+                            <picture>
+                                <source srcset="content/features/04-xx.webp" type="image/webp">
+                                <source srcset="content/features/04-xx.png" type="image/png"> 
+                                <img src="content/features/04-xx.png" alt="COVID Tracker. Önceden bulunan sağlık durumlarını ekleme" />
+                            </picture>
+                        </div>
+                    </div>
+                </div><!--.default-row-->
+                
+                
+            </article>
+        </div>
+    </div><!--.section-->
+    
+    
+    
+    <div class="section section-benefits section-gray overflow-hidden">
+        
+        <i class="icon icon--virus section-icon icon-120 wow zoomIn"></i>
+        
+        <div class="container-fluid main-container">
+        	<article class="article">
+                
+                
+                <h2 class="wow fadeInDown">Faydalar</h2>
+                
+                <div class="row default-row">
+                    <div class="col-md-4 wow fadeInLeft">
+                        <div class="default-block">
+                            <div class="col-icon align-center">
+                                <i class="icon icon-100 icon--doctor"></i>
+                            </div>
+                            Sağlık kuruluşlarının marka bilinirliliğini arttırmaya ve sağlık risklerine çok dikkat eden kişiler ile iletişim kurmasına yardım eder.
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp">
+                        <div class="default-block">
+                            <div class="col-icon align-center">
+                                <i class="icon icon-100 icon--government"></i>
+                            </div>
+                            Kamu yetkililerine ve kuruluşlarına, resmi bilgilerin hızlı bir şekilde iletilmesini organize etmelerine ve bölgelerindeki enfeksiyon yayılma hızını takip etmelerine yardımcı olur.
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInRight">
+                        <div class="default-block">
+                            <div class="col-icon align-center">
+                                <i class="icon icon-100 icon--location"></i>
+                            </div>
+                            Sağlık kuruluşlarına ve kamu yetkililerine yeni tanı konmuş kişilerin yer değiştirme geçmişlerini sağlar.
+                        </div>
+                    </div>
+                </div><!--.default-row-->
+                
+                <div class="small-text align-center wow fadeInUp">
+                	<i class="icon icon--info icon-30"></i> &nbsp;
+                    Apple ve Google politikasına göre yalnızca sağlık kuruluşları ve kamu yetkilileri kullanabilir.
+                </div>
+                
+                
+            </article>
+        </div>
+    </div><!--.section-->
+            
+    
+    <div class="section section-inside section-gray overflow-hidden">
+        
+        <i class="icon icon--virus section-icon icon-270 wow zoomIn"></i>
+        
+        <div class="container-fluid main-container">
+        	<article class="article">
+            	
+                
+                <h2 class="wow fadeInDown">İçindekiler</h2>
+                
+                <div class="row default-row">
+                    <div class="col-md-4 wow fadeInLeft">
+                        <div class="col-icon align-center">
+                            <i class="icon icon-36 icon--blue-apple"></i>
+                        </div>
+                        Apple AppStore'a yüklenmeye hazır markalı iOS uygulaması <br/>
+                        <a href="#" class="js-popup" data-mfp-src="#popup-order">Demo indir</a>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp">
+                        <div class="col-icon align-center">
+                            <i class="icon icon-36 icon--blue-android"></i>
+                        </div>
+                        Google Play'e yüklenmeye hazır, markalı Android uygulaması
+                    </div>
+                    <div class="col-md-4 wow fadeInRight">
+                        <div class="col-icon align-center">
+                            <i class="icon icon-36 icon--blue-web"></i>
+                        </div>
+                        Markalı web versiyonu <br/>
+                        <a href="#" class="js-popup" data-mfp-src="#popup-order">Demo'yu dene</a>
+                    </div>
+                    <div class="col-12 wow fadeInLeft">
+                        <div class="col-icon align-center">
+                            <i class="icon icon-36 icon--blue-translate"></i>
+                        </div>
+                        15 dile tercüme edilmiştir: İngilizce, Arapça, Bengalce, Almanca, Fransızca, Endonezya dili, İtalyanca, Felemenkçe, Brezilya Portekizcesi, Rusça, İspanyolca, Tay dili, Türkçe, Vietnamca.
+                    </div>
+                    <div class="col-md-4 wow fadeInLeft">
+                        <div class="col-icon align-center">
+                            <i class="icon icon-36 icon--blue-doc"></i>
+                        </div>
+                        Tüm gerekli belgeler: metodoloji açıklaması, gizlilik politikası.
+                    </div>
+                    <div class="col-md-4 wow fadeInUp">
+                        <div class="col-icon align-center">
+                            <i class="icon icon-36 icon--blue-help"></i>
+                        </div>
+                        Uygulamayı yayınlarken ve web sitesini başlatırken desteğimiz. 
+                    </div>
+                    <div class="col-md-4 wow fadeInRight">
+                        <div class="col-icon align-center">
+                            <i class="icon icon-36 icon--blue-cloud"></i>
+                        </div>
+                        Enfeksiyon yolları veri tabanına merkezi erişim.
+                    </div>
+                </div><!--.default-row-->
+                
+                                
+            </article>
+        </div>
+    </div><!--.section-->
+    
+    
+    <div class="section section-our-plans overflow-hidden">
+        <div class="container-fluid middle-container">
+        	<article class="article">
+                
+                
+                <h2 class="wow fadeInDown">Planlarımız</h2>
+                <h5 class="wow fadeInDown">İş modeliniz için en uygun olan paket seçeneğini seçebilirsiniz.</h5>
+                
+                <div class="row default-row">
+                    <div class="col-md-6 wow fadeInLeft">
+                        <h3 class="align-left">Başlangıç Paketi</h3>
+                        <ul class="ul-check min-height">
+                            <li>Markalaştırma (renk değiştirme, font değiştirme, karşılama ekranı, kuruluşunuzun ismini yerleştirme, iletişim ve geribildirim/başvuru formu ekleme)</li>
+                            <li>Web sürümü başlatma (altyapımızı sağlayabilir ve anahtar teslim şekilde teslim edebiliriz)</li>
+                            <li>Uygulamaları AppStore ve Google Play'e yüklemek (bunu destekleyebiliriz)</li>
+                            <li>Yönetmek istiyorsanız, müşteri için tüm kaynak kodlarını alma.</li>
+                        </ul>
+                        <hr/>
+                        <p class="color-green"><strong>Ücret: Aylık 2.500$</strong></p>
+                        <div>Teslimat: 7 iş günü + Apple AppStore ve Google Play Store'un incelemesi için gereken süre</div>
+                    </div>
+                    
+                    <div class="col-md-6 wow fadeInRight">
+                        <h3 class="align-left">Gelişmiş Paket</h3>
+                        <ul class="ul-check min-height">
+                            <li>Hesaplama metodolojisini uzmanlığınıza göre değiştirme</li>
+                            <li>Kullanıcılar için gerçek zamanlı bildirimler sağlama</li>
+                            <li>Rezervasyon özelliği sağlamak için planlama yazılımınızı birleştirme</li>
+                            <li>Kuruluşunuzdan haber akışı sağlama</li>
+                            <li>Uzmanlığınızın ve özel ilginizin bulunduğu hastalıkları ekleme</li>
+                            <li>Teletıp sistemi <a href="https://cortm.com/" target="_blank">https://cortm.com/</a> veya başkasının entegre edilmesi</li>
+                        </ul>
+                        <hr/>
+                        <p class="color-green"><strong>Fiyat: <a href="#contact">talep üzerine</a></strong></p>
+                    </div>
+                </div><!--.default-row-->
+                
+                
+            </article>
+        </div>
+    </div><!--.section-->
+    
+        
+    
+    <div class="section section-gray section-contact">
+        
+        <div class="container-fluid middle-container">
+        	<article class="article">
+                
+                
+                <div class="default-block contact-block block-blue wow fadeInUp">
+                    
+                    <h2>İletişim</h2>
+                    <h5>Lütfen bir danışma talebi bırakın ve kısa bir süre içinde sizinle iletişime geçelim</h5>
+                    
+                    <div class="margin-auto max-width-450">
+                        <form method="post" name="" action="/application-contact.php" class="application_form_contact">
+                            <input type="hidden" id="g-recaptcha-response-contact" name="g-recaptcha-response-contact" />
+                            <input type="hidden" name="lang" value="tr" />
+                            <div class="form-response" style="display: none"></div>
+                            <div class="row form-elements align-items-center">
+                                <div class="col-12">
+                                    <div class="text-block">
+                                        <input type="text" name="country" placeholder="Ülke" />
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="text-block">
+                                        <input type="text" name="organization" placeholder="Kuruluş" />
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="text-block">
+                                        <input type="text" name="name" placeholder="İsminiz" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-block">
+                                        <input type="text" name="phone" placeholder="İletişim telefonu" />
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="text-block">
+                                        <input type="text" name="email" placeholder="İletişim e-mail adresi" />
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="textarea-block">
+                                        <textarea name="message" placeholder="Özel sorular"></textarea>
+                                        <div class="textarea-border"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-submit">
+                                        <button type="submit" class="btn btn-default btn-full-width">
+                                            <div class="btn__content">
+                                                Gönder
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>                        
+                </div>
+                
+                <footer class="footer wow fadeInUp">
+                    <p>&copy; 2020 Cortex Technology Limited <br/>
+                    63-66, Hatton Garden, London, EC1N 8LE, England</p>
+                    <p><a href="mailto:info@example.com" target="_blank">info@example.com</a>
+                    &nbsp; • &nbsp;
+                    <a href="http://www.cb.technology/" target="_blank">www.cb.tecnology</a></p>
+                    <p><a href="#" target="_blank">Hükümler ve koşullar</a></p>
+                </footer>
+                
+        
+            </article>
+        </div>
+    </div><!--.section-->
+            
+</div><!--virtracker-fullpage-->
+
+
+<header class="header wow fadeInDown">
+    <div class="container-fluid index-container">
+    	
+        <div class="row header-row align-items-center justify-content-end">
+        	<div class="col-auto header-row__logo">
+            	<div class="site-logo-link"></div>
+            </div>
+            
+            <div class="col header-row__lang">
+            	<div class="lang-block">
+                    <i class="icon icon-15 icon--globe"></i>
+                    <select id="site-lang" class="simple-select">
+                        <option value="en" title="English">EN</option>
+                        <option value="id" title="Bahasa Indonesia">ID</option>
+                        <option value="pt" title="Português">PT</option>
+                        <option value="tr" title="Türk">TR</option>
+                        <option value="ru" title="Русский">RU</option>
+                    </select>
+                </div>
+            </div>
+                                    
+            <div class="col-auto header-row__menu">
+                <nav class="site-menu">
+                    <ul id="menu" class="not-list">
+                        
+                        <li class="fp-link menu-index-link" data-menuanchor="index"><a href="#index">Ev</a></li>
+                        <li class="fp-link menu-default-link" data-menuanchor="features"><a href="#features">Özellikler</a></li>
+                        <li class="fp-link menu-default-link" data-menuanchor="benefits"><a href="#benefits">Faydalar</a></li>
+                        <li class="fp-link menu-default-link" data-menuanchor="whats-inside"><a href="#whats-inside">İçindekiler</a></li>
+                        <li class="fp-link menu-default-link" data-menuanchor="our-plans"><a href="#our-plans">Planlarımız</a></li>
+                        <li class="fp-link menu-contact-link" data-menuanchor="contact"><a href="#contact" class="btn btn-default btn-small"><div class="btn__content">İletişim</div></a></li>
+                        
+                    </ul>
+                </nav>
+            </div><!--.header-row__menu-->
+                                    
+            <div class="col-auto header-row__mobile">
+            	<a href="#" class="mobile-mainmenu-btn">
+                	<div class="menu-btn-line"></div>
+                    <div class="menu-btn-line"></div>
+                    <div class="menu-btn-line"></div>
+                </a>
+            </div>
+        </div><!--.header-row-->
+        
+    </div><!--.main-container-->
+</header><!--.header-->
+
+
+
+<div class="popup-form zoom-anim-dialog mfp-hide" id="popup-video">
+    <div class="form-wrapper">
+    	video frame
+    </div><!--.form-wrapper-->
+</div><!--.popup-form-->
+
+
+
+<div class="popup-form zoom-anim-dialog mfp-hide" id="popup-order">
+    <div class="form-wrapper">
+    	
+		
+        <h2>Demo talebi</h2>
+        <h5>Web sürümüne ve .apk dosyası indirmeye hemen erişmek için lütfen ayrıntılarınızı belirtin</h5>
+        
+        <div class="demo-form margin-auto max-width-450">
+            <form method="post" name="" action="/application-order.php" class="application_form_order">
+                <input type="hidden" id="g-recaptcha-response-order" name="g-recaptcha-response-order" />
+                <input type="hidden" name="lang" value="tr" />
+                <div class="form-response" style="display: none"></div>
+                <div class="row form-elements align-items-center">
+                    <div class="col-12">
+                        <div class="text-block">
+                            <input type="text" name="country" placeholder="Ülke" />
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="text-block">
+                            <input type="text" name="organization" placeholder="Kuruluş" />
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="text-block">
+                            <input type="text" name="name" placeholder="İsminiz" />
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="text-block">
+                            <input type="text" name="email" placeholder="İletişim e-mail adresi" />
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-default btn-full-width">
+                                <div class="btn__content">
+                                    Demo al
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div> 
+        
+        <div class="demo-links">
+        	<table>
+            	<tr>
+                	<td>
+                    	<p>Web uygulaması demosu</p>
+                        <a href="" id="link-demo-web" target="_blank" class="btn btn-default">
+                            <div class="btn__content">
+                                Web sürümüne git
+                            </div>
+                        </a>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <p>APK dosyası (android demo uygulaması)</p>
+                        <a href="" id="link-demo-file" target="_blank" class="btn btn-default">
+                            <div class="btn__content">
+                                İndir
+                            </div>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>                       
+        
+        
+    </div><!--.form-wrapper-->
+</div><!--.popup-form-->
+
+
+<div class="preloader preloader--full"></div><!---->
+
+
+<!--<script src="https://www.google.com/recaptcha/api.js?render=6Ld5zPkUAAAAAO-7N4XtyLZIDcT2hjJPVcafq2QR"></script>-->
+
+<script src="js/libs/scrolloverflow.min.js"></script>
+<script src="js/libs/jquery.mousewheel.js"></script>
+<script src="js/libs/jquery.fullpage.js"></script>
+<script src="js/libs/jquery.validate.min.js"></script>
+<script src="js/libs/jquery.magnific-popup.min.js"></script>
+<script src="js/libs/jquery.sidr.min.js"></script>
+<script src="js/libs/jquery.touchSwipe.min.js"></script>
+<script src="js/libs/wow.min.js"></script>
+
+<script src="js/main.js?v=10"></script> 
+
+</body>
+</html>

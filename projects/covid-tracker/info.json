@@ -1,0 +1,10 @@
+{
+  "year": 2020,
+  "title": "COVID Tracker",
+  "description": "Верстка многостраничного лэндинга ПО для отслеживания риска заражения COVID-19",
+  "site": "http://virtracker.com/",
+  "en": {
+    "title": "COVID Tracker",
+    "description": "Layout of multi-page landing page for COVID-19 infection risk tracking software"
+  }
+}
