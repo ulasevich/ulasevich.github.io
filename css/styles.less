@@ -38,7 +38,7 @@
 
 @main-padding: 15px;
 @main-max-width: 1770px;
-@content-max-width: 850px;
+@content-max-width: 900px;
 @default-control-height: 50px;
 
 
@@ -267,7 +267,7 @@ body {
 	color: @base-font-color;
 	background-color: @base-bg-color;
     @media @desktop-1400 {
-		font-size: 90%;
+		font-size: 96%;
 	}
 }
 
@@ -330,7 +330,7 @@ p {
 	&:last-child { margin-bottom: 0 !important; }
 }
 h1, h2, h3, h4, h5, h6 {
-	margin: 0.6em 0 0.3em;
+	margin: 0.5em 0 0.3em;
 	line-height: 1.2em;
 	font-weight: 700;
 	&:first-child { margin-top: 0; }
@@ -342,20 +342,20 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 1.4em;
 }
 h2 {
-	margin-bottom: 0.6em;
+	margin-bottom: 0.5em;
 }
 h3 {
 	font-size: 1.2em;
 }
 .heading-borders {
 	position: relative;
-	padding: 10px 0 20px;
+	padding: 0 0 20px;
 	margin-bottom: 30px;
 	&:after {
 		position: absolute;
 		content: '';
-		height: 3px;
-		border-radius: 3px;
+		height: 2px;
+		border-radius: 2px;
 		background-color: #999;
 		width: 160px;
 		bottom: 0;
@@ -420,7 +420,7 @@ ul {
 	}
 	& > li {
 		display: table;
-		margin: 0 0 0.1em;
+		margin: 0 0 0.2em;
 		position: relative;
 	}
     & > li:before {
@@ -462,7 +462,7 @@ ol {
 	& > li {
 		display: table;
 		counter-increment: item;
-		margin: 0 0 1em;
+		margin: 0 0 0.2em;
 	}
 	& > li:before {
 		content: counters(item, ". ") ". ";
@@ -1104,7 +1104,7 @@ Forms, Popups
 /* Middle
 -----------------------------------------------------------------------------*/
 .content {
-	padding: 30px 0;
+	padding: 25px 0;
 	@media @mobile-992 {
 		padding-top: 15px;
 	}
@@ -1113,20 +1113,18 @@ Forms, Popups
 	text-align: center;
 	margin-bottom: 20px;
 	img {
+		max-width: 150px;
 		.rounded-corners(50%);
 	}
 }
 .detail-row {
-	margin-top: 2em;
-	margin-bottom: 2em;
+	margin-top: 25px;
 	> div[class*="col"] {
-		@media @mobile-992 {
-			padding-bottom: 25px;
-		}
+		padding-bottom: 25px;
 	}
 }
 .detail-row__contacts {
-	padding-bottom: 20px;
+	/*padding-bottom: 20px;*/
 	@media @mobile-768 {
 		text-align: center;
 	}
@@ -1302,3 +1300,33 @@ Forms, Popups
 	}
 }
 
+.inline-circle {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background-color: @color-gray;
+	vertical-align: middle;
+	margin-right: 5px;
+	.rounded-corners(50%);
+}
+.light-red {
+	background: red;
+	background-image: radial-gradient(brown, transparent);
+	box-shadow: 
+		0 0 3px #ff8080 inset,
+		0 0 5px red;
+}
+.light-orange {
+	background: orange;
+	background-image: radial-gradient(orange, transparent);
+	box-shadow: 
+		0 0 3px #ffd68b inset,
+		0 0 5px red;
+}
+.light-green {
+	background: green;
+	background-image: radial-gradient(green, transparent);
+	box-shadow: 
+		0 0 3px #7aff7a inset,
+		0 0 5px green;
+}

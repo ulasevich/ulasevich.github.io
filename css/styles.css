@@ -124,7 +124,7 @@ body {
 }
 @media all and (max-width: 1400px) {
   body {
-    font-size: 90%;
+    font-size: 96%;
   }
 }
 .wrapper {
@@ -155,7 +155,7 @@ body {
 }
 @media all and (max-width: 1400px) {
   .content-container {
-    max-width: 850px;
+    max-width: 900px;
   }
 }
 /*--- Basic ---*/
@@ -215,7 +215,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0.6em 0 0.3em;
+  margin: 0.5em 0 0.3em;
   line-height: 1.2em;
   font-weight: 700;
 }
@@ -236,21 +236,21 @@ h2 {
   font-size: 1.4em;
 }
 h2 {
-  margin-bottom: 0.6em;
+  margin-bottom: 0.5em;
 }
 h3 {
   font-size: 1.2em;
 }
 .heading-borders {
   position: relative;
-  padding: 10px 0 20px;
+  padding: 0 0 20px;
   margin-bottom: 30px;
 }
 .heading-borders:after {
   position: absolute;
   content: '';
-  height: 3px;
-  border-radius: 3px;
+  height: 2px;
+  border-radius: 2px;
   background-color: #999;
   width: 160px;
   bottom: 0;
@@ -338,7 +338,7 @@ ul ul {
 }
 ul > li {
   display: table;
-  margin: 0 0 0.1em;
+  margin: 0 0 0.2em;
   position: relative;
 }
 ul > li:before {
@@ -390,7 +390,7 @@ ol ul {
 ol > li {
   display: table;
   counter-increment: item;
-  margin: 0 0 1em;
+  margin: 0 0 0.2em;
 }
 ol > li:before {
   content: counters(item, ". ") ". ";
@@ -1056,7 +1056,7 @@ Forms, Popups
 /* Middle
 -----------------------------------------------------------------------------*/
 .content {
-  padding: 30px 0;
+  padding: 25px 0;
 }
 @media all and (max-width: 991.98px) {
   .content {
@@ -1068,6 +1068,7 @@ Forms, Popups
   margin-bottom: 20px;
 }
 .portfolio-photo img {
+  max-width: 150px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -khtml-border-radius: 50%;
@@ -1075,16 +1076,14 @@ Forms, Popups
   border-radius: 50%;
 }
 .detail-row {
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 25px;
 }
-@media all and (max-width: 991.98px) {
-  .detail-row > div[class*="col"] {
-    padding-bottom: 25px;
-  }
+.detail-row > div[class*="col"] {
+  padding-bottom: 25px;
 }
 .detail-row__contacts {
-  padding-bottom: 20px;
+  /*padding-bottom: 20px;*/
+
 }
 @media all and (max-width: 767.98px) {
   .detail-row__contacts {
@@ -1300,4 +1299,35 @@ Forms, Popups
 }
 .show-all-link:hover:after {
   border-top-color: #51c0ff;
+}
+.inline-circle {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #9c9c9c;
+  vertical-align: middle;
+  margin-right: 5px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+.light-red {
+  background: red;
+  background-image: radial-gradient(#a52a2a, transparent);
+  box-shadow: 0 0 3px #ff8080 inset,
+		0 0 5px red;
+}
+.light-orange {
+  background: orange;
+  background-image: radial-gradient(#ffa500, transparent);
+  box-shadow: 0 0 3px #ffd68b inset,
+		0 0 5px red;
+}
+.light-green {
+  background: green;
+  background-image: radial-gradient(#008000, transparent);
+  box-shadow: 0 0 3px #7aff7a inset,
+		0 0 5px green;
 }
