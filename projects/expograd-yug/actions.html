@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=1034, initial-scale=1.0, minimum-scale=0.25, maximum-scale=1.6">
 	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <!-- Compliance patch for Microsoft browsers --> <!--[if lt IE 9]><script src="http://ie7-js.googlecode.com/svn/trunk/lib/IE9.js"></script><![endif]-->
-	<title>Мероприятия в ВКК — Экспоград Юг</title>
+	<title>РњРµСЂРѕРїСЂРёСЏС‚РёСЏ РІ Р’РљРљ вЂ” Р­РєСЃРїРѕРіСЂР°Рґ Р®Рі</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<link href="css/style.css" rel="stylesheet">
@@ -17,7 +17,7 @@
 	<script src="js/jquery.imagemapster.min.js"></script>
 	
     
-    <!--Для календаря в левой колонке-->
+    <!--Р”Р»СЏ РєР°Р»РµРЅРґР°СЂСЏ РІ Р»РµРІРѕР№ РєРѕР»РѕРЅРєРµ-->
     <link rel="stylesheet" href="css/jquery-ui.css">
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery.ui.datepicker-ru.js"></script>
@@ -25,11 +25,11 @@
     <script>
 	$(document).ready(function(){
 		var selected_dates = new Array();
-		selected_dates = getSelectedDates(); //массив дат мероприятий
+		selected_dates = getSelectedDates(); //РјР°СЃСЃРёРІ РґР°С‚ РјРµСЂРѕРїСЂРёСЏС‚РёР№
 		
 		$( ".date-filter" ).datepicker({
 			dateFormat: 'd.m.yy',
-			beforeShowDay: function (date) // обработчик, выделяющий дни с мероприятими, остальным присваивает disable
+			beforeShowDay: function (date) // РѕР±СЂР°Р±РѕС‚С‡РёРє, РІС‹РґРµР»СЏСЋС‰РёР№ РґРЅРё СЃ РјРµСЂРѕРїСЂРёСЏС‚РёРјРё, РѕСЃС‚Р°Р»СЊРЅС‹Рј РїСЂРёСЃРІР°РёРІР°РµС‚ disable
 			{
 				var mm = date.getMonth() + 1,
 					dd = date.getDate(),
@@ -48,7 +48,7 @@
 			},
 			onSelect: function(date)
 			{
-				//обработчик при выборе даты
+				//РѕР±СЂР°Р±РѕС‚С‡РёРє РїСЂРё РІС‹Р±РѕСЂРµ РґР°С‚С‹
 				console.log(date);
 				console.log(selected_dates[date]);
 			},
@@ -65,14 +65,14 @@
 	{
 		var the_selected_dates = [];
 		var json_dates = [{"id":"63","name":"\u0421\u043e\u0432\u0435\u0449\u0430\u043d\u0438\u0435 \u0421\u041c\u042d\u0412 \u041f\u0415\u0420\u0415\u041d\u0415\u0421\u0415\u041d\u041e \u041d\u0410 9:00","event_date":"27.9.2015","active":"yes"},{"id":"57","name":"\u0421\u0435\u043c\u0438\u043d\u0430\u0440 \u00ab\u043e\u0431\u0435\u0441\u043f\u0435\u0447\u0435\u043d\u0438\u0435 \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u043e\u043d\u043d\u043e\u0439","event_date":"27.9.2015","active":"no"},{"id":"56","name":"\u041a\u043e\u043d\u0442\u0440\u0430\u043a\u0442\u043d\u0430\u044f \u0441\u0438\u0441\u0442\u0435\u043c\u0430 \u0432 \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0438: \u043f\u0435\u0440\u0432\u044b\u0435 ","event_date":"19.9.2015","active":"no"},{"id":"62","name":"event 3","event_date":"9.9.2015","active":"no"},{"id":"61","name":"event 2348","event_date":"6.9.2015","active":"no"},{"id":"58","name":"\u041d\u043e\u0432\u0430\u0446\u0438\u0438 \u0432 \u043f\u0440\u0430\u0432\u043e\u0432\u043e\u043c \u0440\u0435\u0433\u0443\u043b\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0438 ","event_date":"3.9.2015","active":"no"},{"id":"59","name":"\u0421\u0435\u043c\u0438\u043d\u0430\u0440-\u043f\u0440\u0430\u043a\u0442\u0438\u043a\u0443\u043c \u00ab\u0420\u0435\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u044f ","event_date":"1.9.2015","active":"no"}];
-		var date = "", status = ""; //для временного хранения даты
+		var date = "", status = ""; //РґР»СЏ РІСЂРµРјРµРЅРЅРѕРіРѕ С…СЂР°РЅРµРЅРёСЏ РґР°С‚С‹
 		
 		$.each(json_dates, function(n, val)
 		{
 			the_selected_dates[val.event_date] = [];
 			the_selected_dates[val.event_date]["id"] = val.id;
 			the_selected_dates[val.event_date]["name"] = val.name;
-			//если в этот день есть несколько мероприятий и хоть одно из них ещё открыто (active=yes) обозначаем его открытым
+			//РµСЃР»Рё РІ СЌС‚РѕС‚ РґРµРЅСЊ РµСЃС‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ РјРµСЂРѕРїСЂРёСЏС‚РёР№ Рё С…РѕС‚СЊ РѕРґРЅРѕ РёР· РЅРёС… РµС‰С‘ РѕС‚РєСЂС‹С‚Рѕ (active=yes) РѕР±РѕР·РЅР°С‡Р°РµРј РµРіРѕ РѕС‚РєСЂС‹С‚С‹Рј
 			if ((val.event_date==date) && (status=="yes")) {
 				the_selected_dates[val.event_date]["active"] = "yes";
 			} else {
@@ -85,7 +85,7 @@
 		return the_selected_dates;
 	}
     </script>
-    <!--Для календаря в левой колонке-->
+    <!--Р”Р»СЏ РєР°Р»РµРЅРґР°СЂСЏ РІ Р»РµРІРѕР№ РєРѕР»РѕРЅРєРµ-->
     
 	<script src="/js/panel.js"></script>
 </head>
@@ -102,11 +102,11 @@
 
 <div class="wrapper">
     <header class="header">
-        <a href="index.html" class="logo-link" title="Главная"> <img src="images/logo.png"> </a>
+        <a href="index.html" class="logo-link" title="Р“Р»Р°РІРЅР°СЏ"> <img src="images/logo.png"> </a>
         <div class="header-right">
             <div class="b-language-swticher">
                 <div class="b-ls__wrapper">
-                    <div class="b-selected"><a class="ru" href="index.html">Русская версия</a></div>
+                    <div class="b-selected"><a class="ru" href="index.html">Р СѓСЃСЃРєР°СЏ РІРµСЂСЃРёСЏ</a></div>
                     <div class=" b-dropdown" style="display: none;">
                         <a class="en" href="en.html">English version</a>
                     </div>
@@ -115,7 +115,7 @@
             
             <div class="h-search">
                 <form name="" method="get" action="">
-                    <input type="text" name="" placeholder="Поиск по сайту" class="h-s-text">
+                    <input type="text" name="" placeholder="РџРѕРёСЃРє РїРѕ СЃР°Р№С‚Сѓ" class="h-s-text">
                     <input type="submit" name="" value="" class="h-s-btn">
                 </form>
             </div>
@@ -123,10 +123,10 @@
             <div class="h-phone"><span>+7 (495)</span> 228-05-58</div>
             <nav class="h-menu">
                 <div class="clearfix">
-                    <a href="about.html" class="h-m-link h-m-1">О ВКК</a>
-                    <a href="actions.html" class="h-m-link h-m-2 selected">Мероприятия в ВКК</a>
-                    <a href="services.html" class="h-m-link h-m-3">Услуги ВКК</a>
-                    <a href="contacts.html" class="h-m-link h-m-4">Контакты</a>
+                    <a href="about.html" class="h-m-link h-m-1">Рћ Р’РљРљ</a>
+                    <a href="actions.html" class="h-m-link h-m-2 selected">РњРµСЂРѕРїСЂРёСЏС‚РёСЏ РІ Р’РљРљ</a>
+                    <a href="services.html" class="h-m-link h-m-3">РЈСЃР»СѓРіРё Р’РљРљ</a>
+                    <a href="contacts.html" class="h-m-link h-m-4">РљРѕРЅС‚Р°РєС‚С‹</a>
                 </div>
                 <img src="images/top-menu-shade.png">
             </nav>
@@ -141,21 +141,21 @@
         
         <main class="content">
             <div class="heading">
-                <h1>Мероприятия в ВКК</h1>
+                <h1>РњРµСЂРѕРїСЂРёСЏС‚РёСЏ РІ Р’РљРљ</h1>
             </div>
             
             <div class="article-short clearfix">
                 <img src="content/article-short-2.jpg" width="135" class="fl-left a-s-img">
                 <div class="fl-right a-s-data">
-                	<span class="a-s-date a-s-top">24 апреля 2014</span><br/>
-                    Организатор:<br/>
-                    <a href="#" class="color-link">Кубань ЭКСПОЦЕНТР</a><br/>
-                    <a href="actions-exhibitions.html" class="a-s-category-img" title="Выставки"> <img src="images/icon-article-expo.png"> </a>
+                	<span class="a-s-date a-s-top">24 Р°РїСЂРµР»СЏ 2014</span><br/>
+                    РћСЂРіР°РЅРёР·Р°С‚РѕСЂ:<br/>
+                    <a href="#" class="color-link">РљСѓР±Р°РЅСЊ Р­РљРЎРџРћР¦Р•РќРўР </a><br/>
+                    <a href="actions-exhibitions.html" class="a-s-category-img" title="Р’С‹СЃС‚Р°РІРєРё"> <img src="images/icon-article-expo.png"> </a>
                 </div>
                 <div class="a-s-content">
-                    <a href="actions-item.html" class="a-s-link">Холдинг «РАМО-М» — на 12-м месте в рейтинге 100 крупнейших девелоперов ТЦ России</a>
+                    <a href="actions-item.html" class="a-s-link">РҐРѕР»РґРёРЅРі В«Р РђРњРћ-РњВ» вЂ” РЅР° 12-Рј РјРµСЃС‚Рµ РІ СЂРµР№С‚РёРЅРіРµ 100 РєСЂСѓРїРЅРµР№С€РёС… РґРµРІРµР»РѕРїРµСЂРѕРІ РўР¦ Р РѕСЃСЃРёРё</a>
                     <div class="a-s-text">
-                        Благодаря работе компании жители крупных городов региона получили доступ к современным торгово-развлекательным комплексам европейского уровня, где представлены ...
+                        Р‘Р»Р°РіРѕРґР°СЂСЏ СЂР°Р±РѕС‚Рµ РєРѕРјРїР°РЅРёРё Р¶РёС‚РµР»Рё РєСЂСѓРїРЅС‹С… РіРѕСЂРѕРґРѕРІ СЂРµРіРёРѕРЅР° РїРѕР»СѓС‡РёР»Рё РґРѕСЃС‚СѓРї Рє СЃРѕРІСЂРµРјРµРЅРЅС‹Рј С‚РѕСЂРіРѕРІРѕ-СЂР°Р·РІР»РµРєР°С‚РµР»СЊРЅС‹Рј РєРѕРјРїР»РµРєСЃР°Рј РµРІСЂРѕРїРµР№СЃРєРѕРіРѕ СѓСЂРѕРІРЅСЏ, РіРґРµ РїСЂРµРґСЃС‚Р°РІР»РµРЅС‹ ...
                     </div>
                 </div>
             </div>
@@ -165,15 +165,15 @@
             <div class="article-short clearfix">
                 <img src="content/article-short-3.jpg" width="135" class="fl-left a-s-img">
                 <div class="fl-right a-s-data">
-                	<span class="a-s-date a-s-top">15 - 24 апреля 2014</span><br/>
-                    Организатор:<br/>
-                    <a href="#" class="color-link">ЗАО «Экспоцентр»</a><br/>
-                    <a href="actions-congress.html" class="a-s-category-img" title="Коцертно-развлекательные мероприятия"> <img src="images/icon-article-entertainment.png"> </a>
+                	<span class="a-s-date a-s-top">15 - 24 Р°РїСЂРµР»СЏ 2014</span><br/>
+                    РћСЂРіР°РЅРёР·Р°С‚РѕСЂ:<br/>
+                    <a href="#" class="color-link">Р—РђРћ В«Р­РєСЃРїРѕС†РµРЅС‚СЂВ»</a><br/>
+                    <a href="actions-congress.html" class="a-s-category-img" title="РљРѕС†РµСЂС‚РЅРѕ-СЂР°Р·РІР»РµРєР°С‚РµР»СЊРЅС‹Рµ РјРµСЂРѕРїСЂРёСЏС‚РёСЏ"> <img src="images/icon-article-entertainment.png"> </a>
                 </div>
                 <div class="a-s-content">
-                    <a href="actions-item.html" class="a-s-link">Мегацентр «Красная Площадь», г. Армавир – финалист Премии Commercial Real Estate Federal Awards 2014</a>
+                    <a href="actions-item.html" class="a-s-link">РњРµРіР°С†РµРЅС‚СЂ В«РљСЂР°СЃРЅР°СЏ РџР»РѕС‰Р°РґСЊВ», Рі. РђСЂРјР°РІРёСЂ вЂ“ С„РёРЅР°Р»РёСЃС‚ РџСЂРµРјРёРё Commercial Real Estate Federal Awards 2014</a>
                     <div class="a-s-text">
-                        Мегацентр «Красная Площадь», г. Армавир, с успехом вошел в состав финалистов Премии CRE Federal Awards 2014 ...
+                        РњРµРіР°С†РµРЅС‚СЂ В«РљСЂР°СЃРЅР°СЏ РџР»РѕС‰Р°РґСЊВ», Рі. РђСЂРјР°РІРёСЂ, СЃ СѓСЃРїРµС…РѕРј РІРѕС€РµР» РІ СЃРѕСЃС‚Р°РІ С„РёРЅР°Р»РёСЃС‚РѕРІ РџСЂРµРјРёРё CRE Federal Awards 2014 ...
                     </div>
                 </div>
             </div>
@@ -181,16 +181,16 @@
             
             <div class="article-short clearfix">
                 <div class="fl-right a-s-data">
-                	<span class="a-s-date a-s-top">3 апреля 2014</span><br/>
-                    Организатор:<br/>
-                    <a href="#" class="color-link">ЗАО «Экспоцентр»</a><br/>
-                    <a href="actions-exhibitions.html" class="a-s-category-img" title="Конгрессы и деловые программы"> <img src="images/icon-article-congresses.png"> </a>
+                	<span class="a-s-date a-s-top">3 Р°РїСЂРµР»СЏ 2014</span><br/>
+                    РћСЂРіР°РЅРёР·Р°С‚РѕСЂ:<br/>
+                    <a href="#" class="color-link">Р—РђРћ В«Р­РєСЃРїРѕС†РµРЅС‚СЂВ»</a><br/>
+                    <a href="actions-exhibitions.html" class="a-s-category-img" title="РљРѕРЅРіСЂРµСЃСЃС‹ Рё РґРµР»РѕРІС‹Рµ РїСЂРѕРіСЂР°РјРјС‹"> <img src="images/icon-article-congresses.png"> </a>
                 </div>
                 <div class="a-s-content">
-                    <a href="actions-item.html" class="a-s-link">Началось строительство отеля Four Points by Sheraton Krasnodar</a>
+                    <a href="actions-item.html" class="a-s-link">РќР°С‡Р°Р»РѕСЃСЊ СЃС‚СЂРѕРёС‚РµР»СЊСЃС‚РІРѕ РѕС‚РµР»СЏ Four Points by Sheraton Krasnodar</a>
                     <div class="a-s-text">
-                        Реализация проекта отеля международного уровня осуществляется в соответствии с ранее утвержденным графиком.
-Помимо сети торгово-развлекательных комплексов в Краснодарском крае, которую компания планирует развивать ...
+                        Р РµР°Р»РёР·Р°С†РёСЏ РїСЂРѕРµРєС‚Р° РѕС‚РµР»СЏ РјРµР¶РґСѓРЅР°СЂРѕРґРЅРѕРіРѕ СѓСЂРѕРІРЅСЏ РѕСЃСѓС‰РµСЃС‚РІР»СЏРµС‚СЃСЏ РІ СЃРѕРѕС‚РІРµС‚СЃС‚РІРёРё СЃ СЂР°РЅРµРµ СѓС‚РІРµСЂР¶РґРµРЅРЅС‹Рј РіСЂР°С„РёРєРѕРј.
+РџРѕРјРёРјРѕ СЃРµС‚Рё С‚РѕСЂРіРѕРІРѕ-СЂР°Р·РІР»РµРєР°С‚РµР»СЊРЅС‹С… РєРѕРјРїР»РµРєСЃРѕРІ РІ РљСЂР°СЃРЅРѕРґР°СЂСЃРєРѕРј РєСЂР°Рµ, РєРѕС‚РѕСЂСѓСЋ РєРѕРјРїР°РЅРёСЏ РїР»Р°РЅРёСЂСѓРµС‚ СЂР°Р·РІРёРІР°С‚СЊ ...
                     </div>
                 </div>
             </div>
@@ -199,15 +199,15 @@
             <div class="article-short clearfix">
                 <img src="content/article-short-4.jpg" width="135" class="fl-left a-s-img">
                 <div class="fl-right a-s-data">
-                	<span class="a-s-date a-s-top">26 марта 2014</span><br/>
-                    Организатор:<br/>
-                    <a href="#" class="color-link">ЗАО «Экспоцентр»</a><br/>
-                    <a href="actions-exhibitions.html" class="a-s-category-img" title="Конгрессы и деловые программы"> <img src="images/icon-article-congresses.png"> </a>
+                	<span class="a-s-date a-s-top">26 РјР°СЂС‚Р° 2014</span><br/>
+                    РћСЂРіР°РЅРёР·Р°С‚РѕСЂ:<br/>
+                    <a href="#" class="color-link">Р—РђРћ В«Р­РєСЃРїРѕС†РµРЅС‚СЂВ»</a><br/>
+                    <a href="actions-exhibitions.html" class="a-s-category-img" title="РљРѕРЅРіСЂРµСЃСЃС‹ Рё РґРµР»РѕРІС‹Рµ РїСЂРѕРіСЂР°РјРјС‹"> <img src="images/icon-article-congresses.png"> </a>
                 </div>
                 <div class="a-s-content">
-                    <a href="actions-item.html" class="a-s-link">Новый этап реализации проекта Four Points by Sheraton</a>
+                    <a href="actions-item.html" class="a-s-link">РќРѕРІС‹Р№ СЌС‚Р°Рї СЂРµР°Р»РёР·Р°С†РёРё РїСЂРѕРµРєС‚Р° Four Points by Sheraton</a>
                     <div class="a-s-text">
-                        Мегацентр «Красная Площадь», г. Армавир, с успехом вошел в состав финалистов Премии CRE Federal Awards 2014 ...
+                        РњРµРіР°С†РµРЅС‚СЂ В«РљСЂР°СЃРЅР°СЏ РџР»РѕС‰Р°РґСЊВ», Рі. РђСЂРјР°РІРёСЂ, СЃ СѓСЃРїРµС…РѕРј РІРѕС€РµР» РІ СЃРѕСЃС‚Р°РІ С„РёРЅР°Р»РёСЃС‚РѕРІ РџСЂРµРјРёРё CRE Federal Awards 2014 ...
                     </div>
                 </div>
             </div>
@@ -215,16 +215,16 @@
             
             <div class="article-short clearfix">
                 <div class="fl-right a-s-data">
-                	<span class="a-s-date a-s-top">19 марта 2014</span><br/>
-                    Организатор:<br/>
-                    <a href="#" class="color-link">Кубань ЭКСПОЦЕНТР Сочи-2013</a><br/>
-                    <a href="actions-exhibitions.html" class="a-s-category-img" title="Выставки"> <img src="images/icon-article-expo.png"> </a>
+                	<span class="a-s-date a-s-top">19 РјР°СЂС‚Р° 2014</span><br/>
+                    РћСЂРіР°РЅРёР·Р°С‚РѕСЂ:<br/>
+                    <a href="#" class="color-link">РљСѓР±Р°РЅСЊ Р­РљРЎРџРћР¦Р•РќРўР  РЎРѕС‡Рё-2013</a><br/>
+                    <a href="actions-exhibitions.html" class="a-s-category-img" title="Р’С‹СЃС‚Р°РІРєРё"> <img src="images/icon-article-expo.png"> </a>
                 </div>
                 <div class="a-s-content">
-                    <a href="actions-item.html" class="a-s-link">Итоги форума «Сочи-2013»: подписано соглашение между ГК «РАМО-М» и Администрацией Краснодарского края о строительстве новых объектов</a>
+                    <a href="actions-item.html" class="a-s-link">РС‚РѕРіРё С„РѕСЂСѓРјР° В«РЎРѕС‡Рё-2013В»: РїРѕРґРїРёСЃР°РЅРѕ СЃРѕРіР»Р°С€РµРЅРёРµ РјРµР¶РґСѓ Р“Рљ В«Р РђРњРћ-РњВ» Рё РђРґРјРёРЅРёСЃС‚СЂР°С†РёРµР№ РљСЂР°СЃРЅРѕРґР°СЂСЃРєРѕРіРѕ РєСЂР°СЏ Рѕ СЃС‚СЂРѕРёС‚РµР»СЊСЃС‚РІРµ РЅРѕРІС‹С… РѕР±СЉРµРєС‚РѕРІ</a>
                     <div class="a-s-text">
-                        Реализация проекта отеля международного уровня осуществляется в соответствии с ранее утвержденным графиком.
-Помимо сети торгово-развлекательных комплексов в Краснодарском крае, которую компания планирует развивать ...
+                        Р РµР°Р»РёР·Р°С†РёСЏ РїСЂРѕРµРєС‚Р° РѕС‚РµР»СЏ РјРµР¶РґСѓРЅР°СЂРѕРґРЅРѕРіРѕ СѓСЂРѕРІРЅСЏ РѕСЃСѓС‰РµСЃС‚РІР»СЏРµС‚СЃСЏ РІ СЃРѕРѕС‚РІРµС‚СЃС‚РІРёРё СЃ СЂР°РЅРµРµ СѓС‚РІРµСЂР¶РґРµРЅРЅС‹Рј РіСЂР°С„РёРєРѕРј.
+РџРѕРјРёРјРѕ СЃРµС‚Рё С‚РѕСЂРіРѕРІРѕ-СЂР°Р·РІР»РµРєР°С‚РµР»СЊРЅС‹С… РєРѕРјРїР»РµРєСЃРѕРІ РІ РљСЂР°СЃРЅРѕРґР°СЂСЃРєРѕРј РєСЂР°Рµ, РєРѕС‚РѕСЂСѓСЋ РєРѕРјРїР°РЅРёСЏ РїР»Р°РЅРёСЂСѓРµС‚ СЂР°Р·РІРёРІР°С‚СЊ ...
                     </div>
                 </div>
             </div>
@@ -232,7 +232,7 @@
             
             
             <div class="pages">
-                <span class="p-title">Страница:</span>
+                <span class="p-title">РЎС‚СЂР°РЅРёС†Р°:</span>
                 <span class="p-link p-current">1</span>
                 <a href="#" class="p-link">2</a>
                 <a href="#" class="p-link">3</a>
@@ -256,13 +256,13 @@
             
             <nav class="l-menu">
                 <a href="actions-exhibitions.html" class="l-m-link l-m-icon l-m-icon-expo">
-                	Календарь выставок
+                	РљР°Р»РµРЅРґР°СЂСЊ РІС‹СЃС‚Р°РІРѕРє
                 </a>
                 <a href="actions-congress.html" class="l-m-link l-m-icon l-m-icon-congresses">
-                	Конгрессы и деловые программы
+                	РљРѕРЅРіСЂРµСЃСЃС‹ Рё РґРµР»РѕРІС‹Рµ РїСЂРѕРіСЂР°РјРјС‹
                 </a>
                 <a href="actions-entertainment.html" class="l-m-link l-m-icon l-m-icon-entertainment">
-                	Коцертно-развлекательные мероприятия
+                	РљРѕС†РµСЂС‚РЅРѕ-СЂР°Р·РІР»РµРєР°С‚РµР»СЊРЅС‹Рµ РјРµСЂРѕРїСЂРёСЏС‚РёСЏ
                 </a>
             </nav>
             <!--.l-menu-->
@@ -276,24 +276,24 @@
             <div class="l-slider">
                 <div id="l-slides" class="l-slides">
                     <div class="l-slide">
-                        <div class="l-s-date">10 марта - 2 апреля 2014</div>
+                        <div class="l-s-date">10 РјР°СЂС‚Р° - 2 Р°РїСЂРµР»СЏ 2014</div>
                         <img src="content/left-slide-1.jpg" width="220" height="190">
-                        <div class="l-s-title"><a href="#">Межданародная архитектурно-строительная выставка</a></div>
+                        <div class="l-s-title"><a href="#">РњРµР¶РґР°РЅР°СЂРѕРґРЅР°СЏ Р°СЂС…РёС‚РµРєС‚СѓСЂРЅРѕ-СЃС‚СЂРѕРёС‚РµР»СЊРЅР°СЏ РІС‹СЃС‚Р°РІРєР°</a></div>
                     </div>
                     <div class="l-slide">
-                        <div class="l-s-date">23 апреля - 3 мая 2014</div>
+                        <div class="l-s-date">23 Р°РїСЂРµР»СЏ - 3 РјР°СЏ 2014</div>
                         <img src="content/left-slide-2.jpg" width="220" height="190">
-                        <div class="l-s-title"><a href="#">Выставка КОТЭ</a></div>
+                        <div class="l-s-title"><a href="#">Р’С‹СЃС‚Р°РІРєР° РљРћРўР­</a></div>
                     </div>
                     <div class="l-slide">
-                        <div class="l-s-date">14 мая - 23 мая 2014</div>
+                        <div class="l-s-date">14 РјР°СЏ - 23 РјР°СЏ 2014</div>
                         <img src="content/left-slide-3.jpg" width="220" height="190">
-                        <div class="l-s-title"><a href="#">Продовольственная выставка</a></div>
+                        <div class="l-s-title"><a href="#">РџСЂРѕРґРѕРІРѕР»СЊСЃС‚РІРµРЅРЅР°СЏ РІС‹СЃС‚Р°РІРєР°</a></div>
                     </div>
                     <div class="l-slide">
-                        <div class="l-s-date">26 июня - 1 июля 2014</div>
+                        <div class="l-s-date">26 РёСЋРЅСЏ - 1 РёСЋР»СЏ 2014</div>
                         <img src="content/left-slide-4.jpg" width="220" height="190">
-                        <div class="l-s-title"><a href="#">Автомобили</a></div>
+                        <div class="l-s-title"><a href="#">РђРІС‚РѕРјРѕР±РёР»Рё</a></div>
                     </div>
                 </div>
                 <a href="#" class="l-s-prev" id="l-s-prev"></a>
@@ -315,11 +315,11 @@
     
     <div class="f-inside clearfix">
         <div class="fl-left f-l-first">
-            <p>&copy; 2014. Выставочно-конгрессный комплекс</p>
-            «Экспоград Юг». Все права защищены
+            <p>&copy; 2014. Р’С‹СЃС‚Р°РІРѕС‡РЅРѕ-РєРѕРЅРіСЂРµСЃСЃРЅС‹Р№ РєРѕРјРїР»РµРєСЃ</p>
+            В«Р­РєСЃРїРѕРіСЂР°Рґ Р®РіВ». Р’СЃРµ РїСЂР°РІР° Р·Р°С‰РёС‰РµРЅС‹
         </div>
         <div class="fl-left f-l-border f-l-phone">
-            <p>Телефон:</p>
+            <p>РўРµР»РµС„РѕРЅ:</p>
             <big>+7 (495) 228-05-58</big>
         </div>
         <div class="fl-left f-l-border f-l-email">
@@ -327,12 +327,12 @@
             <a href="#">zsecretar@ramo.ru</a>
         </div>
         <div class="fl-left f-l-border f-l-address">
-            <p>Адрес:</p>
-            Краснодар, ул. Дзержинского, ХХХ
+            <p>РђРґСЂРµСЃ:</p>
+            РљСЂР°СЃРЅРѕРґР°СЂ, СѓР». Р”Р·РµСЂР¶РёРЅСЃРєРѕРіРѕ, РҐРҐРҐ
         </div>
         <div class="fl-right">
             <p><a href="#">English version</a></p>
-            <a href="#">Разработка сайта</a>
+            <a href="#">Р Р°Р·СЂР°Р±РѕС‚РєР° СЃР°Р№С‚Р°</a>
         </div>
     </div>
     <!--.f-inside-->
