@@ -17,32 +17,440 @@
 
 <body>
 <div class="wrapper">
-    <div class="container-fluid main-container">
-        <h1>Тестовая страница</h1>
-        <h2>Тестовая страница</h2>
-        <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+    <div class="container-fluid content-container">
+        <div class="content">
+            <h1>Веб-разработчик</h1>
+            <h2>Верстка адаптивных сайтов, работа с CMS: Bitrix, Wordpress и др.</h2>
+            <div class="row detail-row">
+                <div class="col-md-3 detail-row__contacts">
+                    <div class="portfolio-photo">
+                        <img src="content/photo-default.jpg" alt="Веб-разработчик Уласевич Александр" />
+                    </div>
+                    <p>
+                        WhatsApp/Telegram:<br/>
+                        <a href="tel:89181527429">8-918-1527429</a> 
+                    </p>
+                    <p>
+                        E-mail:<br/>
+                        <a href="mailto:ulasevich.aleks@gmail.com">ulasevich.aleks@gmail.com</a>
+                    </p>
+                    
+                    <div style="display: none;">
+                    	В ближайшие дни:
+                        <!--<div> <span class="inline-circle light-red"></span> занят </div>
+                        <div> <span class="inline-circle light-orange"></span> скоро освобожусь </div>-->
+                        <div> <span class="inline-circle light-green"></span> свободен </div>
+                    </div>
+                    
+                </div><!--.detail-row__contacts-->
+                
+                <div class="col-md-9 detail-row__text">
+                    <p>Здравствуйте. Меня зовут Александр Уласевич. Работаю в сфере веб-разработки (фронтенд) с 2010 года. <br/>
+                    Большой опыт в вёрстке сайтов и работе с CMS (системами управления сайтов).</p>
+                    
+                    <div class="row col-text-row">
+                        <div class="col-lg-6">
+                            <h3>Верстка:</h3>
+                            <ul>
+                                <li>от визиток и лэндингов до более сложных;</li>
+                                <li>кроссбраузерная, адаптивная;</li>
+                                <li>валидный, читаемый HTML5, CSS3, JS с комментариями;</li>
+                                <li>использование различных плагинов jQuery/JavaScript или создание собственного функционала (зависит от сложности задачи).</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="col-lg-6">
+                            <h3>CMS:</h3>
+                            <ul>
+                                <li>полная установка вёрстки на движок (Bitrix, Wordpress и другие) и настройка (или доработка) различных компонентов;</li>
+                                <li>составление руководства пользователя или консультации по наполнению контента;</li>
+                                <li>SEO (регистрация в Google, Yandex и установка их метрик, мета-теги Open Graph для соц-сетей)</li>
+                            </ul>
+                        </div>
+                    </div><!--.col-text-row-->
+                </div><!--.detail-row__text-->
+            </div><!--.portfolio-row-->
+            
+            
+            
+            
+            <h2 class="align-center uppercase heading-borders">Портфолио</h2>
+            
+            <div class="row portfolio-row">
+            	<div class="col-md-4 col-sm-6 portfolio-row__item">
+                	<div class="portfolio-item-content">
+                    	<a href="projects/covid-tracker/">
+                        	<div class="portfolio-item-img">
+                            	<img src="img/sizes.jpg" class="sizes" />
+                                <img data-src="projects/covid-tracker/preview.jpg" class="preview lazyload" data-sizes="auto" alt="Портфолио. Верстка многостраничного лэндинга ПО для отслеживания риска заражения COVID-19" />
+                            </div>
+                            <div class="portfolio-item-info-wrapper">
+                            	<div class="portfolio-item-info-text">
+                                    <p>Верстка многостраничного лэндинга ПО для отслеживания риска заражения COVID-19</p>
+                                </div>
+                                <div class="portfolio-item-year">Год: 2020</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-row__item">
+                	<div class="portfolio-item-content">
+                    	<a href="projects/tm2/">
+                        	<div class="portfolio-item-img">
+                            	<img src="img/sizes.jpg" class="sizes" />
+                                <img data-src="projects/tm2/preview.jpg" class="preview lazyload" data-sizes="auto" alt="Портфолио. Верстка и установка на CMS Bitrix сайта TM2 — биржи металлов" />
+                            </div>
+                            <div class="portfolio-item-info-wrapper">
+                            	<div class="portfolio-item-info-text">
+                                    <p>Верстка и установка на Bitrix сайта TM2 — биржи металлов</p>
+                                </div>
+                                <div class="portfolio-item-year">Год: 2020</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-row__item">
+                	<div class="portfolio-item-content">
+                    	<a href="projects/cortex/">
+                        	<div class="portfolio-item-img">
+                            	<img src="img/sizes.jpg" class="sizes" />
+                                <img data-src="projects/cortex/preview.jpg" class="preview lazyload" alt="Портфолио. Верстка лэндинга для IT-компании Cortex" />
+                            </div>
+                            <div class="portfolio-item-info-wrapper">
+                            	<div class="portfolio-item-info-text">
+                                    <p>Верстка лэндинга для IT-компании Cortex</p>
+                                </div>
+                                <div class="portfolio-item-year">Год: 2019</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-row__item">
+                	<div class="portfolio-item-content">
+                    	<a href="projects/agroaudit/">
+                        	<div class="portfolio-item-img">
+                            	<img src="img/sizes.jpg" class="sizes" />
+                                <img data-src="projects/agroaudit/preview.jpg" class="preview lazyload" alt="Портфолио. Верстка лэндинга для сервиса Direct.Farm — Агроаудит" />
+                            </div>
+                            <div class="portfolio-item-info-wrapper">
+                            	<div class="portfolio-item-info-text">
+                                    <p>Верстка лэндинга для сервиса Direct.Farm — Агроаудит</p>
+                                </div>
+                                <div class="portfolio-item-year">Год: 2019</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-row__item">
+                	<div class="portfolio-item-content">
+                    	<a href="projects/fresh-scanner/">
+                        	<div class="portfolio-item-img">
+                            	<img src="img/sizes.jpg" class="sizes" />
+                                <img data-src="projects/fresh-scanner/preview.jpg" class="preview lazyload" alt="Портфолио. Верстка для веб-сервиса распознавания качества овощей и фруктов" />
+                            </div>
+                            <div class="portfolio-item-info-wrapper">
+                            	<div class="portfolio-item-info-text">
+                                    <p>Верстка для веб-сервиса распознавания качества овощей и фруктов</p>
+                                </div>
+                                <div class="portfolio-item-year">Год: 2019</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-row__item">
+                	<div class="portfolio-item-content">
+                    	<a href="projects/nacioanlnye-proekty/">
+                        	<div class="portfolio-item-img">
+                            	<img src="img/sizes.jpg" class="sizes" />
+                                <img data-src="projects/nacioanlnye-proekty/preview.jpg" class="preview lazyload" alt="Портфолио. Верстка для сайта национальных проектов в Краснодарском крае" />
+                            </div>
+                            <div class="portfolio-item-info-wrapper">
+                            	<div class="portfolio-item-info-text">
+                                    <p>Верстка для сайта национальных проектов в Краснодарском крае</p>
+                                </div>
+                                <div class="portfolio-item-year">Год: 2019</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-row__item">
+                	<div class="portfolio-item-content">
+                    	<a href="projects/armavirskie-zhirnye-kisloty/">
+                        	<div class="portfolio-item-img">
+                            	<img src="img/sizes.jpg" class="sizes" />
+                                <img data-src="projects/armavirskie-zhirnye-kisloty/preview.jpg" class="preview lazyload" alt="Портфолио. Верстка лэндинга для производителя жирных кислот" />
+                            </div>
+                            <div class="portfolio-item-info-wrapper">
+                            	<div class="portfolio-item-info-text">
+                                    <p>Верстка лэндинга для производителя жирных кислот</p>
+                                </div>
+                                <div class="portfolio-item-year">Год: 2019</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-row__item">
+                	<div class="portfolio-item-content">
+                    	<a href="projects/golden-standart-management/">
+                        	<div class="portfolio-item-img">
+                            	<img src="img/sizes.jpg" class="sizes" />
+                                <img data-src="projects/golden-standart-management/preview.jpg" class="preview lazyload" alt="Портфолио. Верстка многостраничного лэндинга для компании Golden Standart Management" />
+                            </div>
+                            <div class="portfolio-item-info-wrapper">
+                            	<div class="portfolio-item-info-text">
+                                    <p>Верстка многостраничного лэндинга для компании Golden Standart Management</p>
+                                </div>
+                                <div class="portfolio-item-year">Год: 2019</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-row__item">
+                	<div class="portfolio-item-content">
+                    	<a href="projects/system-engineering/">
+                        	<div class="portfolio-item-img">
+                            	<img src="img/sizes.jpg" class="sizes" />
+                                <img data-src="projects/system-engineering/preview.jpg" class="preview lazyload" alt="Портфолио. Верстка и установка на Bitrix сайта System Engineering" />
+                            </div>
+                            <div class="portfolio-item-info-wrapper">
+                            	<div class="portfolio-item-info-text">
+                                    <p>Верстка и установка на Bitrix сайта System Engineering</p>
+                                </div>
+                                <div class="portfolio-item-year">Год: 2018</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-row__item">
+                	<div class="portfolio-item-content">
+                    	<a href="projects/da-vinci/">
+                        	<div class="portfolio-item-img">
+                            	<img src="img/sizes.jpg" class="sizes" />
+                                <img data-src="projects/da-vinci/preview.jpg" class="preview lazyload" alt="Портфолио. Верстка и установка на Bitrix сайта робота-хирурга Da Vinci Surgery" />
+                            </div>
+                            <div class="portfolio-item-info-wrapper">
+                            	<div class="portfolio-item-info-text">
+                                    <p>Верстка и установка на Bitrix сайта робота-хирурга Da Vinci Surgery</p>
+                                </div>
+                                <div class="portfolio-item-year">Год: 2018</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-row__item">
+                	<div class="portfolio-item-content">
+                    	<a href="projects/platanhotel/">
+                        	<div class="portfolio-item-img">
+                            	<img src="img/sizes.jpg" class="sizes" />
+                                <img data-src="projects/platanhotel/preview.jpg" class="preview lazyload" alt="Портфолио. Верстка сайта. Установка шаблона на CMS Bitrix, настройка структуры и различных компонентов сайта отеля Платан" />
+                            </div>
+                            <div class="portfolio-item-info-wrapper">
+                            	<div class="portfolio-item-info-text">
+                                    <p>Верстка и установка на Bitrix сайта отеля Платан</p>
+                                </div>
+                                <div class="portfolio-item-year">Год: 2017</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-row__item">
+                	<div class="portfolio-item-content">
+                    	<a href="projects/kapremont/">
+                        	<div class="portfolio-item-img">
+                            	<img src="img/sizes.jpg" class="sizes" />
+                                <img data-src="projects/kapremont/preview.jpg" class="preview lazyload" alt="Портфолио. Верстка сайта НКО «Фонд капитального ремонта МКД»" />
+                            </div>
+                            <div class="portfolio-item-info-wrapper">
+                            	<div class="portfolio-item-info-text">
+                                    <p>Верстка сайта НКО «Фонд капитального ремонта МКД»</p>
+                                </div>
+                                <div class="portfolio-item-year">Год: 2017</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-row__item">
+                	<div class="portfolio-item-content">
+                    	<a href="projects/triumf/">
+                        	<div class="portfolio-item-img">
+                            	<img src="img/sizes.jpg" class="sizes" />
+                                <img data-src="projects/triumf/preview.jpg" class="preview lazyload" alt="Портфолио. Верстка сайта компании «Триумф» — крупнейшего производителя туалетной бумаги на Юге России" />
+                            </div>
+                            <div class="portfolio-item-info-wrapper">
+                            	<div class="portfolio-item-info-text">
+                                    <p>Верстка сайта компании «Триумф» — крупнейшего производителя туалетной бумаги на Юге России</p>
+                                </div>
+                                <div class="portfolio-item-year">Год: 2016</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-row__item">
+                	<div class="portfolio-item-content">
+                    	<a href="projects/bspsecurity/">
+                        	<div class="portfolio-item-img">
+                            	<img src="img/sizes.jpg" class="sizes" />
+                                <img data-src="projects/bspsecurity/preview.jpg" class="preview lazyload" alt="Портфолио. Верстка сайта для интернет-магазина cистем безопасности и видеонаблюдения «BSP Security»" />
+                            </div>
+                            <div class="portfolio-item-info-wrapper">
+                            	<div class="portfolio-item-info-text">
+                                    <p>Верстка сайта для интернет-магазина cистем безопасности и видеонаблюдения «BSP Security»</p>
+                                </div>
+                                <div class="portfolio-item-year">Год: 2015</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-row__item">
+                	<div class="portfolio-item-content">
+                    	<a href="projects/ra-bomba/">
+                        	<div class="portfolio-item-img">
+                            	<img src="img/sizes.jpg" class="sizes" />
+                                <img data-src="projects/ra-bomba/preview.jpg" class="preview lazyload" alt="Портфолио. Верстка сайта Event агентства «Бомба»" />
+                            </div>
+                            <div class="portfolio-item-info-wrapper">
+                            	<div class="portfolio-item-info-text">
+                                    <p>Верстка сайта Event агентства «Бомба»</p>
+                                </div>
+                                <div class="portfolio-item-year">Год: 2015</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-row__item">
+                	<div class="portfolio-item-content">
+                    	<a href="projects/standart/">
+                        	<div class="portfolio-item-img">
+                            	<img src="img/sizes.jpg" class="sizes" />
+                                <img data-src="projects/standart/preview.jpg" class="preview lazyload" alt="Портфолио. Верстка сайта «StandArt» – строительно-монтажной фирмы по строительству выставочных экспозиций" />
+                            </div>
+                            <div class="portfolio-item-info-wrapper">
+                            	<div class="portfolio-item-info-text">
+                                    <p>Верстка сайта «StandArt» – строительно-монтажной фирмы по строительству выставочных экспозиций</p>
+                                </div>
+                                <div class="portfolio-item-year">Год: 2015</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-row__item">
+                	<div class="portfolio-item-content">
+                    	<a href="projects/vector-n/">
+                        	<div class="portfolio-item-img">
+                            	<img src="img/sizes.jpg" class="sizes" />
+                                <img data-src="projects/vector-n/preview.jpg" class="preview lazyload" alt="Портфолио. Верстка сайта «Вектор-Н» — производителя гибкой упаковки" />
+                            </div>
+                            <div class="portfolio-item-info-wrapper">
+                            	<div class="portfolio-item-info-text">
+                                    <p>Верстка сайта «Вектор-Н» — производителя гибкой упаковки</p>
+                                </div>
+                                <div class="portfolio-item-year">Год: 2015</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-row__item">
+                	<div class="portfolio-item-content">
+                    	<a href="projects/kubanvoir/">
+                        	<div class="portfolio-item-img">
+                            	<img src="img/sizes.jpg" class="sizes" />
+                                <img data-src="projects/kubanvoir/preview.jpg" class="preview lazyload" alt="Портфолио. Верстка и установка на Bitrix сайта всероссийского общества изобретателей и рационализаторов" />
+                            </div>
+                            <div class="portfolio-item-info-wrapper">
+                            	<div class="portfolio-item-info-text">
+                                    <p>Верстка и установка на Bitrix сайта всероссийского общества изобретателей и рационализаторов</p>
+                                </div>
+                                <div class="portfolio-item-year">Год: 2014</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-row__item">
+                	<div class="portfolio-item-content">
+                    	<a href="projects/expograd-yug/">
+                        	<div class="portfolio-item-img">
+                            	<img src="img/sizes.jpg" class="sizes" />
+                                <img data-src="projects/expograd-yug/preview.jpg" class="preview lazyload" alt="Портфолио. Верстка сайта для выставочного центра в Краснодаре «Экспоград Юг»" />
+                            </div>
+                            <div class="portfolio-item-info-wrapper">
+                            	<div class="portfolio-item-info-text">
+                                    <p>Верстка сайта для выставочного центра в Краснодаре «Экспоград Юг»</p>
+                                </div>
+                                <div class="portfolio-item-year">Год: 2014</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-row__item">
+                	<div class="portfolio-item-content">
+                    	<a href="projects/kkbmk/">
+                        	<div class="portfolio-item-img">
+                            	<img src="img/sizes.jpg" class="sizes" />
+                                <img data-src="projects/kkbmk/preview.jpg" class="preview lazyload" alt="Портфолио. Верстка и установка на Bitrix сайта Краснодарского краевого базового медицинского колледжа" />
+                            </div>
+                            <div class="portfolio-item-info-wrapper">
+                            	<div class="portfolio-item-info-text">
+                                    <p>Верстка и установка на Bitrix сайта Краснодарского краевого базового медицинского колледжа</p>
+                                </div>
+                                <div class="portfolio-item-year">Год: 2013</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-row__item">
+                	<div class="portfolio-item-content">
+                    	<a href="projects/present-m/">
+                        	<div class="portfolio-item-img">
+                            	<img src="img/sizes.jpg" class="sizes" />
+                                <img data-src="projects/present-m/preview.jpg" class="preview lazyload" alt="Портфолио. Верстка сайта компании «Презент-М», занимающейся строительством выставочных стендов" />
+                            </div>
+                            <div class="portfolio-item-info-wrapper">
+                            	<div class="portfolio-item-info-text">
+                                    <p>Верстка сайта компании «Презент-М», занимающейся строительством выставочных стендов</p>
+                                </div>
+                                <div class="portfolio-item-year">Год: 2012</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-row__item">
+                	<div class="portfolio-item-content">
+                    	<a href="projects/sed/">
+                        	<div class="portfolio-item-img">
+                            	<img src="img/sizes.jpg" class="sizes" />
+                                <img data-src="projects/sed/preview.jpg" class="preview lazyload" alt="Портфолио. Верстка сайта для коммерческой группы компаний «СЭД»" />
+                            </div>
+                            <div class="portfolio-item-info-wrapper">
+                            	<div class="portfolio-item-info-text">
+                                    <p>Верстка сайта для коммерческой группы компаний «СЭД»</p>
+                                </div>
+                                <div class="portfolio-item-year">Год: 2012</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-row__switch">
+                	<a href="#" class="show-all-link js-show-all">Посмотреть все</a>
+                </div>
+                
+            </div><!--.portfolio-row-->
+            
+            
+            <h3>Принципы работы:</h3>
+            <ul>
+                <li>для работы нужен готовый макет (PSD, Figma, Zeplin);</li>
+                <li>при необходимости нестандартного функционала, эффектов, анимаций и т.д. они должны быть или подробно описаны в ТЗ или изображены на макетах;</li>
+                <li>неограниченная гарантия на правки, если мною были упущены какие-то моменты в ТЗ/макете или правки не требуют существенного времени;</li>
+                <li>предоплата от 20 до 50% после выполнения и демонстрации одной страницы (или половины страницы в случае лэндинга).</li>
+            </ul>
+            
+        </div><!--.content-->
     </div><!--.main-container-->
 </div><!--.wrapper-->
 
-<div class="uas-panel">
-	<div class="uas-panel-wrapper">
-        <div class="uas-panel-side">
-        	<svg class="spchat-svg-icon" enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M24.291,14.276L14.705,4.69c-0.878-0.878-2.317-0.878-3.195,0l-0.8,0.8c-0.878,0.877-0.878,2.316,0,3.194  L18.024,16l-7.315,7.315c-0.878,0.878-0.878,2.317,0,3.194l0.8,0.8c0.878,0.879,2.317,0.879,3.195,0l9.586-9.587  c0.472-0.471,0.682-1.103,0.647-1.723C24.973,15.38,24.763,14.748,24.291,14.276z"/></svg>
-            <br/>
-			<svg class="spchat-svg-icon" enable-background="new 0 0 32 32" height="32px" id="Слой_1" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Cancel"><path clip-rule="evenodd" d="M16,0C7.163,0,0,7.163,0,16c0,8.836,7.163,16,16,16   c8.836,0,16-7.163,16-16C32,7.163,24.836,0,16,0z M16,30C8.268,30,2,23.732,2,16C2,8.268,8.268,2,16,2s14,6.268,14,14   C30,23.732,23.732,30,16,30z"/><path clip-rule="evenodd" d="M22.729,21.271l-5.268-5.269l5.238-5.195   c0.395-0.391,0.395-1.024,0-1.414c-0.394-0.39-1.034-0.39-1.428,0l-5.231,5.188l-5.309-5.31c-0.394-0.396-1.034-0.396-1.428,0   c-0.394,0.395-0.394,1.037,0,1.432l5.301,5.302l-5.331,5.287c-0.394,0.391-0.394,1.024,0,1.414c0.394,0.391,1.034,0.391,1.429,0   l5.324-5.28l5.276,5.276c0.394,0.396,1.034,0.396,1.428,0C23.123,22.308,23.123,21.667,22.729,21.271z"/></g><g/><g/><g/><g/><g/><g/></svg>
-        </div>
-        <div class="uas-panel-content">
-        	<p>Название проекта <br/>
-            Год: 2019</p>
-            <p>
-            Краткое описание: <br/>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <p><a href="#">&larr; Ссылка на портфолио</a></p>
-        </div>
-    </div>
-</div>
 
+<script src="js/libs/lazysizes.min.js" async></script>
 <script src="js/main.js"></script>
 </body>
 </html>
