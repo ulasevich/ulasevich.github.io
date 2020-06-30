@@ -1,0 +1,31 @@
+.form-terms {
+  color: #616161;
+  display: block;
+  font-size: 11px;
+  margin-top: 20px;
+  text-align: center;
+}
+.form-terms__link {
+  color: #616161;
+  text-decoration: underline;
+}
+
+div.col-12.no-pb {
+  padding-bottom: 0;
+}
+
+.privacy-policy {
+  color: #616161;
+  font-size: 12px;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+.privacy-policy__link {
+  color: #616161;
+  font-size: 12px;
+  text-decoration: underline;
+}

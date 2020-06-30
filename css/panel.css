@@ -23,12 +23,13 @@
 	line-height: 1.2em !important;
 	-moz-box-sizing: border-box !important;
     box-sizing: border-box !important;
+	color: #000 !important;
 }
-.uas-panel a {
+.uas-panel a, .uas-panel a span {
 	color: #175181 !important;
 	text-decoration: none !important;
 }
-.uas-panel a:hover, .uas-panel a:focus {
+.uas-panel a:hover, .uas-panel a:focus, .uas-panel a:hover span {
 	color: #c00 !important;
 	text-decoration: none !important;
 }

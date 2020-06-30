@@ -46,7 +46,7 @@ var Panel = {
 			
 			var panel_data_site = '';
 			if (panel_data.site) {
-				panel_data_site = '<p><div>Сайт:</div><a href="'+panel_data.site+'" target="_blank" rel="nofollow">'+panel_data.site+'</a></p>';
+				panel_data_site = '<div>Сайт:</div><p><a href="'+panel_data.site+'" target="_blank" rel="nofollow">'+panel_data.site+'</a></p>';
 			}
 			
 			$(this).append(
@@ -65,7 +65,8 @@ var Panel = {
 						<div class="uas-panel-content">\
 							<div class="uas-project-title">'+panel_data.title+'</div>\
 							<p>Год: '+panel_data.year+'</p>\
-							<p><div>Задача:</div>'+panel_data.description+'</p>'
+							<div>Выполнено:</div>\
+							<p>'+panel_data.description+'</p>'
 							+panel_data_site+'\
 							<p><a href="/" class="uas-back-link"><span class="uas-arr">&lsaquo;</span> <span class="uas-back-text">Назад в портфолио</span></a></p>\
 						</div>\

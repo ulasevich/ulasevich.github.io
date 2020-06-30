@@ -689,9 +689,9 @@ App.Lang = function () {
 			return false;
 		}
 		
-		var page = '/';
+		var page = '/projects/covid-tracker/';
 		if (lang!="en") {
-			page = '/index-'+lang+'.html';
+			page = '/projects/covid-tracker/index-'+lang+'.html';
 		}
 		window.location.href = page; // redirect
 	});
