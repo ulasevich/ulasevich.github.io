@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+    <meta charset="utf-8" />
 	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	
-	<title>Краснотека &#8212; Краснодог &#8212; приют для пострадавших животных</title>
+	<title>РљСЂР°СЃРЅРѕС‚РµРєР° &#8212; РљСЂР°СЃРЅРѕРґРѕРі &#8212; РїСЂРёСЋС‚ РґР»СЏ РїРѕСЃС‚СЂР°РґР°РІС€РёС… Р¶РёРІРѕС‚РЅС‹С…</title>
 	
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
@@ -13,28 +13,29 @@
     <!--[if IE]> 
     <link href="css/style_ie.css" rel= "stylesheet" media="all" type="text/css" />
     <![endif]-->
-    <!-- Таблица стилей для IE<9 -->
+    <!-- РўР°Р±Р»РёС†Р° СЃС‚РёР»РµР№ РґР»СЏ IE<9 -->
     
     <!--[if lte IE 8]> 
     <link href="css/style_ie8.css" rel= "stylesheet" media="all" type="text/css" />
     <![endif]-->
-    <!-- Таблица стилей для IE<8 -->
+    <!-- РўР°Р±Р»РёС†Р° СЃС‚РёР»РµР№ РґР»СЏ IE<8 -->
         
     <script src="script/jquery-1.7.1.min.js"></script>
     <script src="script/krasnodog.js"></script>
     
-    <!-- для стилизации скроллов -->
+    <!-- РґР»СЏ СЃС‚РёР»РёР·Р°С†РёРё СЃРєСЂРѕР»Р»РѕРІ -->
 	<script type="text/javascript" src="script/jquery.jscrollpane.min.js"></script>
     <script type="text/javascript" src="script/jquery.mousewheel.js"></script>
     <link rel="stylesheet" href="css/jquery.jscrollpane.css" type="text/css" media="screen, projection" />
     
-    <!-- для стилизации select -->
+    <!-- РґР»СЏ СЃС‚РёР»РёР·Р°С†РёРё select -->
 	<script type="text/javascript" src="script/chosen.jquery.min.js"></script>
     <link rel="stylesheet" href="css/chosen.css" type="text/css" media="screen, projection" />
     
-    <!-- для вкладок -->
+    <!-- РґР»СЏ РІРєР»Р°РґРѕРє -->
     <script src="script/jquery.idTabs.min.js"></script>
     
+	<script src="/js/panel.js"></script>
 </head>
 
 <body>
@@ -44,31 +45,31 @@
 
     <header class="header clearfix">
         <div class="h-inside">
-            <div class="f-left h-icon-animals"> <a href="animals-our.html" class="h-link">Наши животные</a> <span class="h-count">(353)</span> </div>
-            <div class="f-left h-icon-home"> <a href="#" class="h-link">Уже дома</a> <span class="h-count">(3084)</span> </div>
-            <div class="f-left h-icon-shop"> <a href="shop.html" class="h-link">Интернет-магазин</a> </div>
-            <div class="f-left h-more-block"> <span class="h-more-link">Ещё</span> </div>
+            <div class="f-left h-icon-animals"> <a href="animals-our.html" class="h-link">РќР°С€Рё Р¶РёРІРѕС‚РЅС‹Рµ</a> <span class="h-count">(353)</span> </div>
+            <div class="f-left h-icon-home"> <a href="#" class="h-link">РЈР¶Рµ РґРѕРјР°</a> <span class="h-count">(3084)</span> </div>
+            <div class="f-left h-icon-shop"> <a href="shop.html" class="h-link">РРЅС‚РµСЂРЅРµС‚-РјР°РіР°Р·РёРЅ</a> </div>
+            <div class="f-left h-more-block"> <span class="h-more-link">Р•С‰С‘</span> </div>
             <div class="h-more-menu"> 
-                <div><a href="#">Уставные документы</a></div>
-                <div><a href="#">Отчеты</a></div>
-                <div><a href="#">Пресса о нас</a></div>
+                <div><a href="#">РЈСЃС‚Р°РІРЅС‹Рµ РґРѕРєСѓРјРµРЅС‚С‹</a></div>
+                <div><a href="#">РћС‚С‡РµС‚С‹</a></div>
+                <div><a href="#">РџСЂРµСЃСЃР° Рѕ РЅР°СЃ</a></div>
             </div>
             <!--.h-more-menu-->
-            <div class="f-left h-help-block"> <a href="#" class="h-help-link">Хочу помочь</a> </div>
+            <div class="f-left h-help-block"> <a href="#" class="h-help-link">РҐРѕС‡Сѓ РїРѕРјРѕС‡СЊ</a> </div>
             
             <div class="f-right">
                 
-            <button class="auth-btn">Войти</button> <a href="registration.html" class="h-link">Зарегистрироваться</a>
+            <button class="auth-btn">Р’РѕР№С‚Рё</button> <a href="registration.html" class="h-link">Р—Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°С‚СЊСЃСЏ</a>
             
             </div>
             
             <div class="auth-form" style="display:none;">
                 <form method="post" action="private-main.html">
-                    <span class="h-auth-close" title="Закрыть"></span>
-                    <div><input type="text" class="h-auth-text" value="логин" onclick="if (this.value=='логин') {this.value=''}; $(this).css('color','#777')" onblur="if (this.value=='') {this.value='логин'}; $(this).css('color','#999999')"></div>
+                    <span class="h-auth-close" title="Р—Р°РєСЂС‹С‚СЊ"></span>
+                    <div><input type="text" class="h-auth-text" value="Р»РѕРіРёРЅ" onclick="if (this.value=='Р»РѕРіРёРЅ') {this.value=''}; $(this).css('color','#777')" onblur="if (this.value=='') {this.value='Р»РѕРіРёРЅ'}; $(this).css('color','#999999')"></div>
                     <div><input type="password" class="h-auth-text"></div>
-                    <div><label class="h-checkbox"> <input type="checkbox"> <span>Запомнить меня</span> </label></div>
-                    <div><input type="submit" value="Войти" class="h-auth-submit"> <a href="#" class="h-auth-restore">Восстановить пароль</a></div>
+                    <div><label class="h-checkbox"> <input type="checkbox"> <span>Р—Р°РїРѕРјРЅРёС‚СЊ РјРµРЅСЏ</span> </label></div>
+                    <div><input type="submit" value="Р’РѕР№С‚Рё" class="h-auth-submit"> <a href="#" class="h-auth-restore">Р’РѕСЃСЃС‚Р°РЅРѕРІРёС‚СЊ РїР°СЂРѕР»СЊ</a></div>
                 </form>
             </div>
             <!--.auth-form ( Authorization form )-->
@@ -89,21 +90,21 @@
         
         <div class="site-face">
             
-            <a href="index.html" title="Главная страница" class="logo-link"></a>
+            <a href="index.html" title="Р“Р»Р°РІРЅР°СЏ СЃС‚СЂР°РЅРёС†Р°" class="logo-link"></a>
             <div class="logo-slogan">
-                Мы помогаем животным и людям найти друг друга!
+                РњС‹ РїРѕРјРѕРіР°РµРј Р¶РёРІРѕС‚РЅС‹Рј Рё Р»СЋРґСЏРј РЅР°Р№С‚Рё РґСЂСѓРі РґСЂСѓРіР°!
             </div>
             <div class="logo-info">
                 <span class="l-i-phone">+7 (988) 505-2-505</span> <br/>
-                Диспетчер, с 10:00 до 17:00
+                Р”РёСЃРїРµС‚С‡РµСЂ, СЃ 10:00 РґРѕ 17:00
             </div>
             <div class="share-links clearfix">
-                <!--noindex--><a href="https://www.facebook.com/farfolen" class="s-l-facebook" target="_blank" rel="nofollow" title="Наша страница в Facebook"></a><!--/noindex-->
-                <!--noindex--><a href="http://www.odnoklassniki.ru/group/51853960872042" class="s-l-odnoklassniki" target="_blank" rel="nofollow" title="Краснодог в Одноклассниках"></a><!--/noindex-->
-                <!--noindex--><a href="http://vk.com/club6322452" class="s-l-vkontakte" target="_blank" rel="nofollow" title="Краснодог ВКонтакте"></a><!--/noindex-->
-                <!--noindex--><a href="https://twitter.com/krasnodog" class="s-l-twitter" target="_blank" rel="nofollow" title="Twitter Краснодога"></a><!--/noindex-->
-                <!--noindex--><a href="http://www.youtube.com/user/KrasnodogPriut?feature=watch" class="s-l-youtube" target="_blank" rel="nofollow" title="Наш канал в Youtube"></a><!--/noindex-->
-                <!--noindex--><a href="http://krasnodog.livejournal.com/" class="s-l-livejournal" target="_blank" rel="nofollow" title="Наш блог в ЖЖ"></a><!--/noindex-->
+                <!--noindex--><a href="#" class="s-l-facebook" target="_blank" rel="nofollow" title="РќР°С€Р° СЃС‚СЂР°РЅРёС†Р° РІ Facebook"></a><!--/noindex-->
+                <!--noindex--><a href="#" class="s-l-odnoklassniki" target="_blank" rel="nofollow" title="РљСЂР°СЃРЅРѕРґРѕРі РІ РћРґРЅРѕРєР»Р°СЃСЃРЅРёРєР°С…"></a><!--/noindex-->
+                <!--noindex--><a href="#" class="s-l-vkontakte" target="_blank" rel="nofollow" title="РљСЂР°СЃРЅРѕРґРѕРі Р’РљРѕРЅС‚Р°РєС‚Рµ"></a><!--/noindex-->
+                <!--noindex--><a href="#" class="s-l-twitter" target="_blank" rel="nofollow" title="Twitter РљСЂР°СЃРЅРѕРґРѕРіР°"></a><!--/noindex-->
+                <!--noindex--><a href="#" class="s-l-youtube" target="_blank" rel="nofollow" title="РќР°С€ РєР°РЅР°Р» РІ Youtube"></a><!--/noindex-->
+                <!--noindex--><a href="#" class="s-l-livejournal" target="_blank" rel="nofollow" title="РќР°С€ Р±Р»РѕРі РІ Р–Р–"></a><!--/noindex-->
             </div>
         </div>
         <!--.site-face-->
@@ -114,39 +115,39 @@
                     
                                         
                     <div class="green-header">
-                        <a href="krasnoteka.html">Краснотека</a> &rarr; <h1>Юридические материалы</h1>
+                        <a href="krasnoteka.html">РљСЂР°СЃРЅРѕС‚РµРєР°</a> &rarr; <h1>Р®СЂРёРґРёС‡РµСЃРєРёРµ РјР°С‚РµСЂРёР°Р»С‹</h1>
                     </div>
 
                     
                     <div class="gray-item">
-                        <h2 class="text-header">Что делать, если на ваших глазах происходит отстрел или отлов животных?</h2>
+                        <h2 class="text-header">Р§С‚Рѕ РґРµР»Р°С‚СЊ, РµСЃР»Рё РЅР° РІР°С€РёС… РіР»Р°Р·Р°С… РїСЂРѕРёСЃС…РѕРґРёС‚ РѕС‚СЃС‚СЂРµР» РёР»Рё РѕС‚Р»РѕРІ Р¶РёРІРѕС‚РЅС‹С…?</h2>
                         
-                        <p>Все отловы проходят с грубыми нарушениями Регламента, основные из них:</p>
+                        <p>Р’СЃРµ РѕС‚Р»РѕРІС‹ РїСЂРѕС…РѕРґСЏС‚ СЃ РіСЂСѓР±С‹РјРё РЅР°СЂСѓС€РµРЅРёСЏРјРё Р РµРіР»Р°РјРµРЅС‚Р°, РѕСЃРЅРѕРІРЅС‹Рµ РёР· РЅРёС…:</p>
                         
                         <ol>
-                            <li>Отсутствие опознавательных знаков на одежде ловцов (название организации и телефоны);</li>
-                            <li>Не предъявляют заказ-наряды. Ловцы имеют право отлавливать только тех животных, на кого оформлены заказ-наряды с подробным описанием животного и адреса обитания. Других животных не имеют права отлавливать!</li>
-                            <li>За один заезд не имеют права отлавливать более 3-5 голов.</li>
-                            <li>Ловцы не имеют права сами усыплять животное в машине, а должны доставить его в пункт стерилизации и содержания. И уже врач должна принять решение об усыплении.</li>
+                            <li>РћС‚СЃСѓС‚СЃС‚РІРёРµ РѕРїРѕР·РЅР°РІР°С‚РµР»СЊРЅС‹С… Р·РЅР°РєРѕРІ РЅР° РѕРґРµР¶РґРµ Р»РѕРІС†РѕРІ (РЅР°Р·РІР°РЅРёРµ РѕСЂРіР°РЅРёР·Р°С†РёРё Рё С‚РµР»РµС„РѕРЅС‹);</li>
+                            <li>РќРµ РїСЂРµРґСЉСЏРІР»СЏСЋС‚ Р·Р°РєР°Р·-РЅР°СЂСЏРґС‹. Р›РѕРІС†С‹ РёРјРµСЋС‚ РїСЂР°РІРѕ РѕС‚Р»Р°РІР»РёРІР°С‚СЊ С‚РѕР»СЊРєРѕ С‚РµС… Р¶РёРІРѕС‚РЅС‹С…, РЅР° РєРѕРіРѕ РѕС„РѕСЂРјР»РµРЅС‹ Р·Р°РєР°Р·-РЅР°СЂСЏРґС‹ СЃ РїРѕРґСЂРѕР±РЅС‹Рј РѕРїРёСЃР°РЅРёРµРј Р¶РёРІРѕС‚РЅРѕРіРѕ Рё Р°РґСЂРµСЃР° РѕР±РёС‚Р°РЅРёСЏ. Р”СЂСѓРіРёС… Р¶РёРІРѕС‚РЅС‹С… РЅРµ РёРјРµСЋС‚ РїСЂР°РІР° РѕС‚Р»Р°РІР»РёРІР°С‚СЊ!</li>
+                            <li>Р—Р° РѕРґРёРЅ Р·Р°РµР·Рґ РЅРµ РёРјРµСЋС‚ РїСЂР°РІР° РѕС‚Р»Р°РІР»РёРІР°С‚СЊ Р±РѕР»РµРµ 3-5 РіРѕР»РѕРІ.</li>
+                            <li>Р›РѕРІС†С‹ РЅРµ РёРјРµСЋС‚ РїСЂР°РІР° СЃР°РјРё СѓСЃС‹РїР»СЏС‚СЊ Р¶РёРІРѕС‚РЅРѕРµ РІ РјР°С€РёРЅРµ, Р° РґРѕР»Р¶РЅС‹ РґРѕСЃС‚Р°РІРёС‚СЊ РµРіРѕ РІ РїСѓРЅРєС‚ СЃС‚РµСЂРёР»РёР·Р°С†РёРё Рё СЃРѕРґРµСЂР¶Р°РЅРёСЏ. Р СѓР¶Рµ РІСЂР°С‡ РґРѕР»Р¶РЅР° РїСЂРёРЅСЏС‚СЊ СЂРµС€РµРЅРёРµ РѕР± СѓСЃС‹РїР»РµРЅРёРё.</li>
                         </ol>
                         
-                        <p>Запишите номера машин, приметы и кол-во отловленных собак и узнавайте, куда их повезут. Говорите, что Вы опекун. Требуйте документы и наряды на отлов!!!</p>
+                        <p>Р—Р°РїРёС€РёС‚Рµ РЅРѕРјРµСЂР° РјР°С€РёРЅ, РїСЂРёРјРµС‚С‹ Рё РєРѕР»-РІРѕ РѕС‚Р»РѕРІР»РµРЅРЅС‹С… СЃРѕР±Р°Рє Рё СѓР·РЅР°РІР°Р№С‚Рµ, РєСѓРґР° РёС… РїРѕРІРµР·СѓС‚. Р“РѕРІРѕСЂРёС‚Рµ, С‡С‚Рѕ Р’С‹ РѕРїРµРєСѓРЅ. РўСЂРµР±СѓР№С‚Рµ РґРѕРєСѓРјРµРЅС‚С‹ Рё РЅР°СЂСЏРґС‹ РЅР° РѕС‚Р»РѕРІ!!!</p>
                         
                         <div class="align-center"><img src="content/help-2.jpg" class="article-img"></div>
                         
-                        <p>Если Вы видите, как убивают животных - снимайте всё на мобильный телефон! Не забудьте зафиксировать государственный номер автомобиля!</p>
+                        <p>Р•СЃР»Рё Р’С‹ РІРёРґРёС‚Рµ, РєР°Рє СѓР±РёРІР°СЋС‚ Р¶РёРІРѕС‚РЅС‹С… - СЃРЅРёРјР°Р№С‚Рµ РІСЃС‘ РЅР° РјРѕР±РёР»СЊРЅС‹Р№ С‚РµР»РµС„РѕРЅ! РќРµ Р·Р°Р±СѓРґСЊС‚Рµ Р·Р°С„РёРєСЃРёСЂРѕРІР°С‚СЊ РіРѕСЃСѓРґР°СЂСЃС‚РІРµРЅРЅС‹Р№ РЅРѕРјРµСЂ Р°РІС‚РѕРјРѕР±РёР»СЏ!</p>
                         
-                        <p><strong>Звоните в префектуру Вашего округа! Требуйте разобраться, откуда «растут ноги» узаконенного убийства!</strong></p>
+                        <p><strong>Р—РІРѕРЅРёС‚Рµ РІ РїСЂРµС„РµРєС‚СѓСЂСѓ Р’Р°С€РµРіРѕ РѕРєСЂСѓРіР°! РўСЂРµР±СѓР№С‚Рµ СЂР°Р·РѕР±СЂР°С‚СЊСЃСЏ, РѕС‚РєСѓРґР° В«СЂР°СЃС‚СѓС‚ РЅРѕРіРёВ» СѓР·Р°РєРѕРЅРµРЅРЅРѕРіРѕ СѓР±РёР№СЃС‚РІР°!</strong></p>
                         
                         
                         
                         <br/>
                         
-                        <p>Достаточно много людей относятся к братьям нашим меньшим с особым теплым чувством. Владельцы квартир способны делить жилые метры со своими любимцами. Но не многие знают, что содержание домашнего животного в жилых помещениях регламентируется законом.</p>
+                        <p>Р”РѕСЃС‚Р°С‚РѕС‡РЅРѕ РјРЅРѕРіРѕ Р»СЋРґРµР№ РѕС‚РЅРѕСЃСЏС‚СЃСЏ Рє Р±СЂР°С‚СЊСЏРј РЅР°С€РёРј РјРµРЅСЊС€РёРј СЃ РѕСЃРѕР±С‹Рј С‚РµРїР»С‹Рј С‡СѓРІСЃС‚РІРѕРј. Р’Р»Р°РґРµР»СЊС†С‹ РєРІР°СЂС‚РёСЂ СЃРїРѕСЃРѕР±РЅС‹ РґРµР»РёС‚СЊ Р¶РёР»С‹Рµ РјРµС‚СЂС‹ СЃРѕ СЃРІРѕРёРјРё Р»СЋР±РёРјС†Р°РјРё. РќРѕ РЅРµ РјРЅРѕРіРёРµ Р·РЅР°СЋС‚, С‡С‚Рѕ СЃРѕРґРµСЂР¶Р°РЅРёРµ РґРѕРјР°С€РЅРµРіРѕ Р¶РёРІРѕС‚РЅРѕРіРѕ РІ Р¶РёР»С‹С… РїРѕРјРµС‰РµРЅРёСЏС… СЂРµРіР»Р°РјРµРЅС‚РёСЂСѓРµС‚СЃСЏ Р·Р°РєРѕРЅРѕРј.</p>
                         <img src="content/help-2.jpg" class="article-img f-left">
-                        <p>Проще говоря, в своей квартире Вы можете поселить любимого питомца, но делать это необходимо с учетом некоторых правил. Одно дело, когда Вы селите животного в свою собственную квартиру, а другое, когда сами проживаете в помещении коммунального типа. Здесь правила немного другие и собственником квартиры являетесь не только Вы, но и Ваши соседи. Здесь необходимо прислушаться и к их мнению. Но самое сложное в содержании домашних животных в жилых помещениях, является то, что Вы можете решить переехать в съемную квартиру, а животное с Вами. Здесь есть некоторые нюансы, которые необходимо учитывать.</p>
+                        <p>РџСЂРѕС‰Рµ РіРѕРІРѕСЂСЏ, РІ СЃРІРѕРµР№ РєРІР°СЂС‚РёСЂРµ Р’С‹ РјРѕР¶РµС‚Рµ РїРѕСЃРµР»РёС‚СЊ Р»СЋР±РёРјРѕРіРѕ РїРёС‚РѕРјС†Р°, РЅРѕ РґРµР»Р°С‚СЊ СЌС‚Рѕ РЅРµРѕР±С…РѕРґРёРјРѕ СЃ СѓС‡РµС‚РѕРј РЅРµРєРѕС‚РѕСЂС‹С… РїСЂР°РІРёР». РћРґРЅРѕ РґРµР»Рѕ, РєРѕРіРґР° Р’С‹ СЃРµР»РёС‚Рµ Р¶РёРІРѕС‚РЅРѕРіРѕ РІ СЃРІРѕСЋ СЃРѕР±СЃС‚РІРµРЅРЅСѓСЋ РєРІР°СЂС‚РёСЂСѓ, Р° РґСЂСѓРіРѕРµ, РєРѕРіРґР° СЃР°РјРё РїСЂРѕР¶РёРІР°РµС‚Рµ РІ РїРѕРјРµС‰РµРЅРёРё РєРѕРјРјСѓРЅР°Р»СЊРЅРѕРіРѕ С‚РёРїР°. Р—РґРµСЃСЊ РїСЂР°РІРёР»Р° РЅРµРјРЅРѕРіРѕ РґСЂСѓРіРёРµ Рё СЃРѕР±СЃС‚РІРµРЅРЅРёРєРѕРј РєРІР°СЂС‚РёСЂС‹ СЏРІР»СЏРµС‚РµСЃСЊ РЅРµ С‚РѕР»СЊРєРѕ Р’С‹, РЅРѕ Рё Р’Р°С€Рё СЃРѕСЃРµРґРё. Р—РґРµСЃСЊ РЅРµРѕР±С…РѕРґРёРјРѕ РїСЂРёСЃР»СѓС€Р°С‚СЊСЃСЏ Рё Рє РёС… РјРЅРµРЅРёСЋ. РќРѕ СЃР°РјРѕРµ СЃР»РѕР¶РЅРѕРµ РІ СЃРѕРґРµСЂР¶Р°РЅРёРё РґРѕРјР°С€РЅРёС… Р¶РёРІРѕС‚РЅС‹С… РІ Р¶РёР»С‹С… РїРѕРјРµС‰РµРЅРёСЏС…, СЏРІР»СЏРµС‚СЃСЏ С‚Рѕ, С‡С‚Рѕ Р’С‹ РјРѕР¶РµС‚Рµ СЂРµС€РёС‚СЊ РїРµСЂРµРµС…Р°С‚СЊ РІ СЃСЉРµРјРЅСѓСЋ РєРІР°СЂС‚РёСЂСѓ, Р° Р¶РёРІРѕС‚РЅРѕРµ СЃ Р’Р°РјРё. Р—РґРµСЃСЊ РµСЃС‚СЊ РЅРµРєРѕС‚РѕСЂС‹Рµ РЅСЋР°РЅСЃС‹, РєРѕС‚РѕСЂС‹Рµ РЅРµРѕР±С…РѕРґРёРјРѕ СѓС‡РёС‚С‹РІР°С‚СЊ.</p>
                         
-                        <p>На самом деле, если Вы добросовестно снимаете квартиру с учетом всех правил (заключаете договор), то такой вопрос как содержание домашних животных необходимо оговорить заранее. Договор должен содержать такой пункт о животных. Обязательно просмотрите договор. Если такого пункта Вы не обнаружите, то это вовсе не означает, что Вам разрешено содержание домашних животных.</p>
+                        <p>РќР° СЃР°РјРѕРј РґРµР»Рµ, РµСЃР»Рё Р’С‹ РґРѕР±СЂРѕСЃРѕРІРµСЃС‚РЅРѕ СЃРЅРёРјР°РµС‚Рµ РєРІР°СЂС‚РёСЂСѓ СЃ СѓС‡РµС‚РѕРј РІСЃРµС… РїСЂР°РІРёР» (Р·Р°РєР»СЋС‡Р°РµС‚Рµ РґРѕРіРѕРІРѕСЂ), С‚Рѕ С‚Р°РєРѕР№ РІРѕРїСЂРѕСЃ РєР°Рє СЃРѕРґРµСЂР¶Р°РЅРёРµ РґРѕРјР°С€РЅРёС… Р¶РёРІРѕС‚РЅС‹С… РЅРµРѕР±С…РѕРґРёРјРѕ РѕРіРѕРІРѕСЂРёС‚СЊ Р·Р°СЂР°РЅРµРµ. Р”РѕРіРѕРІРѕСЂ РґРѕР»Р¶РµРЅ СЃРѕРґРµСЂР¶Р°С‚СЊ С‚Р°РєРѕР№ РїСѓРЅРєС‚ Рѕ Р¶РёРІРѕС‚РЅС‹С…. РћР±СЏР·Р°С‚РµР»СЊРЅРѕ РїСЂРѕСЃРјРѕС‚СЂРёС‚Рµ РґРѕРіРѕРІРѕСЂ. Р•СЃР»Рё С‚Р°РєРѕРіРѕ РїСѓРЅРєС‚Р° Р’С‹ РЅРµ РѕР±РЅР°СЂСѓР¶РёС‚Рµ, С‚Рѕ СЌС‚Рѕ РІРѕРІСЃРµ РЅРµ РѕР·РЅР°С‡Р°РµС‚, С‡С‚Рѕ Р’Р°Рј СЂР°Р·СЂРµС€РµРЅРѕ СЃРѕРґРµСЂР¶Р°РЅРёРµ РґРѕРјР°С€РЅРёС… Р¶РёРІРѕС‚РЅС‹С….</p>
                                                 
                     </div>
                     <!--.gray-item-->
@@ -165,41 +166,41 @@
                 
                 <nav class="l-menu">
                     
-                    <a href="about.html">О нас</a>
-                    <a href="blog.html">Блог</a>
-                    <a href="life.html">«КРАСНОДОГ» life</a>
-                    <a href="news.html">Новости</a>
-                    <a href="guest.html">Гостевая</a>
-                    <a href="contests.html">Наши конкурсы</a>
-                    <a href="krasnoteka.html" class="active">Краснотека</a>
-                    <a href="contacts.html">Контакты</a>
-                    <a href="forum.html">Форум</a>
-                    <a href="krasnodog.html">Движение «КРАСНОДОГ»</a>
-                    <a href="child.html">Детское направление</a>
-                    <a href="events.html">Наши мероприятия</a>
+                    <a href="about.html">Рћ РЅР°СЃ</a>
+                    <a href="blog.html">Р‘Р»РѕРі</a>
+                    <a href="life.html">В«РљР РђРЎРќРћР”РћР“В» life</a>
+                    <a href="news.html">РќРѕРІРѕСЃС‚Рё</a>
+                    <a href="guest.html">Р“РѕСЃС‚РµРІР°СЏ</a>
+                    <a href="contests.html">РќР°С€Рё РєРѕРЅРєСѓСЂСЃС‹</a>
+                    <a href="krasnoteka.html" class="active">РљСЂР°СЃРЅРѕС‚РµРєР°</a>
+                    <a href="contacts.html">РљРѕРЅС‚Р°РєС‚С‹</a>
+                    <a href="forum.html">Р¤РѕСЂСѓРј</a>
+                    <a href="krasnodog.html">Р”РІРёР¶РµРЅРёРµ В«РљР РђРЎРќРћР”РћР“В»</a>
+                    <a href="child.html">Р”РµС‚СЃРєРѕРµ РЅР°РїСЂР°РІР»РµРЅРёРµ</a>
+                    <a href="events.html">РќР°С€Рё РјРµСЂРѕРїСЂРёСЏС‚РёСЏ</a>
                                   
                 </nav>
                 <!-- .l-menu -->
                 
                 <div class="form-search">
                     <form method="post" action="">
-                        <input type="text" name="" class="f-s-text" value="Поиск по сайту" onclick="if (this.value=='Поиск по сайту') {this.value=''}; $(this).css('color','#474747')" onblur="if (this.value=='') {this.value='Поиск по сайту'}; $(this).css('color','#ababab')">
-                        <input type="submit" name="" class="f-s-submit" value="" title="Найти">
+                        <input type="text" name="" class="f-s-text" value="РџРѕРёСЃРє РїРѕ СЃР°Р№С‚Сѓ" onclick="if (this.value=='РџРѕРёСЃРє РїРѕ СЃР°Р№С‚Сѓ') {this.value=''}; $(this).css('color','#474747')" onblur="if (this.value=='') {this.value='РџРѕРёСЃРє РїРѕ СЃР°Р№С‚Сѓ'}; $(this).css('color','#ababab')">
+                        <input type="submit" name="" class="f-s-submit" value="" title="РќР°Р№С‚Рё">
                     </form>
                 </div>
                 <!--.form-search-->
                 
                 <div class="help-block">
-                    <h2 class="red-header">Как нам помочь?</h2>
+                    <h2 class="red-header">РљР°Рє РЅР°Рј РїРѕРјРѕС‡СЊ?</h2>
                     <nav class="l-menu">
 						
-                        <a href="#">Лично</a>
-                        <a href="#">Электронные деньги</a>
-                        <a href="#">Банковский перевод</a>
-                        <a href="#">SMS-сообщение</a>
-                        <a href="#">Боксы для пожертвований</a>
-                        <a href="#">QIWI-терминалы</a>
-                        <a href="#">День «стольника»</a>
+                        <a href="#">Р›РёС‡РЅРѕ</a>
+                        <a href="#">Р­Р»РµРєС‚СЂРѕРЅРЅС‹Рµ РґРµРЅСЊРіРё</a>
+                        <a href="#">Р‘Р°РЅРєРѕРІСЃРєРёР№ РїРµСЂРµРІРѕРґ</a>
+                        <a href="#">SMS-СЃРѕРѕР±С‰РµРЅРёРµ</a>
+                        <a href="#">Р‘РѕРєСЃС‹ РґР»СЏ РїРѕР¶РµСЂС‚РІРѕРІР°РЅРёР№</a>
+                        <a href="#">QIWI-С‚РµСЂРјРёРЅР°Р»С‹</a>
+                        <a href="#">Р”РµРЅСЊ В«СЃС‚РѕР»СЊРЅРёРєР°В»</a>
                                       
                     </nav>
                     <!-- .l-menu -->
@@ -231,13 +232,13 @@
 <footer class="footer">
     <div class="f-inside">
         <div class="f-left">
-            &copy; 2013. Приют «Краснодог»
+            &copy; 2013. РџСЂРёСЋС‚ В«РљСЂР°СЃРЅРѕРґРѕРіВ»
         </div>
         <div class="f-left">
-            Телефон: +7 988 505 2 505 (ежедневно с 10:00 до 17:00) <a href="#">Размещение рекламы на сайте</a> 
+            РўРµР»РµС„РѕРЅ: +7 988 505 2 505 (РµР¶РµРґРЅРµРІРЅРѕ СЃ 10:00 РґРѕ 17:00) <a href="#">Р Р°Р·РјРµС‰РµРЅРёРµ СЂРµРєР»Р°РјС‹ РЅР° СЃР°Р№С‚Рµ</a> 
         </div>
         <div class="f-right">
-            <a href="#">Информация о разработчиках сайта</a>
+            <a href="#">РРЅС„РѕСЂРјР°С†РёСЏ Рѕ СЂР°Р·СЂР°Р±РѕС‚С‡РёРєР°С… СЃР°Р№С‚Р°</a>
         </div>
     </div>
     <!--.f-inside-->

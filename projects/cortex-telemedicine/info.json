@@ -1,10 +1,10 @@
 {
   "year": 2020,
   "title": "Cortex Telemedicine",
-  "description": "Верстка сайта медицинского приложения Telemed",
+  "description": "Верстка лэндинга медицинского приложения Telemed",
   "site": "https://cortm.com/",
   "en": {
     "title": "Cortex Telemedicine",
-    "description": "Layout of the site of the medical application Telemed"
+    "description": "Layout of the landing of the medical application Telemed"
   }
 }
