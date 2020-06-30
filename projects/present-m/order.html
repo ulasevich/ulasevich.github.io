@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
-<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<meta charset="utf-8" />
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	
-	<title>Заказать стенд &#8212; Презент-М</title>
+	<title>Р—Р°РєР°Р·Р°С‚СЊ СЃС‚РµРЅРґ &#8212; РџСЂРµР·РµРЅС‚-Рњ</title>
 	
     <meta name="keywords" content="" />
 	<meta name="description" content="" />
@@ -22,7 +22,7 @@
         DD_belatedPNG.fix('.f-bread-crumbs, .h-logo-address, .h-phone, .menu-left a, .menu-top a, .contact-link');
     </script>
     <![endif]-->
-    <!-- для IE6 -->
+    <!-- РґР»СЏ IE6 -->
 	
 	<script src="script/jquery-1.7.1.min.js"></script>
     
@@ -35,7 +35,7 @@
 		
 		$(document).ready(function() {
 		
-			//это нужно, чтобы в будущем выводить предупреждения про покупную мебель
+			//СЌС‚Рѕ РЅСѓР¶РЅРѕ, С‡С‚РѕР±С‹ РІ Р±СѓРґСѓС‰РµРј РІС‹РІРѕРґРёС‚СЊ РїСЂРµРґСѓРїСЂРµР¶РґРµРЅРёСЏ РїСЂРѕ РїРѕРєСѓРїРЅСѓСЋ РјРµР±РµР»СЊ
 			$(".o-purchased").each(function(index) {
 				$(this).children("option:last").val("buy");
 			});
@@ -64,14 +64,14 @@
 				return false;
 			});
 						
-			//если выбрана опция "покупная мебель" выводим подсказку
+			//РµСЃР»Рё РІС‹Р±СЂР°РЅР° РѕРїС†РёСЏ "РїРѕРєСѓРїРЅР°СЏ РјРµР±РµР»СЊ" РІС‹РІРѕРґРёРј РїРѕРґСЃРєР°Р·РєСѓ
 			$(".o-purchased").live("change", function() {
 			    if ( $("#" + $(this).attr("id") + " :last").val() == "buy" ) 
 					{ $(this).siblings(".o-postscript").css("display", "block"); }
 				else { $(this).siblings(".o-postscript").css("display", "none"); }
 			});
 			
-			// меняем опции при выборе "витрины"
+			// РјРµРЅСЏРµРј РѕРїС†РёРё РїСЂРё РІС‹Р±РѕСЂРµ "РІРёС‚СЂРёРЅС‹"
 			$(".o-showcase").change( function() {
 				select_id = $(this).attr("id").slice(11);
 				$(this).siblings("div").css("display", "none");
@@ -94,12 +94,12 @@
         <header class="header">
             <nav class="menu-top">
                 
-                <a href="index.html">Главная</a>
-                <a href="about.html">О компании</a>
-                <a href="work.html">Наши работы</a>
-                <a href="awards.html">Награды и отзывы</a>
-                <a href="order.html" class="active">Заказать стенд</a>
-                <a href="contacts.html">Контакты</a>
+                <a href="index.html">Р“Р»Р°РІРЅР°СЏ</a>
+                <a href="about.html">Рћ РєРѕРјРїР°РЅРёРё</a>
+                <a href="work.html">РќР°С€Рё СЂР°Р±РѕС‚С‹</a>
+                <a href="awards.html">РќР°РіСЂР°РґС‹ Рё РѕС‚Р·С‹РІС‹</a>
+                <a href="order.html" class="active">Р—Р°РєР°Р·Р°С‚СЊ СЃС‚РµРЅРґ</a>
+                <a href="contacts.html">РљРѕРЅС‚Р°РєС‚С‹</a>
                            
             </nav>
             <div class="clear"></div>
@@ -107,7 +107,7 @@
                 <a href="#" class="active">RU</a> <a href="#">EN</a>
             </div>
             <div class="h-logo-address">
-                Москва, ул. Коцюбитского, 4<br>
+                РњРѕСЃРєРІР°, СѓР». РљРѕС†СЋР±РёС‚СЃРєРѕРіРѕ, 4<br>
                 <big class="h-phone"><span class="phone-code">(495)</span> 221 65 57</big>
             </div>
        </header>
@@ -121,27 +121,27 @@
                 <div class="content">
 					
                     
-                    <a href="#" class="back-link">Вернуться</a>
+                    <a href="#" class="back-link">Р’РµСЂРЅСѓС‚СЊСЃСЏ</a>
                     
-                    <h1>Заказать стенд</h1>
+                    <h1>Р—Р°РєР°Р·Р°С‚СЊ СЃС‚РµРЅРґ</h1>
                     
-                    <p class="p-big">Данный раздел включает в себя набор элементарных вопросов, которые дадут нам достаточно информации для предварительной оценки и дальнейшей работы.</p>
+                    <p class="p-big">Р”Р°РЅРЅС‹Р№ СЂР°Р·РґРµР» РІРєР»СЋС‡Р°РµС‚ РІ СЃРµР±СЏ РЅР°Р±РѕСЂ СЌР»РµРјРµРЅС‚Р°СЂРЅС‹С… РІРѕРїСЂРѕСЃРѕРІ, РєРѕС‚РѕСЂС‹Рµ РґР°РґСѓС‚ РЅР°Рј РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РёРЅС„РѕСЂРјР°С†РёРё РґР»СЏ РїСЂРµРґРІР°СЂРёС‚РµР»СЊРЅРѕР№ РѕС†РµРЅРєРё Рё РґР°Р»СЊРЅРµР№С€РµР№ СЂР°Р±РѕС‚С‹.</p>
                     
                     <form method="post" action="" class="order-form">
                     
-                        <h3>Информация о Заказчике</h3>
+                        <h3>РРЅС„РѕСЂРјР°С†РёСЏ Рѕ Р—Р°РєР°Р·С‡РёРєРµ</h3>
                         
                         <table>
                             <tr>
-                                <td class="first-td"><b class="required">*</b> Компания:</td>
+                                <td class="first-td"><b class="required">*</b> РљРѕРјРїР°РЅРёСЏ:</td>
                                 <td><input type="text" name="" value="" class="o-text o-t-largest"></td>
                             </tr>
                             <tr>
-                                <td class="first-td"><b class="required">*</b> Контактное лицо:</td>
+                                <td class="first-td"><b class="required">*</b> РљРѕРЅС‚Р°РєС‚РЅРѕРµ Р»РёС†Рѕ:</td>
                                 <td><input type="text" name="" value="" class="o-text o-t-largest"></td>
                             </tr>
                             <tr>
-                                <td class="first-td"><b class="required">*</b> Телефон/факс:</td>
+                                <td class="first-td"><b class="required">*</b> РўРµР»РµС„РѕРЅ/С„Р°РєСЃ:</td>
                                 <td><input type="text" name="" value="" class="o-text o-t-middle"></td>
                             </tr>
                             <tr>
@@ -149,19 +149,19 @@
                                 <td><input type="text" name="" value="" class="o-text o-t-bigger"></td>
                             </tr>
                             <tr>
-                                <td class="first-td">Сайт:</td>
+                                <td class="first-td">РЎР°Р№С‚:</td>
                                 <td><input type="text" name="" value="" class="o-text o-t-bigger"></td>
                             </tr>
                             <tr>
-                                <td class="first-td"><b class="required">*</b> Название выставки:</td>
+                                <td class="first-td"><b class="required">*</b> РќР°Р·РІР°РЅРёРµ РІС‹СЃС‚Р°РІРєРё:</td>
                                 <td><input type="text" name="" value="" class="o-text o-t-largest"></td>
                             </tr>
                             <tr>
-                                <td class="first-td"><b class="required">*</b> Время проведения:</td>
+                                <td class="first-td"><b class="required">*</b> Р’СЂРµРјСЏ РїСЂРѕРІРµРґРµРЅРёСЏ:</td>
                                 <td><input type="text" name="" value="" class="o-text o-t-middle"></td>
                             </tr>
                             <tr>
-                                <td class="first-td">Прикрепить планировку зала:</td>
+                                <td class="first-td">РџСЂРёРєСЂРµРїРёС‚СЊ РїР»Р°РЅРёСЂРѕРІРєСѓ Р·Р°Р»Р°:</td>
                                 <td>
                                     <!--[if !(IE 6)]><!-->
                                     <div class="file-input-box">
@@ -173,57 +173,57 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="first-td">Номер места на плане:</td>
+                                <td class="first-td">РќРѕРјРµСЂ РјРµСЃС‚Р° РЅР° РїР»Р°РЅРµ:</td>
                                 <td> <input type="text" name="" value="" class="o-text o-t-middle"> </td>
                             </tr>
                         </table>
                         
                         
-                        <h3>Требования к стенду</h3>
+                        <h3>РўСЂРµР±РѕРІР°РЅРёСЏ Рє СЃС‚РµРЅРґСѓ</h3>
                         
                         <table>
                             <tr>
-                                <td class="first-td">Напольное покрытие:</td>
+                                <td class="first-td">РќР°РїРѕР»СЊРЅРѕРµ РїРѕРєСЂС‹С‚РёРµ:</td>
                                 <td>
                                     <select>
-                                        <option value="0">Выберите материал</option>
-                                        <option value="1">ковролин</option>
-                                        <option value="2">ламинат</option>
-                                        <option value="3">другое</option>
+                                        <option value="0">Р’С‹Р±РµСЂРёС‚Рµ РјР°С‚РµСЂРёР°Р»</option>
+                                        <option value="1">РєРѕРІСЂРѕР»РёРЅ</option>
+                                        <option value="2">Р»Р°РјРёРЅР°С‚</option>
+                                        <option value="3">РґСЂСѓРіРѕРµ</option>
                                     </select>
                                 </td>
                                 <td width="186">
                                     <select>
-                                        <option value="0">Выберите настил</option>
-                                        <option value="1">настил 32мм</option>
-                                        <option value="2">подиум 100мм</option>
-                                        <option value="3">подиум 100мм+подсветка по краю</option>
-                                        <option value="4">другое</option>
+                                        <option value="0">Р’С‹Р±РµСЂРёС‚Рµ РЅР°СЃС‚РёР»</option>
+                                        <option value="1">РЅР°СЃС‚РёР» 32РјРј</option>
+                                        <option value="2">РїРѕРґРёСѓРј 100РјРј</option>
+                                        <option value="3">РїРѕРґРёСѓРј 100РјРј+РїРѕРґСЃРІРµС‚РєР° РїРѕ РєСЂР°СЋ</option>
+                                        <option value="4">РґСЂСѓРіРѕРµ</option>
                                     </select>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="first-td">Этажность:</td>
+                                <td class="first-td">Р­С‚Р°Р¶РЅРѕСЃС‚СЊ:</td>
                                 <td colspan="2">
                                     <select>
-                                        <option value="0">Выберите</option>
-                                        <option value="1">1 этаж</option>
-                                        <option value="2">2 этажа</option>
+                                        <option value="0">Р’С‹Р±РµСЂРёС‚Рµ</option>
+                                        <option value="1">1 СЌС‚Р°Р¶</option>
+                                        <option value="2">2 СЌС‚Р°Р¶Р°</option>
                                     </select>
                                 </td>
                             </tr>
                             <tr>
-                                <td class="first-td">Переговорные комнаты:</td>
+                                <td class="first-td">РџРµСЂРµРіРѕРІРѕСЂРЅС‹Рµ РєРѕРјРЅР°С‚С‹:</td>
                                 <td colspan="2">
                                     <select class="yes-or-not">
-                                        <option value="0">Нет</option>
-                                        <option value="1">Да</option>
+                                        <option value="0">РќРµС‚</option>
+                                        <option value="1">Р”Р°</option>
                                     </select>
                                     <div style="display:none;">
                                         <div class="o-additional">
-                                            Кол-во, шт.: 
+                                            РљРѕР»-РІРѕ, С€С‚.: 
                                             <input type="text" name="" value="" class="o-text o-t-small o-margin-right" maxlength="4">
-                                            примерная площадь, кв.м.: 
+                                            РїСЂРёРјРµСЂРЅР°СЏ РїР»РѕС‰Р°РґСЊ, РєРІ.Рј.: 
                                             <input type="text" name="" value="" class="o-text o-t-small" maxlength="4">
                                         </div>                                            
                                     </div>
@@ -231,17 +231,17 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="first-td">Подсобные помещения:</td>
+                                <td class="first-td">РџРѕРґСЃРѕР±РЅС‹Рµ РїРѕРјРµС‰РµРЅРёСЏ:</td>
                                 <td colspan="2">
                                     <select class="yes-or-not">
-                                        <option value="0">Нет</option>
-                                        <option value="1">Да</option>
+                                        <option value="0">РќРµС‚</option>
+                                        <option value="1">Р”Р°</option>
                                     </select>
                                     <div style="display:none;">
                                         <div class="o-additional">
-                                            Кол-во, шт.: 
+                                            РљРѕР»-РІРѕ, С€С‚.: 
                                             <input type="text" name="" value="" class="o-text o-t-small o-margin-right" maxlength="4">
-                                            примерная площадь, кв.м.: 
+                                            РїСЂРёРјРµСЂРЅР°СЏ РїР»РѕС‰Р°РґСЊ, РєРІ.Рј.: 
                                             <input type="text" name="" value="" class="o-text o-t-small" maxlength="4">
                                         </div>                                            
                                     </div>
@@ -249,37 +249,37 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="first-td">Дополнительные пожелания:</td>
-                                <td colspan="2"> <textarea class="o-text">стенд открытый/закрытый;</textarea> </td>
+                                <td class="first-td">Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ РїРѕР¶РµР»Р°РЅРёСЏ:</td>
+                                <td colspan="2"> <textarea class="o-text">СЃС‚РµРЅРґ РѕС‚РєСЂС‹С‚С‹Р№/Р·Р°РєСЂС‹С‚С‹Р№;</textarea> </td>
                             </tr>
                         </table>
                         
                         
-                        <h3>Наполнение стенда</h3>
+                        <h3>РќР°РїРѕР»РЅРµРЅРёРµ СЃС‚РµРЅРґР°</h3>
                         
                         <table>
                             <tr>
-                                <td class="first-td">Информационные стойки:</td>
+                                <td class="first-td">РРЅС„РѕСЂРјР°С†РёРѕРЅРЅС‹Рµ СЃС‚РѕР№РєРё:</td>
                                 <td>
                                     <select class="yes-or-not">
-                                        <option value="0">Нет</option>
-                                        <option value="1">Да</option>
+                                        <option value="0">РќРµС‚</option>
+                                        <option value="1">Р”Р°</option>
                                     </select>
                                     
                                     <div style="display:none;">
                                     
                                         <div class="o-additional">
                                             <select class="select-big o-margin-bottom">
-                                                <option value="1">Стойка из конструктива</option>
-                                                <option value="2">Эксклюзивная стойка (МДФ,ДСП,стекло, покраска)</option>
+                                                <option value="1">РЎС‚РѕР№РєР° РёР· РєРѕРЅСЃС‚СЂСѓРєС‚РёРІР°</option>
+                                                <option value="2">Р­РєСЃРєР»СЋР·РёРІРЅР°СЏ СЃС‚РѕР№РєР° (РњР”Р¤,Р”РЎРџ,СЃС‚РµРєР»Рѕ, РїРѕРєСЂР°СЃРєР°)</option>
                                             </select><br>
-                                            Кол-во, шт.: 
+                                            РљРѕР»-РІРѕ, С€С‚.: 
                                             <input type="text" name="" value="" class="o-text o-t-small o-margin-right" maxlength="4">
-                                            Кол-во чел. за стойкой: 
+                                            РљРѕР»-РІРѕ С‡РµР». Р·Р° СЃС‚РѕР№РєРѕР№: 
                                             <input type="text" name="" value="" class="o-text o-t-small" maxlength="4">
                                         </div>
                                                                                 
-                                        <a href="#" class="o-add-link">Добавить еще</a>
+                                        <a href="#" class="o-add-link">Р”РѕР±Р°РІРёС‚СЊ РµС‰Рµ</a>
                                     
                                     </div>
                                     <!-- style="display:none;" -->
@@ -287,48 +287,48 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="first-td">Витрины:</td>
+                                <td class="first-td">Р’РёС‚СЂРёРЅС‹:</td>
                                 <td>
                                     <select class="yes-or-not">
-                                        <option value="0">Нет</option>
-                                        <option value="1">Да</option>
+                                        <option value="0">РќРµС‚</option>
+                                        <option value="1">Р”Р°</option>
                                     </select>
                                     
                                     <div style="display:none;">
                                     
                                         <div class="o-additional">
                                             <select class="select-big o-margin-bottom o-showcase">
-                                                <option value="1">Витрина из конструктива</option>
-                                                <option value="2">Эксклюзивная витрина (МДФ, ДСП, стекло, покраска)</option>
-                                                <option value="3">Покупная витрина</option>
+                                                <option value="1">Р’РёС‚СЂРёРЅР° РёР· РєРѕРЅСЃС‚СЂСѓРєС‚РёРІР°</option>
+                                                <option value="2">Р­РєСЃРєР»СЋР·РёРІРЅР°СЏ РІРёС‚СЂРёРЅР° (РњР”Р¤, Р”РЎРџ, СЃС‚РµРєР»Рѕ, РїРѕРєСЂР°СЃРєР°)</option>
+                                                <option value="3">РџРѕРєСѓРїРЅР°СЏ РІРёС‚СЂРёРЅР°</option>
                                             </select>
                                             <div class="o-showcase-1">
                                                 <select>
-                                                    <option value="1">Высокая</option>
-                                                    <option value="2">Низкая</option>
+                                                    <option value="1">Р’С‹СЃРѕРєР°СЏ</option>
+                                                    <option value="2">РќРёР·РєР°СЏ</option>
                                                 </select>
                                                 <select>
-                                                    <option value="1">С подсветкой</option>
-                                                    <option value="2">Без подсветки</option>
+                                                    <option value="1">РЎ РїРѕРґСЃРІРµС‚РєРѕР№</option>
+                                                    <option value="2">Р‘РµР· РїРѕРґСЃРІРµС‚РєРё</option>
                                                 </select>
                                                 <select>
-                                                    <option value="1">Прямоугольная</option>
-                                                    <option value="2">Квадратная</option>
-                                                    <option value="3">Радиусная</option>
+                                                    <option value="1">РџСЂСЏРјРѕСѓРіРѕР»СЊРЅР°СЏ</option>
+                                                    <option value="2">РљРІР°РґСЂР°С‚РЅР°СЏ</option>
+                                                    <option value="3">Р Р°РґРёСѓСЃРЅР°СЏ</option>
                                                 </select>
                                             </div>
                                             <div class="o-showcase-2" style="display:none;">
-                                                Кол-во, шт.: 
+                                                РљРѕР»-РІРѕ, С€С‚.: 
                                                 <input type="text" name="" value="" class="o-text o-t-small o-margin-right o-margin-bottom" maxlength="4"><br>
-                                                Площадь, кв.м.: 
+                                                РџР»РѕС‰Р°РґСЊ, РєРІ.Рј.: 
                                                 <input type="text" name="" value="" class="o-text o-t-small o-margin-right o-margin-bottom" maxlength="4"><br>
-                                                Количество полок, шт.: 
+                                                РљРѕР»РёС‡РµСЃС‚РІРѕ РїРѕР»РѕРє, С€С‚.: 
                                                 <input type="text" name="" value="" class="o-text o-t-small" maxlength="4">
                                             </div>
                                             <div class="o-showcase-3" style="display:none;">
-                                                Кол-во, шт.: 
+                                                РљРѕР»-РІРѕ, С€С‚.: 
                                                 <input type="text" name="" value="" class="o-text o-t-small o-margin-right" maxlength="4">
-                                                <div class="o-postscript" style="display:block;">Покупные витрины обсуждаются с заказчиком</div>
+                                                <div class="o-postscript" style="display:block;">РџРѕРєСѓРїРЅС‹Рµ РІРёС‚СЂРёРЅС‹ РѕР±СЃСѓР¶РґР°СЋС‚СЃСЏ СЃ Р·Р°РєР°Р·С‡РёРєРѕРј</div>
                                             </div>
                                             
                                         </div>
@@ -338,28 +338,28 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="first-td">Полки:</td>
+                                <td class="first-td">РџРѕР»РєРё:</td>
                                 <td>
                                     <select class="yes-or-not">
-                                        <option value="0">Нет</option>
-                                        <option value="1">Да</option>
+                                        <option value="0">РќРµС‚</option>
+                                        <option value="1">Р”Р°</option>
                                     </select>
                                     
                                     <div style="display:none;">
                                         
                                         <div class="o-additional">
                                             <select class="select-big o-purchased">
-                                                <option value="1">Стандартная полка 1000мм х 300мм</option>
-                                                <option value="2">Эксклюзивная полка (МДФ,ДСП,стекло, покраска)</option>
+                                                <option value="1">РЎС‚Р°РЅРґР°СЂС‚РЅР°СЏ РїРѕР»РєР° 1000РјРј С… 300РјРј</option>
+                                                <option value="2">Р­РєСЃРєР»СЋР·РёРІРЅР°СЏ РїРѕР»РєР° (РњР”Р¤,Р”РЎРџ,СЃС‚РµРєР»Рѕ, РїРѕРєСЂР°СЃРєР°)</option>
                                             </select>
                                             <div class="o-a-count">
-                                                Кол-во, шт.: 
+                                                РљРѕР»-РІРѕ, С€С‚.: 
                                                 <input type="text" name="" value="" class="o-text o-t-small" maxlength="4"> 
                                             </div>
-                                            <div class="o-postscript">полки обсуждаются с заказчиком</div>
+                                            <div class="o-postscript">РїРѕР»РєРё РѕР±СЃСѓР¶РґР°СЋС‚СЃСЏ СЃ Р·Р°РєР°Р·С‡РёРєРѕРј</div>
                                         </div>
                                         <!--.o-additional-->
-                                        <a href="#" class="o-add-link">Добавить еще</a>
+                                        <a href="#" class="o-add-link">Р”РѕР±Р°РІРёС‚СЊ РµС‰Рµ</a>
                                         
                                     </div>
                                     <!-- style="display:none;" -->
@@ -367,122 +367,122 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="first-td">Стеллажи:</td>
+                                <td class="first-td">РЎС‚РµР»Р»Р°Р¶Рё:</td>
                                 <td>
                                     <select class="yes-or-not">
-                                        <option value="0">Нет</option>
-                                        <option value="1">Да</option>
+                                        <option value="0">РќРµС‚</option>
+                                        <option value="1">Р”Р°</option>
                                     </select>
                                     
                                     <div style="display:none;">
                                         
                                         <div class="o-additional">
                                             <select class="select-big">
-                                                <option value="1">Стеллаж из пяти полок 300*1000*2500</option>
-                                                <option value="2">Стеллаж из пяти полок 500*1000*2500</option>
-                                                <option value="3">Стеллаж из пяти полок 500*500*2500</option>
-                                                <option value="4">Стеллаж из пяти полок 1000*1000*2500</option>
+                                                <option value="1">РЎС‚РµР»Р»Р°Р¶ РёР· РїСЏС‚Рё РїРѕР»РѕРє 300*1000*2500</option>
+                                                <option value="2">РЎС‚РµР»Р»Р°Р¶ РёР· РїСЏС‚Рё РїРѕР»РѕРє 500*1000*2500</option>
+                                                <option value="3">РЎС‚РµР»Р»Р°Р¶ РёР· РїСЏС‚Рё РїРѕР»РѕРє 500*500*2500</option>
+                                                <option value="4">РЎС‚РµР»Р»Р°Р¶ РёР· РїСЏС‚Рё РїРѕР»РѕРє 1000*1000*2500</option>
                                             </select>
                                             <div class="o-a-count">
-                                                Кол-во, шт.: 
+                                                РљРѕР»-РІРѕ, С€С‚.: 
                                                 <input type="text" name="" value="" class="o-text o-t-small" maxlength="4"> 
                                             </div>
-                                            <div class="o-postscript">полки обсуждаются с заказчиком</div>
+                                            <div class="o-postscript">РїРѕР»РєРё РѕР±СЃСѓР¶РґР°СЋС‚СЃСЏ СЃ Р·Р°РєР°Р·С‡РёРєРѕРј</div>
                                         </div>
                                         <!--.o-additional-->
-                                        <a href="#" class="o-add-link">Добавить еще</a>
+                                        <a href="#" class="o-add-link">Р”РѕР±Р°РІРёС‚СЊ РµС‰Рµ</a>
                                         
                                     </div>
                                     <!-- style="display:none;" -->
                                 </td>
                             </tr>
                             <tr>
-                                <td class="first-td">Оборудование:</td>
+                                <td class="first-td">РћР±РѕСЂСѓРґРѕРІР°РЅРёРµ:</td>
                                 <td>
                                     <select class="yes-or-not">
-                                        <option value="0">Нет</option>
-                                        <option value="1">Да</option>
+                                        <option value="0">РќРµС‚</option>
+                                        <option value="1">Р”Р°</option>
                                     </select>
                                     
                                     <div style="display:none;">
                                         
                                         <div class="o-additional">
                                             <select class="select-big">
-                                                <option value="1">Монитор (samsung 19")</option>
-                                                <option value="2">Плазменная панель 42"</option>
-                                                <option value="3">Плазменная панель 50"</option>
-                                                <option value="4">Плазменная панель 60"</option>
+                                                <option value="1">РњРѕРЅРёС‚РѕСЂ (samsung 19")</option>
+                                                <option value="2">РџР»Р°Р·РјРµРЅРЅР°СЏ РїР°РЅРµР»СЊ 42"</option>
+                                                <option value="3">РџР»Р°Р·РјРµРЅРЅР°СЏ РїР°РЅРµР»СЊ 50"</option>
+                                                <option value="4">РџР»Р°Р·РјРµРЅРЅР°СЏ РїР°РЅРµР»СЊ 60"</option>
                                                 <option value="5">DVD</option>
                                             </select>
                                             <div class="o-a-count">
-                                                Кол-во, шт.: 
+                                                РљРѕР»-РІРѕ, С€С‚.: 
                                                 <input type="text" name="" value="" class="o-text o-t-small" maxlength="4"> 
                                             </div>
-                                            <div class="o-postscript">полки обсуждаются с заказчиком</div>
+                                            <div class="o-postscript">РїРѕР»РєРё РѕР±СЃСѓР¶РґР°СЋС‚СЃСЏ СЃ Р·Р°РєР°Р·С‡РёРєРѕРј</div>
                                         </div>
                                         <!--.o-additional-->
-                                        <a href="#" class="o-add-link">Добавить еще</a>
+                                        <a href="#" class="o-add-link">Р”РѕР±Р°РІРёС‚СЊ РµС‰Рµ</a>
                                         
                                     </div>
                                     <!-- style="display:none;" -->
                                 </td>
                             </tr>
                             <tr>
-                                <td class="first-td">Дополнительные пожелания:</td>
+                                <td class="first-td">Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ РїРѕР¶РµР»Р°РЅРёСЏ:</td>
                                 <td> <textarea class="o-text"></textarea> </td>
                             </tr>
                         </table>
                         
                         
-                        <h3>Наполнение мебелью помещений или открытых зон</h3>
+                        <h3>РќР°РїРѕР»РЅРµРЅРёРµ РјРµР±РµР»СЊСЋ РїРѕРјРµС‰РµРЅРёР№ РёР»Рё РѕС‚РєСЂС‹С‚С‹С… Р·РѕРЅ</h3>
                         
                         <table>
                             <tr>
-                                <td class="first-td">Закрытая переговорная:</td>
+                                <td class="first-td">Р—Р°РєСЂС‹С‚Р°СЏ РїРµСЂРµРіРѕРІРѕСЂРЅР°СЏ:</td>
                                 <td colspan="2">
                                     <select class="yes-or-not">
-                                        <option value="0">Нет</option>
-                                        <option value="1">Да</option>
+                                        <option value="0">РќРµС‚</option>
+                                        <option value="1">Р”Р°</option>
                                     </select>
                                     
                                     <div style="display:none;">
                                     
                                         <div class="o-additional">
                                             <select class="select-big o-purchased">
-                                                <option value="1">Стол стеклянный d800</option>
-                                                <option value="2">Стол 800*800</option>
-                                                <option value="3">Стол 700х1100</option>
-                                                <option value="4">Стол d700</option>
-                                                <option value="5">Стол барный d800</option>
-                                                <option value="6">Стол стеклянный журнальный (овальный) 600*1000</option>
-                                                <option value="7">Покупной стол</option>
+                                                <option value="1">РЎС‚РѕР» СЃС‚РµРєР»СЏРЅРЅС‹Р№ d800</option>
+                                                <option value="2">РЎС‚РѕР» 800*800</option>
+                                                <option value="3">РЎС‚РѕР» 700С…1100</option>
+                                                <option value="4">РЎС‚РѕР» d700</option>
+                                                <option value="5">РЎС‚РѕР» Р±Р°СЂРЅС‹Р№ d800</option>
+                                                <option value="6">РЎС‚РѕР» СЃС‚РµРєР»СЏРЅРЅС‹Р№ Р¶СѓСЂРЅР°Р»СЊРЅС‹Р№ (РѕРІР°Р»СЊРЅС‹Р№) 600*1000</option>
+                                                <option value="7">РџРѕРєСѓРїРЅРѕР№ СЃС‚РѕР»</option>
                                             </select>
                                             <div class="o-a-count">
-                                                Кол-во, шт.: 
+                                                РљРѕР»-РІРѕ, С€С‚.: 
                                                 <input type="text" name="" value="" class="o-text o-t-small" maxlength="4"> 
                                             </div>
-                                            <div class="o-postscript">Покупные столы обсуждаются с заказчиком</div>
+                                            <div class="o-postscript">РџРѕРєСѓРїРЅС‹Рµ СЃС‚РѕР»С‹ РѕР±СЃСѓР¶РґР°СЋС‚СЃСЏ СЃ Р·Р°РєР°Р·С‡РёРєРѕРј</div>
                                         </div>
                                         <!--.o-additional-->
-                                        <a href="#" class="o-add-link">Добавить еще</a>
+                                        <a href="#" class="o-add-link">Р”РѕР±Р°РІРёС‚СЊ РµС‰Рµ</a>
                                         
                                         <div class="o-additional">
                                             <select class="select-big o-purchased">
-                                                <option value="1">Стул мягкий</option>
-                                                <option value="2">Стул «Икеа»</option>
-                                                <option value="3">Стул барный</option>
-                                                <option value="4">Кресло одноместное</option>
-                                                <option value="5">Диван двухмесный</option>
-                                                <option value="6">Покупной стул</option>
+                                                <option value="1">РЎС‚СѓР» РјСЏРіРєРёР№</option>
+                                                <option value="2">РЎС‚СѓР» В«РРєРµР°В»</option>
+                                                <option value="3">РЎС‚СѓР» Р±Р°СЂРЅС‹Р№</option>
+                                                <option value="4">РљСЂРµСЃР»Рѕ РѕРґРЅРѕРјРµСЃС‚РЅРѕРµ</option>
+                                                <option value="5">Р”РёРІР°РЅ РґРІСѓС…РјРµСЃРЅС‹Р№</option>
+                                                <option value="6">РџРѕРєСѓРїРЅРѕР№ СЃС‚СѓР»</option>
                                             </select>
                                             <div class="o-a-count">
-                                                Кол-во, шт.: 
+                                                РљРѕР»-РІРѕ, С€С‚.: 
                                                 <input type="text" name="" value="" class="o-text o-t-small" maxlength="4"> 
                                             </div>
-                                            <div class="o-postscript">Покупные стулья обсуждаются с заказчиком</div>
+                                            <div class="o-postscript">РџРѕРєСѓРїРЅС‹Рµ СЃС‚СѓР»СЊСЏ РѕР±СЃСѓР¶РґР°СЋС‚СЃСЏ СЃ Р·Р°РєР°Р·С‡РёРєРѕРј</div>
                                         </div>
                                         <!--.o-additional-->
-                                        <a href="#" class="o-add-link">Добавить еще</a>
+                                        <a href="#" class="o-add-link">Р”РѕР±Р°РІРёС‚СЊ РµС‰Рµ</a>
                                     
                                     </div>
                                     <!-- style="display:none;" -->
@@ -490,170 +490,170 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="first-td">Открытая переговорная:</td>
+                                <td class="first-td">РћС‚РєСЂС‹С‚Р°СЏ РїРµСЂРµРіРѕРІРѕСЂРЅР°СЏ:</td>
                                 <td colspan="2">
                                     <select class="yes-or-not">
-                                        <option value="0">Нет</option>
-                                        <option value="1">Да</option>
+                                        <option value="0">РќРµС‚</option>
+                                        <option value="1">Р”Р°</option>
                                     </select>
                                     
                                     <div style="display:none;">
                                     
                                         <div class="o-additional">
                                             <select class="select-big o-purchased">
-                                                <option value="1">Стол стеклянный d800</option>
-                                                <option value="2">Стол 800*800</option>
-                                                <option value="3">Стол 700х1100</option>
-                                                <option value="4">Стол d700</option>
-                                                <option value="5">Стол барный d800</option>
-                                                <option value="6">Стол стеклянный журнальный (овальный) 600*1000</option>
-                                                <option value="7">Покупной стол</option>
+                                                <option value="1">РЎС‚РѕР» СЃС‚РµРєР»СЏРЅРЅС‹Р№ d800</option>
+                                                <option value="2">РЎС‚РѕР» 800*800</option>
+                                                <option value="3">РЎС‚РѕР» 700С…1100</option>
+                                                <option value="4">РЎС‚РѕР» d700</option>
+                                                <option value="5">РЎС‚РѕР» Р±Р°СЂРЅС‹Р№ d800</option>
+                                                <option value="6">РЎС‚РѕР» СЃС‚РµРєР»СЏРЅРЅС‹Р№ Р¶СѓСЂРЅР°Р»СЊРЅС‹Р№ (РѕРІР°Р»СЊРЅС‹Р№) 600*1000</option>
+                                                <option value="7">РџРѕРєСѓРїРЅРѕР№ СЃС‚РѕР»</option>
                                             </select>
                                             <div class="o-a-count">
-                                                Кол-во, шт.: 
+                                                РљРѕР»-РІРѕ, С€С‚.: 
                                                 <input type="text" name="" value="" class="o-text o-t-small" maxlength="4"> 
                                             </div>
-                                            <div class="o-postscript">Покупные столы обсуждаются с заказчиком</div>
+                                            <div class="o-postscript">РџРѕРєСѓРїРЅС‹Рµ СЃС‚РѕР»С‹ РѕР±СЃСѓР¶РґР°СЋС‚СЃСЏ СЃ Р·Р°РєР°Р·С‡РёРєРѕРј</div>
                                         </div>
                                         <!--.o-additional-->
-                                        <a href="#" class="o-add-link">Добавить еще</a>
+                                        <a href="#" class="o-add-link">Р”РѕР±Р°РІРёС‚СЊ РµС‰Рµ</a>
                                         
                                         <div class="o-additional">
                                             <select class="select-big o-purchased">
-                                                <option value="1">Стул мягкий</option>
-                                                <option value="2">Стул «Икеа»</option>
-                                                <option value="3">Стул барный</option>
-                                                <option value="4">Кресло одноместное</option>
-                                                <option value="5">Диван двухмесный</option>
-                                                <option value="6">Покупной стул</option>
+                                                <option value="1">РЎС‚СѓР» РјСЏРіРєРёР№</option>
+                                                <option value="2">РЎС‚СѓР» В«РРєРµР°В»</option>
+                                                <option value="3">РЎС‚СѓР» Р±Р°СЂРЅС‹Р№</option>
+                                                <option value="4">РљСЂРµСЃР»Рѕ РѕРґРЅРѕРјРµСЃС‚РЅРѕРµ</option>
+                                                <option value="5">Р”РёРІР°РЅ РґРІСѓС…РјРµСЃРЅС‹Р№</option>
+                                                <option value="6">РџРѕРєСѓРїРЅРѕР№ СЃС‚СѓР»</option>
                                             </select>
                                             <div class="o-a-count">
-                                                Кол-во, шт.: 
+                                                РљРѕР»-РІРѕ, С€С‚.: 
                                                 <input type="text" name="" value="" class="o-text o-t-small" maxlength="4"> 
                                             </div>
-                                            <div class="o-postscript">Покупные стулья обсуждаются с заказчиком</div>
+                                            <div class="o-postscript">РџРѕРєСѓРїРЅС‹Рµ СЃС‚СѓР»СЊСЏ РѕР±СЃСѓР¶РґР°СЋС‚СЃСЏ СЃ Р·Р°РєР°Р·С‡РёРєРѕРј</div>
                                         </div>
                                         <!--.o-additional-->
-                                        <a href="#" class="o-add-link">Добавить еще</a>
+                                        <a href="#" class="o-add-link">Р”РѕР±Р°РІРёС‚СЊ РµС‰Рµ</a>
                                     
                                     </div>
                                     <!-- style="display:none;" -->
                                 </td>
                             </tr>
                             <tr>
-                                <td class="first-td">Кухня:</td>
+                                <td class="first-td">РљСѓС…РЅСЏ:</td>
                                 <td colspan="2">
                                     <select class="yes-or-not">
-                                        <option value="0">Нет</option>
-                                        <option value="1">Да</option>
+                                        <option value="0">РќРµС‚</option>
+                                        <option value="1">Р”Р°</option>
                                     </select>
                                     
                                     <div style="display:none;">
                                     
                                         <div class="o-additional">
                                             <select class="select-big o-purchased">
-                                                <option value="1">Стол стеклянный d800</option>
-                                                <option value="2">Стол 800*800</option>
-                                                <option value="3">Стол 700х1100</option>
-                                                <option value="4">Стол d700</option>
-                                                <option value="5">Стол барный d800</option>
-                                                <option value="6">Стол стеклянный журнальный (овальный) 600*1000</option>
-                                                <option value="7">Покупной стол</option>
+                                                <option value="1">РЎС‚РѕР» СЃС‚РµРєР»СЏРЅРЅС‹Р№ d800</option>
+                                                <option value="2">РЎС‚РѕР» 800*800</option>
+                                                <option value="3">РЎС‚РѕР» 700С…1100</option>
+                                                <option value="4">РЎС‚РѕР» d700</option>
+                                                <option value="5">РЎС‚РѕР» Р±Р°СЂРЅС‹Р№ d800</option>
+                                                <option value="6">РЎС‚РѕР» СЃС‚РµРєР»СЏРЅРЅС‹Р№ Р¶СѓСЂРЅР°Р»СЊРЅС‹Р№ (РѕРІР°Р»СЊРЅС‹Р№) 600*1000</option>
+                                                <option value="7">РџРѕРєСѓРїРЅРѕР№ СЃС‚РѕР»</option>
                                             </select>
                                             <div class="o-a-count">
-                                                Кол-во, шт.: 
+                                                РљРѕР»-РІРѕ, С€С‚.: 
                                                 <input type="text" name="" value="" class="o-text o-t-small" maxlength="4"> 
                                             </div>
-                                            <div class="o-postscript">Покупные столы обсуждаются с заказчиком</div>
+                                            <div class="o-postscript">РџРѕРєСѓРїРЅС‹Рµ СЃС‚РѕР»С‹ РѕР±СЃСѓР¶РґР°СЋС‚СЃСЏ СЃ Р·Р°РєР°Р·С‡РёРєРѕРј</div>
                                         </div>
                                         <!--.o-additional-->
-                                        <a href="#" class="o-add-link">Добавить еще</a>
+                                        <a href="#" class="o-add-link">Р”РѕР±Р°РІРёС‚СЊ РµС‰Рµ</a>
                                         
                                         <div class="o-additional">
                                             <select class="select-big o-purchased">
-                                                <option value="1">Стул мягкий</option>
-                                                <option value="2">Стул «Икеа»</option>
-                                                <option value="3">Стул барный</option>
-                                                <option value="4">Кресло одноместное</option>
-                                                <option value="5">Диван двухмесный</option>
-                                                <option value="6">Покупной стул</option>
+                                                <option value="1">РЎС‚СѓР» РјСЏРіРєРёР№</option>
+                                                <option value="2">РЎС‚СѓР» В«РРєРµР°В»</option>
+                                                <option value="3">РЎС‚СѓР» Р±Р°СЂРЅС‹Р№</option>
+                                                <option value="4">РљСЂРµСЃР»Рѕ РѕРґРЅРѕРјРµСЃС‚РЅРѕРµ</option>
+                                                <option value="5">Р”РёРІР°РЅ РґРІСѓС…РјРµСЃРЅС‹Р№</option>
+                                                <option value="6">РџРѕРєСѓРїРЅРѕР№ СЃС‚СѓР»</option>
                                             </select>
                                             <div class="o-a-count">
-                                                Кол-во, шт.: 
+                                                РљРѕР»-РІРѕ, С€С‚.: 
                                                 <input type="text" name="" value="" class="o-text o-t-small" maxlength="4"> 
                                             </div>
-                                            <div class="o-postscript">Покупные стулья обсуждаются с заказчиком</div>
+                                            <div class="o-postscript">РџРѕРєСѓРїРЅС‹Рµ СЃС‚СѓР»СЊСЏ РѕР±СЃСѓР¶РґР°СЋС‚СЃСЏ СЃ Р·Р°РєР°Р·С‡РёРєРѕРј</div>
                                         </div>
                                         <!--.o-additional-->
-                                        <a href="#" class="o-add-link">Добавить еще</a>
+                                        <a href="#" class="o-add-link">Р”РѕР±Р°РІРёС‚СЊ РµС‰Рµ</a>
                                     
                                     </div>
                                     <!-- style="display:none;" -->
                                 </td>
                             </tr>
                             <tr>
-                                <td class="first-td">Подсобное помещение:</td>
+                                <td class="first-td">РџРѕРґСЃРѕР±РЅРѕРµ РїРѕРјРµС‰РµРЅРёРµ:</td>
                                 <td colspan="2">
                                     <select class="yes-or-not">
-                                        <option value="0">Нет</option>
-                                        <option value="1">Да</option>
+                                        <option value="0">РќРµС‚</option>
+                                        <option value="1">Р”Р°</option>
                                     </select>
                                     
                                     <div style="display:none;">
                                     
                                         <div class="o-additional">
                                             <select class="select-big o-purchased">
-                                                <option value="1">Стол стеклянный d800</option>
-                                                <option value="2">Стол 800*800</option>
-                                                <option value="3">Стол 700х1100</option>
-                                                <option value="4">Стол d700</option>
-                                                <option value="5">Стол барный d800</option>
-                                                <option value="6">Стол стеклянный журнальный (овальный) 600*1000</option>
-                                                <option value="7">Покупной стол</option>
+                                                <option value="1">РЎС‚РѕР» СЃС‚РµРєР»СЏРЅРЅС‹Р№ d800</option>
+                                                <option value="2">РЎС‚РѕР» 800*800</option>
+                                                <option value="3">РЎС‚РѕР» 700С…1100</option>
+                                                <option value="4">РЎС‚РѕР» d700</option>
+                                                <option value="5">РЎС‚РѕР» Р±Р°СЂРЅС‹Р№ d800</option>
+                                                <option value="6">РЎС‚РѕР» СЃС‚РµРєР»СЏРЅРЅС‹Р№ Р¶СѓСЂРЅР°Р»СЊРЅС‹Р№ (РѕРІР°Р»СЊРЅС‹Р№) 600*1000</option>
+                                                <option value="7">РџРѕРєСѓРїРЅРѕР№ СЃС‚РѕР»</option>
                                             </select>
                                             <div class="o-a-count">
-                                                Кол-во, шт.: 
+                                                РљРѕР»-РІРѕ, С€С‚.: 
                                                 <input type="text" name="" value="" class="o-text o-t-small" maxlength="4"> 
                                             </div>
-                                            <div class="o-postscript">Покупные столы обсуждаются с заказчиком</div>
+                                            <div class="o-postscript">РџРѕРєСѓРїРЅС‹Рµ СЃС‚РѕР»С‹ РѕР±СЃСѓР¶РґР°СЋС‚СЃСЏ СЃ Р·Р°РєР°Р·С‡РёРєРѕРј</div>
                                         </div>
                                         <!--.o-additional-->
-                                        <a href="#" class="o-add-link">Добавить еще</a>
+                                        <a href="#" class="o-add-link">Р”РѕР±Р°РІРёС‚СЊ РµС‰Рµ</a>
                                         
                                         <div class="o-additional">
                                             <select class="select-big o-purchased">
-                                                <option value="1">Стул мягкий</option>
-                                                <option value="2">Стул «Икеа»</option>
-                                                <option value="3">Стул барный</option>
-                                                <option value="4">Кресло одноместное</option>
-                                                <option value="5">Диван двухмесный</option>
-                                                <option value="6">Покупной стул</option>
+                                                <option value="1">РЎС‚СѓР» РјСЏРіРєРёР№</option>
+                                                <option value="2">РЎС‚СѓР» В«РРєРµР°В»</option>
+                                                <option value="3">РЎС‚СѓР» Р±Р°СЂРЅС‹Р№</option>
+                                                <option value="4">РљСЂРµСЃР»Рѕ РѕРґРЅРѕРјРµСЃС‚РЅРѕРµ</option>
+                                                <option value="5">Р”РёРІР°РЅ РґРІСѓС…РјРµСЃРЅС‹Р№</option>
+                                                <option value="6">РџРѕРєСѓРїРЅРѕР№ СЃС‚СѓР»</option>
                                             </select>
                                             <div class="o-a-count">
-                                                Кол-во, шт.: 
+                                                РљРѕР»-РІРѕ, С€С‚.: 
                                                 <input type="text" name="" value="" class="o-text o-t-small" maxlength="4"> 
                                             </div>
-                                            <div class="o-postscript">Покупные стулья обсуждаются с заказчиком</div>
+                                            <div class="o-postscript">РџРѕРєСѓРїРЅС‹Рµ СЃС‚СѓР»СЊСЏ РѕР±СЃСѓР¶РґР°СЋС‚СЃСЏ СЃ Р·Р°РєР°Р·С‡РёРєРѕРј</div>
                                         </div>
                                         <!--.o-additional-->
-                                        <a href="#" class="o-add-link">Добавить еще</a>
+                                        <a href="#" class="o-add-link">Р”РѕР±Р°РІРёС‚СЊ РµС‰Рµ</a>
                                     
                                     </div>
                                     <!-- style="display:none;" -->
                                 </td>
                             </tr>
                             <tr>
-                                <td class="first-td">Дополнительные пожелания:</td>
+                                <td class="first-td">Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Рµ РїРѕР¶РµР»Р°РЅРёСЏ:</td>
                                 <td colspan="2"> <textarea class="o-text"></textarea> </td>
                             </tr>
                         </table>
                         
                         
-                        <h3>Художественное оформление</h3>
+                        <h3>РҐСѓРґРѕР¶РµСЃС‚РІРµРЅРЅРѕРµ РѕС„РѕСЂРјР»РµРЅРёРµ</h3>
                         
                         <table>
                             <tr>
-                                <td class="first-td">Логотип:</td>
+                                <td class="first-td">Р›РѕРіРѕС‚РёРї:</td>
                                 <td>
                                     <!--[if !(IE 6)]><!-->
                                     <div class="file-input-box">
@@ -665,15 +665,15 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="first-td">Слоган, надписи:</td>
+                                <td class="first-td">РЎР»РѕРіР°РЅ, РЅР°РґРїРёСЃРё:</td>
                                 <td> <input type="text" name="" value="" class="o-text o-t-largest"> </td>
                             </tr>
                             <tr>
-                                <td class="first-td">Цветовая гамма стенда:</td>
+                                <td class="first-td">Р¦РІРµС‚РѕРІР°СЏ РіР°РјРјР° СЃС‚РµРЅРґР°:</td>
                                 <td> <input type="text" name="" value="" class="o-text o-t-bigger"> </td>
                             </tr>
                             <tr>
-                                <td class="first-td">Баннеры:</td>
+                                <td class="first-td">Р‘Р°РЅРЅРµСЂС‹:</td>
                                 <td>
                                     <!--[if !(IE 6)]><!-->
                                     <div class="file-input-box">
@@ -685,15 +685,15 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="first-td">Дополнительная информация:</td>
+                                <td class="first-td">Р”РѕРїРѕР»РЅРёС‚РµР»СЊРЅР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ:</td>
                                 <td colspan="2"> <textarea class="o-text"></textarea> </td>
                             </tr>
                             <tr>
-                                <td class="first-td">Ориентировочный бюджет:</td>
+                                <td class="first-td">РћСЂРёРµРЅС‚РёСЂРѕРІРѕС‡РЅС‹Р№ Р±СЋРґР¶РµС‚:</td>
                                 <td><input type="text" name="" value="" class="o-text o-t-middle"></td>
                             </tr>
                             <tr>
-                                <td class="first-td">Дата сдачи проекта:</td>
+                                <td class="first-td">Р”Р°С‚Р° СЃРґР°С‡Рё РїСЂРѕРµРєС‚Р°:</td>
                                 <td><input type="text" name="" value="" class="o-text o-t-middle"></td>
                             </tr>
                         </table>
@@ -701,8 +701,8 @@
                         <table>
                             <tr>
                                 <td style="vertical-align:middle;">
-                                    Поля отмеченные <b class="required">*</b> обязательны для заполнения.<br>
-                                    Файлы больше 10 Мб отправлять на managerexpo@mail.ru.
+                                    РџРѕР»СЏ РѕС‚РјРµС‡РµРЅРЅС‹Рµ <b class="required">*</b> РѕР±СЏР·Р°С‚РµР»СЊРЅС‹ РґР»СЏ Р·Р°РїРѕР»РЅРµРЅРёСЏ.<br>
+                                    Р¤Р°Р№Р»С‹ Р±РѕР»СЊС€Рµ 10 РњР± РѕС‚РїСЂР°РІР»СЏС‚СЊ РЅР° managerexpo@mail.ru.
                                 </td>
                                 <td align="right"> <input type='submit' class="d-submit" value=""> </td>
                             </tr>
@@ -719,7 +719,7 @@
             <aside class="sideLeft">
                 <nav class="menu-left">
                     
-                    <a href="order.html" class="active">Заказать стенд Online</a>
+                    <a href="order.html" class="active">Р—Р°РєР°Р·Р°С‚СЊ СЃС‚РµРЅРґ Online</a>
                     <span></span>
                      
                 </nav>
@@ -745,7 +745,7 @@
 		<div class="f-content">
 			<div class="f-b-c-links">
 				
-                <a href="index.html">Главная</a> <span>&rsaquo;</span> <a href="order.html">Заказать стенд</a> <span>&rsaquo;</span>
+                <a href="index.html">Р“Р»Р°РІРЅР°СЏ</a> <span>&rsaquo;</span> <a href="order.html">Р—Р°РєР°Р·Р°С‚СЊ СЃС‚РµРЅРґ</a> <span>&rsaquo;</span>
                 
             </div>
         </div>
@@ -755,8 +755,8 @@
     <div class="f-contacts">
         <div class="f-content">
             <div class="f-info">
-                &copy; 2012   г. Москва, ул. Коцюбитского, 4   |   тел.: +7 (495) 221 65 57<br>
-                <a href="sitemap.html">Карта сайта</a> 
+                &copy; 2012   Рі. РњРѕСЃРєРІР°, СѓР». РљРѕС†СЋР±РёС‚СЃРєРѕРіРѕ, 4   |   С‚РµР».: +7 (495) 221 65 57<br>
+                <a href="sitemap.html">РљР°СЂС‚Р° СЃР°Р№С‚Р°</a> 
             </div>
         </div>
         <!--.f-content-->
