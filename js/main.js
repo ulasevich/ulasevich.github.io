@@ -36,7 +36,8 @@ App.Other = function () {
 	$('.js-show-all').on( "click", function() {
 		var scrollHeight = $('.portfolio-row').prop("scrollHeight");
 		$('.portfolio-row').css('max-height', scrollHeight*1.5);
-		$('.portfolio-row__switch').fadeOut();
+		$('.portfolio-row__gradient').fadeOut();
+		$('.show-all-block').fadeOut();
 		return false;
 	});
 };
