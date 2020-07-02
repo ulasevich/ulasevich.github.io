@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    
+    <title>Redem options | Add(Edit) metals | Digital metals | Adminstation | TM2</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!--SEO and Share-->
+    <meta name="description" content="Описание" />
+    <!--SEO and Share-->
+    
+    <!--favicons--> 
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#7287D5">
+    
+    <meta name="apple-mobile-web-app-status-bar-style" content="#7287D5">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#7287D5">
+    <!--favicons-->
+        
+    <!--head css, js-->
+    <link rel="stylesheet" href="css/libs/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/libs/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="js/modernizr-custom.js"></script>
+    <!--head css, js-->
+    
+    <script src="/js/panel.js"></script>
+    
+</head>
+<body>
+
+<div id="root">
+
+<div class="wrapper">
+	<header class="header">
+    	<div class="main-container container-fluid">
+        	<div class="row header-row align-items-center justify-content-end">
+            	<div class="col-2 header-row__logo">
+                	<a href="admin.html" class="header-logo-link" title="Main page">TM2</a>
+                </div>
+                
+                <div class="col header-row__empty"></div>
+                                
+                
+                
+                
+                
+                <div class="col-auto header-row__status">
+                    <div class="dropdown-wrapper">
+                        <button class="dropdown-toggle" onClick="test_show_avatar_dropdown()">
+                            <!--<div class="avatar-item">
+                            </div>-->
+                            <div class="avatar-name">Fred Brown</div>
+                            <span class="dropdown-arrow"></span>
+                        </button>
+                        
+                        <div class="dropdown-menu" id="test-avatar-dropdown" style="display: none">
+                            
+                            <div class="dropdown-item">
+                                <a href="admin.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--user"></i>
+                                        <span class="icon-item__text">Profile</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a href="index.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--logout"></i>
+                                        <span class="icon-item__text">Log out</span>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div><!--.dropdown-wrapper-->
+                </div>
+            </div><!--.header-row-->
+        </div><!--.main-container-->
+    </header>
+    
+    <div class="middle">
+		<div class="main-container container-fluid">
+            <div class="middle-row">
+                <div class="sidebar">
+                    <nav class="l-menu">
+                    	<ul class="not-list">
+                        	
+                            <li>
+                                <a href="admin.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--main"></i>
+                                        <span class="icon-item__text">Main (admin)</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-investor.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--main"></i>
+                                        <span class="icon-item__text">Main (investor)</span>
+                                    </div>
+                                </a>
+                            </li>
+							<li>
+								<a href="admin-users.html" class="link link-icon">
+									<div class="icon-item">
+										<i class="icon icon--users"></i>
+										<span class="icon-item__text">Users</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="admin-wallets.html" class="link link-icon">
+									<div class="icon-item">
+										<i class="icon icon--wallets"></i>
+										<span class="icon-item__text">Wallets</span>
+									</div>
+								</a>
+							</li>
+                            <li>
+                                <a href="admin-metals.html" class="link link-icon active">
+                                    <div class="icon-item">
+                                        <i class="icon icon--metals"></i>
+                                        <span class="icon-item__text">Digital metals</span>
+                                    </div>
+                                </a>
+                            </li>
+							<li>
+                                <a href="admin-investor-buy-metals.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--buy-sell"></i>
+                                        <span class="icon-item__text">Buy metals</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-balance.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--balance"></i>
+                                        <span class="icon-item__text">Balance</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-vaults.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--vaults"></i>
+                                        <span class="icon-item__text">Vaults</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-news.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--news"></i>
+                                        <span class="icon-item__text">News & Analysis</span>
+                                    </div>
+                                </a>
+							</li>
+                            
+                        </ul>
+                    </nav>
+                    
+                    
+                    
+                    
+                </div><!--.sidebar-->
+                
+                <div class="content">
+                    
+                    
+                    <h1><a href="admin-metals.html" class="back-arrow"></a> New (Edit) metals</h1>
+                    
+                    <div class="tab-links">
+                        <a href="admin-metals-add(edit).html" class="tab-link">General</a>
+                        <a href="admin-metals-add(edit)-redeem.html" class="tab-link active">Redeem options</a>
+                    </div>
+                    
+                    
+                    <div class="tab-blocks">
+                    	
+                        <div id="test-coins-add(edit)" style="display: none;">
+                        	
+                            <form>
+                                <div class="form-narrow-col">
+                                    General
+                                </div><!--.form-narrow-col-->
+                            </form>
+                            
+                        </div><!--#test-coins-add(edit)-->
+                        
+                        
+                        
+                        
+                        <div id="test-coins-add(edit)" style="display: none;">
+                        	
+                            <form>
+                            	Limits
+                            </form>
+                            
+                        </div><!--#test-coins-add(edit)-->
+                        
+                        
+                        
+                        
+                        <div id="test-coins-add(edit)" style="display: block;">
+                            <form>
+                            	
+                                <div class="light-gradient-block">
+                                	<div class="row row-copy-block">
+                                    	<div class="col row-copy-block__content">
+                                        	
+                                            <div class="row form-elements align-items-center">
+                                                <div class="col-md-4">
+                                                    <label class="field-label label-small">Name</label>
+                                                    <div class="text-block">
+                                                        <input type="text" name="" placeholder="Type here..." value="Medium 99.99 % Rhodium bar" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="field-label label-small">Amount</label>
+                                                    <div class="text-block">
+                                                        <input type="text" name="" placeholder="Type here..." value="100" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="field-label label-small">Unit</label>
+                                                    <div class="select-block">
+                                                        <select name="">
+                                                            <option value="" selected disabled> Choose options </option>
+                                                            <option value="1"> g </option>
+                                                            <option value="2"> oz </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="field-label label-small">Minimal amount</label>
+                                                    <div class="text-block">
+                                                        <input type="text" name="" placeholder="Type here..." value="90" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="field-label label-small">Price</label>
+                                                    <div class="row">
+                                                    	<div class="col-6">
+                                                            <div class="text-block">
+                                                                <input type="text" name="" placeholder="" value="" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="select-block">
+                                                                <select name="">
+                                                                    <option value="" disabled> Choose </option>
+                                                                    <option value="1" selected> USD </option>
+                                                                    <option value="2"> metal </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-12">
+                                                    <div class="upload-previews">
+                                                        <div class="upload-previews__item">
+                                                            <img src="content/news-preview-1.jpg" height="100" />
+                                                            <button title="Delete image" type="button" class="btn btn-preview-delete">×</button>
+                                                        </div>
+                                                    </div><!--.upload-previews-->
+                                                    
+                                                    <div class="file-box">
+                                                        <label><input type="file" name="file" class="inputfile">
+                                                            <div class="link link-icon">
+                                                                <div class="icon-item">
+                                                                    <i class="icon icon--add"></i>
+                                                                    <span class="icon-item__text">Add image</span>
+                                                                </div>
+                                                            </div>
+                                                            <span>file_name.jpg</span>
+                                                        </label>
+                                                    </div><!--.file-box-->
+                                                </div>
+                                                
+                                                <div class="col-12">
+                                                    <label class="field-label label-small">Description</label>
+                                                    <div class="text-block textarea-block">
+                                                        <textarea placeholder="Type here...">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</textarea>
+                                                    </div>
+                                                    <small class="field-tip">maximum 255 characters</small>
+                                                </div>
+                                            </div><!--.form-elements-->
+                                            
+                                        </div><!--.row-copy-block__content-->
+                                        <div class="col-md-auto align-self-end row-copy-block__controls">
+                                            <a href="#" class="link link-icon">
+                                                <div class="icon-item color-red">
+                                                    <i class="icon icon--remove-red"></i>
+                                                    <span class="icon-item__text">Remove</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div><!--.row-copy-block-->
+                                </div><!--.light-gradient-block-->
+                                
+                                
+                                <div class="light-gradient-block">
+                                	<div class="row row-copy-block">
+                                    	<div class="col row-copy-block__content">
+                                        	
+                                            <div class="row form-elements align-items-center">
+                                                <div class="col-md-4">
+                                                    <label class="field-label label-small">Name</label>
+                                                    <div class="text-block">
+                                                        <input type="text" name="" placeholder="Type here..." value="Medium 99.99 % Rhodium bar" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="field-label label-small">Amount</label>
+                                                    <div class="text-block">
+                                                        <input type="text" name="" placeholder="Type here..." value="100" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="field-label label-small">Unit</label>
+                                                    <div class="select-block">
+                                                        <select name="">
+                                                            <option value="" selected disabled> Choose options </option>
+                                                            <option value="1"> g </option>
+                                                            <option value="2"> m </option>
+                                                            <option value="3"> n </option>
+                                                            <option value="4"> v </option>
+                                                            <option value="5"> b </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <label class="field-label">Description</label>
+                                                    <div class="text-block">
+                                                        <textarea placeholder="Type here..."></textarea>
+                                                    </div>
+                                                </div>
+                                            </div><!--.form-elements-->
+                                            
+                                        </div><!--.row-copy-block__content-->
+                                        <div class="col-md-auto align-self-end row-copy-block__controls">
+                                            <a href="#" class="link link-icon">
+                                                <div class="icon-item color-red">
+                                                    <i class="icon icon--remove-red"></i>
+                                                    <span class="icon-item__text">Remove</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div><!--.row-copy-block-->
+                                </div><!--.light-gradient-block-->
+                                
+                                
+                                <div class="link-block">
+                                    <a href="#" class="link link-icon">
+                                        <div class="icon-item color-blue-dodger">
+                                            <i class="icon icon--add"></i>
+                                            <span class="icon-item__text">Add</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="form-submit">
+                                    <button type="submit" class="btn btn-default">Save</button>
+                                    <button type="reset" class="btn btn-default btn--reset">Cansel</button>
+                                </div>
+                                
+                            </form>
+                        </div><!--#test-coins-add(edit)-->
+                        
+                    </div><!--.tab-blocks-->
+                    
+                    
+                </div>
+                <div class="clearfix"></div>
+                
+            </div><!--.middle-row-->
+        </div><!--.main-container-->
+    </div><!--.middle-->
+</div><!--.wrapper-->
+
+
+
+
+
+
+</div><!--#root-->
+
+<!-- не использовать в проекте, содержит функции test_... только для демонстрации шаблонов верстки-->
+<script src="js/test.js"></script>
+
+</body>
+</html>

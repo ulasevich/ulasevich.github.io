@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="ru"><!-- InstanceBegin template="/Templates/TM2_admin.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+    <meta charset="utf-8">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>Main | Adminstation | TM2</title>
+    <!-- InstanceEndEditable -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!--SEO and Share-->
+    <meta name="description" content="Описание" />
+    <!--SEO and Share-->
+    
+    <!--favicons--> 
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#7287D5">
+    
+    <meta name="apple-mobile-web-app-status-bar-style" content="#7287D5">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#7287D5">
+    <!--favicons-->
+        
+    <!--head css, js-->
+    <link rel="stylesheet" href="css/libs/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/libs/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="js/modernizr-custom.js"></script>
+    <!--head css, js-->
+    
+    <!-- InstanceBeginEditable name="head" -->
+    <!-- InstanceEndEditable -->
+</head>
+<body>
+
+<div id="root">
+
+<div class="wrapper">
+	<header class="header">
+    	<div class="main-container container-fluid">
+        	<div class="row header-row align-items-center justify-content-end">
+            	<div class="col-2 header-row__logo">
+                	<a href="admin.html" class="header-logo-link" title="Main page">TM2</a>
+                </div>
+                
+                <div class="col header-row__empty"></div>
+                                
+                <!-- InstanceBeginEditable name="Top_header_region" -->
+                <div class="col-auto header-row__status">
+                    <div class="dropdown-wrapper">
+                        <button class="dropdown-toggle" onClick="test_show_points_dropdown('lang-menu')">
+                            <div class="icon-item">
+                                <i class="icon icon--lang-en"></i>
+                            </div>
+                            <span class="dropdown-arrow"></span>
+                        </button>
+                        
+                        <div class="dropdown-menu" id="lang-menu" style="display: none">
+                            <div class="dropdown-item">
+                                <a href="#" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--lang-en"></i>
+                                        <span class="icon-item__text">English</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a href="#" class="link link-icon" title="Chinese">
+                                    <div class="icon-item">
+                                        <i class="icon icon--lang-cn"></i>
+                                        <span class="icon-item__text">中文</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!--.dropdown-wrapper-->
+                </div>
+                <!-- InstanceEndEditable -->
+                
+                <div class="col-auto header-row__status">
+                    <div class="dropdown-wrapper">
+                        <button class="dropdown-toggle" onClick="test_show_avatar_dropdown()">
+                            <!--<div class="avatar-item">
+                            </div>-->
+                            <div class="avatar-name">Fred Brown</div>
+                            <span class="dropdown-arrow"></span>
+                        </button>
+                        
+                        <div class="dropdown-menu" id="test-avatar-dropdown" style="display: none">
+                            <!-- InstanceBeginEditable name="Top_menu_region" -->
+                            <div class="dropdown-item">
+                                <a href="admin.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--user"></i>
+                                        <span class="icon-item__text">Profile</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a href="index.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--logout"></i>
+                                        <span class="icon-item__text">Log out</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- InstanceEndEditable -->
+                        </div>
+                    </div><!--.dropdown-wrapper-->
+                </div>
+            </div><!--.header-row-->
+        </div><!--.main-container-->
+    </header>
+    
+    <div class="middle">
+		<div class="main-container container-fluid">
+            <div class="middle-row">
+                <div class="sidebar">
+                    <nav class="l-menu">
+                    	<ul class="not-list">
+                        	<!-- InstanceBeginEditable name="Menu_region" -->
+							
+                            <li>
+                                <a href="admin.html" class="link link-icon active">
+                                    <div class="icon-item">
+                                        <i class="icon icon--main"></i>
+                                        <span class="icon-item__text">Main (admin)</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-investor.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--main"></i>
+                                        <span class="icon-item__text">Main (investor)</span>
+                                    </div>
+                                </a>
+                            </li>
+							<li>
+								<a href="admin-users.html" class="link link-icon">
+									<div class="icon-item">
+										<i class="icon icon--users"></i>
+										<span class="icon-item__text">Users</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="admin-wallets.html" class="link link-icon">
+									<div class="icon-item">
+										<i class="icon icon--wallets"></i>
+										<span class="icon-item__text">Wallets</span>
+									</div>
+								</a>
+							</li>
+                            <li>
+                                <a href="admin-metals.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--metals"></i>
+                                        <span class="icon-item__text">Digital metals</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-investor-buy-metals.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--buy-sell"></i>
+                                        <span class="icon-item__text">Buy metals</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-balance.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--balance"></i>
+                                        <span class="icon-item__text">Balance</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-vaults.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--vaults"></i>
+                                        <span class="icon-item__text">Vaults</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-news.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--news"></i>
+                                        <span class="icon-item__text">News & Analysis</span>
+                                    </div>
+                                </a>
+							</li>
+							
+                            <!-- InstanceEndEditable -->
+                        </ul>
+                    </nav>
+                    
+                    <!-- InstanceBeginEditable name="Sidebar_bottom_region" -->
+                    <!-- InstanceEndEditable -->
+                    
+                </div><!--.sidebar-->
+                
+                <div class="content">
+                    <!-- InstanceBeginEditable name="Content_region" -->
+                    
+                    <div class="row row-tile">
+                    	<div class="col-md-3">
+                        	<div class="light-gradient-block">
+                                <div class="row row-chart-small">
+                                	<div class="col-5">
+                                    	<div>Volume</div>
+                                        <table class="account-data-table">
+                                        	<tbody>
+                                            	<tr>
+                                                	<td><span class="middle-text">536033 $</span></td>
+                                                    <td class="account-data-table__value align-right">
+                                                        <div class="icon-item color-green">
+                                                            <i class="icon icon--up-green"></i>
+                                                            <span class="icon-item__text">0,05%</span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                	<td class="account-data-table__var">Today</td>
+                                                    <td class="account-data-table__value align-right">
+                                                        <span class="color-blue-light">543 $</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                	<td class="account-data-table__var">This month</td>
+                                                    <td class="account-data-table__value align-right">
+                                                        <span class="color-blue-light">10245 $</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="chart-wrapper">
+                                            <div id="chart-example-small-1" class="chart-container height-90">
+                                            </div>
+                                        </div><!--.chart-wrapper-->
+                                    </div>
+                                </div><!--.row-chart-small-->
+                            </div><!--.light-gradient-block-->
+                        </div><!--.col-md-3-->
+                        
+                        
+                        
+                        <div class="col-md-3">
+                        	<div class="light-gradient-block">
+                                <div class="row row-chart-small">
+                                	<div class="col-5">
+                                    	<div>Sales commision</div>
+                                        <table class="account-data-table">
+                                        	<tbody>
+                                            	<tr>
+                                                	<td><span class="middle-text">35500 $</span></td>
+                                                    <td class="account-data-table__value align-right">
+                                                        <div class="icon-item color-green">
+                                                            <i class="icon icon--up-green"></i>
+                                                            <span class="icon-item__text">0,05%</span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                	<td class="account-data-table__var">Today</td>
+                                                    <td class="account-data-table__value align-right">
+                                                        <span class="color-blue-light">50 $</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                	<td class="account-data-table__var">This month</td>
+                                                    <td class="account-data-table__value align-right">
+                                                        <span class="color-blue-light">1258 $</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-7">
+                                    	<div class="chart-wrapper">
+                                            <div id="chart-example-small-2" class="chart-container height-90">
+                                            </div>
+                                        </div><!--.chart-wrapper-->
+                                    </div>
+                                </div><!--.row-chart-small-->
+                            </div><!--.light-gradient-block-->
+                        </div><!--.col-md-3-->
+                        
+                        
+                        
+                        <div class="col-md-3">
+                        	<div class="light-gradient-block">
+                                <div class="row row-chart-small">
+                                	<div class="col-5">
+                                    	<div>Customers</div>
+                                        <table class="account-data-table">
+                                        	<tbody>
+                                            	<tr>
+                                                	<td><span class="middle-text">1500</span></td>
+                                                    <td class="account-data-table__value align-right">
+                                                        <div class="icon-item color-red">
+                                                            <i class="icon icon--down-red"></i>
+                                                            <span class="icon-item__text">0,05%</span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                	<td class="account-data-table__var">Today</td>
+                                                    <td class="account-data-table__value align-right">
+                                                        <span class="color-blue-light">28</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                	<td class="account-data-table__var">This month</td>
+                                                    <td class="account-data-table__value align-right">
+                                                        <span class="color-blue-light">202</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-7">
+                                    	<div class="chart-wrapper">
+                                            <div id="chart-example-small-3" class="chart-container height-90">
+                                            </div>
+                                        </div><!--.chart-wrapper-->
+                                    </div>
+                                </div><!--.row-chart-small-->
+                            </div><!--.light-gradient-block-->
+                        </div><!--.col-md-3-->
+                        
+                        
+                        
+                        <div class="col-md-3">
+                        	<div class="light-gradient-block">
+                                <div class="row row-chart-small">
+                                	<div class="col-5">
+                                    	<div>Purchases</div>
+                                        <table class="account-data-table">
+                                        	<tbody>
+                                            	<tr>
+                                                	<td><span class="middle-text">135558</span></td>
+                                                    <td class="account-data-table__value align-right">
+                                                        <div class="icon-item color-red">
+                                                            <i class="icon icon--down-red"></i>
+                                                            <span class="icon-item__text">0,05%</span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                	<td class="account-data-table__var">Today</td>
+                                                    <td class="account-data-table__value align-right">
+                                                        <span class="color-blue-light">278</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                	<td class="account-data-table__var">This month</td>
+                                                    <td class="account-data-table__value align-right">
+                                                        <span class="color-blue-light">8302</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-7">
+                                    	<div class="chart-wrapper">
+                                            <div id="chart-example-small-4" class="chart-container height-90">
+                                            </div>
+                                        </div><!--.chart-wrapper-->
+                                    </div>
+                                </div><!--.row-chart-small-->
+                            </div><!--.light-gradient-block-->
+                        </div><!--.col-md-3-->
+                        
+                        
+                        
+                        <div class="col-md-6">
+                        	<h2>User total</h2>
+                            <div class="light-gradient-block">
+                                <div class="chart-filtr">
+                                    <span class="chart-filtr__title">Show:</span>
+                                    
+                                    <label class="form-label button-label button-label--small" onClick="show_usertotal_week()">
+                                        <input type="radio" name="test-user-total[]" value="" checked />
+                                        <div class="btn button-label__text">week</div>
+                                    </label>
+                                    <label class="form-label button-label button-label--small" onClick="show_usertotal_month()">
+                                        <input type="radio" name="test-user-total[]" value="" />
+                                        <div class="btn button-label__text">month</div>
+                                    </label>
+                                    <label class="form-label button-label button-label--small" onClick="show_usertotal_year()">
+                                        <input type="radio" name="test-user-total[]" value="" />
+                                        <div class="btn button-label__text">year</div>
+                                    </label>
+                                </div><!--.chart-filtr-->
+                                <div class="chart-wrapper">
+                                    <div id="chart-example-user-total" class="chart-container height-350">
+                                    </div>
+                                </div><!--.chart-wrapper-->
+                            </div><!--.light-gradient-block-->
+                        </div><!--.col-md-6-->
+                        
+                        
+                        
+                        <div class="col-md-6">
+                        	<h2>New users</h2>
+                            <div class="light-gradient-block">
+                                <div class="chart-filtr">
+                                    <span class="chart-filtr__title">Show:</span>
+                                    
+                                    <label class="form-label button-label button-label--small" onClick="show_usertotal_week()">
+                                        <input type="radio" name="test-new-users[]" value="" checked />
+                                        <div class="btn button-label__text">week</div>
+                                    </label>
+                                    <label class="form-label button-label button-label--small" onClick="show_usertotal_month()">
+                                        <input type="radio" name="test-new-users[]" value="" />
+                                        <div class="btn button-label__text">month</div>
+                                    </label>
+                                    <label class="form-label button-label button-label--small" onClick="show_usertotal_year()">
+                                        <input type="radio" name="test-new-users[]" value="" />
+                                        <div class="btn button-label__text">year</div>
+                                    </label>
+                                </div><!--.chart-filtr-->
+                                <div class="chart-wrapper">
+                                    <div id="chart-example-new-users" class="chart-container height-350">
+                                    </div>
+                                </div><!--.chart-wrapper-->
+                            </div><!--.light-gradient-block-->
+                        </div><!--.col-md-6-->
+                        
+                        
+
+                    	<div class="col-md-6">
+                        	<h2>Retention rate</h2>
+                            <div class="rate-block">
+                                <div class="rate-block__value">
+                                    95%
+                                </div>
+                                <div class="light-gradient-block">
+                                    <div class="chart-wrapper">
+                                        <div id="chart-example-retention-rate" class="chart-container height-90">
+                                        </div>
+                                    </div><!--.chart-wrapper-->
+                                </div><!--.light-gradient-block-->
+                            </div><!--.row-chart-small-->
+                            
+                            <h2>Acquisitions rate</h2>
+                            <div class="rate-block">
+                                <div class="rate-block__value">
+                                    50,7%
+                                </div>
+                                <div class="light-gradient-block">
+                                    <div class="chart-wrapper">
+                                        <div id="chart-example-acquisitions-rate" class="chart-container height-90">
+                                        </div>
+                                    </div><!--.chart-wrapper-->
+                                </div><!--.light-gradient-block-->
+                            </div><!--.row-chart-small-->
+                            
+                        </div><!--.col-md-6-->
+                        
+                        
+                        
+                        <div class="col-md-6">
+                        	<h2>Metals</h2>
+                            <table class="default-table">
+                                <tbody>
+                                    <tr>
+                                        <td> </td>
+                                        <td class="align-center"> Users </td>
+                                        <td class="align-center"> Volume </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Rhodium </td>
+                                        <td class="align-right">
+                                        	<span class="color-blue-light">150</span>
+                                        </td>
+                                        <td class="align-right">
+                                        	<span class="color-blue-light">256896 $</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Cobalt </td>
+                                        <td class="align-right">
+                                        	<span class="color-blue-light">1500</span>
+                                        </td>
+                                        <td class="align-right">
+                                        	<span class="color-blue-light">3200100 $</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Vanadium </td>
+                                        <td class="align-right">
+                                        	<span class="color-blue-light">0</span>
+                                        </td>
+                                        <td class="align-right">
+                                        	<span class="color-blue-light">0 $</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Berrylium </td>
+                                        <td class="align-right">
+                                        	<span class="color-blue-light">17</span>
+                                        </td>
+                                        <td class="align-right">
+                                        	<span class="color-blue-light">25000 $</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!--.col-md-6-->
+                        
+                        
+                        
+                        <div class="col-12">
+                            <h2>Purchases</h2>
+                            <div class="light-gradient-block">
+                                <div class="chart-filtr">
+                                    <span class="chart-filtr__title">Show:</span>
+                                    
+                                    <label class="form-label button-label button-label--small" onClick="show_usertotal_week()">
+                                        <input type="radio" name="test-purchases[]" value="" checked />
+                                        <div class="btn button-label__text">week</div>
+                                    </label>
+                                    <label class="form-label button-label button-label--small" onClick="show_usertotal_month()">
+                                        <input type="radio" name="test-purchases[]" value="" />
+                                        <div class="btn button-label__text">month</div>
+                                    </label>
+                                    <label class="form-label button-label button-label--small" onClick="show_usertotal_year()">
+                                        <input type="radio" name="test-purchases[]" value="" />
+                                        <div class="btn button-label__text">year</div>
+                                    </label>
+                                </div><!--.chart-filtr-->
+                                <div class="chart-wrapper">
+                                    <div id="chart-example-purchases" class="chart-container height-300">
+                                    </div>
+                                </div><!--.chart-wrapper-->
+                            </div><!--.light-gradient-block-->
+                        </div><!--.col-12-->
+                        
+                    </div><!--.row-tile-->
+                    
+                    
+                    
+                    
+                    <script src="js/highcharts.js"></script>
+                    <script>
+					var myChart_small_1, myChart_small_2, myChart_small_3, myChart_small_4;
+					var myChart_user_total, myChart_new_users;
+					var myChart_retention_rate, myChart_acquisitions_rate;
+					var myChart_purchases;
+					
+					data_chart_small = [
+						[Date.UTC(2018, 4, 11), 29.9],
+						[Date.UTC(2018, 4, 12), 210.5],
+						[Date.UTC(2018, 4, 13), 71.5],
+						[Date.UTC(2018, 4, 14), 96.4],
+						[Date.UTC(2018, 4, 15), 116.4],
+						[Date.UTC(2018, 4, 16), 16.4],
+						[Date.UTC(2018, 4, 17), 206.4]
+					];
+					
+					
+					data_chart_user_total_week = [
+						[Date.UTC(2018, 4, 11), 150],
+						[Date.UTC(2018, 4, 12), 275],
+						[Date.UTC(2018, 4, 13), 220],
+						[Date.UTC(2018, 4, 14), 201],
+						[Date.UTC(2018, 4, 15), 265],
+						[Date.UTC(2018, 4, 16), 165],
+						[Date.UTC(2018, 4, 17), 198]
+					];
+					data_chart_user_approved_week = [
+						[Date.UTC(2018, 4, 11), 80],
+						[Date.UTC(2018, 4, 12), 165],
+						[Date.UTC(2018, 4, 13), 180],
+						[Date.UTC(2018, 4, 14), 152],
+						[Date.UTC(2018, 4, 15), 93],
+						[Date.UTC(2018, 4, 16), 130],
+						[Date.UTC(2018, 4, 17), 95]
+					];
+					data_chart_user_waiting_week = [
+						[Date.UTC(2018, 4, 11), 50],
+						[Date.UTC(2018, 4, 12), 45],
+						[Date.UTC(2018, 4, 13), 80],
+						[Date.UTC(2018, 4, 14), 62],
+						[Date.UTC(2018, 4, 15), 103],
+						[Date.UTC(2018, 4, 16), 90],
+						[Date.UTC(2018, 4, 17), 65]
+					];
+					data_chart_user_blocked_week = [
+						[Date.UTC(2018, 4, 11), 10],
+						[Date.UTC(2018, 4, 12), 25],
+						[Date.UTC(2018, 4, 13), 40],
+						[Date.UTC(2018, 4, 14), 12],
+						[Date.UTC(2018, 4, 15), 23],
+						[Date.UTC(2018, 4, 16), 40],
+						[Date.UTC(2018, 4, 17), 15]
+					];
+					
+					
+					data_chart_new_users_ind_week = [
+						[Date.UTC(2018, 4, 11), 20],
+						[Date.UTC(2018, 4, 12), 15],
+						[Date.UTC(2018, 4, 13), 40],
+						[Date.UTC(2018, 4, 14), 30],
+						[Date.UTC(2018, 4, 15), 66],
+						[Date.UTC(2018, 4, 16), 14],
+						[Date.UTC(2018, 4, 17), 80]
+					];
+					data_chart_new_users_inst_week = [
+						[Date.UTC(2018, 4, 11), 10],
+						[Date.UTC(2018, 4, 12), 45],
+						[Date.UTC(2018, 4, 13), 50],
+						[Date.UTC(2018, 4, 14), 40],
+						[Date.UTC(2018, 4, 15), 70],
+						[Date.UTC(2018, 4, 16), 24],
+						[Date.UTC(2018, 4, 17), 100]
+					];
+					
+					
+					data_chart_purchases_cobalt_week = [
+						[Date.UTC(2018, 4, 11), 10],
+						[Date.UTC(2018, 4, 12), 9.6],
+						[Date.UTC(2018, 4, 13), 9],
+						[Date.UTC(2018, 4, 14), 7],
+						[Date.UTC(2018, 4, 15), 8],
+						[Date.UTC(2018, 4, 16), 9.7],
+						[Date.UTC(2018, 4, 17), 9]
+					];
+					data_chart_purchases_rhodium_week = [
+						[Date.UTC(2018, 4, 11), 9],
+						[Date.UTC(2018, 4, 12), 7.6],
+						[Date.UTC(2018, 4, 13), 7],
+						[Date.UTC(2018, 4, 14), 6.7],
+						[Date.UTC(2018, 4, 15), 7.5],
+						[Date.UTC(2018, 4, 16), 9.6],
+						[Date.UTC(2018, 4, 17), 7]
+					];
+					data_chart_purchases_vanadium_week = [
+						[Date.UTC(2018, 4, 11), 6],
+						[Date.UTC(2018, 4, 12), 6.6],
+						[Date.UTC(2018, 4, 13), 5],
+						[Date.UTC(2018, 4, 14), 4.7],
+						[Date.UTC(2018, 4, 15), 7],
+						[Date.UTC(2018, 4, 16), 8],
+						[Date.UTC(2018, 4, 17), 5]
+					];
+					data_chart_purchases_berrylium_week = [
+						[Date.UTC(2018, 4, 11), 3],
+						[Date.UTC(2018, 4, 12), 2],
+						[Date.UTC(2018, 4, 13), 1],
+						[Date.UTC(2018, 4, 14), 3],
+						[Date.UTC(2018, 4, 15), 4.5],
+						[Date.UTC(2018, 4, 16), 3.7],
+						[Date.UTC(2018, 4, 17), 3.2]
+					];
+					
+										
+					document.addEventListener("DOMContentLoaded", function(event) {
+						myChart_small_1 = Highcharts.chart('chart-example-small-1', {
+							chart: {
+								type: 'line',
+								backgroundColor: 'rgba(255, 255, 255, 0.0)',
+							},
+							legend: {
+								enabled: false
+							},
+							title: {
+								text: ''
+							},
+							xAxis: {
+								type: 'datetime',
+								labels: {
+									enabled: false,
+								},
+								lineWidth: 0,
+								tickWidth: 0,
+							},
+							yAxis: {
+								title: {
+									text: '',
+								},
+								labels: {
+									enabled: false,
+								},
+								gridLineWidth: 0,
+							},
+							plotOptions: {
+								series: {
+									marker: {
+										enabled: false,
+									}
+								}
+							},
+							tooltip: {
+								shared: true,
+								crosshairs: true,
+								backgroundColor: 'rgba(114, 135, 213, 0.8)',
+								borderColor: '#7287D5',
+								style: {
+									color: '#FFF'
+								},
+								xDateFormat: '%d %B %Y, %a',
+								useHTML: true,
+								headerFormat: '<div style="text-align: center;">{point.key}</div>',	
+								pointFormat: '<div style="text-align: center; font-size: 1.1em;">{point.y}</div>',
+							},
+							series: [{
+								name: 'Volume',
+								color: '#2DA8F2',
+								data: data_chart_small
+							}],
+						});
+						
+						myChart_small_2 = Highcharts.chart('chart-example-small-2', {
+							chart: {
+								type: 'line',
+								backgroundColor: 'rgba(255, 255, 255, 0.0)',
+							},
+							legend: {
+								enabled: false
+							},
+							title: {
+								text: ''
+							},
+							xAxis: {
+								type: 'datetime',
+								labels: {
+									enabled: false,
+								},
+								lineWidth: 0,
+								tickWidth: 0,
+							},
+							yAxis: {
+								title: {
+									text: '',
+								},
+								labels: {
+									enabled: false,
+								},
+								gridLineWidth: 0,
+							},
+							plotOptions: {
+								series: {
+									marker: {
+										enabled: false,
+									}
+								}
+							},
+							tooltip: {
+								shared: true,
+								crosshairs: true,
+								backgroundColor: 'rgba(114, 135, 213, 0.8)',
+								borderColor: '#7287D5',
+								style: {
+									color: '#FFF'
+								},
+								xDateFormat: '%d %B %Y, %a',
+								useHTML: true,
+								headerFormat: '<div style="text-align: center;">{point.key}</div>',	
+								pointFormat: '<div style="text-align: center; font-size: 1.1em;">{point.y}</div>',
+							},
+							series: [{
+								name: 'Sales commision',
+								color: '#2ED47A',
+								data: data_chart_small
+							}],
+						});
+						
+						myChart_small_3 = Highcharts.chart('chart-example-small-3', {
+							chart: {
+								type: 'line',
+								backgroundColor: 'rgba(255, 255, 255, 0.0)',
+							},
+							legend: {
+								enabled: false
+							},
+							title: {
+								text: ''
+							},
+							xAxis: {
+								type: 'datetime',
+								labels: {
+									enabled: false,
+								},
+								lineWidth: 0,
+								tickWidth: 0,
+							},
+							yAxis: {
+								title: {
+									text: '',
+								},
+								labels: {
+									enabled: false,
+								},
+								gridLineWidth: 0,
+							},
+							plotOptions: {
+								series: {
+									marker: {
+										enabled: false,
+									}
+								}
+							},
+							tooltip: {
+								shared: true,
+								crosshairs: true,
+								backgroundColor: 'rgba(114, 135, 213, 0.8)',
+								borderColor: '#7287D5',
+								style: {
+									color: '#FFF'
+								},
+								xDateFormat: '%d %B %Y, %a',
+								useHTML: true,
+								headerFormat: '<div style="text-align: center;">{point.key}</div>',	
+								pointFormat: '<div style="text-align: center; font-size: 1.1em;">{point.y}</div>',
+							},
+							series: [{
+								name: 'Customers',
+								color: '#EB5757',
+								data: data_chart_small
+							}],
+						});
+						
+						myChart_small_4 = Highcharts.chart('chart-example-small-4', {
+							chart: {
+								type: 'line',
+								backgroundColor: 'rgba(255, 255, 255, 0.0)',
+							},
+							legend: {
+								enabled: false
+							},
+							title: {
+								text: ''
+							},
+							xAxis: {
+								type: 'datetime',
+								labels: {
+									enabled: false,
+								},
+								lineWidth: 0,
+								tickWidth: 0,
+							},
+							yAxis: {
+								title: {
+									text: '',
+								},
+								labels: {
+									enabled: false,
+								},
+								gridLineWidth: 0,
+							},
+							plotOptions: {
+								series: {
+									marker: {
+										enabled: false,
+									}
+								}
+							},
+							tooltip: {
+								shared: true,
+								crosshairs: true,
+								backgroundColor: 'rgba(114, 135, 213, 0.8)',
+								borderColor: '#7287D5',
+								style: {
+									color: '#FFF'
+								},
+								xDateFormat: '%d %B %Y, %a',
+								useHTML: true,
+								headerFormat: '<div style="text-align: center;">{point.key}</div>',	
+								pointFormat: '<div style="text-align: center; font-size: 1.1em;">{point.y}</div>',
+							},
+							series: [{
+								name: 'Purchases',
+								color: '#FFB946',
+								data: data_chart_small
+							}],
+						});
+						
+												
+						
+						myChart_user_total = Highcharts.chart('chart-example-user-total', {
+							chart: {
+								type: 'line',
+								backgroundColor: 'rgba(255, 255, 255, 0.0)',
+							},
+							legend: {
+								itemStyle: {
+									color: '#FFF',
+									fontWeight: 'normal'
+								},
+								itemHoverStyle: {
+									color: '#99a8e1',
+								},
+							},
+							title: {
+								text: ''
+							},
+							xAxis: {
+								type: 'datetime',
+								labels: {
+									style: {
+										color: '#FFF'
+									}
+								},
+								lineWidth: 0,
+								tickWidth: 0,
+							},
+							yAxis: {
+								title: {
+									text: '',
+									style: {
+										color: '#FFF'
+									}
+								},
+								labels: {
+									style: {
+										color: '#FFF'
+									}
+								},
+								gridLineDashStyle: 'LongDash',
+								gridLineColor: '#5a5a5a',
+							},
+							plotOptions: {
+								series: {
+									marker: {
+										enabled: false,
+									}
+								}
+							},
+							tooltip: {
+								shared: true,
+								crosshairs: true,
+								backgroundColor: 'rgba(114, 135, 213, 0.8)',
+								borderColor: '#7287D5',
+								style: {
+									color: '#FFF'
+								},
+								xDateFormat: '%d %B %Y, %a',
+								useHTML: true,
+								headerFormat: '<div style="padding-bottom: 4px;">{point.key}</div>' + 
+								'<table><tbody>',	
+								pointFormat: '<tr><td style="padding: 2px 5px 2px 0;">{series.name}: </td><td style="text-align: right; padding: 2px 0 2px 5px;">{point.y}</td></tr>',
+								footerFormat: '</tbody></table>',			
+							},
+							series: [{
+								name: 'Total',
+								color: '#2ED47A',
+								data: data_chart_user_total_week
+							},{
+								name: 'KYC approved',
+								color: '#FFB946',
+								data: data_chart_user_approved_week
+							},{
+								name: 'KYC waiting',
+								color: '#42CAEB',
+								data: data_chart_user_waiting_week
+							},{
+								name: 'Blocked',
+								color: '#EB5757',
+								data: data_chart_user_blocked_week
+							}],
+						});
+						
+						
+						myChart_new_users = Highcharts.chart('chart-example-new-users', {
+							chart: {
+								type: 'column',
+								backgroundColor: 'rgba(255, 255, 255, 0.0)',
+							},
+							legend: {
+								itemStyle: {
+									color: '#FFF',
+									fontWeight: 'normal'
+								},
+								itemHoverStyle: {
+									color: '#99a8e1',
+								},
+							},
+							title: {
+								text: ''
+							},
+							xAxis: {
+								type: 'datetime',
+								labels: {
+									style: {
+										color: '#FFF'
+									}
+								},
+								lineWidth: 0,
+								tickWidth: 0,
+							},
+							yAxis: {
+								title: {
+									text: '',
+									style: {
+										color: '#FFF'
+									}
+								},
+								labels: {
+									style: {
+										color: '#FFF'
+									}
+								},
+								gridLineDashStyle: 'LongDash',
+								gridLineColor: '#5a5a5a',
+							},
+							plotOptions: {
+								series: {
+									marker: {
+										enabled: false,
+									},
+									borderWidth: 0,
+								}
+							},
+							tooltip: {
+								shared: true,
+								crosshairs: true,
+								backgroundColor: 'rgba(114, 135, 213, 0.8)',
+								borderColor: '#7287D5',
+								style: {
+									color: '#FFF'
+								},
+								xDateFormat: '%d %B %Y, %a',
+								useHTML: true,
+								headerFormat: '<div style="padding-bottom: 4px;">{point.key}</div>' + 
+								'<table><tbody>',	
+								pointFormat: '<tr><td style="padding: 2px 5px 2px 0;">{series.name}: </td><td style="text-align: right; padding: 2px 0 2px 5px;">{point.y}</td></tr>',
+								footerFormat: '</tbody></table>',			
+							},
+							series: [{
+								name: 'Individuals',
+								color: '#42CAEB',
+								data: data_chart_new_users_ind_week
+							},{
+								name: 'Institutionals',
+								color: '#EB5757',
+								data: data_chart_new_users_inst_week
+							}],
+						});
+						
+						
+						myChart_retention_rate = Highcharts.chart('chart-example-retention-rate', {
+							chart: {
+								type: 'line',
+								backgroundColor: 'rgba(255, 255, 255, 0.0)',
+							},
+							legend: {
+								enabled: false
+							},
+							title: {
+								text: ''
+							},
+							xAxis: {
+								type: 'datetime',
+								labels: {
+									enabled: false,
+								},
+								lineWidth: 0,
+								tickWidth: 0,
+							},
+							yAxis: {
+								title: {
+									text: '',
+								},
+								labels: {
+									enabled: false,
+								},
+								gridLineWidth: 0,
+							},
+							plotOptions: {
+								series: {
+									marker: {
+										enabled: false,
+									}
+								}
+							},
+							tooltip: {
+								shared: true,
+								crosshairs: true,
+								backgroundColor: 'rgba(114, 135, 213, 0.8)',
+								borderColor: '#7287D5',
+								style: {
+									color: '#FFF'
+								},
+								xDateFormat: '%d %B %Y, %a',
+								useHTML: true,
+								headerFormat: '<div style="text-align: center;">{point.key}</div>',	
+								pointFormat: '<div style="text-align: center; font-size: 1.1em;">{point.y}</div>',
+							},
+							series: [{
+								name: 'Retention rate',
+								color: '#2DA8F2',
+								data: data_chart_small
+							}],
+						});
+						
+						
+						myChart_acquisitions_rate = Highcharts.chart('chart-example-acquisitions-rate', {
+							chart: {
+								type: 'line',
+								backgroundColor: 'rgba(255, 255, 255, 0.0)',
+							},
+							legend: {
+								enabled: false
+							},
+							title: {
+								text: ''
+							},
+							xAxis: {
+								type: 'datetime',
+								labels: {
+									enabled: false,
+								},
+								lineWidth: 0,
+								tickWidth: 0,
+							},
+							yAxis: {
+								title: {
+									text: '',
+								},
+								labels: {
+									enabled: false,
+								},
+								gridLineWidth: 0,
+							},
+							plotOptions: {
+								series: {
+									marker: {
+										enabled: false,
+									}
+								}
+							},
+							tooltip: {
+								shared: true,
+								crosshairs: true,
+								backgroundColor: 'rgba(114, 135, 213, 0.8)',
+								borderColor: '#7287D5',
+								style: {
+									color: '#FFF'
+								},
+								xDateFormat: '%d %B %Y, %a',
+								useHTML: true,
+								headerFormat: '<div style="text-align: center;">{point.key}</div>',	
+								pointFormat: '<div style="text-align: center; font-size: 1.1em;">{point.y}</div>',
+							},
+							series: [{
+								name: 'Retention rate',
+								color: '#EB5757',
+								data: data_chart_small
+							}],
+						});
+						
+						
+						myChart_purchases = Highcharts.chart('chart-example-purchases', {
+							chart: {
+								type: 'column',
+								backgroundColor: 'rgba(255, 255, 255, 0.0)',
+							},
+							legend: {
+								itemStyle: {
+									color: '#FFF',
+									fontWeight: 'normal'
+								},
+								itemHoverStyle: {
+									color: '#99a8e1',
+								},
+							},
+							title: {
+								text: ''
+							},
+							xAxis: {
+								type: 'datetime',
+								labels: {
+									style: {
+										color: '#FFF'
+									}
+								},
+								lineWidth: 0,
+								tickWidth: 0,
+							},
+							yAxis: {
+								title: {
+									text: '',
+									style: {
+										color: '#FFF'
+									}
+								},
+								labels: {
+									style: {
+										color: '#FFF'
+									}
+								},
+								gridLineDashStyle: 'LongDash',
+								gridLineColor: '#5a5a5a',
+							},
+							plotOptions: {
+								series: {
+									marker: {
+										enabled: false,
+									},
+									borderWidth: 0,
+								},
+								column: {
+									stacking: 'normal',
+								}
+							},
+							tooltip: {
+								shared: true,
+								crosshairs: true,
+								backgroundColor: 'rgba(114, 135, 213, 0.8)',
+								borderColor: '#7287D5',
+								style: {
+									color: '#FFF'
+								},
+								xDateFormat: '%d %B %Y, %a',
+								useHTML: true,
+								headerFormat: '<div style="padding-bottom: 4px;">{point.key}</div>' + 
+								'<table><tbody>',	
+								pointFormat: '<tr><td style="padding: 2px 5px 2px 0;">{series.name}: </td><td style="text-align: right; padding: 2px 0 2px 5px;">{point.y}</td></tr>',
+								footerFormat: '</tbody></table>',			
+							},
+							series: [{
+								name: 'Cobalt',
+								color: '#2ED47A',
+								data: data_chart_purchases_cobalt_week
+							},{
+								name: 'Rhodium',
+								color: '#2DA8F2',
+								data: data_chart_purchases_rhodium_week
+							},{
+								name: 'Vanadium',
+								color: '#8380D3',
+								data: data_chart_purchases_vanadium_week
+							},{
+								name: 'Berrylium',
+								color: '#EB5757',
+								data: data_chart_purchases_berrylium_week
+							}],
+						});
+						
+						
+					});
+					</script>
+                    
+                    
+                    <!-- InstanceEndEditable -->
+                </div>
+                <div class="clearfix"></div>
+                
+            </div><!--.middle-row-->
+        </div><!--.main-container-->
+    </div><!--.middle-->
+</div><!--.wrapper-->
+
+<!-- InstanceBeginEditable name="Extra_region" -->
+
+<!-- InstanceEndEditable -->
+
+</div><!--#root-->
+
+<!-- не использовать в проекте, содержит функции test_... только для демонстрации шаблонов верстки-->
+<script src="js/test.js"></script>
+
+</body>
+<!-- InstanceEnd --></html>

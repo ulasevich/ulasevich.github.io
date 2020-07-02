@@ -1,3 +1,11 @@
+if(typeof jQuery=='undefined') {
+    var headTag = document.getElementsByTagName("head")[0];
+    var jqTag = document.createElement('script');
+    jqTag.type = 'text/javascript';
+    jqTag.src = '/js/jquery-1.12.2.min.js';
+    headTag.appendChild(jqTag);
+} 
+
 //Глобальный объект (панель) для разделов портфолио
 var Panel = {
     win: $(window),
@@ -144,5 +152,5 @@ $(document).ready(function(){
 	Panel_el = $( "#uas-portfolio-panel" ).uasPanel({
 		//color: "white"
 	});
-	console.log(Panel_el);
+	//console.log(Panel_el);
 });

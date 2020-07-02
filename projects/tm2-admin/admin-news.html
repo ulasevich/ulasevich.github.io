@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru"><!-- InstanceBegin template="/Templates/TM2_admin.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+    <meta charset="utf-8">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>News&Analysis | Adminstation | TM2</title>
+    <!-- InstanceEndEditable -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!--SEO and Share-->
+    <meta name="description" content="Описание" />
+    <!--SEO and Share-->
+    
+    <!--favicons--> 
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#7287D5">
+    
+    <meta name="apple-mobile-web-app-status-bar-style" content="#7287D5">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#7287D5">
+    <!--favicons-->
+        
+    <!--head css, js-->
+    <link rel="stylesheet" href="css/libs/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/libs/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="js/modernizr-custom.js"></script>
+    <!--head css, js-->
+    
+    <!-- InstanceBeginEditable name="head" -->
+    <!-- InstanceEndEditable -->
+</head>
+<body>
+
+<div id="root">
+
+<div class="wrapper">
+	<header class="header">
+    	<div class="main-container container-fluid">
+        	<div class="row header-row align-items-center justify-content-end">
+            	<div class="col-2 header-row__logo">
+                	<a href="admin.html" class="header-logo-link" title="Main page">TM2</a>
+                </div>
+                
+                <div class="col header-row__empty"></div>
+                                
+                <!-- InstanceBeginEditable name="Top_header_region" -->
+                
+                <!-- InstanceEndEditable -->
+                
+                <div class="col-auto header-row__status">
+                    <div class="dropdown-wrapper">
+                        <button class="dropdown-toggle" onClick="test_show_avatar_dropdown()">
+                            <!--<div class="avatar-item">
+                            </div>-->
+                            <div class="avatar-name">Fred Brown</div>
+                            <span class="dropdown-arrow"></span>
+                        </button>
+                        
+                        <div class="dropdown-menu" id="test-avatar-dropdown" style="display: none">
+                            <!-- InstanceBeginEditable name="Top_menu_region" -->
+                            <div class="dropdown-item">
+                                <a href="admin.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--user"></i>
+                                        <span class="icon-item__text">Profile</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a href="index.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--logout"></i>
+                                        <span class="icon-item__text">Log out</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- InstanceEndEditable -->
+                        </div>
+                    </div><!--.dropdown-wrapper-->
+                </div>
+            </div><!--.header-row-->
+        </div><!--.main-container-->
+    </header>
+    
+    <div class="middle">
+		<div class="main-container container-fluid">
+            <div class="middle-row">
+                <div class="sidebar">
+                    <nav class="l-menu">
+                    	<ul class="not-list">
+                        	<!-- InstanceBeginEditable name="Menu_region" -->
+                            <li>
+                                <a href="admin.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--main"></i>
+                                        <span class="icon-item__text">Main (admin)</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-investor.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--main"></i>
+                                        <span class="icon-item__text">Main (investor)</span>
+                                    </div>
+                                </a>
+                            </li>
+							<li>
+								<a href="admin-users.html" class="link link-icon">
+									<div class="icon-item">
+										<i class="icon icon--users"></i>
+										<span class="icon-item__text">Users</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="admin-wallets.html" class="link link-icon">
+									<div class="icon-item">
+										<i class="icon icon--wallets"></i>
+										<span class="icon-item__text">Wallets</span>
+									</div>
+								</a>
+							</li>
+                            <li>
+                                <a href="admin-metals.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--metals"></i>
+                                        <span class="icon-item__text">Digital metals</span>
+                                    </div>
+                                </a>
+                            </li>
+							<li>
+                                <a href="admin-investor-buy-metals.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--buy-sell"></i>
+                                        <span class="icon-item__text">Buy metals</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-balance.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--balance"></i>
+                                        <span class="icon-item__text">Balance</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-vaults.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--vaults"></i>
+                                        <span class="icon-item__text">Vaults</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-news.html" class="link link-icon active">
+                                    <div class="icon-item">
+                                        <i class="icon icon--news"></i>
+                                        <span class="icon-item__text">News & Analysis</span>
+                                    </div>
+                                </a>
+							</li>
+                            
+                            <!-- InstanceEndEditable -->
+                        </ul>
+                    </nav>
+                    
+                    <!-- InstanceBeginEditable name="Sidebar_bottom_region" -->
+                    <!-- InstanceEndEditable -->
+                    
+                </div><!--.sidebar-->
+                
+                <div class="content">
+                    <!-- InstanceBeginEditable name="Content_region" -->
+                                               
+                    <h1>News&Analysis</h1>
+                    
+                                            	
+                    <div class="row filter-block align-items-center">
+                        <div class="col-lg-6 col-md-7 filter-block__search">
+                            <div class="search-line" id="test-search-line">
+                                <form>
+                                    <div class="search-line__top">
+                                        <input type="text" class="search-line__top-text" placeholder="Type in search" onClick="test_show_form_search()" />
+                                        <button type="submit" class="btn search-line__top-submit"></button>
+                                        <button type="button" class="btn search-line__top-close" onClick="test_close_form_search()">×</button>
+                                    </div>
+                                    
+                                    <div class="search-line__dropdown">
+                                        <div class="search-line__dropdown-content">
+                                            <div class="row form-elements align-items-center">
+                                                <div class="col-md-6">
+                                                    <label class="field-label label-small">Metal</label>
+                                                    <div class="select-block">
+                                                        <select name="">
+                                                            <option value="" selected disabled> Choose options </option>
+                                                            <option value="1"> Rhodium </option>
+                                                            <option value="2"> Cobalt </option>
+                                                            <option value="3"> Vanadium </option>
+                                                            <option value="4"> Beryllium </option>
+                                                            <option value="5"> Bismuth </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-submit">
+                                                        <button type="submit" class="btn btn-default">Search</button>
+                                                        <button type="reset" class="btn btn-default btn--reset">Reset</button>
+                                                    </div>
+                                                </div>
+                                            </div><!--.row form-elements-->
+                                        </div><!--.search-line__dropdown-content-->
+                                    </div><!--.search-line__dropdown-->
+                                </form>
+                            </div><!--.search-line-->
+                        </div>
+                        
+                        <div class="col filter-block__empty">
+                        </div>
+                        
+                        <div class="col-auto filter-block__control">
+                        	<a href="admin-news-add(edit).html" class="link link-icon">
+                            	<div class="icon-item color-blue-dodger">
+                                    <i class="icon icon--add"></i>
+                                    <span class="icon-item__text">Add</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div><!--.filter-block-->
+                    
+                    
+                    
+                    
+                    <div class="light-gradient-block">
+                    	<div class="row row-news-item">
+                        	<div class="col row-news-item__top">
+                            	<span class="line-label">Metal:</span>
+                                <div class="tag-links">
+                                	<a href="#" class="op-link metal--rhodium">Rhodium</a>
+                                </div>
+                            </div>
+                            <div class="col-md-auto row-news-item__date">
+                            	<div class="icon-item">
+                                    <i class="icon icon--date"></i>
+                                    <span class="icon-item__text">March 22, 2019</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-break"></div>
+                            <div class="col row-news-item__content">
+                            	<p>LIVE FUTURES REPORT 26/03: SHFE zinc up 1.6% on dollar weakness, supply concerns; tin dips</p>
+                                <p class="color-green">Active</p>
+                            </div>
+                            <div class="col-md-auto align-self-end row-news-item__controls">
+                                <a href="admin-news-add(edit).html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--edit"></i>
+                                        <span class="icon-item__text">Edit</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="link link-icon">
+                                    <div class="icon-item color-red">
+                                        <i class="icon icon--remove-red"></i>
+                                        <span class="icon-item__text">Remove</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div><!--.row-news-item-->
+                    </div><!--.light-gradient-block-->
+                    
+                    
+                    <div class="light-gradient-block">
+                    	<div class="row row-news-item">
+                        	<div class="col row-news-item__top">
+                            	<span class="line-label">Metal:</span>
+                                <div class="tag-links">
+                                	<a href="#" class="op-link metal--cobalt">Cobalt</a>
+                                </div>
+                            </div>
+                            <div class="col-md-auto row-news-item__date">
+                            	<div class="icon-item">
+                                    <i class="icon icon--date"></i>
+                                    <span class="icon-item__text">April 12, 2019</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-break"></div>
+                            <div class="col row-news-item__content">
+                            	<p>LIVE FUTURES REPORT 26/03: SHFE zinc up 1.6% on dollar weakness, supply concerns; tin dips</p>
+                                <p class="color-red">Inactive</p>
+                            </div>
+                            <div class="col-md-auto align-self-end row-news-item__controls">
+                                <a href="admin-news-add(edit).html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--edit"></i>
+                                        <span class="icon-item__text">Edit</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="link link-icon">
+                                    <div class="icon-item color-red">
+                                        <i class="icon icon--remove-red"></i>
+                                        <span class="icon-item__text">Remove</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div><!--.row-news-item-->
+                    </div><!--.light-gradient-block-->
+                    
+                    
+                    <div class="light-gradient-block">
+                    	<div class="row row-news-item">
+                        	<div class="col row-news-item__top">
+                            	<span class="line-label">Metal:</span>
+                                <div class="tag-links">
+                                	<a href="#" class="op-link metal--vanadium">Vanadium</a>
+                                    <a href="#" class="op-link metal--beryllium">Beryllium</a>
+                                </div>
+                            </div>
+                            <div class="col-md-auto row-news-item__date">
+                            	<div class="icon-item">
+                                    <i class="icon icon--date"></i>
+                                    <span class="icon-item__text">May 1, 2019</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-break"></div>
+                            <div class="col row-news-item__content">
+                            	<p>LIVE FUTURES REPORT 26/03: SHFE zinc up 1.6% on dollar weakness, supply concerns; tin dips LIVE FUTURES REPORT 26/03: SHFE zinc up 1.6% on dollar weakness, supply concerns; tin dips</p>
+                                <p class="color-green">Active</p>
+                            </div>
+                            <div class="col-md-auto align-self-end row-news-item__controls">
+                                <a href="admin-news-add(edit).html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--edit"></i>
+                                        <span class="icon-item__text">Edit</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="link link-icon">
+                                    <div class="icon-item color-red">
+                                        <i class="icon icon--remove-red"></i>
+                                        <span class="icon-item__text">Remove</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div><!--.row-news-item-->
+                    </div><!--.light-gradient-block-->
+                    
+                            
+                    <div class="light-gradient-block">
+                    	<div class="row row-news-item">
+                        	<div class="col row-news-item__top">
+                            	<span class="line-label">Metal:</span>
+                                <div class="tag-links">
+                                	<a href="#" class="op-link metal--bismuth">Bismuth</a>
+                                    <a href="#" class="op-link metal--rhodium">Rhodium</a>
+                                    <a href="#" class="op-link metal--vanadium">Vanadium</a>
+                                </div>
+                            </div>
+                            <div class="col-md-auto row-news-item__date">
+                            	<div class="icon-item">
+                                    <i class="icon icon--date"></i>
+                                    <span class="icon-item__text">March 22, 2019</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-break"></div>
+                            <div class="col row-news-item__content">
+                            	<p>LIVE FUTURES REPORT 26/03: SHFE zinc up 1.6% on dollar weakness, supply concerns; tin dips</p>
+                                <p class="color-green">Active</p>
+                            </div>
+                            <div class="col-md-auto align-self-end row-news-item__controls">
+                                <a href="admin-news-add(edit).html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--edit"></i>
+                                        <span class="icon-item__text">Edit</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="link link-icon">
+                                    <div class="icon-item color-red">
+                                        <i class="icon icon--remove-red"></i>
+                                        <span class="icon-item__text">Remove</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div><!--.row-news-item-->
+                    </div><!--.light-gradient-block-->
+                    
+                    
+                    <div class="light-gradient-block">
+                    	<div class="row row-news-item">
+                        	<div class="col row-news-item__top">
+                            	<span class="line-label">Metal:</span>
+                                <div class="tag-links">
+                                    <a href="#" class="op-link metal--rhodium">Rhodium</a>
+                                </div>
+                            </div>
+                            <div class="col-md-auto row-news-item__date">
+                            	<div class="icon-item">
+                                    <i class="icon icon--date"></i>
+                                    <span class="icon-item__text">March 22, 2019</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-break"></div>
+                            <div class="col row-news-item__content">
+                            	<p>LIVE FUTURES REPORT 26/03: SHFE zinc up 1.6% on dollar weakness, supply concerns; tin dips</p>
+                                <p class="color-green">Active</p>
+                            </div>
+                            <div class="col-md-auto align-self-end row-news-item__controls">
+                                <a href="admin-news-add(edit).html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--edit"></i>
+                                        <span class="icon-item__text">Edit</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="link link-icon">
+                                    <div class="icon-item color-red">
+                                        <i class="icon icon--remove-red"></i>
+                                        <span class="icon-item__text">Remove</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div><!--.row-news-item-->
+                    </div><!--.light-gradient-block-->
+                                                                                                    
+                    <!-- InstanceEndEditable -->
+                </div>
+                <div class="clearfix"></div>
+                
+            </div><!--.middle-row-->
+        </div><!--.main-container-->
+    </div><!--.middle-->
+</div><!--.wrapper-->
+
+<!-- InstanceBeginEditable name="Extra_region" -->
+
+<!-- InstanceEndEditable -->
+
+</div><!--#root-->
+
+<!-- не использовать в проекте, содержит функции test_... только для демонстрации шаблонов верстки-->
+<script src="js/test.js"></script>
+
+</body>
+<!-- InstanceEnd --></html>

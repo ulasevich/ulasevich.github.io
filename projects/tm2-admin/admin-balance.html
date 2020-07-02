@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    
+    <title>Balance | Adminstation | TM2</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!--SEO and Share-->
+    <meta name="description" content="Описание" />
+    <!--SEO and Share-->
+    
+    <!--favicons--> 
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#7287D5">
+    
+    <meta name="apple-mobile-web-app-status-bar-style" content="#7287D5">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#7287D5">
+    <!--favicons-->
+        
+    <!--head css, js-->
+    <link rel="stylesheet" href="css/libs/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/libs/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="js/modernizr-custom.js"></script>
+    <!--head css, js-->
+    
+    <script src="/js/panel.js"></script>
+    
+</head>
+<body>
+
+<div id="root">
+
+<div class="wrapper">
+	<header class="header">
+    	<div class="main-container container-fluid">
+        	<div class="row header-row align-items-center justify-content-end">
+            	<div class="col-2 header-row__logo">
+                	<a href="admin.html" class="header-logo-link" title="Main page">TM2</a>
+                </div>
+                
+                <div class="col header-row__empty"></div>
+                                
+                
+                
+                
+                
+                <div class="col-auto header-row__status">
+                    <div class="dropdown-wrapper">
+                        <button class="dropdown-toggle" onClick="test_show_avatar_dropdown()">
+                            <!--<div class="avatar-item">
+                            </div>-->
+                            <div class="avatar-name">Fred Brown</div>
+                            <span class="dropdown-arrow"></span>
+                        </button>
+                        
+                        <div class="dropdown-menu" id="test-avatar-dropdown" style="display: none">
+                            
+                            <div class="dropdown-item">
+                                <a href="admin.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--user"></i>
+                                        <span class="icon-item__text">Profile</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a href="index.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--logout"></i>
+                                        <span class="icon-item__text">Log out</span>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div><!--.dropdown-wrapper-->
+                </div>
+            </div><!--.header-row-->
+        </div><!--.main-container-->
+    </header>
+    
+    <div class="middle">
+		<div class="main-container container-fluid">
+            <div class="middle-row">
+                <div class="sidebar">
+                    <nav class="l-menu">
+                    	<ul class="not-list">
+                        	
+                            <li>
+                                <a href="admin.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--main"></i>
+                                        <span class="icon-item__text">Main (admin)</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-investor.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--main"></i>
+                                        <span class="icon-item__text">Main (investor)</span>
+                                    </div>
+                                </a>
+                            </li>
+							<li>
+								<a href="admin-users.html" class="link link-icon">
+									<div class="icon-item">
+										<i class="icon icon--users"></i>
+										<span class="icon-item__text">Users</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="admin-wallets.html" class="link link-icon">
+									<div class="icon-item">
+										<i class="icon icon--wallets"></i>
+										<span class="icon-item__text">Wallets</span>
+									</div>
+								</a>
+							</li>
+                            <li>
+                                <a href="admin-metals.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--metals"></i>
+                                        <span class="icon-item__text">Digital metals</span>
+                                    </div>
+                                </a>
+                            </li>
+							<li>
+                                <a href="admin-investor-buy-metals.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--buy-sell"></i>
+                                        <span class="icon-item__text">Buy metals</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-balance.html" class="link link-icon active">
+                                    <div class="icon-item">
+                                        <i class="icon icon--balance"></i>
+                                        <span class="icon-item__text">Balance</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-vaults.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--vaults"></i>
+                                        <span class="icon-item__text">Vaults</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-news.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--news"></i>
+                                        <span class="icon-item__text">News & Analysis</span>
+                                    </div>
+                                </a>
+							</li>
+                            
+                        </ul>
+                    </nav>
+                    
+                    
+                    
+                    
+                </div><!--.sidebar-->
+                
+                <div class="content">
+                    
+                    
+                    <h1>Balance</h1>
+                    
+                    <div class="tab-links">
+                        <a href="admin-balance.html" class="tab-link active">Daily balance history</a>
+                        <a href="admin-balance-correction.html" class="tab-link">Correction transactions</a>
+                    </div>
+                    
+                    
+                    <div class="tab-blocks">
+                    	
+                        <div id="test-balance" style="display: block;">
+                        	
+                            <div class="form-small-col">
+                                <div class="row form-elements align-items-center">
+                                    <div class="col-md-6">
+                                        <label class="field-label label-small">Date</label>
+                                        <div class="text-block">
+                                            <input type="text" name="" placeholder="DD.MM.YY" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="field-label label-small">Issuer</label>
+                                        <div class="select-block">
+                                            <select name="country.id">
+                                                <option value="" disabled="">Choose issuer</option>
+                                                <option value="231">Issuer 1</option>
+                                                <option value="245">Issuer 2</option>
+                                                <option value="236">Issuer 3</option>
+                                                <option value="76">Issuer 4</option>
+                                                <option value="169">Issuer 5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div><!--.form-elements-->
+                                
+                                
+                                <div class="table-wrapper">
+                                	<table class="default-table">
+                                        <thead>
+                                            <tr>
+                                                <th class="table-header-sorter table-header-sorter--asc">
+                                                    <span>Date</span>
+                                                </th>
+                                                <th class="table-header-sorter">
+                                                    <span>Issuer</span>
+                                                </th>
+                                                <th class="table-header-sorter table-header-sorter--desc">
+                                                    <span>Balance</span>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> 28.08.2019 </td>
+                                                <td> Bard&Ico </td>
+                                                <td class="align-right"> $1,590.00 </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 27.08.2019 </td>
+                                                <td> Company Name </td>
+                                                <td class="align-right"> $800.00 </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 20.08.2019 </td>
+                                                <td> Bard&Ico </td>
+                                                <td class="align-right"> $0.00 </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 28.08.2019 </td>
+                                                <td> Bard&Ico </td>
+                                                <td class="align-right"> $1,590.00 </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 27.08.2019 </td>
+                                                <td> Company Name </td>
+                                                <td class="align-right"> $800.00 </td>
+                                            </tr>
+                                            <tr>
+                                                <td> 20.08.2019 </td>
+                                                <td> Bard&Ico </td>
+                                                <td class="align-right"> $0.00 </td>
+                                            </tr>
+                                            <tr>
+                                            	<td><strong class="big-text">Total</strong></td>
+                                            	<td colspan="2" class="align-right"><strong class="big-text">$4,590.00</strong></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+                                    <ul class="pagination">
+                                        <li class=""><a class="" href="#">«</a></li>
+                                        <li class=""><a class="" href="#">⟨</a></li>
+                                        <li class=""><a class="" href="#">1</a></li>
+                                        <li class=""><a class="" href="#">2</a></li>
+                                        <li class=""><a class="" href="#">3</a></li>
+                                        <li class="active"><a class="active" href="#">12</a></li>
+                                        <li class=""><a class="" href="#">13</a></li>
+                                        <li class=""><a class="" href="#">14</a></li>
+                                        <li class="disabled"><a class="" href="#">⟩</a></li>
+                                        <li class="disabled"><a class="" href="#">»</a></li>
+                                    </ul>
+                                    
+                                </div><!--.table-wrapper-->
+                                
+                                
+                            </div><!--.form-small-col-->
+                            
+                            
+                                                        
+                        </div><!--#test-balance-->
+                        
+                        
+                        
+                        <div id="test-balance-correction" style="display: none;">
+                        
+                        </div><!--#test-balance-correction-->
+                        
+                        
+                        
+                    </div><!--.tab-blocks-->
+                    
+                    
+                </div>
+                <div class="clearfix"></div>
+                
+            </div><!--.middle-row-->
+        </div><!--.main-container-->
+    </div><!--.middle-->
+</div><!--.wrapper-->
+
+
+
+
+
+
+</div><!--#root-->
+
+<!-- не использовать в проекте, содержит функции test_... только для демонстрации шаблонов верстки-->
+<script src="js/test.js"></script>
+
+</body>
+</html>

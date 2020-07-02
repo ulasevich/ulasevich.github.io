@@ -1,0 +1,10 @@
+{
+  "year": 2019,
+  "title": "TM2",
+  "description": "Верстка административной части сайта для клиентов TM2 — биржи металлов",
+  "site": "https://members.tm2.online/",
+  "en": {
+    "title": "TM2",
+    "description": "Layout of the administrative part of the site for TM2 customers - metal exchanges"
+  }
+}

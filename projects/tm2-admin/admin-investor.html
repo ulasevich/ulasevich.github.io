@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    
+    <title>Investor | Adminstation | TM2</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!--SEO and Share-->
+    <meta name="description" content="Описание" />
+    <!--SEO and Share-->
+    
+    <!--favicons--> 
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#7287D5">
+    
+    <meta name="apple-mobile-web-app-status-bar-style" content="#7287D5">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#7287D5">
+    <!--favicons-->
+        
+    <!--head css, js-->
+    <link rel="stylesheet" href="css/libs/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/libs/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="js/modernizr-custom.js"></script>
+    <!--head css, js-->
+    
+    <script src="/js/panel.js"></script>
+    
+</head>
+<body>
+
+<div id="root">
+
+<div class="wrapper">
+	<header class="header">
+    	<div class="main-container container-fluid">
+        	<div class="row header-row align-items-center justify-content-end">
+            	<div class="col-2 header-row__logo">
+                	<a href="admin.html" class="header-logo-link" title="Main page">TM2</a>
+                </div>
+                
+                <div class="col header-row__empty"></div>
+                                
+                
+                
+                
+                <div class="col-auto header-row__status">
+                    <div class="dropdown-wrapper">
+                        <button class="dropdown-toggle" onClick="test_show_avatar_dropdown()">
+                            <!--<div class="avatar-item">
+                            </div>-->
+                            <div class="avatar-name">Fred Brown</div>
+                            <span class="dropdown-arrow"></span>
+                        </button>
+                        
+                        <div class="dropdown-menu" id="test-avatar-dropdown" style="display: none">
+                            
+                            <div class="dropdown-item">
+                                <a href="admin.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--user"></i>
+                                        <span class="icon-item__text">Profile</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a href="index.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--logout"></i>
+                                        <span class="icon-item__text">Log out</span>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div><!--.dropdown-wrapper-->
+                </div>
+            </div><!--.header-row-->
+        </div><!--.main-container-->
+    </header>
+    
+    <div class="middle">
+		<div class="main-container container-fluid">
+            <div class="middle-row">
+                <div class="sidebar">
+                    <nav class="l-menu">
+                    	<ul class="not-list">
+                        	
+                            <li>
+                                <a href="admin.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--main"></i>
+                                        <span class="icon-item__text">Main (admin)</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-investor.html" class="link link-icon active">
+                                    <div class="icon-item">
+                                        <i class="icon icon--main"></i>
+                                        <span class="icon-item__text">Main (investor)</span>
+                                    </div>
+                                </a>
+                            </li>
+							<li>
+								<a href="admin-users.html" class="link link-icon">
+									<div class="icon-item">
+										<i class="icon icon--users"></i>
+										<span class="icon-item__text">Users</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="admin-wallets.html" class="link link-icon">
+									<div class="icon-item">
+										<i class="icon icon--wallets"></i>
+										<span class="icon-item__text">Wallets</span>
+									</div>
+								</a>
+							</li>
+                            <li>
+                                <a href="admin-metals.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--metals"></i>
+                                        <span class="icon-item__text">Digital metals</span>
+                                    </div>
+                                </a>
+                            </li>
+							<li>
+                                <a href="admin-investor-buy-metals.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--buy-sell"></i>
+                                        <span class="icon-item__text">Buy metals</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-balance.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--balance"></i>
+                                        <span class="icon-item__text">Balance</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-vaults.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--vaults"></i>
+                                        <span class="icon-item__text">Vaults</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-news.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--news"></i>
+                                        <span class="icon-item__text">News & Analysis</span>
+                                    </div>
+                                </a>
+							</li>
+                            
+                        </ul>
+                    </nav>
+                    
+                    
+                    <div class="l-bottom">
+                    	<div class="l-bottom-item">
+                        	<a href="#" onClick="return test_show_form_OTC()">CONTACT OTC</a>
+                        </div>
+                    </div>
+                    
+                    
+                </div><!--.sidebar-->
+                
+                <div class="content">
+                    
+                    
+                    
+                    <h1>Alex White <span class="badge">Investor</span></h1>
+                    
+                    <div class="row row-account-line align-items-center">
+                    	<div class="col-auto row-account-line__photo account-photo--round">
+                            <div class="account-card__photo-wrapper">
+                                <img src="content/account.png" />
+                                <div class="account-card__photo-default"></div>
+                            </div>
+                        </div>
+                        <div class="col-md row-account-line__info">
+                            <p>
+                            	<span class="op-text">Status:</span> Dicliner
+                            </p>
+                        </div>
+                        <div class="col-auto row-account-line__controls">
+                        	<a href="KYC.html" class="btn btn-default">Start KYC process</a>
+                        </div>
+                    </div><!--.row-account-line-->
+                    
+                    
+                    
+                                                           
+                    
+                    <div class="row row-account-data">
+                    	
+                        <div class="col-md-8 row-account-data__left">
+                        	<div class="account-data-wrapper">
+                            	
+                                <div class="row row-account-data__header">
+                                	<div class="col-sm">
+                                    	<div class="icon-item">
+                                        	<i class="icon icon--profile"></i>
+                                            <span class="icon-item__text">Profile Details</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-auto">
+                                    	<div class="icon-item">
+                                        	<i class="icon icon--profile-edit"></i>
+                                            <span class="icon-item__text"> <a href="#" onClick="return test_show_form_edit_profile()">Edit Profile</a> </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="account-data__content">
+                                	<table class="account-data-table">
+                                    	<tbody>
+                                        	<tr>
+                                            	<td class="account-data-table__var">
+                                                    <div class="icon-item">
+                                                        <i class="icon icon--user-blue"></i>
+                                                        <span class="icon-item__text">Full name</span>
+                                                    </div>
+                                                </td>
+                                                <td class="account-data-table__value">
+                                                	Alex White
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                            	<td class="account-data-table__var">
+                                                    <div class="icon-item">
+                                                        <i class="icon icon--email-blue"></i>
+                                                        <span class="icon-item__text">Email</span>
+                                                    </div>
+                                                </td>
+                                                <td class="account-data-table__value">
+                                                	PJohnson@gmail. com
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                            	<td class="account-data-table__var">
+                                                    <div class="icon-item">
+                                                        <i class="icon icon--phone-blue"></i>
+                                                        <span class="icon-item__text">Phone</span>
+                                                    </div>
+                                                </td>
+                                                <td class="account-data-table__value">
+                                                	+447800767690
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                            	<td class="account-data-table__var">
+                                                    <div class="icon-item">
+                                                        <i class="icon icon--country-blue"></i>
+                                                        <span class="icon-item__text">Country</span>
+                                                    </div>
+                                                </td>
+                                                <td class="account-data-table__value">
+                                                	Great Britain
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                            	<td class="account-data-table__var">
+                                                    <div class="icon-item">
+                                                        <i class="icon icon--company-blue"></i>
+                                                        <span class="icon-item__text">Company</span>
+                                                    </div>
+                                                </td>
+                                                <td class="account-data-table__value">
+                                                	Henry Diaper & Co Ltd
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                            	<td class="account-data-table__var">
+                                                    <div class="icon-item">
+                                                        <i class="icon icon--address-blue"></i>
+                                                        <span class="icon-item__text">Address</span>
+                                                    </div>
+                                                </td>
+                                                <td class="account-data-table__value dont-break-out">
+                                                	Road Knowsley Industrial Park North Liverpool L33 3AR
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                            	<td class="account-data-table__var">
+                                                    <div class="icon-item">
+                                                        <i class="icon icon--wallet-blue"></i>
+                                                        <span class="icon-item__text">E-wallet public key</span>
+                                                    </div>
+                                                </td>
+                                                <td class="account-data-table__value">
+                                                    <div class="dont-break-out">
+                                                    	GC4NMSWKQ2FDJW4W7NEVLE56HDPWSDG6XUWR5JADGFA6EWPJA5UBRCK3
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                            	<td class="account-data-table__var">
+                                                    <div class="icon-item">
+                                                        <i class="icon icon--doc-blue"></i>
+                                                        <span class="icon-item__text">Updating account form</span>
+                                                    </div>
+                                                </td>
+                                                <td class="account-data-table__value">
+                                                    filename.pdf
+                                                    21.05.2019 15:37
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div><!--.account-data__content-->
+                                
+                            </div>
+                        </div><!--.row-account-data__left-->
+                        
+                        
+                        <div class="col-md-4 row-account-data__right">
+                        	<div class="account-data-wrapper">
+                            	
+                                <div class="row row-account-data__header">
+                                	<div class="col-sm">
+                                    	<div class="icon-item">
+                                        	<i class="icon icon--history"></i>
+                                            <span class="icon-item__text">Activity History</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="account-data__content">
+                                	<p class="op-text">Latest activity</p>
+                                    
+                                    <div class="activity-items">
+                                        <p class="activity-item">today at 9:26 am (London,Great Britain. Windows)</p>
+                                        <p class="activity-item">01.04.19 - 11:26 am (London,Great Britain. iPhone)</p>
+                                        <p class="activity-item">31.03.19 - 14:30 am (London,Great Britain. iPhone)</p>
+                                        <p class="activity-item">30.03.19 - 15:00 am (London,Great Britain. iPhone)</p>
+                                        <p class="activity-item">27.03.19 - 10:20 am (London,Great Britain. iPhone)</p>
+                                    </div>
+                                </div><!--.account-data__content-->
+                                
+                            </div>
+                        </div><!--.row-account-data__right-->
+                        
+                    </div><!--.row-account-data-->
+                    
+                    
+                    <script>
+                    document.addEventListener("DOMContentLoaded", function(event) { 
+						test_show_form_confirm();
+					});
+                    </script>
+                    
+                    
+                </div>
+                <div class="clearfix"></div>
+                
+            </div><!--.middle-row-->
+        </div><!--.main-container-->
+    </div><!--.middle-->
+</div><!--.wrapper-->
+
+
+<div class="pform-bg pform-zoom-in pform-show" style="display: none" id="test-pform-bg"></div>
+
+<div class="pform-wrapper pform-zoom-in pform-show" tabindex="-1" style="display: none" id="test-pform-edit-profile">
+    <div class="pform-container">
+        <div class="pform-outer">
+            
+            <div class="pform zoom-anim-dialog">
+                <button title="Close" type="button" class="pform-close" onClick="test_close_form_edit_profile()">×</button>
+                <div class="pform-content">
+                    
+                    <div class="pform-center-col">
+                        <form name="" method="post" action="">
+                            <h2>Edit profile</h2>
+                            <div class="form-response" style="display: none">
+                            </div>
+                            <div class="row form-elements">
+                            	<div class="col-12">
+                                	<div class="text-block">
+                                    	<input type="text" name="" placeholder="Full name" value="Alex White" />
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                	<div class="text-block">
+                                    	<input type="text" name="" placeholder="Email" value="PJohnson@gmail. com" />
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                	<div class="text-block">
+                                    	<input type="text" name="" placeholder="Phone" value="+447800767690" />
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                	<div class="select-block">
+                                    	<select name="">
+                                        	<option value="" selected disabled> Country </option>
+                                            <option value="1"> Germany </option>
+                                            <option value="2"> U.K. </option>
+                                            <option value="3"> U.S.A. </option>
+                                            <option value="4"> France </option>
+                                            <option value="5"> Iceland </option>
+                                            <option value="6" selected> Great Britain </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                	<div class="text-block">
+                                    	<input type="text" name="" placeholder="Company" value="Henry Diaper & Co Ltd" />
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                	<div class="text-block">
+                                    	<input type="text" name="" placeholder="Address" value="Road Knowsley Industrial Park North Liverpool L33 3AR" />
+                                    </div>
+                                </div>
+                                
+                                <div class="col-6">
+                                	<div class="text-block">
+                                    	<input type="password" name="" placeholder="Old password" />
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                	<div class="text-block">
+                                    	<input type="password" name="" placeholder="New password" />
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12">
+                                    <div class="form-submit">
+                                        <button type="submit" class="btn btn-default">Save</button>
+                                        <button type="reset" class="btn btn-default btn--reset" onClick="test_close_form_edit_profile()">Cansel</button>
+                                    </div>
+                                </div>
+                            </div><!--.form-elements-->
+                        </form>
+                    </div><!--.pform-center-col-->
+                    
+                </div><!--.pform-content-->
+            </div><!--.pform-->
+            
+        </div>
+    </div>
+</div><!--.pform-wrapper-->
+
+
+<div class="pform-wrapper pform-no-col pform-zoom-in pform-show" tabindex="-1" style="display: none" id="test-pform-confirm">
+    <div class="pform-container">
+        <div class="pform-outer">
+            
+            <div class="pform zoom-anim-dialog">
+                <button title="Close" type="button" class="pform-close" onClick="test_close_form_confirm()">×</button>
+                <div class="pform-content">
+                    
+                    <div class="pform-center-col">
+                        <form name="" method="post" action="">
+                            <h2>Terms of use</h2>
+                            
+                            <div class="row form-elements">
+                                <div class="col-12">
+                                	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">
+                                        <input type="checkbox" name="" value="" />
+                                        <span><i>I have read and agree with the Terms of Use</i></span>
+                                    </label>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-submit">
+                                        <button type="submit" class="btn btn-default" disabled>Accept</button>
+                                        <button type="reset" class="btn btn-default btn--reset" onClick="test_close_form_confirm()">Cansel</button>
+                                    </div>
+                                </div>
+                            </div><!--.form-elements-->
+                        </form>
+                    </div><!--.pform-center-col-->
+                    
+                </div><!--.pform-content-->
+            </div><!--.pform-->
+            
+        </div>
+    </div>
+</div><!--.pform-wrapper-->
+
+
+<div class="pform-wrapper pform-show pform-zoom-in pform-right-slide pform-right-slide-full" tabindex="-1" style="display: none" id="test-pform-OTC">
+    <div class="pform-container">
+        <div class="pform-outer">
+            
+            <div class="pform zoom-anim-dialog">
+                <button title="Close" type="button" class="pform-close" onClick="test_close_form_OTC()">×</button>
+                <div class="pform-content">
+                    
+                    <div class="pform-center-col">
+                        <form>
+                            <h2>Contact OTC</h2>
+                            
+                            <div class="row row-otc-form">
+                            	<div class="col-md-7">
+                                	<div class="row form-elements">
+                                    	<div class="col-12">
+                                        	<p>Please fill out this form, and we will get back to you shorty</p>
+                                            <label class="field-label">Client relationship type:</label>
+                                            <label class="form-label">
+                                                <input type="checkbox" name="" value="" />
+                                                <span><i>Private individual</i></span>
+                                            </label>
+                                            <label class="form-label">
+                                                <input type="checkbox" name="" value="" />
+                                                <span><i>Corporate</i></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="icon-line">
+                                                <div class="icon-item">
+                                                    <i class="icon icon--user"></i>
+                                                    <span class="icon-item__text">Pete</span>
+                                                </div>
+                                            </div>
+                                            <div class="icon-line">
+                                                <div class="icon-item">
+                                                    <i class="icon icon--user"></i>
+                                                    <span class="icon-item__text">Johnson</span>
+                                                </div>
+                                            </div>
+                                            <div class="icon-line">
+                                                <div class="icon-item">
+                                                    <i class="icon icon--phone"></i>
+                                                    <span class="icon-item__text">+447800767690</span>
+                                                </div>
+                                            </div>
+                                            <div class="icon-line">
+                                                <div class="icon-item">
+                                                    <i class="icon icon--email"></i>
+                                                    <span class="icon-item__text">PJohnson@gmail.com</span>
+                                                </div>
+                                            </div>
+                                            <div class="icon-line">
+                                                <div class="icon-item">
+                                                    <i class="icon icon--country"></i>
+                                                    <span class="icon-item__text">Great Britain</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="field-label">Expected usual trading volume (USD)</label>
+                                            <div class="select-block select-block--auto">
+                                                <select name="">
+                                                    <option value="" selected disabled> Please select amount </option>
+                                                    <option value="1"> 1 </option>
+                                                    <option value="2"> 2 </option>
+                                                    <option value="3"> 3 </option>
+                                                    <option value="4"> 4 </option>
+                                                    <option value="5"> 5 </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label">
+                                                <input type="checkbox" name="" value="" />
+                                                <span><i>Baird_rhodium_coin</i></span>
+                                            </label>
+                                            <label class="form-label">
+                                                <input type="checkbox" name="" value="" />
+                                                <span><i>Baird_rhodium_bar</i></span>
+                                            </label>
+                                            <label class="form-label">
+                                                <input type="checkbox" name="" value="" />
+                                                <span><i>Baird_rhodium_round</i></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-submit">
+                                                <button type="submit" class="btn btn-default">Send</button>
+                                            </div>
+                                        </div>
+                                    </div><!--.row form-elements -->
+                                </div><!--.col-md-7-->
+                                
+                                <div class="col-md-5">
+                                	<p>With TM2 you receive:</p>
+                                    <ul>
+                                        <li>Internations fast settlements in most Flat currencies</li>
+                                        <li>Ability to trade TM2, Ether, and most other cryptocurrencies</li>
+                                        <li>Up to 150M CHF/usd/eur daily trades</li>
+                                        <li>Limitred counter-party risk</li>
+                                        <li>AML regulated financial intermediary</li>
+                                    </ul>
+                                    <p>Experienced trades in the cryptocurrency trading business will be glad to walk you through the trading process and assist with any questions or issues you might face along the way</p>
+                                    <p>Our service is for high volume orders only. Minimum order size USD 50.000</p>
+                                    <p>Please use our retail platform for trading orders smaller than USD 50.000</p>
+                                </div><!--.col-md-5-->
+                            </div><!--.row-->
+                        </form>
+                    </div><!--.pform-center-col-->
+                    
+                </div><!--.pform-content-->
+            </div><!--.pform-->
+            
+        </div>
+    </div>
+</div><!--.pform-wrapper-->
+
+
+
+
+</div><!--#root-->
+
+<!-- не использовать в проекте, содержит функции test_... только для демонстрации шаблонов верстки-->
+<script src="js/test.js"></script>
+
+</body>
+</html>

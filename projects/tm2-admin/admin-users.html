@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="ru"><!-- InstanceBegin template="/Templates/TM2_admin.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+    <meta charset="utf-8">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>Users | Adminstation | TM2</title>
+    <!-- InstanceEndEditable -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!--SEO and Share-->
+    <meta name="description" content="Описание" />
+    <!--SEO and Share-->
+    
+    <!--favicons--> 
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#7287D5">
+    
+    <meta name="apple-mobile-web-app-status-bar-style" content="#7287D5">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#7287D5">
+    <!--favicons-->
+        
+    <!--head css, js-->
+    <link rel="stylesheet" href="css/libs/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/libs/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="js/modernizr-custom.js"></script>
+    <!--head css, js-->
+    
+    <!-- InstanceBeginEditable name="head" -->
+    <!-- InstanceEndEditable -->
+</head>
+<body>
+
+<div id="root">
+
+<div class="wrapper">
+	<header class="header">
+    	<div class="main-container container-fluid">
+        	<div class="row header-row align-items-center justify-content-end">
+            	<div class="col-2 header-row__logo">
+                	<a href="admin.html" class="header-logo-link" title="Main page">TM2</a>
+                </div>
+                
+                <div class="col header-row__empty"></div>
+                                
+                <!-- InstanceBeginEditable name="Top_header_region" -->
+                
+                <div class="col-auto header-row__status">
+                    <div class="dropdown-wrapper">
+                        <button class="dropdown-toggle" onClick="test_show_points_dropdown('lang-menu')">
+                            <div class="icon-item">
+                                <i class="icon icon--lang-en"></i>
+                            </div>
+                            <span class="dropdown-arrow"></span>
+                        </button>
+                        
+                        <div class="dropdown-menu" id="lang-menu" style="display: none">
+                            <div class="dropdown-item">
+                                <a href="#" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--lang-en"></i>
+                                        <span class="icon-item__text">English</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a href="#" class="link link-icon" title="Chinese">
+                                    <div class="icon-item">
+                                        <i class="icon icon--lang-cn"></i>
+                                        <span class="icon-item__text">中文</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div><!--.dropdown-wrapper-->
+                </div>
+                
+                <!-- InstanceEndEditable -->
+                
+                <div class="col-auto header-row__status">
+                    <div class="dropdown-wrapper">
+                        <button class="dropdown-toggle" onClick="test_show_avatar_dropdown()">
+                            <!--<div class="avatar-item">
+                            </div>-->
+                            <div class="avatar-name">Fred Brown</div>
+                            <span class="dropdown-arrow"></span>
+                        </button>
+                        
+                        <div class="dropdown-menu" id="test-avatar-dropdown" style="display: none">
+                            <!-- InstanceBeginEditable name="Top_menu_region" -->
+                            <div class="dropdown-item">
+                                <a href="admin.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--user"></i>
+                                        <span class="icon-item__text">Profile</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a href="index.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--logout"></i>
+                                        <span class="icon-item__text">Log out</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- InstanceEndEditable -->
+                        </div>
+                    </div><!--.dropdown-wrapper-->
+                </div>
+            </div><!--.header-row-->
+        </div><!--.main-container-->
+    </header>
+    
+    <div class="middle">
+		<div class="main-container container-fluid">
+            <div class="middle-row">
+                <div class="sidebar">
+                    <nav class="l-menu">
+                    	<ul class="not-list">
+                        	<!-- InstanceBeginEditable name="Menu_region" -->
+                            <li>
+                                <a href="admin.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--main"></i>
+                                        <span class="icon-item__text">Main (admin)</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-investor.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--main"></i>
+                                        <span class="icon-item__text">Main (investor)</span>
+                                    </div>
+                                </a>
+                            </li>
+							<li>
+								<a href="admin-users.html" class="link link-icon active">
+									<div class="icon-item">
+										<i class="icon icon--users"></i>
+										<span class="icon-item__text">Users</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="admin-wallets.html" class="link link-icon">
+									<div class="icon-item">
+										<i class="icon icon--wallets"></i>
+										<span class="icon-item__text">Wallets</span>
+									</div>
+								</a>
+							</li>
+                            <li>
+                                <a href="admin-metals.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--metals"></i>
+                                        <span class="icon-item__text">Digital metals</span>
+                                    </div>
+                                </a>
+                            </li>
+							<li>
+                                <a href="admin-investor-buy-metals.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--buy-sell"></i>
+                                        <span class="icon-item__text">Buy metals</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-balance.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--balance"></i>
+                                        <span class="icon-item__text">Balance</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-vaults.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--vaults"></i>
+                                        <span class="icon-item__text">Vaults</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-news.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--news"></i>
+                                        <span class="icon-item__text">News & Analysis</span>
+                                    </div>
+                                </a>
+							</li>
+                            <!-- InstanceEndEditable -->
+                        </ul>
+                    </nav>
+                    
+                    <!-- InstanceBeginEditable name="Sidebar_bottom_region" -->
+                    <div class="l-bottom">
+                    	<div class="l-bottom-item">
+                        	<a href="#" onClick="return test_show_form_OTC()">CONTACT OTC</a>
+                        </div>
+                    </div>
+                    <!-- InstanceEndEditable -->
+                    
+                </div><!--.sidebar-->
+                
+                <div class="content">
+                    <!-- InstanceBeginEditable name="Content_region" -->
+                    <h1>Users</h1>
+                           
+                                        
+                    
+                    
+                    <div class="row filter-block align-items-center">
+                    	<div class="col-lg-6 col-md-7 filter-block__search" style="display: block;">
+                            <div class="search-line" id="test-search-line">
+                                <form>
+                                    <div class="search-line__top">
+                                        <input type="text" class="search-line__top-text" placeholder="Type in search" onClick="test_show_form_search()" />
+                                        <button type="submit" class="btn search-line__top-submit"></button>
+                                        <button type="button" class="btn search-line__top-close" onClick="test_close_form_search()">×</button>
+                                    </div>
+                                    
+                                    <div class="search-line__dropdown">
+                                        <div class="search-line__dropdown-content">
+                                            <div class="row form-elements align-items-center">
+                                                <div class="col-md-6">
+                                                    <div class="text-block">
+                                                        <i class="icon icon--user"></i>
+                                                        <input type="text" name="" placeholder="Full name" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="text-block">
+                                                        <i class="icon icon--user"></i>
+                                                        <input type="text" name="" placeholder="Last name" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="select-block">
+                                                        <i class="icon icon--country"></i>
+                                                        <select name="">
+                                                            <option value="" selected disabled> Country </option>
+                                                            <option value="1"> Germany </option>
+                                                            <option value="2"> ... </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="text-block">
+                                                        <i class="icon icon--phone"></i>
+                                                        <input type="text" name="" placeholder="Phone" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="select-block">
+                                                        <select name="">
+                                                            <option value="" selected disabled> Role </option>
+                                                            <option value="1"> Issuer </option>
+                                                            <option value="2"> Investor </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="select-block">
+                                                        <select name="">
+                                                            <option value="" selected disabled> KYC </option>
+                                                            <option value="1"> Undefined </option>
+                                                            <option value="2"> Approved </option>
+                                                            <option value="3"> Disapprove </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="form-label">
+                                                        <input type="checkbox" name="" value="" />
+                                                        <span><i>Activity</i></span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-submit">
+                                                        <button type="submit" class="btn btn-default">Search</button>
+                                                        <button type="reset" class="btn btn-default btn--reset">Reset</button>
+                                                    </div>
+                                                </div>
+                                            </div><!--.row form-elements-->
+                                        </div><!--.search-line__dropdown-content-->
+                                    </div><!--.search-line__dropdown-->
+                                </form>
+                            </div><!--.search-line-->
+                        </div>
+                        
+                        <div class="col filter-block__empty">
+                        </div>
+                        
+                        <div class="col-auto filter-block__control">
+                        	<a href="#" class="link link-icon" onClick="return test_show_form_add_user()">
+                            	<div class="icon-item color-blue-dodger">
+                                    <i class="icon icon--add"></i>
+                                    <span class="icon-item__text">Add user</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div><!--.filter-block-->
+                    
+                    
+                    <div class="table-wrapper">
+                    	<table class="default-table">
+                        	<thead>
+                            	<tr>
+                                	<th>
+                                        <div class="icon-item" title="Settings">
+                                            <i class="icon icon--settings"></i>
+                                        </div>
+                                    </th>
+                                    <th class="table-header-sorter">
+                                    	<span>Full name</span>
+                                    </th>
+                                    <th class="table-header-sorter">
+                                    	<span>E-mail</span>
+                                    </th>
+                                    <th class="table-header-sorter table-header-sorter--asc">
+                                    	<span>Phone</span>
+                                    </th>
+                                    <th class="table-header-sorter">
+                                    	<span>Role</span>
+                                    </th>
+                                    <th class="table-header-sorter table-header-sorter--desc">
+                                    	<span>Country</span>
+                                    </th>
+                                    <th class="table-header-sorter">
+                                    	<span>Active</span>
+                                    </th>
+                                    <th class="table-header-sorter">
+                                    	<span>KYC</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            	
+                                <tr>
+                                	<td class="td-controls">
+                                    	<div class="dropdown-wrapper">
+                                            <button class="dropdown-toggle">
+                                            	<span class="btn btn-points"></span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td> <a href="#">Fred Brown</a> </td>
+                                    <td> Fred.Brown@gmail. com </td>
+                                    <td> +447800768564 </td>
+                                    <td> Investor </td>
+                                    <td> Iceland </td>
+                                    <td> <span class="color-red">No</span> </td>
+                                    <td>
+                                    	<span class="color-red">Disapprove</span>
+                                        <div class="dropdown-wrapper">
+                                            <button type="button" class="dropdown-toggle" onclick="test_show_info_dropdown()">
+                                                <div class="icon-item">
+                                                    <i class="icon icon--question"></i>
+                                                </div>
+                                            </button>
+                                            
+                                            <div class="dropdown-menu" id="test-info-dropdown" style="display: none">
+                                            	<div class="dropdown-item">
+                                                    <div class="dropdown-text">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                	<td class="td-controls">
+                                    	<div class="dropdown-wrapper">
+                                            <button class="dropdown-toggle">
+                                            	<span class="btn btn-points"></span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td> <a href="#">Caleb Harris</a> </td>
+                                    <td> Caleb_Harris2019 @gmail. com </td>
+                                    <td> +447800132690 </td>
+                                    <td> Issuer </td>
+                                    <td> Great Britain </td>
+                                    <td> <span class="color-red">No</span> </td>
+                                    <td> Undefined </td>
+                                </tr>
+                                <tr>
+                                	<td class="td-controls">
+                                    	<div class="dropdown-wrapper">
+                                            <button class="dropdown-toggle">
+                                            	<span class="btn btn-points"></span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td> <a href="#">Tyler Hall</a> </td>
+                                    <td> TylerHall@gmail. com </td>
+                                    <td> +447800767690 </td>
+                                    <td> Issuer </td>
+                                    <td> USA </td>
+                                    <td> <span class="color-green">Yes</span> </td>
+                                    <td>
+                                    	<span class="color-green">Approved</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                	<td class="td-controls">
+                                    	<div class="dropdown-wrapper">
+                                            <button class="dropdown-toggle">
+                                            	<span class="btn btn-points"></span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td> <a href="#">Alex White</a> </td>
+                                    <td> Alex_White2019 @gmail. com </td>
+                                    <td> +447800132690 </td>
+                                    <td> Issuer </td>
+                                    <td> Great Britain </td>
+                                    <td> <span class="color-red">No</span> </td>
+                                    <td> Undefined </td>
+                                </tr>
+                                <tr>
+                                	<td class="td-controls">
+                                    	<div class="dropdown-wrapper">
+                                            <button class="dropdown-toggle">
+                                            	<span class="btn btn-points"></span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td> <a href="#">Ryan Johnson</a> </td>
+                                    <td> RJohnson@gmail. com </td>
+                                    <td> +447800767690 </td>
+                                    <td> Issuer </td>
+                                    <td> Great Britain </td>
+                                    <td> <span class="color-green">Yes</span> </td>
+                                    <td> <span class="color-green">Approved</span> </td>
+                                </tr>
+                                <tr>
+                                    <td class="td-controls">
+                                    	<div class="dropdown-wrapper">
+                                            <button type="button" class="dropdown-toggle" onClick="test_show_points_dropdown()">
+                                            	<span class="btn btn-points"></span>
+                                            </button>
+                                            
+                                            <div class="dropdown-menu" id="test-points-dropdown" style="display: none">
+                                                <div class="dropdown-item">
+                                                    <a href="#" class="link link-icon">
+                                                        <div class="icon-item">
+                                                            <i class="icon icon--edit"></i>
+                                                            <span class="icon-item__text">Edit</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="dropdown-item">
+                                                    <a href="#" class="link link-icon">
+                                                        <div class="icon-item">
+                                                            <i class="icon icon--decline"></i>
+                                                            <span class="icon-item__text">Decline KYC</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="dropdown-item">
+                                                    <a href="#" class="link link-icon">
+                                                        <div class="icon-item color-green">
+                                                            <i class="icon icon--approve-green"></i>
+                                                            <span class="icon-item__text">Approve KYC</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="dropdown-item">
+                                                    <a href="#" class="link link-icon">
+                                                        <div class="icon-item color-red">
+                                                            <i class="icon icon--block-red"></i>
+                                                            <span class="icon-item__text">Block</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="dropdown-item">
+                                                    <a href="#" class="link link-icon">
+                                                        <div class="icon-item color-red">
+                                                            <i class="icon icon--remove-red"></i>
+                                                            <span class="icon-item__text">Remove</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td> <a href="#">Pete Johnson</a> </td>
+                                    <td> PJohnson@gmail. com </td>
+                                    <td> +447800767690 </td>
+                                    <td> Issuer </td>
+                                    <td> Great Britain </td>
+                                    <td> <span class="color-green">Yes</span> </td>
+                                    <td> <span class="color-green">Approved</span> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <ul class="pagination">
+                            <li class=""><a class="" href="#">«</a></li>
+                            <li class=""><a class="" href="#">⟨</a></li>
+                            <li class=""><a class="" href="#">1</a></li>
+                            <li class=""><a class="" href="#">2</a></li>
+                            <li class=""><a class="" href="#">3</a></li>
+                            <li class="active"><a class="active" href="#">12</a></li>
+                            <li class=""><a class="" href="#">13</a></li>
+                            <li class=""><a class="" href="#">14</a></li>
+                            <li class="disabled"><a class="" href="#">⟩</a></li>
+                            <li class="disabled"><a class="" href="#">»</a></li>
+                        </ul>
+                        
+                    </div><!--.table-wrapper-->                    
+                                                            
+                    
+                    <div class="btn-block">
+                        <button type="button" class="btn btn-default" onClick="test_show_preloader_screen()"> Показать прелоадер </button>
+                    </div>
+                    <br/><br/><br/><br/><br/><br/><br/>
+                    
+                                        
+                    <!-- InstanceEndEditable -->
+                </div>
+                
+            </div><!--.middle-row-->
+        </div><!--.main-container-->
+    </div><!--.middle-->
+</div><!--.wrapper-->
+
+<!-- InstanceBeginEditable name="Extra_region" -->
+<div class="pform-bg pform-zoom-in" style="display: none" id="test-pform-bg"></div>
+
+<div class="pform-wrapper pform-zoom-in" tabindex="-1" style="display: none" id="test-pform-add-user">
+    <div class="pform-container">
+        <div class="pform-outer">
+            
+            <div class="pform zoom-anim-dialog pform-big">
+                <button title="Close" type="button" class="pform-close" onClick="test_close_form_add_user()">×</button>
+                <div class="pform-content">
+                    
+                    <div class="pform-center-col">
+                        <div>
+                            <h2>Add user</h2>
+                            <div class="row form-elements">
+                                <div class="col-md-6">
+                                    <label class="field-label label-small">First name<span class="color-red">&nbsp;*</span></label>
+                                    <div class="text-block">
+                                        <input type="text" placeholder="" name="firstName" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="field-label label-small">Last name<span class="color-red">&nbsp;*</span></label>
+                                    <div class="text-block">
+                                        <input type="text" placeholder="" name="lastName" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="field-label label-small">E-mail<span class="color-red">&nbsp;*</span></label>
+                                    <div class="text-block">
+                                        <input type="text" placeholder="" name="email" autocomplete="new-password" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="field-label label-small">Company<span class="color-red">&nbsp;*</span></label>
+                                    <div class="text-block">
+                                        <input type="text" placeholder="" name="company" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="field-label label-small">Address</label>
+                                    <div class="text-block">
+                                        <input type="text" placeholder="" name="address" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="field-label label-small">Phone<span class="color-red">&nbsp;*</span></label>
+                                    <div class="text-block">
+                                        <input type="text" placeholder="" name="phone" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="field-label label-small">Country<span class="color-red">&nbsp;*</span></label>
+                                    <div class="select-block">
+                                        <select name="country.id">
+                                            <option value="" disabled="">Choose option</option>
+                                            <option value="231">Afghanistan</option>
+                                            <option value="245">Aland Islands</option>
+                                            <option value="236">Albania</option>
+                                            <option value="76">Svalbard and Jan Mayen</option>
+                                            <option value="169">Swaziland</option>
+                                            <option value="193">Sweden</option>
+                                            <option value="152">Switzerland</option>
+                                            <option value="170">Syria</option>
+                                            <option value="210">Taiwan</option>
+                                            <option value="40">Tajikistan</option>
+                                            <option value="124">Tanzania</option>
+                                            <option value="221">Thailand</option>
+                                            <option value="223">Togo</option>
+                                            <option value="42">Tokelau</option>
+                                            <option value="216">Tonga</option>
+                                            <option value="211">Trinidad and Tobago</option>
+                                            <option value="63">Tunisia</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="col-md-6">
+                                    <label class="field-label label-small">Role<span class="color-red">&nbsp;*</span></label>
+                                    <!--<div class="select-block">
+                                        <select name="role.id">
+                                            <option value="" disabled="">Choose option</option>
+                                            <option value="1">Administrator</option>
+                                            <option value="3">Investor</option>
+                                            <option value="2" selected>Issuer</option>
+                                            <option value="4">Vault manager</option>
+                                        </select>
+                                    </div>-->
+                                    
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="select-block">
+                                                <select name="role.id">
+                                                    <option value="" disabled="">Choose option</option>
+                                                    <option value="1">Administrator</option>
+                                                    <option value="3">Investor</option>
+                                                    <option value="2" selected>Issuer</option>
+                                                    <option value="4">Vault manager</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="select-block">
+                                                <select name="">
+                                                    <option value="" disabled selected> Choose Issuer </option>
+                                                    <option value="1" > Issuer first last name 1 </option>
+                                                    <option value="2"> Issuer first last name 2 </option>
+                                                    <option value="2"> Issuer first last name 3 </option>
+                                                    <option value="2"> Issuer first last name 4 </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div><!--.col-md-6-->
+                                
+                                
+                                <div class="col-12">
+                                    <label class="field-label label-small">E-wallet public key</label>
+                                    <div class="text-block">
+                                        <input type="text" placeholder="" name="ewalletPublicKey" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="field-label label-small">Password<span class="color-red">&nbsp;*</span></label>
+                                    <div class="text-block">
+                                        <input type="password" name="password" autocomplete="new-password" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="field-label label-small">Password confirmation<span class="color-red">&nbsp;*</span></label>
+                                    <div class="text-block">
+                                        <input type="password" name="matchingPassword" autocomplete="new-password" value="">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-submit">
+                                        <button type="button" class="btn btn-simple">
+                                        <div class="btn__content btn--blue">Save</div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--.pform-center-col-->
+                    
+                </div><!--.pform-content-->
+            </div><!--.pform-->
+            
+        </div>
+    </div>
+</div><!--.pform-wrapper-->
+
+
+<div class="pform-wrapper pform-zoom-in" tabindex="-1" style="display: none" id="test-pform-add-user-old">
+    <div class="pform-container">
+        <div class="pform-outer">
+            
+            <div class="pform zoom-anim-dialog">
+                <button title="Close" type="button" class="pform-close" onClick="test_close_form_add_user()">×</button>
+                <div class="pform-content">
+                    
+                    <div class="pform-center-col">
+                        <form name="" method="post" action="">
+                            <h2>Add user</h2>
+                            <div class="form-response" style="display: block">
+                            	Просто текст
+                            </div>
+                            <div class="form-response color-red" style="display: block">
+                            	Текст ошибки
+                            </div>
+                            <div class="form-response color-green" style="display: block">
+                            	Текст результата
+                            </div>
+                            <div class="row form-elements">
+                            	<div class="col-12">
+                                	<div class="text-block block-error">
+                                    	<input type="text" name="" placeholder="Full name" />
+                                        <span class="error">Error text 1</span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                	<div class="select-block">
+                                    	<select name="" id="test-country-select">
+                                        	<option value="" selected disabled> Country </option>
+                                            <option value="1"> Germany </option>
+                                            <option value="2"> U.K. </option>
+                                            <option value="3"> U.S.A. </option>
+                                            <option value="4"> France </option>
+                                            <option value="5"> Iceland </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                	<div class="select-block block-error">
+                                    	<select name="">
+                                        	<option value="" selected disabled> Select example </option>
+                                            <option value="1"> Germany </option>
+                                            <option value="2"> U.K. </option>
+                                            <option value="3"> U.S.A. </option>
+                                            <option value="4"> France </option>
+                                            <option value="5"> Iceland </option>
+                                        </select>
+                                        <span class="error">Error text 2</span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                	<div class="text-block">
+                                    	<input type="text" name="" placeholder="Phone" />
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12">
+                                	<div class="file-box">
+                                        <label><input type="file" name="file" class="inputfile"><strong class="btn btn-default">Add photo</strong> <span>file_name.jpg</span> </label>
+                                    </div><!--.file-box-->
+                                </div>
+                                
+                                <div class="col-12">
+                                	<div class="text-block">
+                                    	<input type="text" name="" placeholder="Role" />
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                	<div class="text-block">
+                                    	<textarea placeholder="Textarea example"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                	<div class="text-block block-error">
+                                    	<textarea placeholder="Textarea example"></textarea>
+                                        <span class="error">Error text 3</span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">
+                                        <input type="checkbox" name="" value="" />
+                                        <span><i>Activity</i></span>
+                                    </label>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label block-error">
+                                        <input type="checkbox" name="" value="" />
+                                        <span><i>Sponsored</i></span>
+                                        <span class="error">Error text 2</span>
+                                    </label>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label">
+                                        <input type="checkbox" name="" value="" />
+                                        <span><i>Broker</i></span>
+                                    </label>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-submit">
+                                        <button type="submit" class="btn btn-default">Add user</button>
+                                        <button type="reset" class="btn btn-default btn--reset" onClick="test_close_form_add_user()">Cansel</button>
+                                    </div>
+                                </div>
+                            </div><!--.form-elements-->
+                        </form>
+                    </div><!--.pform-center-col-->
+                    
+                </div><!--.pform-content-->
+            </div><!--.pform-->
+            
+        </div>
+    </div>
+</div><!--.pform-wrapper-->
+
+
+<div class="pform-wrapper pform-zoom-in pform-show" tabindex="-1" style="display: none" id="test-pform-confirm">
+    <div class="pform-container">
+        <div class="pform-outer">
+            
+            <div class="pform zoom-anim-dialog">
+                <button title="Close" type="button" class="pform-close" onClick="test_close_form_confirm()">×</button>
+                <div class="pform-content">
+                    
+                    <div class="pform-center-col align-center">
+                        <form name="" method="post" action="">
+                            <h2>Are you sure?</h2>
+                            <div class="form-response">
+                            </div>
+                            <div class="row form-elements">
+                                <div class="col-12">
+                                    <div class="form-submit">
+                                        <button type="button" class="btn btn-default btn--reset" onClick="test_close_form_confirm()">Cancel</button>
+                                        <button type="button" class="btn btn-default">Yes</button>
+                                    </div>
+                                </div>
+                            </div><!--.form-elements-->
+                        </form>
+                    </div><!--.pform-center-col-->
+                    
+                </div><!--.pform-content-->
+            </div><!--.pform-->
+            
+        </div>
+    </div>
+</div><!--.pform-wrapper-->
+
+
+
+<div class="pform-wrapper pform-zoom-in pform-show" tabindex="-1" style="display: none" id="test-pform-cancel-limit">
+    <div class="pform-container">
+        <div class="pform-outer">
+            
+            <div class="pform zoom-anim-dialog">
+                <button title="Close" type="button" class="pform-close" onClick="test_close_form_cancel_limit()">×</button>
+                <div class="pform-content">
+                    
+                    <div class="pform-center-col align-center">
+                        <form name="" method="post" action="">
+                            <h2>Cancel BRD limits</h2>
+                            <div class="row form-elements">
+                            	<div class="col-12">
+                                	Are you sure you want to cancel BRD limits?
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-submit">
+                                        <button type="button" class="btn btn-default">Yes, cancel limits</button>
+                                        <button type="reset" class="btn btn-default btn--reset" onClick="test_close_form_cancel_limit()">Close</button>
+                                    </div>
+                                </div>
+                            </div><!--.form-elements-->
+                        </form>
+                    </div><!--.pform-center-col-->
+                    
+                </div><!--.pform-content-->
+            </div><!--.pform-->
+            
+        </div>
+    </div>
+</div><!--.pform-wrapper-->
+
+
+
+<div class="pform-wrapper pform-zoom-in pform-show" tabindex="-1" style="display: none" id="test-pform-buttons">
+    <div class="pform-container">
+        <div class="pform-outer">
+            
+            <div class="pform zoom-anim-dialog">
+                <button title="Close" type="button" class="pform-close" onClick="test_close_form_buttons()">×</button>
+                <div class="pform-content">
+                    
+                    <div class="pform-center-col align-center">
+                        <form name="" method="post" action="">
+                            <h2>New buttons</h2>
+                            
+                            <div class="row form-elements">
+                                <div class="col-12">
+                                    <div class="form-submit">
+                                        <button type="submit" class="btn btn-simple">
+                                        	<div class="btn__content btn--blue">
+                                            	Default
+                                            </div>
+                                        </button>
+                                        <button type="reset" class="btn btn-simple">
+                                        	<div class="btn__content btn--transparent">
+                                            	Cansel
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <button type="button" class="btn btn-simple btn-full-width">
+                                    	<div class="btn__content btn--red">
+                                            <div class="btn__content-name">Sell</div>
+                                            <div class="btn__content-text">Rhodium_Baird_Coin</div>
+                                            <div>175,23 USD</div>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button type="button" class="btn btn-simple btn-full-width">
+                                        <div class="btn__content btn--green">
+                                            <div class="btn__content-name">Buy</div>
+                                            <div class="btn__content-text">Rhodium_Baird_Coin</div>
+                                            <div>175,23 USD</div>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div><!--.form-elements-->
+                        </form>
+                    </div><!--.pform-center-col-->
+                    
+                </div><!--.pform-content-->
+            </div><!--.pform-->
+            
+        </div>
+    </div>
+</div><!--.pform-wrapper-->
+
+
+
+
+
+<div class="preloader-screen" id="test-preloader-screen" style="display: none" onClick="test_hide_preloader_screen()"></div>
+
+
+<div class="fixed-footer">
+	<div class="limit-item">
+        <div class="limit-item__content">
+        	<div>
+            	BRD limits
+                <a href="admin-coins-add(edit)-limits-new.html" class="link link-icon">
+                    <div class="icon-item">
+                        <i class="icon icon--edit"></i>
+                    </div>
+                </a>
+                <a href="#" class="link link-icon" title="Cancel limit" onClick="return test_show_form_cancel_limit()">
+                    <div class="icon-item">
+                        <i class="icon icon--close-red"></i>
+                    </div>
+                </a>
+            </div>
+            <p>
+                <span class="color-blue-light">Bought 85%</span> ($1.450 out of $2.050)
+                <span class="color-blue-light">Sold 100%</span> ($2500 out of $2500)
+            </p>
+        </div>
+    </div>
+    
+    <div class="limit-item">
+    	<div class="limit-item__content">
+        	<div>
+            	RHKRD limits
+                <a href="admin-coins-add(edit)-limits-new.html" class="link link-icon">
+                    <div class="icon-item">
+                        <i class="icon icon--edit"></i>
+                    </div>
+                </a>
+                <a href="#" class="link link-icon" title="Cancel limit" onClick="return test_show_form_cancel_limit()">
+                    <div class="icon-item">
+                        <i class="icon icon--close-red"></i>
+                    </div>
+                </a>
+            </div>
+            <p>
+                <span class="color-blue-light">Bought 3%</span> ($500 out of $5.200)
+                <span class="color-blue-light">Sold 100%</span> ($2500 out of $2500)
+            </p>
+        </div>
+    </div>
+</div><!--.fixed-footer-->
+
+
+<!-- InstanceEndEditable -->
+
+</div><!--#root-->
+
+<!-- не использовать в проекте, содержит функции test_... только для демонстрации шаблонов верстки-->
+<script src="js/test.js"></script>
+
+</body>
+<!-- InstanceEnd --></html>

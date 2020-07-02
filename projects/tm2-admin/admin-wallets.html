@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru"><!-- InstanceBegin template="/Templates/TM2_admin.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+    <meta charset="utf-8">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>Wallets | Adminstation | TM2</title>
+    <!-- InstanceEndEditable -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!--SEO and Share-->
+    <meta name="description" content="Описание" />
+    <!--SEO and Share-->
+    
+    <!--favicons--> 
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#7287D5">
+    
+    <meta name="apple-mobile-web-app-status-bar-style" content="#7287D5">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#7287D5">
+    <!--favicons-->
+        
+    <!--head css, js-->
+    <link rel="stylesheet" href="css/libs/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/libs/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="js/modernizr-custom.js"></script>
+    <!--head css, js-->
+    
+    <!-- InstanceBeginEditable name="head" -->
+    <!-- InstanceEndEditable -->
+</head>
+<body>
+
+<div id="root">
+
+<div class="wrapper">
+	<header class="header">
+    	<div class="main-container container-fluid">
+        	<div class="row header-row align-items-center justify-content-end">
+            	<div class="col-2 header-row__logo">
+                	<a href="admin.html" class="header-logo-link" title="Main page">TM2</a>
+                </div>
+                
+                <div class="col header-row__empty"></div>
+                                
+                <!-- InstanceBeginEditable name="Top_header_region" -->
+                
+                <!-- InstanceEndEditable -->
+                
+                <div class="col-auto header-row__status">
+                    <div class="dropdown-wrapper">
+                        <button class="dropdown-toggle" onClick="test_show_avatar_dropdown()">
+                            <!--<div class="avatar-item">
+                            </div>-->
+                            <div class="avatar-name">Fred Brown</div>
+                            <span class="dropdown-arrow"></span>
+                        </button>
+                        
+                        <div class="dropdown-menu" id="test-avatar-dropdown" style="display: none">
+                            <!-- InstanceBeginEditable name="Top_menu_region" -->
+                            <div class="dropdown-item">
+                                <a href="admin.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--user"></i>
+                                        <span class="icon-item__text">Profile</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a href="index.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--logout"></i>
+                                        <span class="icon-item__text">Log out</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- InstanceEndEditable -->
+                        </div>
+                    </div><!--.dropdown-wrapper-->
+                </div>
+            </div><!--.header-row-->
+        </div><!--.main-container-->
+    </header>
+    
+    <div class="middle">
+		<div class="main-container container-fluid">
+            <div class="middle-row">
+                <div class="sidebar">
+                    <nav class="l-menu">
+                    	<ul class="not-list">
+                        	<!-- InstanceBeginEditable name="Menu_region" -->
+                            <li>
+                                <a href="admin.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--main"></i>
+                                        <span class="icon-item__text">Main (admin)</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-investor.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--main"></i>
+                                        <span class="icon-item__text">Main (investor)</span>
+                                    </div>
+                                </a>
+                            </li>
+							<li>
+								<a href="admin-users.html" class="link link-icon">
+									<div class="icon-item">
+										<i class="icon icon--users"></i>
+										<span class="icon-item__text">Users</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="admin-wallets.html" class="link link-icon active">
+									<div class="icon-item">
+										<i class="icon icon--wallets"></i>
+										<span class="icon-item__text">Wallets</span>
+									</div>
+								</a>
+							</li>
+                            <li>
+                                <a href="admin-metals.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--metals"></i>
+                                        <span class="icon-item__text">Digital metals</span>
+                                    </div>
+                                </a>
+                            </li>
+							<li>
+                                <a href="admin-investor-buy-metals.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--buy-sell"></i>
+                                        <span class="icon-item__text">Buy metals</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-balance.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--balance"></i>
+                                        <span class="icon-item__text">Balance</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-vaults.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--vaults"></i>
+                                        <span class="icon-item__text">Vaults</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-news.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--news"></i>
+                                        <span class="icon-item__text">News & Analysis</span>
+                                    </div>
+                                </a>
+							</li>
+                            
+                            <!-- InstanceEndEditable -->
+                        </ul>
+                    </nav>
+                    
+                    <!-- InstanceBeginEditable name="Sidebar_bottom_region" -->
+                    <!-- InstanceEndEditable -->
+                    
+                </div><!--.sidebar-->
+                
+                <div class="content">
+                    <!-- InstanceBeginEditable name="Content_region" -->
+                                               
+                    <div class="tab-links">
+                        <a href="admin-wallets.html" class="tab-link active">Wallets</a>
+                        <a href="#" class="tab-link">Transactions</a>
+                    </div>
+                    
+                    
+                    <div class="tab-blocks">
+                    	<div id="test-Wallets-block" style="display: block;">
+                        	
+                            <div class="row filter-block align-items-center">
+                                <div class="col-lg-6 col-md-7 filter-block__search">
+                                    <div class="search-line" id="test-search-line">
+                                        <form>
+                                            <div class="search-line__top">
+                                                <input type="text" class="search-line__top-text" placeholder="Type in search" onClick="test_show_form_search()" />
+                                                <button type="submit" class="btn search-line__top-submit"></button>
+                                                <button type="button" class="btn search-line__top-close" onClick="test_close_form_search()">×</button>
+                                            </div>
+                                            
+                                            <div class="search-line__dropdown">
+                                                <div class="search-line__dropdown-content">
+                                                    <div class="row form-elements align-items-center">
+                                                        <div class="col-md-6">
+                                                            <div class="text-block">
+                                                                <i class="icon icon--user"></i>
+                                                                <input type="text" name="" placeholder="Name" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="select-block">
+                                                                <select name="">
+                                                                    <option value="" selected disabled> Metal </option>
+                                                                    <option value="1"> Germany </option>
+                                                                    <option value="2"> ... </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                        	... Other ...
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="form-submit">
+                                                                <button type="submit" class="btn btn-default">Search</button>
+                                                                <button type="reset" class="btn btn-default btn--reset">Reset</button>
+                                                            </div>
+                                                        </div>
+                                                    </div><!--.row form-elements-->
+                                                </div><!--.search-line__dropdown-content-->
+                                            </div><!--.search-line__dropdown-->
+                                        </form>
+                                    </div><!--.search-line-->
+                                </div>
+                                
+                                <div class="col filter-block__empty">
+                                </div>
+                                
+                                <div class="col-auto filter-block__control">
+                                </div>
+                            </div><!--.filter-block-->
+                            
+                            
+                            <div class="table-wrapper">
+                                <table class="default-table">
+                                    <thead>
+                                        <tr>
+                                            <th class="table-header-sorter">
+                                                <span>Name</span>
+                                            </th>
+                                            <th class="table-header-sorter">
+                                                <span>E-wallet</span>
+                                            </th>
+                                            <th class="table-header-sorter">
+                                                <span>Metal</span>
+                                            </th>
+                                            <th class="table-header-sorter table-header-sorter--asc">
+                                                <span>Brand</span>
+                                            </th>
+                                            <th class="table-header-sorter">
+                                                <span>Amount</span>
+                                            </th>
+                                            <th class="table-header-sorter table-header-sorter--desc">
+                                                <span>Currency</span>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                            <button type="button" class="link link-icon" onclick="return test_show_form_profile_final()">
+                                                <div class="icon-item color-blue-light">
+                                                    <span class="icon-item__text">Pete Johnson</span>
+                                                </div>
+                                            </button>
+                                            </td>
+                                            <td> sf458dfr46 </td>
+                                            <td> Rhodium </td>
+                                            <td> Baird </td>
+                                            <td class="align-right"> 47800 </td>
+                                            <td> Baird_rhodium_coin </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                            <button type="button" class="link link-icon" onclick="return test_show_form_profile_final()">
+                                                <div class="icon-item color-blue-light">
+                                                    <span class="icon-item__text">Fred Brown</span>
+                                                </div>
+                                            </button>
+                                            </td>
+                                            <td> gf478dfr02 </td>
+                                            <td> Cobalt </td>
+                                            <td> Baird </td>
+                                            <td class="align-right"> 0 </td>
+                                            <td> Baird_rhodium_bar </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                            <button type="button" class="link link-icon" onclick="return test_show_form_profile_final()">
+                                                <div class="icon-item color-blue-light">
+                                                    <span class="icon-item__text">Caleb Harris</span>
+                                                </div>
+                                            </button>
+                                            </td>
+                                            <td> dc238ofr49 </td>
+                                            <td> Vanadium </td>
+                                            <td> Baird </td>
+                                            <td class="align-right"> 1 </td>
+                                            <td> Baird_rhodium_round </td>
+                                        </tr>
+                                        <tr>
+                                            <td> <a href="#" onClick="return test_show_form_profile_final()">Tyler Hall</a> </td>
+                                            <td> kj089dlr06 </td>
+                                            <td> Beryllium </td>
+                                            <td> Baird </td>
+                                            <td class="align-right"> 1200 </td>
+                                            <td>
+                                                <div class="icon-item">
+                                                    <i class="icon icon-currency icon--dollar-blue"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td> <a href="#" onClick="return test_show_form_profile_final()">Chester Robbins</a> </td>
+                                            <td> dc232ofr49 </td>
+                                            <td> Bismuth </td>
+                                            <td> Baird </td>
+                                            <td class="align-right"> 1 </td>
+                                            <td> Baird_rhodium_round </td>
+                                        </tr>
+                                        <tr>
+                                            <td> <a href="#" onClick="return test_show_form_profile_final()">Arthur Woods</a> </td>
+                                            <td> kj0efdlr06 </td>
+                                            <td> Rhodium </td>
+                                            <td> Baird </td>
+                                            <td class="align-right"> 1000 </td>
+                                            <td>
+                                                <div class="icon-item">
+                                                    <i class="icon icon-currency icon--dollar-blue"></i>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td> <a href="#" onClick="return test_show_form_profile_final()">Richard Stanley</a> </td>
+                                            <td> tg38ofr49 </td>
+                                            <td> Rhodium </td>
+                                            <td> Baird </td>
+                                            <td class="align-right"> </td>
+                                            <td> Baird_rhodium_coin </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                                <ul class="pagination">
+                                    <li class=""><a class="" href="#">«</a></li>
+                                    <li class=""><a class="" href="#">⟨</a></li>
+                                    <li class=""><a class="" href="#">1</a></li>
+                                    <li class=""><a class="" href="#">2</a></li>
+                                    <li class=""><a class="" href="#">3</a></li>
+                                    <li class="active"><a class="active" href="#">12</a></li>
+                                    <li class=""><a class="" href="#">13</a></li>
+                                    <li class=""><a class="" href="#">14</a></li>
+                                    <li class="disabled"><a class="" href="#">⟩</a></li>
+                                    <li class="disabled"><a class="" href="#">»</a></li>
+                                </ul>
+                                
+                            </div><!--.table-wrapper-->   
+                            
+                        </div><!--#test-Wallets-block-->
+                        
+                        <div id="test-Transactions-block" style="display: none;">
+                        	<!--Transactions-->
+                        </div><!--#test-Transactions-block-->
+                        
+                    </div><!--.tab-blocks-->
+                    
+                                                                                                    
+                    <!-- InstanceEndEditable -->
+                </div>
+                <div class="clearfix"></div>
+                
+            </div><!--.middle-row-->
+        </div><!--.main-container-->
+    </div><!--.middle-->
+</div><!--.wrapper-->
+
+<!-- InstanceBeginEditable name="Extra_region" -->
+<div class="pform-bg pform-zoom-in" style="display: none" id="test-pform-bg"></div>
+
+<div class="pform-wrapper pform-move-right pform-right-slide" tabindex="-1" style="display: none" id="test-pform-profile-final">
+    <div class="pform-container">
+        <div class="pform-outer">
+            
+            <div class="pform zoom-anim-dialog">
+                <button title="Close" type="button" class="pform-close" onClick="test_close_form_profile_final()">×</button>
+                <div class="pform-content">
+                    
+                    <div class="pform-center-col">
+                        <h2>Caleb Harris</h2>
+                        
+                        <table class="account-card">
+                            <tbody>
+                                <tr>
+                                    <td class="account-card__photo">
+                                        <div class="account-card__photo-wrapper">
+                                            <img src="content/wallet-profile.png" />
+                                            <div class="account-card__photo-default"></div>
+                                        </div>
+                                        
+                                        <div class="btn-block">
+                                            <button type="button" class="btn btn-default">Profile</button>
+                                        </div>
+                                    </td>
+                                    <td class="account-card__info">
+                                        <div class="icon-line">
+                                            <div class="icon-item">
+                                                <i class="icon icon--country"></i>
+                                                <span class="icon-item__text">Great Britain</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="icon-line">
+                                            <div class="icon-item">
+                                                <i class="icon icon--company"></i>
+                                                <span class="icon-item__text">Henry Diaper & Co Ltd</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="icon-line">
+                                            <div class="icon-item">
+                                                <i class="icon icon--phone"></i>
+                                                <span class="icon-item__text">+447800767690</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="icon-line">
+                                            <div class="icon-item">
+                                                <i class="icon icon--email"></i>
+                                                <span class="icon-item__text">PJohnson@gmail.com</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="icon-line">
+                                            <div class="icon-item">
+                                                <i class="icon icon--wallet"></i>
+                                                <span class="icon-item__text">fd547qaw46</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                            
+                    </div><!--.pform-center-col-->
+                    
+                </div><!--.pform-content-->
+            </div><!--.pform-->
+            
+        </div>
+    </div>
+</div><!--.pform-wrapper-->
+<!-- InstanceEndEditable -->
+
+</div><!--#root-->
+
+<!-- не использовать в проекте, содержит функции test_... только для демонстрации шаблонов верстки-->
+<script src="js/test.js"></script>
+
+</body>
+<!-- InstanceEnd --></html>

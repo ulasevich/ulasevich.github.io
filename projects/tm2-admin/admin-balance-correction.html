@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    
+    <title>Correction trasactions | Adminstation | TM2</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!--SEO and Share-->
+    <meta name="description" content="Описание" />
+    <!--SEO and Share-->
+    
+    <!--favicons--> 
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#7287D5">
+    
+    <meta name="apple-mobile-web-app-status-bar-style" content="#7287D5">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#7287D5">
+    <!--favicons-->
+        
+    <!--head css, js-->
+    <link rel="stylesheet" href="css/libs/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/libs/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="js/modernizr-custom.js"></script>
+    <!--head css, js-->
+    
+    <script src="/js/panel.js"></script>
+    
+</head>
+<body>
+
+<div id="root">
+
+<div class="wrapper">
+	<header class="header">
+    	<div class="main-container container-fluid">
+        	<div class="row header-row align-items-center justify-content-end">
+            	<div class="col-2 header-row__logo">
+                	<a href="admin.html" class="header-logo-link" title="Main page">TM2</a>
+                </div>
+                
+                <div class="col header-row__empty"></div>
+                                
+                
+                
+                
+                
+                <div class="col-auto header-row__status">
+                    <div class="dropdown-wrapper">
+                        <button class="dropdown-toggle" onClick="test_show_avatar_dropdown()">
+                            <!--<div class="avatar-item">
+                            </div>-->
+                            <div class="avatar-name">Fred Brown</div>
+                            <span class="dropdown-arrow"></span>
+                        </button>
+                        
+                        <div class="dropdown-menu" id="test-avatar-dropdown" style="display: none">
+                            
+                            <div class="dropdown-item">
+                                <a href="admin.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--user"></i>
+                                        <span class="icon-item__text">Profile</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a href="index.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--logout"></i>
+                                        <span class="icon-item__text">Log out</span>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div><!--.dropdown-wrapper-->
+                </div>
+            </div><!--.header-row-->
+        </div><!--.main-container-->
+    </header>
+    
+    <div class="middle">
+		<div class="main-container container-fluid">
+            <div class="middle-row">
+                <div class="sidebar">
+                    <nav class="l-menu">
+                    	<ul class="not-list">
+                        	
+                            <li>
+                                <a href="admin.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--main"></i>
+                                        <span class="icon-item__text">Main (admin)</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-investor.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--main"></i>
+                                        <span class="icon-item__text">Main (investor)</span>
+                                    </div>
+                                </a>
+                            </li>
+							<li>
+								<a href="admin-users.html" class="link link-icon">
+									<div class="icon-item">
+										<i class="icon icon--users"></i>
+										<span class="icon-item__text">Users</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="admin-wallets.html" class="link link-icon">
+									<div class="icon-item">
+										<i class="icon icon--wallets"></i>
+										<span class="icon-item__text">Wallets</span>
+									</div>
+								</a>
+							</li>
+                            <li>
+                                <a href="admin-metals.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--metals"></i>
+                                        <span class="icon-item__text">Digital metals</span>
+                                    </div>
+                                </a>
+                            </li>
+							<li>
+                                <a href="admin-investor-buy-metals.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--buy-sell"></i>
+                                        <span class="icon-item__text">Buy metals</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-balance.html" class="link link-icon active">
+                                    <div class="icon-item">
+                                        <i class="icon icon--balance"></i>
+                                        <span class="icon-item__text">Balance</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-vaults.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--vaults"></i>
+                                        <span class="icon-item__text">Vaults</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-news.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--news"></i>
+                                        <span class="icon-item__text">News & Analysis</span>
+                                    </div>
+                                </a>
+							</li>
+                            
+                        </ul>
+                    </nav>
+                    
+                    
+                    
+                    
+                </div><!--.sidebar-->
+                
+                <div class="content">
+                    
+                    
+                    <h1>Balance</h1>
+                    
+                    <div class="tab-links">
+                        <a href="admin-balance.html" class="tab-link">Daily balance history</a>
+                        <a href="admin-balance-correction.html" class="tab-link active">Correction transactions</a>
+                    </div>
+                    
+                    
+                    <div class="tab-blocks">
+                    	
+                        <div id="test-balance" style="display: none;">                            
+                                                        
+                        </div><!--#test-balance-->
+                        
+                        
+                        
+                        <div id="test-balance-correction" style="display: block;">
+                        	
+                            <div class="row filter-block align-items-center">
+                                <div class="col-md-8 filter-block__simple">
+                                    <div class="row form-elements align-items-center">
+                                        
+                                        <div class="col-md-4">
+                                            <label class="field-label label-small">Date</label>
+                                            <div class="text-block select-block dropdown-block">
+                                                <div class="input" onClick="test_show_dropdown_block_1()">all</div>
+                                                <div class="dropdown-block__body" id="text-dropdown-block-1">
+                                                    <div class="dropdown-block__body-content">
+                                                        <div class="row form-elements">
+                                                            <div class="col-md-6">
+                                                                <label class="field-label label-small">from</label>
+                                                                <div class="text-block">
+                                                                    <input type="text" name="" value="01/01/2019" placeholder="" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <label class="field-label label-small">to</label>
+                                                                <div class="text-block">
+                                                                    <input type="text" name="" value="03/01/2019" placeholder="" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <div class="form-submit">
+                                                                    <button type="button" class="btn btn-default btn--small">update</button>
+                                                                    <button type="reset" class="btn btn-default btn--small btn--transparent" onClick="test_close_dropdown_block_1()">close</button>
+                                                                </div>
+                                                            </div>
+                                                        </div><!--.row form-elements-->
+                                                    </div>
+                                                </div>
+                                            </div><!--.dropdown-block-->
+                                        </div>
+                                        
+                                        <div class="col-md-4">
+                                            <label class="field-label label-small">Sender</label>
+                                            <div class="select-block">
+                                                <select name="">
+                                                    <option value="" disabled> Choose </option>
+                                                    <option value="1" selected> all </option>
+                                                    <option value="1"> TM2 admin </option>
+                                                    <option value="2"> Baird&Co </option>
+                                                    <option value="3"> Company name 1 </option>
+                                                    <option value="4"> Company name 2 </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-4">
+                                            <label class="field-label label-small">Recipient</label>
+                                            <div class="select-block">
+                                                <select name="">
+                                                    <option value="" disabled> Choose </option>
+                                                    <option value="1" selected> all </option>
+                                                    <option value="1"> TM2 admin </option>
+                                                    <option value="2"> Baird&Co </option>
+                                                    <option value="3"> Company name 1 </option>
+                                                    <option value="4"> Company name 2 </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div><!--.filter-block__simple-->
+                                
+                                <div class="col filter-block__empty">
+                                </div>
+                                
+                                <div class="col-auto filter-block__control">
+                                    <a href="#" class="link link-icon" onClick="test_show_form_add_correction()">
+                                        <div class="icon-item color-blue-dodger">
+                                            <i class="icon icon--add"></i>
+                                            <span class="icon-item__text">Add correction transaction</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div><!--.filter-block-->
+                            
+                            
+                            <div class="table-wrapper">
+                                <table class="default-table">
+                                    <thead>
+                                        <tr>
+                                            <th class="table-header-sorter table-header-sorter--asc">
+                                                <span>Datetime</span>
+                                            </th>
+                                            <th class="table-header-sorter">
+                                                <span>Sender</span>
+                                            </th>
+                                            <th class="table-header-sorter table-header-sorter--desc">
+                                                <span>Reciepent</span>
+                                            </th>
+                                            <th class="table-header-sorter">
+                                                <span>Amount</span>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    	<tr>
+                                        	<td> 28.08.2019 15:47:00 </td>
+                                            <td> TM2 admin </td>
+                                            <td> Baird&Co </td>
+                                            <td> $1,300.00 </td>
+                                        </tr>
+                                        <tr>
+                                        	<td> 28.08.2019 08:22:20 </td>
+                                            <td> Baird&Co </td>
+                                            <td> TM2 admin </td>
+                                            <td> $2,100.00 </td>
+                                        </tr>
+                                        <tr>
+                                        	<td> 22.08.2019 12:55:10 </td>
+                                            <td> Company name </td>
+                                            <td> Baird&Co </td>
+                                            <td> $560.00 </td>
+                                        </tr>
+                                        <tr>
+                                        	<td> 15.07.2019 15:47:00 </td>
+                                            <td> TM2 admin </td>
+                                            <td> Company name </td>
+                                            <td> $30.00 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                                <ul class="pagination">
+                                    <li class=""><a class="" href="#">«</a></li>
+                                    <li class=""><a class="" href="#">⟨</a></li>
+                                    <li class=""><a class="" href="#">1</a></li>
+                                    <li class=""><a class="" href="#">2</a></li>
+                                    <li class=""><a class="" href="#">3</a></li>
+                                    <li class="active"><a class="active" href="#">12</a></li>
+                                    <li class=""><a class="" href="#">13</a></li>
+                                    <li class=""><a class="" href="#">14</a></li>
+                                    <li class="disabled"><a class="" href="#">⟩</a></li>
+                                    <li class="disabled"><a class="" href="#">»</a></li>
+                                </ul>
+                                
+                            </div><!--.table-wrapper-->
+                            
+                        </div><!--#test-balance-correction-->
+                        
+                    </div><!--.tab-blocks-->
+                    
+                    
+                </div>
+                <div class="clearfix"></div>
+                
+            </div><!--.middle-row-->
+        </div><!--.main-container-->
+    </div><!--.middle-->
+</div><!--.wrapper-->
+
+
+
+<div class="pform-bg pform-zoom-in pform-show" style="display: none" id="test-pform-bg"></div>
+
+<div class="pform-wrapper pform-zoom-in pform-show" tabindex="-1" style="display: none" id="test-pform-add-correction">
+    <div class="pform-container">
+        <div class="pform-outer">
+            
+            <div class="pform zoom-anim-dialog">
+                <button title="Close" type="button" class="pform-close" onClick="test_close_form_add_correction()">×</button>
+                <div class="pform-content">
+                    
+                    <div class="pform-center-col">
+                        <h2>Add correction transaction</h2>
+                        
+                        <div class="row form-elements">
+                            <div class="col-md-6">
+                                <label class="field-label label-small">From</label>
+                                <div class="select-block">
+                                    <select name="">
+                                        <option value="" selected disabled> Choose </option>
+                                        <option value="1"> TM2 admin </option>
+                                        <option value="2"> Baird&Co </option>
+                                        <option value="3"> Company name 1 </option>
+                                        <option value="4"> Company name 2 </option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <label class="field-label label-small">To</label>
+                                <div class="select-block">
+                                    <select name="">
+                                        <option value="" selected disabled> Choose </option>
+                                        <option value="1"> TM2 admin </option>
+                                        <option value="2"> Baird&Co </option>
+                                        <option value="3"> Company name 1 </option>
+                                        <option value="4"> Company name 2 </option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="col-12">
+                                <label class="field-label label-small">Amount</label>
+                                <div class="text-block">
+                                    <input type="text" name="" placeholder="USD" />
+                                </div>
+                            </div>
+                            
+                            <div class="col-12">
+                                <div class="form-submit">
+                                    <button type="reset" class="btn btn-default btn--reset" onClick="test_close_form_add_correction()">Cancel</button>
+                                    <button type="submit" class="btn btn-default">Add</button>
+                                </div>
+                            </div>
+                        </div><!--.form-elements-->
+                    </div><!--.pform-center-col-->
+                    
+                </div><!--.pform-content-->
+            </div><!--.pform-->
+            
+        </div>
+    </div>
+</div><!--.pform-wrapper-->
+
+
+
+</div><!--#root-->
+
+<!-- не использовать в проекте, содержит функции test_... только для демонстрации шаблонов верстки-->
+<script src="js/test.js"></script>
+
+</body>
+</html>

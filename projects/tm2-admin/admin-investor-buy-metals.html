@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    
+    <title>Buy metals | Investor | Adminstation | TM2</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!--SEO and Share-->
+    <meta name="description" content="Описание" />
+    <!--SEO and Share-->
+    
+    <!--favicons--> 
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#7287D5">
+    
+    <meta name="apple-mobile-web-app-status-bar-style" content="#7287D5">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#7287D5">
+    <!--favicons-->
+        
+    <!--head css, js-->
+    <link rel="stylesheet" href="css/libs/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/libs/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="js/modernizr-custom.js"></script>
+    <!--head css, js-->
+    
+    <script src="/js/panel.js"></script>
+    
+</head>
+<body>
+
+<div id="root">
+
+<div class="wrapper">
+	<header class="header">
+    	<div class="main-container container-fluid">
+        	<div class="row header-row align-items-center justify-content-end">
+            	<div class="col-2 header-row__logo">
+                	<a href="admin.html" class="header-logo-link" title="Main page">TM2</a>
+                </div>
+                
+                <div class="col header-row__empty"></div>
+                                
+                
+                
+                
+                
+                <div class="col-auto header-row__status">
+                    <div class="dropdown-wrapper">
+                        <button class="dropdown-toggle" onClick="test_show_avatar_dropdown()">
+                            <!--<div class="avatar-item">
+                            </div>-->
+                            <div class="avatar-name">Fred Brown</div>
+                            <span class="dropdown-arrow"></span>
+                        </button>
+                        
+                        <div class="dropdown-menu" id="test-avatar-dropdown" style="display: none">
+                            
+                            <div class="dropdown-item">
+                                <a href="admin.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--user"></i>
+                                        <span class="icon-item__text">Profile</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a href="index.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--logout"></i>
+                                        <span class="icon-item__text">Log out</span>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div><!--.dropdown-wrapper-->
+                </div>
+            </div><!--.header-row-->
+        </div><!--.main-container-->
+    </header>
+    
+    <div class="middle">
+		<div class="main-container container-fluid">
+            <div class="middle-row">
+                <div class="sidebar">
+                    <nav class="l-menu">
+                    	<ul class="not-list">
+                        	
+                            <li>
+                                <a href="admin.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--main"></i>
+                                        <span class="icon-item__text">Main (admin)</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-investor.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--main"></i>
+                                        <span class="icon-item__text">Main (investor)</span>
+                                    </div>
+                                </a>
+                            </li>
+							<li>
+								<a href="admin-users.html" class="link link-icon">
+									<div class="icon-item">
+										<i class="icon icon--users"></i>
+										<span class="icon-item__text">Users</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="admin-wallets.html" class="link link-icon">
+									<div class="icon-item">
+										<i class="icon icon--wallets"></i>
+										<span class="icon-item__text">Wallets</span>
+									</div>
+								</a>
+							</li>
+                            <li>
+                                <a href="admin-metals.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--metals"></i>
+                                        <span class="icon-item__text">Digital metals</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-investor-buy-metals.html" class="link link-icon active">
+                                    <div class="icon-item">
+                                        <i class="icon icon--buy-sell"></i>
+                                        <span class="icon-item__text">Buy metals</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-balance.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--balance"></i>
+                                        <span class="icon-item__text">Balance</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-vaults.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--vaults"></i>
+                                        <span class="icon-item__text">Vaults</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-news.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--news"></i>
+                                        <span class="icon-item__text">News & Analysis</span>
+                                    </div>
+                                </a>
+							</li>
+                            <li>
+                                <a href="#" class="link" onClick="test_make_blur('scroll-block-portfolio'); return test_show_preloader_block('test-preloader-line-1');">
+                                    preloader 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link" onClick="test_make_blur('scroll-block-order-book'); return test_show_preloader_block('test-preloader-line-2')">
+                                    preloader 2
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link" onClick="test_make_blur('scroll-block-tabs'); return test_show_preloader_block('test-preloader-line-3')">
+                                    preloader 3
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link" onClick="test_make_blur('scroll-block-trade-history'); return test_show_preloader_block('test-preloader-line-4')">
+                                    preloader 4
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                    
+                    
+                    
+                    
+                </div><!--.sidebar-->
+                
+                <div class="content">
+                    
+                    
+                    <div class="row content-row">
+                    	
+                        <div class="col padding-bottom-0">
+                        	<div class="light-gradient-block">
+                            	<div class="row align-items-center">
+                                	<div class="col-auto">
+                                        <div class="text-block select-block bordered-field dropdown-block min-width-180">
+                                            <div class="input font-weight-500" onclick="test_show_dropdown_block_1()">RHODIUM BRDS</div>
+                                            <label class="field-label label-small">Select product</label>
+                                            <div class="dropdown-menu" id="text-dropdown-block-1" style="display: none">
+                                                <div class="dropdown-item">
+                                                    <div class="small-text">Rhodium</div>
+                                                    <table class="small-table-3">
+                                                    	<tr>
+                                                        	<td>BRDS/USD</td>
+                                                            <td class="align-right">4.000.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                        	<td>BRDL/USD</td>
+                                                            <td class="align-right">3.986.00</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <div class="dropdown-item">
+                                                    <div class="small-text">Palladium</div>
+                                                    <table class="small-table-3">
+                                                    	<tr>
+                                                        	<td>BRDS/USD</td>
+                                                            <td class="align-right">4.000.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                        	<td>BRDL/USD</td>
+                                                            <td class="align-right">3.986.00</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                
+                                            </div><!--.dropdown-menu-->
+                                            
+                                        </div><!--.dropdown-block-->
+                                    </div>
+                                    
+                                    <div class="col-auto">
+                                    	<label class="field-label label-small">Last trade price</label>
+                                        <div class="input big-text color-blue-dodger">3.000.85 USD</div>
+                                    </div>
+                                    
+                                    <div class="col-auto">
+                                    	<label class="field-label label-small">Available</label>
+                                        <div class="input big-text">82.0258958 BRDS</div>
+                                    </div>
+                                    
+                                </div><!--.row-->
+                            </div><!--.light-gradient-block-->
+                            
+                            <div class="row content-row nowrap">
+                                <div class="col-auto min-width-300">
+                                    <div class="light-gradient-block gradient-border-block">
+                                        <h3>Portfolio</h3>
+                                    </div>
+                                    <div class="light-gradient-block padding-0">
+                                    	<div class="scroll-block" id="scroll-block-portfolio">
+                                            <table class="small-table-2 table-tr-hover-gradient">
+                                                <thead>
+                                                    <tr>
+                                                        <th> Currency </th>
+                                                        <th> Available </th>
+                                                        <th class="bg-color-emperor"> Product </th>
+                                                        <th class="bg-color-emperor"> Available </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="amounts-of-currencies__country-flag icon-size-12 country-flag_US"></div>
+                                                            USD
+                                                        </td>
+                                                        <td> 4.000.000000 </td>
+                                                        <td class="bg-color-emperor"> BRDL </td>
+                                                        <td class="bg-color-emperor"> 4.000.000000 </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="amounts-of-currencies__country-flag icon-size-12 country-flag_CH"></div>
+                                                            CHF
+                                                        </td>
+                                                        <td> 4.000.0000 </td>
+                                                        <td class="bg-color-emperor"> BRDL </td>
+                                                        <td class="bg-color-emperor"> 4.000.0000 </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="amounts-of-currencies__country-flag icon-size-12 country-flag_EU"></div>
+                                                            EUR
+                                                        </td>
+                                                        <td> 4.000.0000 </td>
+                                                        <td class="bg-color-emperor"> BRDK </td>
+                                                        <td class="bg-color-emperor"> 4.000.0000 </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="amounts-of-currencies__country-flag icon-size-12 country-flag_GB"></div>
+                                                            GBP
+                                                        </td>
+                                                        <td> 4.000.0000 </td>
+                                                        <td class="bg-color-emperor"> BRDL </td>
+                                                        <td class="bg-color-emperor"> 4.000.0000 </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="amounts-of-currencies__country-flag icon-size-12 country-flag_CA"></div>
+                                                            CAD
+                                                        </td>
+                                                        <td> 4.000.0000 </td>
+                                                        <td class="bg-color-emperor"> BRDL </td>
+                                                        <td class="bg-color-emperor"> 4.000.0000 </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="amounts-of-currencies__country-flag icon-size-12 country-flag_CN"></div>
+                                                            CNY
+                                                        </td>
+                                                        <td> 4.000.0000 </td>
+                                                        <td class="bg-color-emperor"> BRDL </td>
+                                                        <td class="bg-color-emperor"> 4.000.0000 </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div><!--.scroll-block-->
+                                        <div class="preloader-line-wrapper" id="test-preloader-line-1" style="display: none">
+                                        	<div class="preloader-line-track">
+                                            	<div class="preloader-line"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="light-gradient-block gradient-border-block">
+                                        <h3>Order book</h3>
+                                    </div>
+                                    <div class="light-gradient-block padding-0">
+                                    	<div class="scroll-block" id="scroll-block-order-book">
+                                            <table class="small-table-2 table-tr-hover-gradient table-tr-hover-show-hidden">
+                                                <thead>
+                                                    <tr>
+                                                        <th> Qty </th>
+                                                        <th> Price, USD </th>
+                                                        <th> Action </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td> 0.0000045 </td>
+                                                        <td> 4.000.00 </td>
+                                                        <td class="align-center">
+                                                            <div class="td-content">
+                                                                <div class="td-content-default">
+                                                                    18:49 20/03/20
+                                                                </div>
+                                                                <div class="td-content-hidden">
+                                                                    <button type="button" class="btn btn-default btn--green btn--small" onclick="return test_show_form('test-pform-buy-metal')">Buy</button>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 0.0000155 </td>
+                                                        <td> 3.550.00 </td>
+                                                        <td class="align-center">
+                                                            <div class="td-content">
+                                                                <div class="td-content-default">
+                                                                    17:49 19/05/20
+                                                                </div>
+                                                                <div class="td-content-hidden">
+                                                                    <button type="button" class="btn btn-default btn--green btn--small" onclick="return test_show_form('test-pform-buy-metal')">Buy</button>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 0.0000263 </td>
+                                                        <td> 5.000.00 </td>
+                                                        <td class="align-center">
+                                                            <div class="td-content">
+                                                                <div class="td-content-default">
+                                                                    12:49 18/03/20
+                                                                </div>
+                                                                <div class="td-content-hidden">
+                                                                    <button type="button" class="btn btn-default btn--green btn--small" onclick="return test_show_form('test-pform-buy-metal')">Buy</button>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> 0.0000045 </td>
+                                                        <td> 4.000.00 </td>
+                                                        <td class="align-center">
+                                                            <div class="td-content">
+                                                                <div class="td-content-default">
+                                                                    18:49 20/03/20
+                                                                </div>
+                                                                <div class="td-content-hidden">
+                                                                    <button type="button" class="btn btn-default btn--green btn--small" onclick="return test_show_form('test-pform-buy-metal')">Buy</button>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div><!--.scroll-block-->
+                                        <div class="preloader-line-wrapper" id="test-preloader-line-2" style="display: none">
+                                        	<div class="preloader-line-track">
+                                            	<div class="preloader-line"></div>
+                                            </div>
+                                        </div>
+                                    </div><!--.light-gradient-block padding-0-->
+                                </div><!--.col-auto min-width-300-->
+                                
+                                
+                                <div class="col col-graph-absolute">
+                                	
+                                    <div class="chart-filtr">
+                                        <span class="chart-filtr__title">Show:</span>
+                                        
+                                        <label class="form-label button-label button-label--small" onClick="show_investor_volume_week()">
+                                            <input type="radio" name="test-volume-1[]" value="" checked />
+                                            <div class="btn button-label__text">week</div>
+                                        </label>
+                                        <label class="form-label button-label button-label--small" onClick="show_investor_volume_month()">
+                                            <input type="radio" name="test-volume-1[]" value="" />
+                                            <div class="btn button-label__text">month</div>
+                                        </label>
+                                        <label class="form-label button-label button-label--small" onClick="show_investor_volume_year()">
+                                            <input type="radio" name="test-volume-1[]" value="" />
+                                            <div class="btn button-label__text">year</div>
+                                        </label>
+                                    </div><!--.chart-filtr-->
+                                    <div class="chart-wrapper">
+                                        <div id="chart-buy-metals" class="chart-container">
+                                        </div>
+                                    </div><!--.chart-wrapper-->
+                                    
+                                </div><!--.col col-graph-->
+                                
+                            </div>
+                            
+                        </div><!--.col padding-bottom-0-->
+                        
+                        
+                        
+                        <div class="col-auto min-width-300">
+                        	<div class="light-gradient-block gradient-border-block">
+                            	<h3>Trade history</h3>
+                            </div>
+                            <div class="light-gradient-block padding-0">
+                            	<div class="scroll-block" id="scroll-block-trade-history">
+                                    <table class="small-table-2 table-tr-hover-gradient">
+                                        <thead>
+                                            <tr>
+                                                <th> </th>
+                                                <th> Qty </th>
+                                                <th> Price, USD </th>
+                                                <th> Time </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="padding-right-0">
+                                                	<span class="inline-circle circle-size-5 bg-color-gray"></span>
+                                                </td>
+                                                <td> 0.0000045 </td>
+                                                <td> 4.000.00 </td>
+                                                <td class="align-center"> 18:49 20/03/20 </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="padding-right-0">
+                                                	<span class="inline-circle circle-size-5 bg-color-red"></span>
+                                                </td>
+                                                <td> 0.000035 </td>
+                                                <td> 3.550.00 </td>
+                                                <td class="align-center"> 17:49 19/05/20 </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="padding-right-0">
+                                                	<span class="inline-circle circle-size-5 bg-color-green"></span>
+                                                </td>
+                                                <td> 0.000055 </td>
+                                                <td> 5.000.00 </td>
+                                                <td class="align-center"> 12:49 18/03/20 </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="padding-right-0">
+                                                	<span class="inline-circle circle-size-5 bg-color-gray"></span>
+                                                </td>
+                                                <td> 0.0000045 </td>
+                                                <td> 4.000.00 </td>
+                                                <td class="align-center"> 18:49 20/03/20 </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="padding-right-0">
+                                                	<span class="inline-circle circle-size-5 bg-color-gray"></span>
+                                                </td>
+                                                <td> 0.000035 </td>
+                                                <td> 3.550.00 </td>
+                                                <td class="align-center"> 17:49 19/05/20 </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="padding-right-0">
+                                                	<span class="inline-circle circle-size-5 bg-color-gray"></span>
+                                                </td>
+                                                <td> 0.000055 </td>
+                                                <td> 5.000.00 </td>
+                                                <td class="align-center"> 12:49 18/03/20 </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="padding-right-0">
+                                                	<span class="inline-circle circle-size-5 bg-color-gray"></span>
+                                                </td>
+                                                <td> 0.0000045 </td>
+                                                <td> 4.000.00 </td>
+                                                <td class="align-center"> 18:49 20/03/20 </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="padding-right-0">
+                                                	<span class="inline-circle circle-size-5 bg-color-gray"></span>
+                                                </td>
+                                                <td> 0.000035 </td>
+                                                <td> 3.550.00 </td>
+                                                <td class="align-center"> 17:49 19/05/20 </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="padding-right-0">
+                                                	<span class="inline-circle circle-size-5 bg-color-gray"></span>
+                                                </td>
+                                                <td> 0.000055 </td>
+                                                <td> 5.000.00 </td>
+                                                <td class="align-center"> 12:49 18/03/20 </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="padding-right-0">
+                                                	<span class="inline-circle circle-size-5 bg-color-gray"></span>
+                                                </td>
+                                                <td> 0.0000045 </td>
+                                                <td> 4.000.00 </td>
+                                                <td class="align-center"> 18:49 20/03/20 </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="padding-right-0">
+                                                	<span class="inline-circle circle-size-5 bg-color-gray"></span>
+                                                </td>
+                                                <td> 0.000035 </td>
+                                                <td> 3.550.00 </td>
+                                                <td class="align-center"> 17:49 19/05/20 </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="padding-right-0">
+                                                	<span class="inline-circle circle-size-5 bg-color-gray"></span>
+                                                </td>
+                                                <td> 0.000055 </td>
+                                                <td> 5.000.00 </td>
+                                                <td class="align-center"> 12:49 18/03/20 </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="padding-right-0">
+                                                	<span class="inline-circle circle-size-5 bg-color-gray"></span>
+                                                </td>
+                                                <td> 0.0000045 </td>
+                                                <td> 4.000.00 </td>
+                                                <td class="align-center"> 18:49 20/03/20 </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="padding-right-0">
+                                                	<span class="inline-circle circle-size-5 bg-color-gray"></span>
+                                                </td>
+                                                <td> 0.000035 </td>
+                                                <td> 3.550.00 </td>
+                                                <td class="align-center"> 17:49 19/05/20 </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="padding-right-0">
+                                                	<span class="inline-circle circle-size-5 bg-color-gray"></span>
+                                                </td>
+                                                <td> 0.000055 </td>
+                                                <td> 5.000.00 </td>
+                                                <td class="align-center"> 12:49 18/03/20 </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="padding-right-0">
+                                                	<span class="inline-circle circle-size-5 bg-color-gray"></span>
+                                                </td>
+                                                <td> 0.0000045 </td>
+                                                <td> 4.000.00 </td>
+                                                <td class="align-center"> 18:49 20/03/20 </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="padding-right-0">
+                                                	<span class="inline-circle circle-size-5 bg-color-gray"></span>
+                                                </td>
+                                                <td> 0.000035 </td>
+                                                <td> 3.550.00 </td>
+                                                <td class="align-center"> 17:49 19/05/20 </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="padding-right-0">
+                                                	<span class="inline-circle circle-size-5 bg-color-gray"></span>
+                                                </td>
+                                                <td> 0.000055 </td>
+                                                <td> 5.000.00 </td>
+                                                <td class="align-center"> 12:49 18/03/20 </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div><!--.scroll-block-->
+                                <div class="preloader-line-wrapper" id="test-preloader-line-4" style="display: none">
+                                    <div class="preloader-line-track">
+                                        <div class="preloader-line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--.col-auto min-width-300-->
+                        
+                        
+                        
+                        <div class="col-12">
+                        	<div class="light-gradient-block gradient-border-block padding-bottom-0">
+                                <div class="tab-links">
+                                    <a href="#" class="tab-link active" onclick="return test_show_tab(this, 'test-tab-1')">Product info</a>
+                                    <a href="#" class="tab-link" onclick="return test_show_tab(this, 'test-tab-2')">Downloads</a>
+                                </div>
+                            </div>
+                            <div class="light-gradient-block font-size-12">
+                            	<div class="scroll-block" id="scroll-block-tabs">
+                                    <div class="tab-blocks">
+                                        
+                                        <div class="tab-block" id="test-tab-1">
+                                            <div class="text-columns-2">
+                                                
+                                                <p>Legal & Commercial Name of Issuer</p>
+                                                <p>Baird & Co. </p>
+                                                <p class="op-text">Incorporated in the United Kingdom on 21st of June, 1988 with registra on number 02269558</p>
+                                                <p>Name of Product: <span class="op-text">Baird Rhodium Digital</span> </p>
+                                                <p>TM2 Symbol: <span class="op-text">BRD</span> </p>
+                                                
+                                                <p>Physical Backing: <span class="op-text">100% backed by Rhodium (999.0) in sponge form</span> </p>
+                                                <p>Unit & Denomination: <span class="op-text">1 BRD = 1 gram of rhodium 999</span> </p>
+                                                <p>Listing: <span class="op-text">The BRD is issued and listed on the Technology Metals Market (TM2), a London based issuing and trading plaPorm for technology metals.</span> </p>
+                                                <p>Trading: <span class="op-text">The BRD can be bought, sold and traded on the TM2, with the simplicity of a few clicks by anyone who has undergone identification verification and become a registered member of the TM2.</span> </p>
+                                                
+                                                <p>Compliant: <span class="op-text">Yes</span> </p>
+                                                <p>Clearing & SeIlement: <span class="op-text">TM2 - Instant</span> </p>
+                                                <p>Digital Custody: <span class="op-text">Verified investors have direct, full control of their BRD holdings through the TM2 wallet.</span> </p>
+                                                
+                                                <p>Physical Custody: <span class="op-text">Singapore</span> </p>
+                                                <p>Title: <span class="op-text">Investor</span> </p>
+                                                <p>Physical Delivery: <span class="op-text">Yes. T+10</span> </p>
+                                                <p>Counterparty for all transactions: <span class="op-text">Technology Metals Market (TM2) London, UK.</span> </p>
+                                                <p>Total Offering: <span class="op-text">£50 million</span> </p>
+                                                <p>Minimum Institutional allocation: <span class="op-text">£250,000</span> </p>       
+                                                <p>Maximum Institutional allocation: <span class="op-text">£10 million</span> </p>      
+                                                <p>BRD Price: <span class="op-text">By BRD Benchmark at issue date (issued regularly)</span> </p>
+                                                <p>Issuing Fee: <span class="op-text">1.65%</span> </p>
+                                                <p>Redemption Fee: <span class="op-text">.25%</span> </p>
+                                                <p>Digital & Physical Custody Fee: <span class="op-text">.50% per annum</span> </p>
+                                                <p>Execution: <span class="op-text">By electronic order via the TM2 or through TM2 OTC</span> </p>
+                                                
+                                            </div><!--.text-columns-2-->
+                                        </div><!--.tab-block-->
+                                        
+                                        <div class="tab-block" id="test-tab-2" style="display: none">
+                                            <div class="row content-row">
+                                                <div class="col-md-6">
+                                                    <div class="light-gradient-block">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                Name document Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit blandit non iaculis ut placerat, onsectetur
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <a href="#" class="link link-icon color-blue">
+                                                                    <div class="icon-item">
+                                                                        <i class="icon icon-size-14 icon--download"></i>
+                                                                        <span class="icon-item__text">Download</span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div><!--.col-md-6-->
+                                                
+                                                <div class="col-md-6">
+                                                    <div class="light-gradient-block">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                Name document Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit blandit non iaculis ut placerat, onsectetur
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <a href="#" class="link link-icon color-blue">
+                                                                    <div class="icon-item">
+                                                                        <i class="icon icon-size-14 icon--download"></i>
+                                                                        <span class="icon-item__text">Download</span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div><!--.col-md-6-->
+                                                
+                                                <div class="col-md-6">
+                                                    <div class="light-gradient-block">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                Name document Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing elit.doc
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <a href="#" class="link link-icon color-blue">
+                                                                    <div class="icon-item">
+                                                                        <i class="icon icon-size-14 icon--download"></i>
+                                                                        <span class="icon-item__text">Download</span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div><!--.col-md-6-->
+                                                
+                                                <div class="col-md-6">
+                                                    <div class="light-gradient-block">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                Name document Lorem ipsum dolor sit amet
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <a href="#" class="link link-icon color-blue">
+                                                                    <div class="icon-item">
+                                                                        <i class="icon icon-size-14 icon--download"></i>
+                                                                        <span class="icon-item__text">Download</span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div><!--.col-md-6-->
+                                                
+                                                <div class="col-md-6">
+                                                    <div class="light-gradient-block">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                Name document Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit blandit non iaculis ut placerat, onsectetur
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <a href="#" class="link link-icon color-blue">
+                                                                    <div class="icon-item">
+                                                                        <i class="icon icon-size-14 icon--download"></i>
+                                                                        <span class="icon-item__text">Download</span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div><!--.col-md-6-->
+                                                
+                                                <div class="col-md-6">
+                                                    <div class="light-gradient-block">
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                Name document Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing elit.doc
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <a href="#" class="link link-icon color-blue">
+                                                                    <div class="icon-item">
+                                                                        <i class="icon icon-size-14 icon--download"></i>
+                                                                        <span class="icon-item__text">Download</span>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div><!--.col-md-6-->
+                                                
+                                            </div>
+                                        </div><!--.tab-block-->
+                                        
+                                    </div><!--.tab-blocks-->
+                                </div><!--.scroll-block-->
+                                <div class="preloader-line-wrapper" id="test-preloader-line-3" style="display: none">
+                                    <div class="preloader-line-track">
+                                        <div class="preloader-line"></div>
+                                    </div>
+                                </div>
+                            </div><!--.light-gradient-block font-size-12-->
+                        </div><!--.col-12-->
+                        
+                    </div><!--.content-row-->
+                    
+                    
+                    
+                    <script src="js/highcharts.js"></script>
+                    <script>
+                    window.addEventListener("resize", updateScrollBlocksHeight);
+					function updateScrollBlocksHeight() {
+						// размеры окна браузера
+						var w = document.documentElement.clientWidth;
+						var h = document.documentElement.clientHeight;
+						console.log("Width: " + w + ", " + "Height: " + h);
+						//alert(h);
+						// некоторые фиксированные величины для вычисления итоговых значений 
+						var height_header = 45,
+						middle_paddings = 40,
+						height_product_filtr = 74,
+						height_block_heading = 43,
+						content_row_padding = 15;
+						
+						var block_trade_history = document.getElementById('scroll-block-trade-history');
+						var block_trade_history_height = 0;
+						var block_tabs = document.getElementById('scroll-block-tabs');
+						var block_tabs_height = 0;
+						var block_portfolio = document.getElementById('scroll-block-portfolio');
+						var block_portfolio_height = 0;
+						var block_order_book = document.getElementById('scroll-block-order-book');
+						var block_order_book_height = 0;
+						
+						h = h - height_header - middle_paddings; // сразу вычитаем для всех выооту шапки и paddings блока .middle
+												
+						block_trade_history_height = (h - height_block_heading*2 - content_row_padding*3)*0.7;
+						block_trade_history.style.height = block_trade_history_height + "px";
+						
+						block_tabs_height = (h - height_block_heading*2 - content_row_padding*3)*0.3;
+						block_tabs.style.height = block_tabs_height + "px";
+						
+						block_portfolio_height = (h - height_product_filtr - block_tabs_height - height_block_heading*3 - content_row_padding*5)*0.5;
+						block_portfolio.style.height = block_portfolio_height + "px";
+						
+						block_order_book_height = block_portfolio_height;
+						block_order_book.style.height = block_order_book_height + "px";
+						
+						/*alert(block_trade_history_height);
+						alert(block_tabs_height);
+						alert(block_portfolio_height);
+						alert(block_order_book_height);*/
+					}
+					
+					var myChart;
+					var data_week_uk, data_week_sg;
+					var data_month_uk, data_month_sg;
+					var data_year_uk, data_year_sg;
+					
+					document.addEventListener("DOMContentLoaded", function(event) { // когда страница загрузилась
+						
+						updateScrollBlocksHeight();
+						
+						data_week_uk = [
+							[Date.UTC(2018, 4, 11), 29.9],
+							[Date.UTC(2018, 4, 12), 10.5],
+							[Date.UTC(2018, 4, 13), 71.5],
+							[Date.UTC(2018, 4, 14), 96.4],
+							[Date.UTC(2018, 4, 15), 86.4],
+							[Date.UTC(2018, 4, 16), 146.4],
+							[Date.UTC(2018, 4, 17), 96.4]
+						];
+						data_week_sg = [
+							[Date.UTC(2018, 4, 11), 60.9],
+							[Date.UTC(2018, 4, 12), 40.5],
+							[Date.UTC(2018, 4, 13), 90.0],
+							[Date.UTC(2018, 4, 14), 110.4],
+							[Date.UTC(2018, 4, 15), 76.4],
+							[Date.UTC(2018, 4, 16), 126.4],
+							[Date.UTC(2018, 4, 17), 86.4]
+						];
+												
+						data_month_uk = [
+							[Date.UTC(2018, 4, 11), 29.9],
+							[Date.UTC(2018, 4, 12), 10.5],
+							[Date.UTC(2018, 4, 13), 71.5],
+							[Date.UTC(2018, 4, 14), 96.4],
+							[Date.UTC(2018, 4, 15), 86.4],
+							[Date.UTC(2018, 4, 16), 146.4],
+							[Date.UTC(2018, 4, 17), 26.4],
+							[Date.UTC(2018, 4, 18), 96.4],
+							[Date.UTC(2018, 4, 19), 116.4],
+							[Date.UTC(2018, 4, 20), 146.4],
+							[Date.UTC(2018, 4, 21), 96.4],
+							[Date.UTC(2018, 4, 22), 66.4],
+							[Date.UTC(2018, 4, 23), 56.4],
+							[Date.UTC(2018, 4, 24), 11.4],
+							[Date.UTC(2018, 4, 25), 34.4],
+							[Date.UTC(2018, 4, 26), 96.4],
+							[Date.UTC(2018, 4, 27), 196.4],
+							[Date.UTC(2018, 4, 28), 126.4],
+							[Date.UTC(2018, 4, 29), 106.4],
+							[Date.UTC(2018, 4, 30), 36.4],
+							[Date.UTC(2018, 4, 31), 196.4],
+							[Date.UTC(2018, 5, 1), 29.9],
+							[Date.UTC(2018, 5, 2), 10.5],
+							[Date.UTC(2018, 5, 3), 71.5],
+							[Date.UTC(2018, 5, 4), 96.4],
+							[Date.UTC(2018, 5, 5), 86.4],
+							[Date.UTC(2018, 5, 6), 146.4],
+							[Date.UTC(2018, 5, 7), 96.4],
+							[Date.UTC(2018, 5, 8), 96.4],
+							[Date.UTC(2018, 5, 9), 96.4],
+							[Date.UTC(2018, 5, 10), 96.4],
+						];
+						data_month_sg = [
+							[Date.UTC(2018, 4, 11), 60.9],
+							[Date.UTC(2018, 4, 12), 40.5],
+							[Date.UTC(2018, 4, 13), 90.0],
+							[Date.UTC(2018, 4, 14), 110.4],
+							[Date.UTC(2018, 4, 15), 76.4],
+							[Date.UTC(2018, 4, 16), 126.4],
+							[Date.UTC(2018, 4, 17), 66.4],
+							[Date.UTC(2018, 4, 18), 46.4],
+							[Date.UTC(2018, 4, 19), 106.4],
+							[Date.UTC(2018, 4, 20), 103.4],
+							[Date.UTC(2018, 4, 21), 196.4],
+							[Date.UTC(2018, 4, 22), 36.4],
+							[Date.UTC(2018, 4, 23), 36.4],
+							[Date.UTC(2018, 4, 24), 21.4],
+							[Date.UTC(2018, 4, 25), 54.4],
+							[Date.UTC(2018, 4, 26), 76.4],
+							[Date.UTC(2018, 4, 27), 96.4],
+							[Date.UTC(2018, 4, 28), 26.4],
+							[Date.UTC(2018, 4, 29), 6.4],
+							[Date.UTC(2018, 4, 30), 136.4],
+							[Date.UTC(2018, 4, 31), 146.4],
+							[Date.UTC(2018, 5, 1), 129.9],
+							[Date.UTC(2018, 5, 2), 110.5],
+							[Date.UTC(2018, 5, 3), 61.5],
+							[Date.UTC(2018, 5, 4), 126.4],
+							[Date.UTC(2018, 5, 5), 66.4],
+							[Date.UTC(2018, 5, 6), 46.4],
+							[Date.UTC(2018, 5, 7), 36.4],
+							[Date.UTC(2018, 5, 8), 86.4],
+							[Date.UTC(2018, 5, 9), 116.4],
+							[Date.UTC(2018, 5, 10), 166.4],
+						];
+						
+						data_year_uk = [
+							[Date.UTC(2018, 0, 1), 59.9],
+							[Date.UTC(2018, 1, 1), 210.5],
+							[Date.UTC(2018, 2, 1), 371.5],
+							[Date.UTC(2018, 3, 1), 96.4],
+							[Date.UTC(2018, 4, 1), 136.4],
+							[Date.UTC(2018, 5, 1), 146.4],
+							[Date.UTC(2018, 6, 1), 86.4],
+							[Date.UTC(2018, 7, 1), 129.9],
+							[Date.UTC(2018, 8, 1), 210.5],
+							[Date.UTC(2018, 9, 1), 76.4],
+							[Date.UTC(2018, 10, 1), 126.4],
+							[Date.UTC(2018, 11, 1), 216.4]
+						];
+						data_year_sg = [
+							[Date.UTC(2018, 0, 1), 130.9],
+							[Date.UTC(2018, 1, 1), 340.5],
+							[Date.UTC(2018, 2, 1), 190.0],
+							[Date.UTC(2018, 3, 1), 105.4],
+							[Date.UTC(2018, 4, 1), 76.4],
+							[Date.UTC(2018, 5, 1), 126.4],
+							[Date.UTC(2018, 6, 1), 55.4],
+							[Date.UTC(2018, 7, 1), 29.9],
+							[Date.UTC(2018, 8, 1), 10.5],
+							[Date.UTC(2018, 9, 1), 176.4],
+							[Date.UTC(2018, 10, 1), 26.4],
+							[Date.UTC(2018, 11, 1), 116.4]
+						];
+						
+						
+						myChart = Highcharts.chart('chart-buy-metals', {
+							chart: {
+								type: 'line',
+								backgroundColor: 'rgba(255, 255, 255, 0.0)',
+							},
+							legend: {
+								itemStyle: {
+									color: '#FFF',
+									fontWeight: 'normal'
+								},
+								itemHoverStyle: {
+									color: '#99a8e1',
+								},
+							},
+							title: {
+								text: ''
+							},
+							xAxis: {
+								type: 'datetime',
+								labels: {
+									style: {
+										color: '#FFF'
+									}
+								},
+								lineWidth: 0,
+								tickWidth: 0,
+							},
+							yAxis: {
+								title: {
+									text: '',
+									style: {
+										color: '#FFF'
+									}
+								},
+								labels: {
+									style: {
+										color: '#FFF'
+									}
+								},
+								gridLineDashStyle: 'LongDash',
+								gridLineColor: '#5a5a5a',
+							},
+							plotOptions: {
+								series: {
+									marker: {
+										enabled: false,
+									}
+								}
+							},
+							tooltip: {
+								shared: true,
+								crosshairs: true,
+								backgroundColor: 'rgba(114, 135, 213, 0.8)',
+								borderColor: '#7287D5',
+								style: {
+									color: '#FFF'
+								},
+								xDateFormat: '%d %B %Y, %a',
+								useHTML: true,
+								headerFormat: '<div style="padding-bottom: 4px;">{point.key}</div>' + 
+								'<table><tbody>',	
+								pointFormat: '<tr><td style="padding: 2px 5px 2px 0;">{series.name}: </td><td style="text-align: right; padding: 2px 0 2px 5px;">{point.y}</td></tr>',
+								footerFormat: '</tbody></table>',			
+							},
+							series: [
+							/*{
+								name: 'Rhodium_UK',
+								color: '#EB5757',
+								data: data_week_uk
+							},*/
+							{
+								name: 'Rhodium_SG',
+								color: '#42CAEB',
+								data: data_week_sg
+							}
+							],
+						});
+												
+					}); // DOMContentLoaded
+					
+					function show_investor_volume_week() {
+						//myChart.series[1].setData(data_week_uk, false, false, false);
+						myChart.series[0].setData(data_week_sg, false, false, false);
+						myChart.redraw();
+					}
+					
+					function show_investor_volume_month() {
+						//myChart.series[1].setData(data_month_uk, false, false, false);
+						myChart.series[0].setData(data_month_sg, false, false, false);
+						myChart.redraw();
+					}
+					
+					function show_investor_volume_year() {
+						//myChart.series[1].setData(data_year_uk, false, false, false);
+						myChart.series[0].setData(data_year_sg, false, false, false);
+						myChart.redraw();
+					}
+                    </script>
+                    
+                    
+                    
+                                        
+                    
+                </div>
+                <div class="clearfix"></div>
+                
+            </div><!--.middle-row-->
+        </div><!--.main-container-->
+    </div><!--.middle-->
+</div><!--.wrapper-->
+
+
+<div class="pform-bg pform-zoom-in pform-show" style="display: none" id="test-pform-bg"></div>
+
+<div class="pform-wrapper pform-zoom-in pform-show" tabindex="-1" style="display: none" id="test-pform-buy-metal">
+    <div class="pform-container">
+        <div class="pform-outer">
+            
+            <div class="pform zoom-anim-dialog">
+                <button title="Close" type="button" class="pform-close" onclick="return test_close_form('test-pform-buy-metal')">×</button>
+                <div class="pform-content">
+                    
+                    <div class="pform-center-col">
+                        <form name="" method="post" action="">
+                            <h2>Buy Rhodium BRDL</h2>
+                            
+                            <div class="row form-elements align-items-center">
+                                
+                                <div class="col-12">
+                                	<p class="op-text">Price</p>
+                                    <div class="light-gradient-block gradient-block-small">
+                                    	<div class="row align-items-center">
+                                        	<div class="col big-text cursor-default">
+                                            	USD <span>158,852.00</span>
+                                            </div>
+                                            <div class="col-auto">
+                                            	<span class="cursor-default op-text">per</span> 
+                                                <div class="select-block select-block-small select-big-arrow select-no-border op-control">
+                                                    <select name="">
+                                                        <option value="1" selected=""> gram </option>
+                                                        <option value="2"> oz </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12">
+                                	<p class="op-text">Amount</p>
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                        	<div class="light-gradient-block gradient-block-small">
+                                                <div class="row">
+                                                    <div class="col big-text">
+                                                    	<div class="text-block text-block-transparent">
+                                                        	<input type="text" name="" value="100" placeholder="type here" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                    	<span class="cursor-default op-text">USD</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                        	<button type="button" class="btn btn-number-control">+</button>
+                                            <button type="button" class="btn btn-number-control">−</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12">
+                                	<div class="row row-range-values">
+                                    	<div class="col">0.1</div>
+                                        <div class="col-auto">500.00</div>
+                                    </div>
+                                    <input type="range" name="" max="500" />
+                                </div>
+                                                                
+                                <div class="col-12">
+                                    <table class="simple-table">
+                                    	<tbody>
+                                            <tr>
+                                            	<td class="td-top-border-silver">Total</td>
+                                                <td class="td-top-border-silver color-blue-light bold">USD 8,856.20</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <div class="align-center">
+                                        <button type="button" class="btn op-btn" onclick="return test_close_form('test-pform-buy-metal')">
+                                            <div class="btn__content">
+                                                Cancel
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <button type="button" class="btn btn-simple btn-full-width" onclick="return test_show_form('test-pform-buy-metal-confirm')">
+                                        <div class="btn__content btn--green">
+                                            <div class="btn__content-name">Buy</div>
+                                            <div class="btn__content-text">
+                                                Rhodium_Baird_Coin
+                                                <big>175,23 USD</big>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
+                                
+                            </div><!--.form-elements-->
+                        </form>
+                    </div><!--.pform-center-col-->
+                    
+                </div><!--.pform-content-->
+            </div><!--.pform-->
+            
+        </div>
+    </div>
+</div><!--.pform-wrapper-->
+
+
+<div class="pform-wrapper pform-zoom-in pform-show" tabindex="-1" style="display: none" id="test-pform-buy-metal-confirm">
+    <div class="pform-container">
+        <div class="pform-outer">
+            
+            <div class="pform zoom-anim-dialog">
+                <button title="Close" type="button" class="pform-close" onclick="return test_close_form('test-pform-buy-metal-confirm')">×</button>
+                <div class="pform-content">
+                    
+                    <div class="pform-center-col">
+                        <form name="" method="post" action="">
+                            <h2>Confirm order details</h2>
+                            
+                            <div class="row form-elements align-items-center">
+                                                                                                
+                                <div class="col-12">
+                                	<table class="simple-table">
+                                    	<tbody>
+                                            <tr>
+                                            	<td class="op-text width-100">Item</td>
+                                                <td>Baird Rhodium Digital London, BRDL 1 oz</td>
+                                            </tr>
+                                            <tr>
+                                            	<td class="op-text">Price per item</td>
+                                                <td>$1.000.50</td>
+                                            </tr>
+                                            <tr>
+                                            	<td class="op-text">Qty</td>
+                                                <td>499.589</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <hr class="blue-hr"/>
+                                </div>
+                                
+                                <div class="col-12">
+                                    <div class="light-gradient-block gradient-block-small">
+                                    	<div class="row align-items-center">
+                                        	<div class="col">Total</div>
+                                            <div class="col-auto">
+                                            	<span class="big-text color-blue-light bold">$499.838.7945</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                
+                                <div class="col-12">
+                                    <div class="form-submit">
+                                        <button type="submit" class="btn btn-default" onclick="return test_show_form('test-pform-buy-metal-success')">Buy now</button>
+                                        <button type="reset" class="btn btn-default btn--reset" onclick="return test_close_form('test-pform-buy-metal-confirm')">Cancel</button>
+                                    </div>
+                                </div>
+                                
+                            </div><!--.form-elements-->
+                        </form>
+                    </div><!--.pform-center-col-->
+                    
+                </div><!--.pform-content-->
+            </div><!--.pform-->
+            
+        </div>
+    </div>
+</div><!--.pform-wrapper-->
+
+
+<div class="pform-wrapper pform-zoom-in pform-show" tabindex="-1" style="display: none" id="test-pform-buy-metal-success">
+    <div class="pform-container">
+        <div class="pform-outer">
+            
+            <div class="pform zoom-anim-dialog">
+                <button title="Close" type="button" class="pform-close" onclick="return test_close_form('test-pform-buy-metal-success')">×</button>
+                <div class="pform-content">
+                    
+                    <div class="pform-center-col">
+                        <form name="" method="post" action="">
+                            
+                            
+                            <div class="row form-elements align-items-center">
+                                <div class="col-12 align-center">
+                                	<i class="icon icon--buy-success"></i>
+                                </div> 
+                                 
+                                <div class="col-12 align-center">
+                                	<h2>Your purchase was successful</h2>
+                                    You successfully bought 15 g of Rhodium BRDL. The metal will be available in your TM2 wallet in a few minutes.
+                                </div>
+                                
+                                <div class="col-12">
+                                    <div class="form-submit">
+                                        <button type="reset" class="btn btn-default" onclick="return test_close_form('test-pform-buy-metal-success')">Ok</button>
+                                    </div>
+                                </div>
+                                
+                            </div><!--.form-elements-->
+                        </form>
+                    </div><!--.pform-center-col-->
+                    
+                </div><!--.pform-content-->
+            </div><!--.pform-->
+            
+        </div>
+    </div>
+</div><!--.pform-wrapper-->
+
+
+
+<div class="pform-wrapper pform-zoom-in pform-show" tabindex="-1" style="display: none" id="test-pform-management-fee">
+    <div class="pform-container">
+        <div class="pform-outer">
+            
+            <div class="pform zoom-anim-dialog pform-big">
+                <button title="Close" type="button" class="pform-close" onClick="test_close_form('test-pform-management-fee')">×</button>
+                <div class="pform-content">
+                    
+                    <div class="pform-center-col">
+                        <form name="" method="post" action="">
+                            <h2>Management fee payment. Need to finish operation using desktop wallet</h2>
+                                                        
+                            <div class="row form-elements form-elements--big-pad align-items-center">
+                                
+                                <div class="col-12">
+                                    <p>To finish the management fee payment operation you need to send the digital assets to the TM2 account.</p>
+                                    <p>In terms of security our platform cannot make it automatically.</p>
+                                    <p>So, to proceed you need:</p>
+                                    <ol>
+                                        <li>Download unsigned blockchain transaction file from <a href="">here</a>.</li>
+                                        <li>Launch desktop application.</li>
+                                        <li>Go to the “Send” section.</li>
+                                        <li>Press "Upload transaction" button and select .tm2 file you downloaded at the step 1.</li>
+                                        <li>Press "Send" button and confirm operation.</li>
+                                    </ol>
+                                </div>
+                                
+                                <div class="col-12">
+                                	<em>Important! The transaction file lifetime is 5 minutes. After that time you need to generate a new one by clicking the button "Pay management fee" from the Management fee section.</em>
+                                </div>
+                                                                
+                                <div class="col-12">
+                                    <div class="form-submit">
+                                        <button type="reset" class="btn btn-default btn--reset" onClick="test_close_form('test-pform-management-fee')">Cancel</button>
+                                        <button type="button" class="btn btn-default" onClick="test_close_form('test-pform-management-fee')">OK</button>
+                                    </div>
+                                </div>
+                            </div><!--.form-elements-->
+                        </form>
+                    </div><!--.pform-center-col-->
+                    
+                </div><!--.pform-content-->
+            </div><!--.pform-->
+            
+        </div>
+    </div>
+</div><!--.pform-wrapper-->
+
+
+</div><!--#root-->
+
+<!-- не использовать в проекте, содержит функции test_... только для демонстрации шаблонов верстки-->
+<script src="js/test.js"></script>
+
+</body>
+</html>

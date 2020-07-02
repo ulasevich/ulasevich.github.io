@@ -1,0 +1,15 @@
+/* Compiled Less CSS File */
+/* Generated from "mixins.css" */
+
+.bg-cover,
+.bg-contain {
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.bg-cover {
+  background-size: cover;
+}
+.bg-contain {
+  background-size: contain;
+}

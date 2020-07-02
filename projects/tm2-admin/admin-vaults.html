@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ru"><!-- InstanceBegin template="/Templates/TM2_admin.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+    <meta charset="utf-8">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>Vaults | Adminstation | TM2</title>
+    <!-- InstanceEndEditable -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!--SEO and Share-->
+    <meta name="description" content="Описание" />
+    <!--SEO and Share-->
+    
+    <!--favicons--> 
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    
+    <link rel="manifest" href="favicon/manifest.json">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#7287D5">
+    
+    <meta name="apple-mobile-web-app-status-bar-style" content="#7287D5">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#7287D5">
+    <!--favicons-->
+        
+    <!--head css, js-->
+    <link rel="stylesheet" href="css/libs/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/libs/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="js/modernizr-custom.js"></script>
+    <!--head css, js-->
+    
+    <!-- InstanceBeginEditable name="head" -->
+    <!-- InstanceEndEditable -->
+</head>
+<body>
+
+<div id="root">
+
+<div class="wrapper">
+	<header class="header">
+    	<div class="main-container container-fluid">
+        	<div class="row header-row align-items-center justify-content-end">
+            	<div class="col-2 header-row__logo">
+                	<a href="admin.html" class="header-logo-link" title="Main page">TM2</a>
+                </div>
+                
+                <div class="col header-row__empty"></div>
+                                
+                <!-- InstanceBeginEditable name="Top_header_region" -->
+                
+                <!-- InstanceEndEditable -->
+                
+                <div class="col-auto header-row__status">
+                    <div class="dropdown-wrapper">
+                        <button class="dropdown-toggle" onClick="test_show_avatar_dropdown()">
+                            <!--<div class="avatar-item">
+                            </div>-->
+                            <div class="avatar-name">Fred Brown</div>
+                            <span class="dropdown-arrow"></span>
+                        </button>
+                        
+                        <div class="dropdown-menu" id="test-avatar-dropdown" style="display: none">
+                            <!-- InstanceBeginEditable name="Top_menu_region" -->
+                            <div class="dropdown-item">
+                                <a href="admin.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--user"></i>
+                                        <span class="icon-item__text">Profile</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="dropdown-item">
+                                <a href="index.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--logout"></i>
+                                        <span class="icon-item__text">Log out</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- InstanceEndEditable -->
+                        </div>
+                    </div><!--.dropdown-wrapper-->
+                </div>
+            </div><!--.header-row-->
+        </div><!--.main-container-->
+    </header>
+    
+    <div class="middle">
+		<div class="main-container container-fluid">
+            <div class="middle-row">
+                <div class="sidebar">
+                    <nav class="l-menu">
+                    	<ul class="not-list">
+                        	<!-- InstanceBeginEditable name="Menu_region" -->
+                            <li>
+                                <a href="admin.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--main"></i>
+                                        <span class="icon-item__text">Main (admin)</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-investor.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--main"></i>
+                                        <span class="icon-item__text">Main (investor)</span>
+                                    </div>
+                                </a>
+                            </li>
+							<li>
+								<a href="admin-users.html" class="link link-icon">
+									<div class="icon-item">
+										<i class="icon icon--users"></i>
+										<span class="icon-item__text">Users</span>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="admin-wallets.html" class="link link-icon">
+									<div class="icon-item">
+										<i class="icon icon--wallets"></i>
+										<span class="icon-item__text">Wallets</span>
+									</div>
+								</a>
+							</li>
+                            <li>
+                                <a href="admin-metals.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--metals"></i>
+                                        <span class="icon-item__text">Digital metals</span>
+                                    </div>
+                                </a>
+                            </li>
+							<li>
+                                <a href="admin-investor-buy-metals.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--buy-sell"></i>
+                                        <span class="icon-item__text">Buy metals</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-balance.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--balance"></i>
+                                        <span class="icon-item__text">Balance</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-vaults.html" class="link link-icon active">
+                                    <div class="icon-item">
+                                        <i class="icon icon--vaults"></i>
+                                        <span class="icon-item__text">Vaults</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="admin-news.html" class="link link-icon">
+                                    <div class="icon-item">
+                                        <i class="icon icon--news"></i>
+                                        <span class="icon-item__text">News & Analysis</span>
+                                    </div>
+                                </a>
+							</li>
+                            
+                            <!-- InstanceEndEditable -->
+                        </ul>
+                    </nav>
+                    
+                    <!-- InstanceBeginEditable name="Sidebar_bottom_region" -->
+                    <!-- InstanceEndEditable -->
+                    
+                </div><!--.sidebar-->
+                
+                <div class="content">
+                    <!-- InstanceBeginEditable name="Content_region" -->
+                    <h1>Vaults</h1>
+                           
+                                        
+                    
+                    
+                    <div class="row filter-block align-items-center">
+                    	<div class="col-lg-6 col-md-7 filter-block__search">
+                            <div class="search-line" id="test-search-line">
+                                <form>
+                                    <div class="search-line__top">
+                                        <input type="text" class="search-line__top-text" placeholder="Type in search" onClick="test_show_form_search()" />
+                                        <button type="submit" class="btn search-line__top-submit"></button>
+                                        <button type="button" class="btn search-line__top-close" onClick="test_close_form_search()">×</button>
+                                    </div>
+                                    
+                                    <div class="search-line__dropdown">
+                                        <div class="search-line__dropdown-content">
+                                            <div class="row form-elements align-items-center">
+                                                <div class="col-md-6">
+                                                    <div class="text-block">
+                                                        <i class="icon icon--address"></i>
+                                                        <input type="text" name="" placeholder="Location" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="text-block">
+                                                        <i class="icon icon--address"></i>
+                                                        <input type="text" name="" placeholder="Address" />
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-12">
+                                                    <div class="form-submit">
+                                                        <button type="submit" class="btn btn-default">Search</button>
+                                                        <button type="reset" class="btn btn-default btn--reset">Reset</button>
+                                                    </div>
+                                                </div>
+                                            </div><!--.row form-elements-->
+                                        </div><!--.search-line__dropdown-content-->
+                                    </div><!--.search-line__dropdown-->
+                                </form>
+                            </div><!--.search-line-->
+                        </div>
+                        
+                        <div class="col filter-block__empty">
+                        </div>
+                        
+                        <div class="col-auto filter-block__control">
+                        	<a href="#" class="link link-icon" onClick="return test_show_form_add_vault()">
+                            	<div class="icon-item color-blue-dodger">
+                                    <i class="icon icon--add"></i>
+                                    <span class="icon-item__text">Add vault</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div><!--.filter-block-->
+                    
+                    
+                    <div class="table-wrapper">
+                    	<table class="default-table">
+                        	<thead>
+                            	<tr>
+                                	<th>
+                                    	<span>&nbsp;</span>
+                                    </th>
+                                    <th class="table-header-sorter">
+                                    	<span>Location</span>
+                                    </th>
+                                    <th class="table-header-sorter">
+                                    	<span>Warehouse company</span>
+                                    </th>
+                                    <th class="table-header-sorter table-header-sorter--asc">
+                                    	<span>Address</span>
+                                    </th>
+                                    <th class="table-header-sorter">
+                                    	<span>Metals</span>
+                                    </th>
+                                    <th class="table-header-sorter table-header-sorter--desc">
+                                    	<span>Issuer</span>
+                                    </th>
+                                    <th class="table-header-sorter">
+                                    	<span>Contacts</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            	<tr>
+                                	<td class="td-controls">
+                                    	<div class="dropdown-wrapper">
+                                            <button class="dropdown-toggle" onClick="test_show_points_dropdown()">
+                                            	<span class="btn btn-points"></span>
+                                            </button>
+                                            
+                                            <div class="dropdown-menu" id="test-points-dropdown" style="display: none">
+                                                <div class="dropdown-item">
+                                                    <a href="#" class="link link-icon" onClick="return test_show_form_add_vault()">
+                                                        <div class="icon-item">
+                                                            <i class="icon icon--edit"></i>
+                                                            <span class="icon-item__text">Edit</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="dropdown-item">
+                                                    <a href="#" class="link link-icon" onClick="test_show_form_confirm()">
+                                                        <div class="icon-item color-red">
+                                                            <i class="icon icon--remove-red"></i>
+                                                            <span class="icon-item__text">Remove</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td> Liverpool </td>
+                                    <td> Henry Diaper & Co Ltd </td>
+                                    <td> Warehouse C5 Depot Road Knowsley Industrial Park North Liverpool L33 3AR </td>
+                                    <td> Rh </td>
+                                    <td> Alex White </td>
+                                    <td>
+                                    	Alex White <br/>
+                                        A.White@gmail.com <br/>
+                                        +447800767690 <br/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                	<td class="td-controls">
+                                    	<div class="dropdown-wrapper">
+                                            <button class="dropdown-toggle">
+                                            	<span class="btn btn-points"></span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td> Detroit </td>
+                                    <td> Metro International Trade Services LLC </td>
+                                    <td> 20501 Pennsylvania Road Brownstown, MI 48193 6307 West Fort Street Detroit, MI 48234 </td>
+                                    <td> Rh </td>
+                                    <td> Richard Stanley </td>
+                                    <td>
+                                    	Richard Stanley <br/>
+                                        Stanley@gmail.com <br/>
+                                        +447800767690 <br/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                	<td class="td-controls">
+                                    	<div class="dropdown-wrapper">
+                                            <button class="dropdown-toggle">
+                                            	<span class="btn btn-points"></span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td> Chicago </td>
+                                    <td> Pacorini Holding LLC </td>
+                                    <td> 9301 S. Kreiter Avenue Chicago, IL 60617 </td>
+                                    <td> Al, Cu, NA, Ni, Pb, Zn, Rh </td>
+                                    <td> Jeffrey French </td>
+                                    <td>
+                                    	Jeffrey French <br/>
+                                        French@gmail.com <br/>
+                                        +447800767690 <br/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                	<td class="td-controls">
+                                    	<div class="dropdown-wrapper">
+                                            <button class="dropdown-toggle">
+                                            	<span class="btn btn-points"></span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td> Rotterdam </td>
+                                    <td> Pacorini Metals Vlissingen BV </td>
+                                    <td> Warehouses GLS 3, 4A, 4B, 5A and 5B Galileistraat 36 Port Number 350 3029 AM Rotterdam </td>
+                                    <td> Rh, AA, Al, Cu, Ni, Pb, Sn, Zn </td>
+                                    <td> Clinton Kennedy </td>
+                                    <td>
+                                    	Clinton Kennedy <br/>
+                                        Kennedy@gmail.com <br/>
+                                        +447800767690 <br/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                	<td class="td-controls">
+                                    	<div class="dropdown-wrapper">
+                                            <button class="dropdown-toggle">
+                                            	<span class="btn btn-points"></span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td> Liverpool </td>
+                                    <td> Henry Diaper & Co Ltd </td>
+                                    <td> Warehouse C5 Depot Road Knowsley Industrial Park North Liverpool L33 3AR </td>
+                                    <td> Rh </td>
+                                    <td> Alex White </td>
+                                    <td>
+                                    	Alex White <br/>
+                                        A.White@gmail.com <br/>
+                                        +447800767690 <br/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                	<td class="td-controls">
+                                    	<div class="dropdown-wrapper">
+                                            <button class="dropdown-toggle">
+                                            	<span class="btn btn-points"></span>
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td> Detroit </td>
+                                    <td> Metro International Trade Services LLC </td>
+                                    <td> 20501 Pennsylvania Road Brownstown, MI 48193 6307 West Fort Street Detroit, MI 48234 </td>
+                                    <td> Rh </td>
+                                    <td> Richard Stanley </td>
+                                    <td>
+                                    	Richard Stanley <br/>
+                                        Stanley@gmail.com <br/>
+                                        +447800767690 <br/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <ul class="pagination">
+                            <li class=""><a class="" href="#">«</a></li>
+                            <li class=""><a class="" href="#">⟨</a></li>
+                            <li class=""><a class="" href="#">1</a></li>
+                            <li class=""><a class="" href="#">2</a></li>
+                            <li class=""><a class="" href="#">3</a></li>
+                            <li class="active"><a class="active" href="#">12</a></li>
+                            <li class=""><a class="" href="#">13</a></li>
+                            <li class=""><a class="" href="#">14</a></li>
+                            <li class="disabled"><a class="" href="#">⟩</a></li>
+                            <li class="disabled"><a class="" href="#">»</a></li>
+                        </ul>
+                        
+                    </div><!--.table-wrapper-->                    
+                                                            
+
+                                                            
+                    <!-- InstanceEndEditable -->
+                </div>
+                <div class="clearfix"></div>
+                
+            </div><!--.middle-row-->
+        </div><!--.main-container-->
+    </div><!--.middle-->
+</div><!--.wrapper-->
+
+<!-- InstanceBeginEditable name="Extra_region" -->
+<div class="pform-bg pform-zoom-in pform-show" style="display: none" id="test-pform-bg"></div>
+
+<div class="pform-wrapper pform-zoom-in pform-show" tabindex="-1" style="display: none" id="test-pform-add-vault">
+    <div class="pform-container">
+        <div class="pform-outer">
+            
+            <div class="pform zoom-anim-dialog">
+                <button title="Close" type="button" class="pform-close" onClick="test_close_form_add_vault()">×</button>
+                <div class="pform-content">
+                    
+                    <div class="pform-center-col">
+                        <form name="" method="post" action="">
+                            <h2>Add (edit) vault</h2>
+                            <div class="form-response color-green" style="display: none">
+                            </div>
+                            <div class="row form-elements">
+                                <div class="col-12">
+                                	<label class="field-label label-small">Country</label>
+                                    <div class="select-block">
+                                    	<select name="" id="test-country-select">
+                                        	<option value="" selected disabled> Choose </option>
+                                            <option value="1"> Germany </option>
+                                            <option value="2"> U.K. </option>
+                                            <option value="3"> U.S.A. </option>
+                                            <option value="4"> France </option>
+                                            <option value="5"> Iceland </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                	<label class="field-label label-small">City</label>
+                                    <div class="text-block">
+                                    	<input type="text" name="" placeholder="Type city..." />
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12">
+                                	<label class="field-label label-small">Warehouse company</label>
+                                    <div class="text-block">
+                                    	<input type="text" name="" placeholder="..." />
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                	<label class="field-label label-small">Address</label>
+                                    <div class="text-block">
+                                    	<input type="text" name="" placeholder="..." />
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12">
+                                	<label class="field-label label-small">Metals</label>
+                                    <label class="form-label">
+                                        <input type="checkbox" name="" value="" />
+                                        <span><i>Rhodium</i></span>
+                                    </label>
+                                    <label class="form-label">
+                                        <input type="checkbox" name="" value="" checked />
+                                        <span><i>Cobalt</i></span>
+                                    </label>
+                                    <label class="form-label">
+                                        <input type="checkbox" name="" value="" />
+                                        <span><i>Vanadium</i></span>
+                                    </label>
+                                    <label class="form-label">
+                                        <input type="checkbox" name="" value="" />
+                                        <span><i>Vanadium</i></span>
+                                    </label>
+                                </div>
+                                
+                                <div class="col-12">
+                                    <label class="field-label label-small">Metals</label>
+                                    <div class="row row-labels">
+                                    	<div class="col-md-4">
+                                            <label class="form-label">
+                                                <input type="checkbox" name="" value="" />
+                                                <span><i>Rhodium</i></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label">
+                                                <input type="checkbox" name="" value="" checked />
+                                                <span><i>Cobalt</i></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label">
+                                                <input type="checkbox" name="" value="" />
+                                                <span><i>Vanadium</i></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label">
+                                                <input type="checkbox" name="" value="" />
+                                                <span><i>Beryllium</i></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="form-label">
+                                                <input type="checkbox" name="" value="" />
+                                                <span><i>Bismuth</i></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="col-12">
+                                	<label class="field-label label-small">Issuer</label>
+                                    <div class="select-block">
+                                    	<select name="" id="test-country-select">
+                                        	<option value="" selected disabled> Choose </option>
+                                            <option value="1"> Issuer 1 </option>
+                                            <option value="2"> Issuer 2 </option>
+                                            <option value="3"> Issuer 3 </option>
+                                            <option value="4"> Issuer 4 </option>
+                                            <option value="5"> Issuer 5 </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                	<label class="field-label label-small">Contacts</label>
+                                    <div class="text-block textarea-block">
+                                    	<textarea placeholder="Type here..."></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-submit">
+                                        <button type="submit" class="btn btn-default">Add (Save)</button>
+                                        <button type="reset" class="btn btn-default btn--reset" onClick="test_close_form_add_vault()">Cansel</button>
+                                    </div>
+                                </div>
+                            </div><!--.form-elements-->
+                        </form>
+                    </div><!--.pform-center-col-->
+                    
+                </div><!--.pform-content-->
+            </div><!--.pform-->
+            
+        </div>
+    </div>
+</div><!--.pform-wrapper-->
+
+
+<div class="pform-wrapper pform-zoom-in pform-show" tabindex="-1" style="display: none" id="test-pform-confirm">
+    <div class="pform-container">
+        <div class="pform-outer">
+            
+            <div class="pform zoom-anim-dialog">
+                <button title="Close" type="button" class="pform-close" onClick="test_close_form_confirm()">×</button>
+                <div class="pform-content">
+                    
+                    <div class="pform-center-col align-center">
+                        <form name="" method="post" action="">
+                            <h2>Are you sure?</h2>
+                            <div class="form-response">
+                            </div>
+                            <div class="row form-elements">
+                                <div class="col-12">
+                                    <div class="form-submit">
+                                        <button type="submit" class="btn btn-default">Yes</button>
+                                        <button type="reset" class="btn btn-default btn--reset" onClick="test_close_form_confirm()">Cansel</button>
+                                    </div>
+                                </div>
+                            </div><!--.form-elements-->
+                        </form>
+                    </div><!--.pform-center-col-->
+                    
+                </div><!--.pform-content-->
+            </div><!--.pform-->
+            
+        </div>
+    </div>
+</div><!--.pform-wrapper-->
+
+
+
+
+<!-- InstanceEndEditable -->
+
+</div><!--#root-->
+
+<!-- не использовать в проекте, содержит функции test_... только для демонстрации шаблонов верстки-->
+<script src="js/test.js"></script>
+
+</body>
+<!-- InstanceEnd --></html>
