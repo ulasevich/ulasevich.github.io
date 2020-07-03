@@ -1,24 +1,3 @@
-window.onload = function() {
-	if(!window.jQuery) {
-		var headTag = document.getElementsByTagName("head")[0];
-		var jqTag = document.createElement('script');
-		jqTag.type = 'text/javascript';
-		jqTag.src = '/js/jquery-1.12.2.min.js';
-		//jqTag.onload = myJQueryCode;
-		headTag.appendChild(jqTag);
-	} 
-}
-defer(function () {
-	console.log(document);
-});
-function defer(method) {
-	if (window.jQuery) {
-		method();
-	} else {
-		setTimeout(function() { defer(method) }, 50);
-	}
-}
-
 //Глобальный объект (панель) для разделов портфолио
 var Panel = {
     win: $(window),
